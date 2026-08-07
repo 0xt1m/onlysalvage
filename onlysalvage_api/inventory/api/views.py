@@ -1,4 +1,5 @@
 import logging
+import mimetypes
 import uuid
 import boto3
 
@@ -24,7 +25,7 @@ from django.contrib.gis.measure import D
 from django.http import HttpResponse
 
 from inventory.filters import ListingFilter
-from inventory.tasks import process_listing_image
+from inventory.tasks import process_listing_image, build_image_key
 from inventory.api.bulk_import import run_bulk_import, generate_template_csv
 from inventory.models import (
 	Make, VehicleModel, VehicleOption, Like, SearchLog, ListingView, TestDriveRequest, Report, MakeModelRequest,
@@ -187,7 +188,9 @@ class PresignUploadView(APIView):
 
 		s3 = boto3.client("s3")
 
-		key = f"listing_images/{listing.id}/original/{uuid.uuid4()}"
+		content_type = request.data.get("content_type", "image/jpeg")
+		ext = mimetypes.guess_extension(content_type) or ""
+		key = build_image_key(listing, "original", ext)
 
 		presign = s3.generate_presigned_post(
 			Bucket=settings.AWS_STORAGE_BUCKET_NAME,
@@ -197,7 +200,7 @@ class PresignUploadView(APIView):
 				["content-length-range", 0, 10 * 1024 * 1024],
 			],
 			Fields={
-				"Content-Type": request.data.get("content_type", "image/jpeg"),
+				"Content-Type": content_type,
 			},
 			ExpiresIn=60,
 		)

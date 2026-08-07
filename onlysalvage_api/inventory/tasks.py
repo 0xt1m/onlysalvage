@@ -4,6 +4,7 @@ import uuid
 
 from celery import shared_task
 from django.conf import settings
+from django.utils.text import slugify
 from io import BytesIO
 from PIL import Image
 import boto3
@@ -17,6 +18,24 @@ SIZES = {
     "medium": 800,
     "thumb": 300,
 }
+
+
+def build_image_key(listing, size, ext=""):
+    """S3 key for one of a listing's images -- title/seller/VIN when
+    available, so browsing the bucket directly isn't just a wall of random
+    UUIDs. Always ends with a short random suffix since none of those
+    fields are guaranteed unique on their own (a VIN can repeat once a
+    listing's sold and relisted, and title may still be blank on a
+    brand-new draft -- see ListingCreateSerializer/Listing.save()).
+    """
+    parts = [
+        slugify(listing.title) if listing.title else None,
+        slugify(listing.seller.username) if listing.seller_id else None,
+        listing.vin or None,
+    ]
+    prefix = "-".join(p for p in parts if p) or "listing"
+    suffix = uuid.uuid4().hex[:8]
+    return f"listing_images/{listing.id}/{size}/{prefix}-{suffix}{ext}"
 
 @shared_task
 def process_listing_image(image_id):
@@ -59,8 +78,7 @@ def process_listing_image(image_id):
         resized.save(buffer, format="WEBP", quality=92, method=6)
         buffer.seek(0)
 
-        img_filename = image.original_s3_key.split("/")[-1]
-        key = f"listing_images/{image.listing.id}/{name}/{img_filename}.webp"
+        key = build_image_key(image.listing, name, ".webp")
 
         s3.put_object(
             Bucket=settings.AWS_STORAGE_BUCKET_NAME,
@@ -89,7 +107,7 @@ def process_listing_image(image_id):
 MAX_IMPORTED_IMAGE_BYTES = 10 * 1024 * 1024
 
 
-def store_original_image(listing_id, body, content_type, order=None):
+def store_original_image(listing, body, content_type, order=None):
     """Puts already-in-hand image bytes into S3 and creates the ListingImage
     row for them -- shared by import_listing_image_from_url below (bytes
     fetched from an external URL) and the public API's direct multipart
@@ -102,7 +120,7 @@ def store_original_image(listing_id, body, content_type, order=None):
     from .models import ListingImage
 
     ext = mimetypes.guess_extension(content_type) or ""
-    key = f"listing_images/{listing_id}/original/{uuid.uuid4()}{ext}"
+    key = build_image_key(listing, "original", ext)
 
     s3.put_object(
         Bucket=settings.AWS_STORAGE_BUCKET_NAME,
@@ -112,7 +130,7 @@ def store_original_image(listing_id, body, content_type, order=None):
     )
 
     return ListingImage.objects.create(
-        listing_id=listing_id,
+        listing_id=listing.id,
         original_s3_key=key,
         order=order,
         status="pending",
@@ -132,7 +150,9 @@ def import_listing_image_from_url(listing_id, url, order=None):
     """
     from .models import Listing
 
-    if not Listing.objects.filter(id=listing_id).exists():
+    try:
+        listing = Listing.objects.select_related("seller").get(id=listing_id)
+    except Listing.DoesNotExist:
         return
 
     try:
@@ -152,7 +172,7 @@ def import_listing_image_from_url(listing_id, url, order=None):
         logger.warning("Failed to fetch image for listing %s: %s", listing_id, url)
         return
 
-    image = store_original_image(listing_id, body, content_type, order=order)
+    image = store_original_image(listing, body, content_type, order=order)
 
     # Called directly rather than .delay() -- this task is already running on
     # a worker, so there's no reason to round-trip through the broker again.

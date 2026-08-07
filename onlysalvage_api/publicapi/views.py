@@ -156,7 +156,7 @@ class PublicListingImageViewSet(ApiKeyAuthMixin, ModelViewSet):
 			if not content_type.startswith("image/"):
 				return Response({"detail": "File must be an image."}, status=status.HTTP_400_BAD_REQUEST)
 
-			image = store_original_image(listing.id, upload.read(), content_type, order=order)
+			image = store_original_image(listing, upload.read(), content_type, order=order)
 			try:
 				process_listing_image.delay(image.id)
 			except Exception:
