@@ -195,7 +195,7 @@ ROOT_URLCONF = 'onlysalvage_api.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -289,11 +289,24 @@ STORAGES = {
 AWS_STORAGE_BUCKET_NAME = os.environ.get("AWS_STORAGE_BUCKET_NAME", "onlysalvage-dev-media")
 AWS_S3_REGION_NAME = os.environ.get("AWS_S3_REGION_NAME", "us-east-1")
 
+# Set this when the bucket is private and only readable through CloudFront
+# (see the bucket's own policy -- "PolicyForCloudFrontPrivateContent" --
+# which grants s3:GetObject only to the CloudFront service principal for one
+# specific distribution). Image URLs then route through CloudFront instead
+# of hitting S3 directly, which would otherwise 403. Left unset, falls back
+# to the raw S3 URL -- fine for a bucket that still allows direct public
+# reads (e.g. local/dev).
+AWS_CLOUDFRONT_DOMAIN = os.environ.get("AWS_CLOUDFRONT_DOMAIN", "")
+
 MEDIA_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/"
-MEDIA_BASE_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/"
+MEDIA_BASE_URL = (
+    f"https://{AWS_CLOUDFRONT_DOMAIN}/" if AWS_CLOUDFRONT_DOMAIN
+    else f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/"
+)
 
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 STATICFILES_STORAGE = "storages.backends.s3boto3.S3StaticStorage"
 

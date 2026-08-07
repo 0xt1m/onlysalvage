@@ -15,6 +15,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "**.s3.amazonaws.com",
       },
+      // CloudFront-fronted buckets (see AWS_CLOUDFRONT_DOMAIN in the
+      // backend's settings.py) serve image URLs from here instead --
+      // wildcarded rather than the one current distribution's exact
+      // hostname so this doesn't need a rebuild if that ever changes.
+      {
+        protocol: "https",
+        hostname: "**.cloudfront.net",
+      },
     ],
   },
   // Baseline security headers -- nginx (see deploy/nginx.conf) sits in front
