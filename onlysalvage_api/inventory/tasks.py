@@ -13,7 +13,7 @@ s3 = boto3.client('s3')
 logger = logging.getLogger(__name__)
 
 SIZES = {
-    "large": 1600,
+    "large": 2400,
     "medium": 800,
     "thumb": 300,
 }
@@ -44,10 +44,19 @@ def process_listing_image(image_id):
 
     for name, width in SIZES.items():
         resized = img.copy()
-        resized.thumbnail((width, width * 10_000))
+        # LANCZOS (Pillow's highest-quality resampling filter) instead of
+        # thumbnail()'s BICUBIC default -- noticeably sharper on a big
+        # downscale like the original photo straight off a phone camera
+        # down to these display sizes.
+        resized.thumbnail((width, width * 10_000), Image.Resampling.LANCZOS)
 
         buffer = BytesIO()
-        resized.save(buffer, format="WEBP", quality=85)
+        # quality=92 + method=6 (WebP's slowest but best-compression encode
+        # mode -- fine here, this always runs async in Celery) instead of
+        # the old quality=85 default, for visibly less compression
+        # softness/blocking on close inspection, which matters for buyers
+        # actually examining salvage damage in the photos.
+        resized.save(buffer, format="WEBP", quality=92, method=6)
         buffer.seek(0)
 
         img_filename = image.original_s3_key.split("/")[-1]

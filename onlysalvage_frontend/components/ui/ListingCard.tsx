@@ -261,6 +261,7 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
             src={img}
             alt={title}
             fill
+            quality={90}
             className="object-cover"
           />
         ) : (

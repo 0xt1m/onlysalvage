@@ -262,6 +262,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                   src={safeImageUrl(img.large_url, img.image_url)}
                   alt={`${title} — photo ${i + 1}`}
                   fill
+                  quality={90}
                   className="object-cover"
                   priority={i === index}
                   draggable={false}
@@ -382,6 +383,11 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                 src={safeImageUrl(images[index].large_url, images[index].image_url)}
                 alt={`${title} — photo ${index + 1}`}
                 fill
+                // Full quality here specifically -- this is the zoomable
+                // fullscreen view buyers use to actually inspect damage
+                // closely, so it's worth skipping Next's usual recompression
+                // on top of the backend's own already-optimized WEBP.
+                quality={100}
                 className="object-contain pointer-events-none"
                 sizes="100vw"
                 priority

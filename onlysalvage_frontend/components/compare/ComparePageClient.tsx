@@ -232,6 +232,7 @@ export function ComparePageClient() {
                       src={safeImageUrl(cover.large_url, cover.image_url)}
                       alt={l.title}
                       fill
+                      quality={90}
                       className="object-cover pointer-events-none"
                     />
                   ) : (
