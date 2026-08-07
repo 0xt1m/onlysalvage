@@ -11,7 +11,7 @@ from inventory.tasks import import_listing_image_from_url
 logger = logging.getLogger(__name__)
 
 MAX_ROWS = 200
-MAX_IMAGE_URLS_PER_ROW = 20
+MAX_IMAGE_URLS_PER_ROW = 50
 
 REQUIRED_COLUMNS = ["vin"]
 
