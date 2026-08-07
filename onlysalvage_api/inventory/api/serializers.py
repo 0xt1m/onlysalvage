@@ -45,7 +45,7 @@ class MakeModelRequestSerializer(serializers.ModelSerializer):
 class ListingImageSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = ListingImage
-		fields = ("id", "image_url", "large_url", "medium_url", "thumb_url", "order", "photo_type",)
+		fields = ("id", "image_url", "large_url", "medium_url", "thumb_url", "order", "photo_type", "status",)
 
 class ListingThumbnailSerializer(serializers.ModelSerializer):
 	class Meta:
@@ -422,8 +422,20 @@ class ListingUpdateSerializer(serializers.ModelSerializer):
 			# uploaded/removed by the time this validate() runs. "Before
 			# repair" photos don't count -- they're supplementary damage
 			# documentation, not photos of the car as it's being sold.
-			if not self.instance.images.filter(photo_type=ListingImage.PhotoType.GALLERY).exists():
+			gallery_images = self.instance.images.filter(photo_type=ListingImage.PhotoType.GALLERY)
+			expected = self.instance.expected_photo_count
+			if not gallery_images.exists():
 				missing["images"] = "Add at least one photo before publishing."
+			elif gallery_images.exclude(status="ready").exists() or (expected and gallery_images.count() < expected):
+				# Covers three cases: an upload still being resized (see
+				# process_listing_image), a bulk-imported listing still
+				# waiting on more image_urls to finish fetching in the
+				# background (expected_photo_count set but not all rows
+				# exist yet), or some of those background fetches having
+				# failed outright (rows never show up at all -- exposed to
+				# the seller as a permanently-stuck count rather than
+				# silently letting them publish short a few photos).
+				missing["images"] = "Some photos are still processing -- wait a moment and try again."
 			if missing:
 				raise serializers.ValidationError(missing)
 

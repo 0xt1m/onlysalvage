@@ -24,7 +24,10 @@ export function DraftListingCard({ draft, onDeleted }: { draft: ListingSummary; 
   const thumb = draft.thumbnails[0]
 
   return (
-    <Card className="flex-row items-center gap-3 p-3">
+    <Card
+      className="flex-row items-center gap-3 p-3 cursor-pointer hover:border-primary transition-colors"
+      onClick={() => router.push(`/inventory/${draft.slug}/edit`)}
+    >
       <div className="relative w-20 h-16 shrink-0 rounded-md overflow-hidden bg-background border border-border flex items-center justify-center">
         {thumb ? (
           <Image src={safeImageUrl(thumb.thumb_url, thumb.image_url)} alt={draft.title} fill sizes="80px" className="object-cover" />
@@ -40,7 +43,7 @@ export function DraftListingCard({ draft, onDeleted }: { draft: ListingSummary; 
         </p>
       </div>
 
-      <div className="flex items-center gap-2 shrink-0">
+      <div className="flex items-center gap-2 shrink-0" onClick={(e) => e.stopPropagation()}>
         <Link href={`/inventory/${draft.slug}/edit`}>
           <Button variant="secondary" size="sm" className="flex items-center gap-1.5">
             <Pencil className="w-3.5 h-3.5" />

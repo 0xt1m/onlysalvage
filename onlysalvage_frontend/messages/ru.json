@@ -495,6 +495,7 @@
     }
   },
   "EditListingForm": {
+    "importingPhotos": "Импорт фотографий... загружено {current} из {total}",
     "status": "Статус",
     "statusAvailable": "Доступно",
     "statusPending": "Ожидает",
@@ -1150,7 +1151,8 @@
     "closeFullscreen": "Закрыть полноэкранный режим",
     "zoomOut": "Уменьшить",
     "zoomIn": "Увеличить",
-    "viewPhotoNumber": "Просмотреть фото {index}"
+    "viewPhotoNumber": "Просмотреть фото {index}",
+    "viewAllPhotos": "Показать все фото"
   },
   "ImageCropModal": {
     "title": "Обрежьте своё фото",

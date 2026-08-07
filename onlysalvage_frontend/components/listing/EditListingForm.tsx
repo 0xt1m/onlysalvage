@@ -22,6 +22,7 @@ import { useDragReorder } from '@/lib/useDragReorder'
 import {
   checkVinAvailability,
   updateListing,
+  getListing,
   getMakes,
   getModels,
   getVehicleOptions,
@@ -100,6 +101,12 @@ export function EditListingForm({ listing }: { listing: Listing }) {
   const [form, setForm] = useState(() => buildInitialForm(listing))
   const [existingImages, setExistingImages] = useState<ListingImage[]>(listing.images.filter(img => img.photo_type !== 'before_repair'))
   const [existingBeforeImages, setExistingBeforeImages] = useState<ListingImage[]>(listing.images.filter(img => img.photo_type === 'before_repair'))
+  // Only ever non-null for a listing bulk-imported from a CSV (see
+  // Listing.expected_photo_count) that hasn't finished fetching all its
+  // image_urls in the background yet -- lets the owner see "3 of 7 photos
+  // uploaded" and watch the grid fill in live instead of only finding out
+  // more arrived by refreshing the page.
+  const [photoImportTotal, setPhotoImportTotal] = useState(listing.expected_photo_count)
   const [newPhotos, setNewPhotos] = useState<Photo[]>([])
   const [newBeforePhotos, setNewBeforePhotos] = useState<Photo[]>([])
   const [carfaxFile, setCarfaxFile] = useState<File | null>(null)
@@ -148,6 +155,24 @@ export function EditListingForm({ listing }: { listing: Listing }) {
     { value: 'PE', label: t('EditListingForm.statusPending') },
     { value: 'SO', label: t('EditListingForm.statusSold') },
   ]
+
+  useEffect(() => {
+    if (photoImportTotal == null || existingImages.length >= photoImportTotal) return
+
+    const poll = async () => {
+      const fresh = await getListing(listing.slug)
+      if (!fresh) return
+      setExistingImages(fresh.images.filter(img => img.photo_type !== 'before_repair'))
+      // Re-read rather than trust the stale closure value -- a permanently
+      // failed image_url decrements this server-side (see
+      // _give_up_on_expected_photo), so the target itself can move, not
+      // just how many rows have arrived so far.
+      setPhotoImportTotal(fresh.expected_photo_count)
+    }
+
+    const interval = setInterval(poll, 3000)
+    return () => clearInterval(interval)
+  }, [listing.slug, photoImportTotal, existingImages.length])
 
   useEffect(() => {
     getMakes().then(setMakes)
@@ -650,6 +675,12 @@ export function EditListingForm({ listing }: { listing: Listing }) {
       <Card>
         <h2 ref={photosRef} className="text-lg font-semibold">{t('SellForm.photos')}</h2>
         {errors.photos && <p className="text-xs text-error -mt-1">{errors.photos}</p>}
+        {photoImportTotal != null && existingImages.length < photoImportTotal && (
+          <p className="flex items-center gap-2 text-sm text-muted -mt-1">
+            <Loader2 className="w-4 h-4 animate-spin" />
+            {t('EditListingForm.importingPhotos', { current: existingImages.length, total: photoImportTotal })}
+          </p>
+        )}
 
         {existingImages.length > 0 && (
           <>
@@ -665,6 +696,11 @@ export function EditListingForm({ listing }: { listing: Listing }) {
                   )}
                 >
                   <Image src={safeImageUrl(img.thumb_url, img.image_url)} alt={t('SellForm.photos')} fill sizes="(min-width: 768px) 16vw, (min-width: 640px) 25vw, 33vw" className="object-cover pointer-events-none" />
+                  {img.status !== 'ready' && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+                      <Loader2 className="w-5 h-5 text-white animate-spin" />
+                    </div>
+                  )}
                   {i === 0 && (
                     <Badge label={t('SellForm.cover')} variant="primary" className="absolute left-1 bottom-1" />
                   )}

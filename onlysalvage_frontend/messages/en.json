@@ -495,6 +495,7 @@
     }
   },
   "EditListingForm": {
+    "importingPhotos": "Importing photos... {current} of {total} uploaded so far",
     "status": "Status",
     "statusAvailable": "Available",
     "statusPending": "Pending",
@@ -1150,7 +1151,8 @@
     "closeFullscreen": "Close fullscreen",
     "zoomOut": "Zoom out",
     "zoomIn": "Zoom in",
-    "viewPhotoNumber": "View photo {index}"
+    "viewPhotoNumber": "View photo {index}",
+    "viewAllPhotos": "View all photos"
   },
   "ImageCropModal": {
     "title": "Crop your photo",

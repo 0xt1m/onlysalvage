@@ -208,6 +208,7 @@ def parse_row(seller, row):
 		engine=(row.get("engine") or "").strip() or None,
 		description=(row.get("description") or "").strip() or None,
 		video_url=(row.get("video_url") or "").strip() or None,
+		expected_photo_count=len(image_urls) or None,
 		**choice_values,
 		**numeric_values,
 	)

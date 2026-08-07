@@ -747,6 +747,13 @@ class ListingViewSet(ModelViewSet):
 
 
 class ListingImageViewSet(ModelViewSet):
+	# A listing has at most 50 images (see ListingImageCreateSerializer.validate,
+	# and MAX_IMAGE_URLS_PER_ROW for bulk import) -- small enough to always
+	# return in full rather than paginating at the global default of 10,
+	# which would otherwise hide anything past the first page from a client
+	# just polling this list for newly-arrived images (see EditListingForm).
+	pagination_class = None
+
 	def get_listing(self, require_owner=False):
 		qs = Listing.objects.filter(id=self.kwargs.get("listing_id"))
 

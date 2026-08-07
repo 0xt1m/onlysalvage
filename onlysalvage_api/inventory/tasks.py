@@ -137,6 +137,23 @@ def store_original_image(listing, body, content_type, order=None):
     )
 
 
+def _give_up_on_expected_photo(listing_id):
+    """Called whenever import_listing_image_from_url below gives up on a URL
+    for good -- decrements expected_photo_count so it converges on "how many
+    images this listing will actually end up with" rather than staying
+    stuck at the CSV row's original count forever. Without this, one dead
+    URL in a bulk-imported row would permanently block that listing from
+    ever publishing (see ListingUpdateSerializer.validate's expected_photo_count
+    check) -- there'd be no way for the count of real rows to ever catch up.
+    """
+    from django.db.models import F
+    from .models import Listing
+
+    Listing.objects.filter(id=listing_id, expected_photo_count__gt=0).update(
+        expected_photo_count=F("expected_photo_count") - 1
+    )
+
+
 @shared_task
 def import_listing_image_from_url(listing_id, url, order=None):
     """Fetches an externally-hosted photo (see the CSV bulk-import's
@@ -162,14 +179,17 @@ def import_listing_image_from_url(listing_id, url, order=None):
         content_type = resp.headers.get("Content-Type", "").split(";")[0].strip()
         if not content_type.startswith("image/"):
             logger.warning("Skipping non-image URL for listing %s: %s", listing_id, url)
+            _give_up_on_expected_photo(listing_id)
             return
 
         body = resp.content
         if len(body) > MAX_IMPORTED_IMAGE_BYTES:
             logger.warning("Skipping oversized image for listing %s: %s", listing_id, url)
+            _give_up_on_expected_photo(listing_id)
             return
     except requests.RequestException:
         logger.warning("Failed to fetch image for listing %s: %s", listing_id, url)
+        _give_up_on_expected_photo(listing_id)
         return
 
     image = store_original_image(listing, body, content_type, order=order)

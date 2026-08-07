@@ -226,6 +226,7 @@ export interface ListingImage {
   thumb_url: string;
   order: number | null;
   photo_type: PhotoType;
+  status: "pending" | "ready" | "failed";
 }
 
 export interface ListingReview {
@@ -274,6 +275,12 @@ export interface Listing {
   created_at: string;
   seller: Profile;
   images: ListingImage[];
+  // Only ever set on a listing created via CSV bulk import (see
+  // inventory/api/bulk_import.py) -- how many image_urls that row listed,
+  // decremented as any that fail to fetch get given up on. Null for every
+  // other creation path, where there's no fixed target and the seller
+  // controls when they're done adding photos themselves.
+  expected_photo_count: number | null;
   reviews: ListingReview[];
   likes_count: number;
   is_liked: boolean;

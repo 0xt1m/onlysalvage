@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import { Car, ChevronLeft, ChevronRight, Maximize2, X, ZoomIn, ZoomOut } from 'lucide-react'
+import { Car, ChevronLeft, ChevronRight, Loader2, Maximize2, X, ZoomIn, ZoomOut } from 'lucide-react'
 import { Badge } from '@/components/ui/Badge'
 import { cn, safeImageUrl } from '@/lib/utils'
 import type { ListingImage } from '@/lib/types'
@@ -40,6 +40,15 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
   const [zoom, setZoom] = useState(1)
   const [pan, setPan] = useState({ x: 0, y: 0 })
   const [isDragging, setIsDragging] = useState(false)
+  // The fullscreen image serves the untouched original (see the src comment
+  // below), which can be genuinely slow to load the first time -- without
+  // this, there's nothing but the black overlay background behind it while
+  // that's in flight, which reads as broken rather than loading.
+  const [fullscreenLoaded, setFullscreenLoaded] = useState(false)
+  // The "3 / 12" counter in the fullscreen viewer opens this -- a grid of
+  // every photo to jump straight to one, since fullscreen (unlike the
+  // regular preview) has no thumbnail strip of its own to pick from.
+  const [showGrid, setShowGrid] = useState(false)
   const dragStart = useRef({ x: 0, y: 0 })
   const containerRef = useRef<HTMLDivElement>(null)
   const maxPan = useRef({ x: 0, y: 0 })
@@ -188,7 +197,12 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
 
     document.body.style.overflow = 'hidden'
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setFullscreen(false)
+      if (e.key === 'Escape') {
+        if (showGrid) setShowGrid(false)
+        else setFullscreen(false)
+        return
+      }
+      if (showGrid) return
       if (e.key === 'ArrowLeft') goTo(index - 1)
       if (e.key === 'ArrowRight') goTo(index + 1)
       if (e.key === '+' || e.key === '=') zoomIn()
@@ -200,7 +214,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
       document.body.style.overflow = ''
       window.removeEventListener('keydown', onKeyDown)
     }
-  }, [fullscreen, index, images.length])
+  }, [fullscreen, index, images.length, showGrid])
 
   useEffect(() => {
     // Attached as a native (non-passive) listener rather than React's onWheel
@@ -226,6 +240,8 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
     pointers.current.clear()
     pinch.current = null
     swipeStart.current = null
+    setFullscreenLoaded(false)
+    setShowGrid(false)
   }, [index, fullscreen])
 
   useEffect(() => {
@@ -404,16 +420,23 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                 src={safeImageUrl(images[index].image_url, images[index].large_url)}
                 alt={`${title} — photo ${index + 1}`}
                 fill
-                // Full quality here specifically -- this is the zoomable
-                // fullscreen view buyers use to actually inspect damage
-                // closely, so it's worth skipping Next's usual recompression
-                // on top of the backend's own already-optimized WEBP.
-                quality={100}
-                className="object-contain pointer-events-none"
+                // Not 100 -- still the untouched original underneath (real
+                // detail to zoom into), but forcing a near-lossless
+                // recompression on top was noticeably slow to encode on
+                // first view with nothing shown while it happened. 90 is
+                // effectively indistinguishable and much cheaper to compute.
+                quality={90}
+                className={cn('object-contain pointer-events-none transition-opacity', fullscreenLoaded ? 'opacity-100' : 'opacity-0')}
                 sizes="100vw"
                 priority
                 draggable={false}
+                onLoad={() => setFullscreenLoaded(true)}
               />
+              {!fullscreenLoaded && (
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <Loader2 className="w-8 h-8 text-white/70 animate-spin" />
+                </div>
+              )}
             </div>
           </div>
 
@@ -434,9 +457,17 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
               </span>
             </button>
             {images.length > 1 && (
-              <div className="bg-black/60 text-white text-xs px-2 py-1 rounded-full">
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setShowGrid(true)
+                }}
+                aria-label={t('viewAllPhotos')}
+                className="bg-black/60 hover:bg-black/80 text-white text-xs px-2 py-1 rounded-full cursor-pointer transition-colors"
+              >
                 {index + 1} / {images.length}
-              </div>
+              </button>
             )}
             <button
               type="button"
@@ -486,6 +517,47 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                 </span>
               </button>
             </>
+          )}
+
+          {showGrid && (
+            <div
+              className="absolute inset-0 z-20 bg-black/95 overflow-y-auto p-4 sm:p-6"
+              onClick={(e) => { e.stopPropagation(); setShowGrid(false) }}
+            >
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); setShowGrid(false) }}
+                aria-label={t('closeFullscreen')}
+                className="absolute right-4 top-4 z-10 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 cursor-pointer"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <div
+                className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 max-w-5xl mx-auto pt-12"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {images.map((img, i) => (
+                  <button
+                    type="button"
+                    key={img.id}
+                    onClick={() => { goTo(i); setShowGrid(false) }}
+                    aria-label={t('viewPhotoNumber', { index: i + 1 })}
+                    className={cn(
+                      'relative aspect-square rounded-md overflow-hidden border-2 cursor-pointer transition-colors',
+                      i === index ? 'border-primary' : 'border-transparent hover:border-white/50'
+                    )}
+                  >
+                    <Image
+                      src={safeImageUrl(img.thumb_url, img.image_url)}
+                      alt={`${title} thumbnail ${i + 1}`}
+                      fill
+                      sizes="(min-width: 768px) 16vw, 33vw"
+                      className="object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
           )}
         </div>
       )}

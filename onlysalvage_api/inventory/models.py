@@ -277,6 +277,17 @@ class Listing(models.Model):
 	# profile Drafts section and exempt from the stale-draft sweep.
 	draft_saved = models.BooleanField(default=False, editable=False)
 
+	# Only ever set by the CSV bulk-import path (see inventory/api/bulk_import.py)
+	# -- the number of image_urls that row listed, queued as background
+	# import_listing_image_from_url tasks that each create their own
+	# ListingImage row once they actually finish fetching. Lets the owner's
+	# edit page show "3 of 7 photos uploaded" and keep polling for the rest
+	# instead of the photo grid just silently growing on its own across
+	# page reloads. Null for every other creation path (SellForm, the public
+	# API), where there's no fixed target to begin with -- the seller adds
+	# photos one at a time and decides themselves when they're done.
+	expected_photo_count = models.PositiveIntegerField(null=True, blank=True, editable=False)
+
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
 	sold_at = models.DateTimeField(blank=True, null=True)

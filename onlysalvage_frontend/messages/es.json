@@ -495,6 +495,7 @@
     }
   },
   "EditListingForm": {
+    "importingPhotos": "Importando fotos... {current} de {total} subidas hasta ahora",
     "status": "Estado",
     "statusAvailable": "Disponible",
     "statusPending": "Pendiente",
@@ -1150,7 +1151,8 @@
     "closeFullscreen": "Cerrar pantalla completa",
     "zoomOut": "Alejar",
     "zoomIn": "Acercar",
-    "viewPhotoNumber": "Ver foto {index}"
+    "viewPhotoNumber": "Ver foto {index}",
+    "viewAllPhotos": "Ver todas las fotos"
   },
   "ImageCropModal": {
     "title": "Recorta tu foto",
