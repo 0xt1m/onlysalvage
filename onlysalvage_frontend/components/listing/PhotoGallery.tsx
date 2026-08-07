@@ -263,16 +263,19 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
             {images.map((img, i) => (
               <div key={img.id} className="relative w-full h-full shrink-0">
                 <Image
-                  // The untouched upload, not large_url's resized/recompressed
-                  // derivative -- this is the main viewing surface for the
-                  // listing, so it should never be any lower fidelity than
-                  // whatever the seller actually uploaded. large_url is only
-                  // the fallback for the rare case an image is still
-                  // mid-processing and image_url briefly isn't set yet.
-                  src={safeImageUrl(img.image_url, img.large_url)}
+                  // large_url (the resized/recompressed derivative), not the
+                  // untouched original -- every slide in this carousel is
+                  // mounted and loading at once (it's a sliding strip, not
+                  // lazy per-slide), so using the full original here meant
+                  // every listing page load was pulling down several
+                  // multi-MB originals simultaneously. Full fidelity is
+                  // reserved for the fullscreen zoomable lightbox below,
+                  // where it's actually needed and only one photo loads at
+                  // a time.
+                  src={safeImageUrl(img.large_url, img.image_url)}
                   alt={`${title} — photo ${i + 1}`}
                   fill
-                  quality={100}
+                  quality={90}
                   // Without this, the browser has to guess the display size
                   // from the srcset alone and can pick a candidate smaller
                   // than this actually renders at (basis-2/3 of a max-1600px
