@@ -20,7 +20,7 @@ const ZOOM_MIN = 1
 // serves that derivative rather than the untouched original).
 const ZOOM_MAX = 6
 const ZOOM_STEP = 0.5
-const WHEEL_ZOOM_STEP = 0.15
+const WHEEL_ZOOM_STEP = 0.3
 const SWIPE_THRESHOLD = 50
 
 function pointerDistance(a: { x: number; y: number }, b: { x: number; y: number }) {
