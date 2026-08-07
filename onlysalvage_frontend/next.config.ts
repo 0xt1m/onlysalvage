@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
   // so every button/slider/interaction on the page looks dead.
   allowedDevOrigins: ["192.168.12.188", "192.168.12.189"],
   images: {
+    // Next 16 whitelists allowed `quality` prop values and silently clamps
+    // anything outside this list back down to 75 (its default) -- without
+    // this, the quality={90}/{100} props on the listing photo components
+    // (PhotoGallery, ListingCard, ComparePageClient) do nothing at all.
+    qualities: [75, 90, 100],
     remotePatterns: [
       {
         protocol: "https",
