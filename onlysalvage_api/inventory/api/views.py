@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework.filters import OrderingFilter
 from rest_framework.pagination import PageNumberPagination
+from rest_framework.throttling import SimpleRateThrottle
 from django_filters.rest_framework import DjangoFilterBackend
 from django.shortcuts import get_object_or_404
 from django.conf import settings
@@ -26,12 +27,13 @@ from inventory.filters import ListingFilter
 from inventory.tasks import process_listing_image
 from inventory.api.bulk_import import run_bulk_import, generate_template_csv
 from inventory.models import (
-	Make, VehicleModel, VehicleOption, Like, SearchLog, ListingView, TestDriveRequest, Report,
+	Make, VehicleModel, VehicleOption, Like, SearchLog, ListingView, TestDriveRequest, Report, MakeModelRequest,
 	get_active_featured_listings, get_most_liked_listings, get_most_viewed_listings,
 	get_recommended_listings, get_similar_listings, recommendation_interest_filter,
 )
 
 from users.utils.geocoding import zip_to_coordinates
+from users.utils.telegram import send_telegram_message
 
 from .serializers import *
 from .permissions import IsListingOwner, IsListingImageOwner
@@ -85,6 +87,38 @@ class VehicleModelViewSet(ReadOnlyModelViewSet):
 			ids = [v.strip() for v in make_ids.split(",") if v.strip().isdigit()]
 			qs = qs.filter(make_id__in=ids)
 		return qs
+
+
+class _MakeModelRequestThrottle(SimpleRateThrottle):
+	# Keyed by user id, not IP -- this endpoint is already IsAuthenticated,
+	# same reasoning as _PhoneVerifyThrottle (users/api/views.py): what needs
+	# bounding is how many requests one *account* can file, not raw traffic.
+	scope = "make-model-request"
+
+	def get_cache_key(self, request, view):
+		return self.cache_format % {"scope": self.scope, "ident": request.user.pk}
+
+
+class MakeModelRequestView(APIView):
+	# Sell form only, so this is login-gated -- no anonymous submissions.
+	permission_classes = [IsAuthenticated]
+	throttle_classes = [_MakeModelRequestThrottle]
+
+	def post(self, request):
+		serializer = MakeModelRequestSerializer(data=request.data)
+		serializer.is_valid(raise_exception=True)
+		req = serializer.save(requested_by=request.user)
+
+		if req.kind == MakeModelRequest.Kind.MAKE:
+			text = f"New make request from @{request.user.username}: \"{req.name}\""
+		else:
+			text = f"New model request from @{request.user.username}: \"{req.name}\" (make: {req.make.name})"
+		delivered = send_telegram_message(text)
+		if delivered:
+			req.delivered = True
+			req.save(update_fields=["delivered"])
+
+		return Response(MakeModelRequestSerializer(req).data, status=status.HTTP_201_CREATED)
 
 class VehicleOptionViewSet(ReadOnlyModelViewSet):
 	queryset = VehicleOption.objects.all()

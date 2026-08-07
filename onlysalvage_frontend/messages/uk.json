@@ -409,6 +409,8 @@
     "loading": "Завантаження...",
     "noModelsYet": "Для цієї марки поки немає моделей",
     "selectModel": "Виберіть модель",
+    "requestNewMake": "Запросити нову марку",
+    "requestNewModel": "Запросити нову модель",
     "trim": "Комплектація",
     "trimPlaceholder": "Необов'язково, напр. EX",
     "vehicleType": "Тип кузова",
@@ -872,6 +874,24 @@
       "seller": "Продавець",
       "features": "Особливості"
     }
+  },
+  "RequestMakeModelModal": {
+    "titleMake": "Запросити нову марку",
+    "titleModel": "Запросити нову модель",
+    "close": "Закрити",
+    "descriptionMake": "Не бачите марку свого автомобіля в списку? Повідомте нас, і ми розглянемо запит.",
+    "descriptionModel": "Не бачите свою модель у списку для {make}? Повідомте нас, і ми розглянемо запит.",
+    "makeNameLabel": "Назва марки",
+    "makeNamePlaceholder": "напр. Freightliner",
+    "modelNameLabel": "Назва моделі",
+    "modelNamePlaceholder": "напр. Cascadia",
+    "nameRequired": "Будь ласка, введіть назву.",
+    "cancel": "Скасувати",
+    "submitting": "Надсилання...",
+    "submitRequest": "Надіслати Запит",
+    "submitFailed": "Не вдалося надіслати запит. Спробуйте ще раз.",
+    "submitSucceeded": "Дякуємо! Ваш запит надіслано на розгляд.",
+    "done": "Готово"
   },
   "ReportListingModal": {
     "report": "Поскаржитися",
@@ -1489,7 +1509,8 @@
       "WGN": "Універсал",
       "CPE": "Купе",
       "HBK": "Хетчбек",
-      "VAN": "Фургон"
+      "VAN": "Фургон",
+      "OTH": "Інше"
     },
     "transmission": {
       "ATM": "Автоматична",

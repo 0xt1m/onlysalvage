@@ -353,6 +353,11 @@ REST_FRAMEWORK = {
         "feedback": "5/hour",
         # ContactMessageView -- public, triggers a Telegram send per call.
         "contact": "5/hour",
+        # MakeModelRequestView -- authenticated, triggers a Telegram send per
+        # call. User-keyed (see _MakeModelRequestThrottle), generous since
+        # it's just a normal part of the Sell form, not spam-prone the way
+        # an anonymous endpoint is.
+        "make-model-request": "20/hour",
     },
 }
 

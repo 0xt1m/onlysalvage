@@ -409,6 +409,8 @@
     "loading": "Cargando...",
     "noModelsYet": "Aún no hay modelos para esta marca",
     "selectModel": "Selecciona un modelo",
+    "requestNewMake": "Solicitar una nueva marca",
+    "requestNewModel": "Solicitar un nuevo modelo",
     "trim": "Versión",
     "trimPlaceholder": "Opcional, p. ej. EX",
     "vehicleType": "Tipo de vehículo",
@@ -872,6 +874,24 @@
       "seller": "Vendedor",
       "features": "Características"
     }
+  },
+  "RequestMakeModelModal": {
+    "titleMake": "Solicitar una nueva marca",
+    "titleModel": "Solicitar un nuevo modelo",
+    "close": "Cerrar",
+    "descriptionMake": "¿No ves la marca de tu vehículo en la lista? Avísanos y la revisaremos.",
+    "descriptionModel": "¿No ves tu modelo en la lista para {make}? Avísanos y lo revisaremos.",
+    "makeNameLabel": "Nombre de la marca",
+    "makeNamePlaceholder": "p. ej. Freightliner",
+    "modelNameLabel": "Nombre del modelo",
+    "modelNamePlaceholder": "p. ej. Cascadia",
+    "nameRequired": "Por favor ingresa un nombre.",
+    "cancel": "Cancelar",
+    "submitting": "Enviando...",
+    "submitRequest": "Enviar Solicitud",
+    "submitFailed": "No se pudo enviar la solicitud. Inténtalo de nuevo.",
+    "submitSucceeded": "¡Gracias! Tu solicitud ha sido enviada para revisión.",
+    "done": "Listo"
   },
   "ReportListingModal": {
     "report": "Reportar",
@@ -1489,7 +1509,8 @@
       "WGN": "Familiar",
       "CPE": "Cupé",
       "HBK": "Hatchback",
-      "VAN": "Furgoneta"
+      "VAN": "Furgoneta",
+      "OTH": "Otro"
     },
     "transmission": {
       "ATM": "Automática",

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { Check, ChevronDown } from 'lucide-react'
+import { Check, ChevronDown, Plus } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 interface SelectOption {
@@ -18,9 +18,14 @@ interface SelectProps {
   error?: string
   disabled?: boolean
   className?: string
+  // Pinned below the option list (outside the scrollable area) -- e.g. a
+  // "Request a new make" action. Doesn't select a value; just closes the
+  // dropdown and runs onFooterClick.
+  footerLabel?: string
+  onFooterClick?: () => void
 }
 
-export function Select({ label, value, onChange, options, placeholder, error, disabled, className }: SelectProps) {
+export function Select({ label, value, onChange, options, placeholder, error, disabled, className, footerLabel, onFooterClick }: SelectProps) {
   const [open, setOpen] = useState(false)
   const [highlighted, setHighlighted] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -152,31 +157,44 @@ export function Select({ label, value, onChange, options, placeholder, error, di
         </button>
 
         {open && (
-          <ul
-            ref={listRef}
-            role="listbox"
-            onMouseMove={() => { suppressHoverRef.current = false }}
-            className="absolute z-20 mt-1 w-full max-h-60 overflow-y-auto rounded-md border border-border bg-surface shadow-lg py-1"
-          >
-            {items.map((item, i) => (
-              <li
-                key={item.value || '__placeholder__'}
-                role="option"
-                aria-selected={item.value === currentValue}
+          <div className="absolute z-20 mt-1 w-full rounded-md border border-border bg-surface shadow-lg overflow-hidden">
+            <ul
+              ref={listRef}
+              role="listbox"
+              onMouseMove={() => { suppressHoverRef.current = false }}
+              className="max-h-60 overflow-y-auto py-1"
+            >
+              {items.map((item, i) => (
+                <li
+                  key={item.value || '__placeholder__'}
+                  role="option"
+                  aria-selected={item.value === currentValue}
+                  onMouseDown={(e) => e.preventDefault()}
+                  onMouseEnter={() => { if (!suppressHoverRef.current) setHighlighted(i) }}
+                  onClick={() => commit(item.value)}
+                  className={cn(
+                    'flex items-center justify-between gap-2 px-3 py-2 text-sm cursor-pointer',
+                    item.value === '' ? 'text-muted' : 'text-foreground',
+                    i === highlighted && 'bg-surface-raised'
+                  )}
+                >
+                  <span className="truncate">{item.label}</span>
+                  {item.value === currentValue && <Check className="w-4 h-4 text-primary-light shrink-0" />}
+                </li>
+              ))}
+            </ul>
+            {footerLabel && onFooterClick && (
+              <button
+                type="button"
                 onMouseDown={(e) => e.preventDefault()}
-                onMouseEnter={() => { if (!suppressHoverRef.current) setHighlighted(i) }}
-                onClick={() => commit(item.value)}
-                className={cn(
-                  'flex items-center justify-between gap-2 px-3 py-2 text-sm cursor-pointer',
-                  item.value === '' ? 'text-muted' : 'text-foreground',
-                  i === highlighted && 'bg-surface-raised'
-                )}
+                onClick={() => { setOpen(false); onFooterClick() }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-sm text-primary-light border-t border-border hover:bg-surface-raised cursor-pointer"
               >
-                <span className="truncate">{item.label}</span>
-                {item.value === currentValue && <Check className="w-4 h-4 text-primary-light shrink-0" />}
-              </li>
-            ))}
-          </ul>
+                <Plus className="w-4 h-4 shrink-0" />
+                <span className="truncate">{footerLabel}</span>
+              </button>
+            )}
+          </div>
         )}
       </div>
       {error && <span className="text-xs text-error">{error}</span>}

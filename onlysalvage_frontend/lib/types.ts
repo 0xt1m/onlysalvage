@@ -117,17 +117,21 @@ export interface VehicleModel {
   make: number;
 }
 
-// Every listing is normalized onto exactly one of these four body styles --
-// there's no separate "full" vs. "selectable" list the way transmission/drive
-// have below, since every Wagon/Coupe/Hatchback listing was migrated onto
-// one of these four (see inventory/migrations/0029_squash_body_styles.py on
-// the backend) and nothing can produce one of the old values anymore (VIN
-// decode included -- see mapBodyClassToVehicleType in SellForm).
+// Every listing is normalized onto one of these five body styles -- there's
+// no separate "full" vs. "selectable" list the way transmission/drive have
+// below, since every Wagon/Coupe/Hatchback listing was migrated onto one of
+// the first four (see inventory/migrations/0029_squash_body_styles.py on the
+// backend) and nothing can produce one of the old values anymore (VIN decode
+// included -- see mapBodyClassToVehicleType in SellForm). OTHER exists as a
+// catch-all for the public API: a third-party client can submit an
+// unrecognized body style, and the backend's generalize_vehicle_type
+// (inventory/models.py) folds it here instead of rejecting the listing.
 export const VEHICLE_TYPES = [
   { value: "SDN", label: "Sedan" },
   { value: "TK", label: "Truck" },
   { value: "SUV", label: "SUV" },
   { value: "VAN", label: "Van" },
+  { value: "OTH", label: "Other" },
 ];
 
 export const TRANSMISSIONS = [

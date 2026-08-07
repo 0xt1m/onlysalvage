@@ -50,18 +50,84 @@ class VehicleModel(models.Model):
 		return self.name
 
 
+class MakeModelRequest(models.Model):
+	"""A seller-submitted request to add a make or model that isn't in the
+	dropdown yet (see the Sell form's "Request a make/model" modal) --
+	reviewed from the Django admin, same shape as Report's moderation queue.
+	Approving one actually creates the Make/VehicleModel (see approve()
+	below); nothing is created just by a request existing.
+	"""
+	class Kind(models.TextChoices):
+		MAKE = "MAKE", "Make"
+		MODEL = "MODEL", "Model"
+
+	class Status(models.TextChoices):
+		PENDING = "PE", "Pending"
+		APPROVED = "AP", "Approved"
+		REJECTED = "RE", "Rejected"
+
+	kind = models.CharField(max_length=5, choices=Kind.choices)
+	name = models.CharField(max_length=100)
+	# Only set (and only meaningful) for a MODEL request -- the existing make
+	# the requested model should be added under. Null for a MAKE request.
+	make = models.ForeignKey(Make, on_delete=models.CASCADE, null=True, blank=True, related_name="model_requests")
+	requested_by = models.ForeignKey(
+		settings.AUTH_USER_MODEL,
+		on_delete=models.SET_NULL,
+		null=True,
+		blank=True,
+		related_name="make_model_requests",
+	)
+	status = models.CharField(max_length=2, choices=Status.choices, default=Status.PENDING)
+	admin_notes = models.TextField(blank=True)
+	# Whether the Telegram notification (see users/utils/telegram.py) actually
+	# went out -- best-effort, same as ContactMessage/SiteFeedback: the
+	# request itself is never lost even if this stays False.
+	delivered = models.BooleanField(default=False)
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
+
+	class Meta:
+		ordering = ["-created_at"]
+
+	def __str__(self):
+		return f"[{self.get_kind_display()}] {self.name}"
+
+	def approve(self):
+		"""Safe to call again on an already-approved request (e.g. re-saving
+		in the admin) -- get_or_create below never creates a duplicate
+		Make/VehicleModel, and this always persists status itself regardless
+		of what self.status already held in memory (needed since the admin's
+		save_model calls this with obj.status already set to APPROVED from
+		the submitted form, before anything's actually hit the database)."""
+		if self.kind == self.Kind.MAKE:
+			Make.objects.get_or_create(name=self.name.strip())
+		elif self.make_id:
+			VehicleModel.objects.get_or_create(make=self.make, name=self.name.strip())
+
+		self.status = self.Status.APPROVED
+		self.save(update_fields=["status", "updated_at"])
+
+	def reject(self):
+		self.status = self.Status.REJECTED
+		self.save(update_fields=["status", "updated_at"])
+
+
 class Listing(models.Model):
 	class VehicleType(models.TextChoices):
-		# Deliberately just these four -- Wagon/Coupe/Hatchback used to be
-		# their own values but every listing (and every new VIN decode, see
-		# the frontend's mapBodyClassToVehicleType) now folds onto whichever
-		# of these four it's closest to instead. See
-		# migrations/0029_squash_body_styles.py for the one-time data fixup
-		# that moved every existing WGN/CPE/HBK listing onto SDN.
+		# Deliberately just these four (plus OTHER as a catch-all) --
+		# Wagon/Coupe/Hatchback used to be their own values but every listing
+		# (and every new VIN decode, see the frontend's
+		# mapBodyClassToVehicleType, and generalize_vehicle_type below for the
+		# public API's equivalent) now folds onto whichever of these it's
+		# closest to instead. See migrations/0029_squash_body_styles.py for
+		# the one-time data fixup that moved every existing WGN/CPE/HBK
+		# listing onto SDN.
 		SEDAN = "SDN", "Sedan"
 		TRUCK = "TK", "Truck"
 		SUV = "SUV", "SUV"
 		VAN = "VAN", "Van"
+		OTHER = "OTH", "Other"
 
 	class Status(models.TextChoices):
 		# Exists only long enough for a seller to fill in the rest of the
@@ -340,6 +406,47 @@ class Listing(models.Model):
 				name='unique_active_vin'
 			)
 		]
+
+
+def generalize_vehicle_type(raw):
+	"""Folds an arbitrary/free-text body style string onto one of
+	Listing.VehicleType's real options, or OTHER if nothing matches.
+	Mirrors the frontend's mapBodyClassToVehicleType (see SellForm.tsx),
+	which does the same folding client-side for VIN-decoded body styles --
+	but this one never gives up: an unrecognized value becomes OTHER
+	instead of null, so a public-API client posting an out-of-vocabulary
+	body style (see ListingCreateSerializer.to_internal_value) still gets
+	a listing created instead of a flat 400 rejection.
+	"""
+	if not raw:
+		return Listing.VehicleType.OTHER
+
+	raw = str(raw).strip()
+
+	# Already a valid code, any casing -- e.g. "SDN", "sdn".
+	upper = raw.upper()
+	if upper in Listing.VehicleType.values:
+		return upper
+
+	# Already a valid label, any casing -- e.g. "Sedan", "suv".
+	lower = raw.lower()
+	for code, label in Listing.VehicleType.choices:
+		if label.lower() == lower:
+			return code
+
+	# Keyword-match against NHTSA's finer-grained BodyClass vocabulary --
+	# same mapping as mapBodyClassToVehicleType, so a body style folds onto
+	# the same bucket regardless of which of the two ever handles it.
+	if "pickup" in lower:
+		return Listing.VehicleType.TRUCK
+	if "van" in lower or "minivan" in lower:
+		return Listing.VehicleType.VAN
+	if any(k in lower for k in ("sport utility", "suv", "crossover", "mpv", "multi-purpose", "multipurpose")):
+		return Listing.VehicleType.SUV
+	if any(k in lower for k in ("sedan", "coupe", "hatchback", "convertible", "wagon")):
+		return Listing.VehicleType.SEDAN
+
+	return Listing.VehicleType.OTHER
 
 
 class ListingImage(models.Model):

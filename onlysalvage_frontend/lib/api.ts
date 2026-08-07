@@ -568,6 +568,17 @@ export const getModelsForMakes = async (makeIds: number[]) => {
   return res.json() as Promise<import("./types").VehicleModel[]>;
 };
 
+// Sell/Edit forms only -- always sent with an auth cookie, since a request
+// needs a requester (see MakeModelRequestView on the backend).
+export const requestMakeModel = async (data: { kind: 'MAKE' | 'MODEL'; name: string; make?: number }) => {
+  const res = await fetchWithAuth(`${getApiUrl()}/inventory/make-model-requests/`, {
+    method: "POST",
+    body: JSON.stringify(data),
+  });
+  const json = res ? await res.json().catch(() => null) : null;
+  return { ok: !!res?.ok, data: json as Record<string, string[]> | null };
+};
+
 export const getVehicleOptions = async () => {
   const res = await fetch(`${getApiUrl()}/inventory/options/`);
   if (!res.ok) return [];

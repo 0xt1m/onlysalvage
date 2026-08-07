@@ -409,6 +409,8 @@
     "loading": "Se încarcă...",
     "noModelsYet": "Niciun model momentan pentru această marcă",
     "selectModel": "Selectează modelul",
+    "requestNewMake": "Solicită o marcă nouă",
+    "requestNewModel": "Solicită un model nou",
     "trim": "Variantă",
     "trimPlaceholder": "Opțional, ex. EX",
     "vehicleType": "Tip vehicul",
@@ -872,6 +874,24 @@
       "seller": "Vânzător",
       "features": "Caracteristici"
     }
+  },
+  "RequestMakeModelModal": {
+    "titleMake": "Solicită o marcă nouă",
+    "titleModel": "Solicită un model nou",
+    "close": "Închide",
+    "descriptionMake": "Nu găsești marca vehiculului tău în listă? Anunță-ne și o vom analiza.",
+    "descriptionModel": "Nu găsești modelul tău la {make}? Anunță-ne și îl vom analiza.",
+    "makeNameLabel": "Numele mărcii",
+    "makeNamePlaceholder": "ex. Freightliner",
+    "modelNameLabel": "Numele modelului",
+    "modelNamePlaceholder": "ex. Cascadia",
+    "nameRequired": "Te rugăm să introduci un nume.",
+    "cancel": "Anulează",
+    "submitting": "Se trimite...",
+    "submitRequest": "Trimite Solicitarea",
+    "submitFailed": "Trimiterea solicitării a eșuat. Te rugăm să încerci din nou.",
+    "submitSucceeded": "Mulțumim! Solicitarea ta a fost trimisă spre analiză.",
+    "done": "Gata"
   },
   "ReportListingModal": {
     "report": "Raportează",
@@ -1489,7 +1509,8 @@
       "WGN": "Break",
       "CPE": "Coupe",
       "HBK": "Hatchback",
-      "VAN": "Furgonetă"
+      "VAN": "Furgonetă",
+      "OTH": "Altele"
     },
     "transmission": {
       "ATM": "Automată",

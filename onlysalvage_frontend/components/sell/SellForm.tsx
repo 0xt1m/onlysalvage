@@ -14,6 +14,7 @@ import { Checkbox } from '@/components/ui/Checkbox'
 import { Dropzone } from '@/components/ui/Dropzone'
 import { DocUploadSlot } from '@/components/listing/DocUploadSlot'
 import { VehicleOptionsPicker } from '@/components/sell/VehicleOptionsPicker'
+import { RequestMakeModelModal } from '@/components/sell/RequestMakeModelModal'
 import { Link, useRouter } from '@/i18n/navigation'
 import { cn, translateOptions, normalizeUrl } from '@/lib/utils'
 import { useDragReorder } from '@/lib/useDragReorder'
@@ -175,6 +176,9 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
   const [makes, setMakes] = useState<Make[]>([])
   const [models, setModels] = useState<VehicleModel[]>([])
   const [loadingModels, setLoadingModels] = useState(false)
+  const [requestModal, setRequestModal] = useState<
+    null | { kind: 'MAKE' } | { kind: 'MODEL'; makeId: number; makeName: string }
+  >(null)
   const [vehicleOptions, setVehicleOptions] = useState<VehicleOption[]>([])
   const [selectedOptions, setSelectedOptions] = useState<number[]>([])
 
@@ -640,6 +644,7 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
   }
 
   return (
+    <>
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
       <Card>
         <h2 className="text-lg font-semibold">{t('vehicleDetails')}</h2>
@@ -670,6 +675,8 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
               options={makes.map(m => ({ value: String(m.id), label: m.name }))}
               placeholder={t('selectMake')}
               error={errors.make}
+              footerLabel={t('requestNewMake')}
+              onFooterClick={() => setRequestModal({ kind: 'MAKE' })}
             />
           </div>
           <div className="flex-1 min-w-[160px]" ref={modelRef}>
@@ -689,6 +696,11 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
               }
               error={errors.model}
               disabled={!form.make || loadingModels}
+              footerLabel={t('requestNewModel')}
+              onFooterClick={() => {
+                const make = makes.find(m => String(m.id) === form.make)
+                if (make) setRequestModal({ kind: 'MODEL', makeId: make.id, makeName: make.name })
+              }}
             />
           </div>
           <div className="flex-1 min-w-[160px]">
@@ -964,5 +976,18 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
         </Button>
       </div>
     </form>
+
+    {requestModal?.kind === 'MAKE' && (
+      <RequestMakeModelModal kind="MAKE" onClose={() => setRequestModal(null)} />
+    )}
+    {requestModal?.kind === 'MODEL' && (
+      <RequestMakeModelModal
+        kind="MODEL"
+        makeId={requestModal.makeId}
+        makeName={requestModal.makeName}
+        onClose={() => setRequestModal(null)}
+      />
+    )}
+    </>
   )
 }

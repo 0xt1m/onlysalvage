@@ -409,6 +409,8 @@
     "loading": "Загрузка...",
     "noModelsYet": "Для этой марки пока нет моделей",
     "selectModel": "Выберите модель",
+    "requestNewMake": "Запросить новую марку",
+    "requestNewModel": "Запросить новую модель",
     "trim": "Комплектация",
     "trimPlaceholder": "Необязательно, напр. EX",
     "vehicleType": "Тип кузова",
@@ -872,6 +874,24 @@
       "seller": "Продавец",
       "features": "Особенности"
     }
+  },
+  "RequestMakeModelModal": {
+    "titleMake": "Запросить новую марку",
+    "titleModel": "Запросить новую модель",
+    "close": "Закрыть",
+    "descriptionMake": "Не нашли марку своего автомобиля в списке? Сообщите нам, и мы её рассмотрим.",
+    "descriptionModel": "Не нашли свою модель в списке для {make}? Сообщите нам, и мы её рассмотрим.",
+    "makeNameLabel": "Название марки",
+    "makeNamePlaceholder": "например, Freightliner",
+    "modelNameLabel": "Название модели",
+    "modelNamePlaceholder": "например, Cascadia",
+    "nameRequired": "Пожалуйста, введите название.",
+    "cancel": "Отмена",
+    "submitting": "Отправка...",
+    "submitRequest": "Отправить Запрос",
+    "submitFailed": "Не удалось отправить запрос. Попробуйте ещё раз.",
+    "submitSucceeded": "Спасибо! Ваш запрос отправлен на рассмотрение.",
+    "done": "Готово"
   },
   "ReportListingModal": {
     "report": "Пожаловаться",
@@ -1489,7 +1509,8 @@
       "WGN": "Универсал",
       "CPE": "Купе",
       "HBK": "Хэтчбек",
-      "VAN": "Фургон"
+      "VAN": "Фургон",
+      "OTH": "Другое"
     },
     "transmission": {
       "ATM": "Автоматическая",

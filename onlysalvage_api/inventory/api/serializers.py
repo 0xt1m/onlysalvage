@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from inventory.models import Listing, ListingImage, VehicleOption, ListingReview, Make, VehicleModel, TestDriveRequest, Report
+from inventory.models import Listing, ListingImage, VehicleOption, ListingReview, Make, VehicleModel, TestDriveRequest, Report, MakeModelRequest, generalize_vehicle_type
 from users.api.serializers import PublicUserSerializer, SmallUserSerializer
 from users.utils.phone import phone_to_e164
 
@@ -13,6 +13,34 @@ class VehicleModelSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = VehicleModel
 		fields = ("id", "name", "make")
+
+class MakeModelRequestSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = MakeModelRequest
+		fields = ("id", "kind", "name", "make", "status", "created_at")
+		read_only_fields = ("id", "status", "created_at")
+
+	def validate(self, data):
+		kind = data.get("kind")
+		name = (data.get("name") or "").strip()
+		make = data.get("make")
+
+		if not name:
+			raise serializers.ValidationError({"name": "This field is required."})
+		data["name"] = name
+
+		if kind == MakeModelRequest.Kind.MODEL:
+			if not make:
+				raise serializers.ValidationError({"make": "Required when requesting a new model."})
+			if VehicleModel.objects.filter(make=make, name__iexact=name).exists():
+				raise serializers.ValidationError({"name": "This model already exists for that make."})
+		elif kind == MakeModelRequest.Kind.MAKE:
+			if make:
+				raise serializers.ValidationError({"make": "Not used when requesting a new make."})
+			if Make.objects.filter(name__iexact=name).exists():
+				raise serializers.ValidationError({"name": "This make already exists."})
+
+		return data
 
 class ListingImageSerializer(serializers.ModelSerializer):
 	class Meta:
@@ -239,6 +267,22 @@ class ListingCreateSerializer(serializers.ModelSerializer):
 			"status",
 			"has_warranty",
 		]
+
+	def to_internal_value(self, data):
+		# The internal Sell form already normalizes vehicle_type client-side
+		# (see SellForm.tsx's mapBodyClassToVehicleType, run at VIN-decode
+		# time) before ever submitting, so this is a no-op for it. It's the
+		# public API that can receive arbitrary free-text body styles from a
+		# third-party client -- generalize_vehicle_type folds those onto one
+		# of the real options (or OTHER) here, before DRF's auto ChoiceField
+		# would otherwise flat-out reject anything not already an exact
+		# match, since that happens before validate()/validate_<field> ever run.
+		raw = data.get("vehicle_type") if hasattr(data, "get") else None
+		if raw and raw not in Listing.VehicleType.values:
+			data = data.copy()
+			data["vehicle_type"] = generalize_vehicle_type(raw)
+
+		return super().to_internal_value(data)
 
 	def validate(self, data):
 		vin = data.get("vin")

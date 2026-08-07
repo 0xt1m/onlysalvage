@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils import timezone
-from .models import Listing, ListingImage, VehicleOption, ListingReview, Make, VehicleModel, FeaturedListing, Report
+from .models import Listing, ListingImage, VehicleOption, ListingReview, Make, VehicleModel, FeaturedListing, Report, MakeModelRequest
 
 class ListingImageInline(admin.TabularInline):
   model = ListingImage
@@ -88,6 +88,40 @@ class VehicleModelAdmin(admin.ModelAdmin):
   list_display = ["name", "make"]
   list_filter = ["make"]
   search_fields = ["name"]
+
+@admin.register(MakeModelRequest)
+class MakeModelRequestAdmin(admin.ModelAdmin):
+  list_display = ("name", "kind", "make", "status", "requested_by", "delivered", "created_at")
+  list_filter = ("kind", "status", "delivered")
+  search_fields = ("name", "make__name", "requested_by__username", "requested_by__email")
+  readonly_fields = ("kind", "name", "make", "requested_by", "delivered", "created_at", "updated_at")
+  fields = ("kind", "name", "make", "requested_by", "status", "admin_notes", "delivered", "created_at", "updated_at")
+  actions = ["approve_requests", "reject_requests"]
+
+  def save_model(self, request, obj, form, change):
+    # Setting status to Approved/Rejected on the change form does the same
+    # thing as running the bulk action below -- both go through
+    # approve()/reject() so a Make/VehicleModel actually gets created,
+    # rather than just flipping the status field.
+    if change and "status" in form.changed_data:
+      if obj.status == MakeModelRequest.Status.APPROVED:
+        obj.approve()
+        return
+      if obj.status == MakeModelRequest.Status.REJECTED:
+        obj.reject()
+        return
+    super().save_model(request, obj, form, change)
+
+  @admin.action(description="Approve selected requests (creates the make/model)")
+  def approve_requests(self, request, queryset):
+    for obj in queryset:
+      obj.approve()
+
+  @admin.action(description="Reject selected requests")
+  def reject_requests(self, request, queryset):
+    for obj in queryset:
+      obj.reject()
+
 
 @admin.register(VehicleOption)
 class VehicleOptionAdmin(admin.ModelAdmin):

@@ -409,6 +409,8 @@
     "loading": "Loading...",
     "noModelsYet": "No models yet for this make",
     "selectModel": "Select model",
+    "requestNewMake": "Request a new make",
+    "requestNewModel": "Request a new model",
     "trim": "Trim",
     "trimPlaceholder": "Optional, e.g. EX",
     "vehicleType": "Vehicle Type",
@@ -872,6 +874,24 @@
       "seller": "Seller",
       "features": "Features"
     }
+  },
+  "RequestMakeModelModal": {
+    "titleMake": "Request a New Make",
+    "titleModel": "Request a New Model",
+    "close": "Close",
+    "descriptionMake": "Don't see your vehicle's make in the list? Let us know and we'll review it.",
+    "descriptionModel": "Don't see your model listed under {make}? Let us know and we'll review it.",
+    "makeNameLabel": "Make name",
+    "makeNamePlaceholder": "e.g. Freightliner",
+    "modelNameLabel": "Model name",
+    "modelNamePlaceholder": "e.g. Cascadia",
+    "nameRequired": "Please enter a name.",
+    "cancel": "Cancel",
+    "submitting": "Submitting...",
+    "submitRequest": "Submit Request",
+    "submitFailed": "Failed to submit request. Please try again.",
+    "submitSucceeded": "Thanks! Your request has been submitted for review.",
+    "done": "Done"
   },
   "ReportListingModal": {
     "report": "Report",
@@ -1489,7 +1509,8 @@
       "WGN": "Wagon",
       "CPE": "Coupe",
       "HBK": "Hatchback",
-      "VAN": "Van"
+      "VAN": "Van",
+      "OTH": "Other"
     },
     "transmission": {
       "ATM": "Automatic",

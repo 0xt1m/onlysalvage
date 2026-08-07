@@ -16,6 +16,7 @@ import { Switch } from '@/components/ui/Switch'
 import { Dropzone } from '@/components/ui/Dropzone'
 import { DocUploadSlot } from '@/components/listing/DocUploadSlot'
 import { VehicleOptionsPicker } from '@/components/sell/VehicleOptionsPicker'
+import { RequestMakeModelModal } from '@/components/sell/RequestMakeModelModal'
 import { cn, safeImageUrl, translateOptions, normalizeUrl } from '@/lib/utils'
 import { useDragReorder } from '@/lib/useDragReorder'
 import {
@@ -135,6 +136,9 @@ export function EditListingForm({ listing }: { listing: Listing }) {
   const [makes, setMakes] = useState<Make[]>([])
   const [models, setModels] = useState<VehicleModel[]>([])
   const [loadingModels, setLoadingModels] = useState(false)
+  const [requestModal, setRequestModal] = useState<
+    null | { kind: 'MAKE' } | { kind: 'MODEL'; makeId: number; makeName: string }
+  >(null)
   const [vehicleOptions, setVehicleOptions] = useState<VehicleOption[]>([])
   const [selectedOptions, setSelectedOptions] = useState<number[]>(() => listing.options.map(o => o.id))
   const [hasWarranty, setHasWarranty] = useState(listing.has_warranty)
@@ -453,6 +457,7 @@ export function EditListingForm({ listing }: { listing: Listing }) {
   }
 
   return (
+    <>
     <form onSubmit={handleSubmit} className="flex flex-col gap-3 pb-20">
       {isDraft && (
         <Card className="border-warning/40 bg-warning/5">
@@ -479,6 +484,8 @@ export function EditListingForm({ listing }: { listing: Listing }) {
               options={makes.map(m => ({ value: String(m.id), label: m.name }))}
               placeholder={t('SellForm.selectMake')}
               error={errors.make}
+              footerLabel={t('SellForm.requestNewMake')}
+              onFooterClick={() => setRequestModal({ kind: 'MAKE' })}
             />
           </div>
           <div className="flex-1 min-w-[160px]" ref={modelRef}>
@@ -498,6 +505,11 @@ export function EditListingForm({ listing }: { listing: Listing }) {
               }
               error={errors.model}
               disabled={!form.make || loadingModels}
+              footerLabel={t('SellForm.requestNewModel')}
+              onFooterClick={() => {
+                const make = makes.find(m => String(m.id) === form.make)
+                if (make) setRequestModal({ kind: 'MODEL', makeId: make.id, makeName: make.name })
+              }}
             />
           </div>
           <div className="flex-1 min-w-[160px]">
@@ -857,5 +869,18 @@ export function EditListingForm({ listing }: { listing: Listing }) {
         </div>
       </div>
     </form>
+
+    {requestModal?.kind === 'MAKE' && (
+      <RequestMakeModelModal kind="MAKE" onClose={() => setRequestModal(null)} />
+    )}
+    {requestModal?.kind === 'MODEL' && (
+      <RequestMakeModelModal
+        kind="MODEL"
+        makeId={requestModal.makeId}
+        makeName={requestModal.makeName}
+        onClose={() => setRequestModal(null)}
+      />
+    )}
+    </>
   )
 }

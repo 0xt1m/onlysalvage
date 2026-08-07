@@ -2,7 +2,7 @@ from rest_framework.routers import SimpleRouter
 
 from django.urls import path, include
 
-from .views import ListingViewSet, ListingImageViewSet, PresignUploadView, MakeViewSet, VehicleModelViewSet, VehicleOptionViewSet, ListingLikeView, ListingCallView, CityListView, VehicleTypeListView, ListingBulkImportView, ListingBulkImportTemplateView
+from .views import ListingViewSet, ListingImageViewSet, PresignUploadView, MakeViewSet, VehicleModelViewSet, VehicleOptionViewSet, ListingLikeView, ListingCallView, CityListView, VehicleTypeListView, ListingBulkImportView, ListingBulkImportTemplateView, MakeModelRequestView
 
 router = SimpleRouter()
 router.register("listings", ListingViewSet, basename="listing")
@@ -40,6 +40,8 @@ urlpatterns = [
   # swallowed by ListingViewSet's own listings/<slug>/ detail route.
   path("listings/bulk-import/", ListingBulkImportView.as_view(), name="listing-bulk-import"),
   path("listings/bulk-import/template/", ListingBulkImportTemplateView.as_view(), name="listing-bulk-import-template"),
+
+  path("make-model-requests/", MakeModelRequestView.as_view(), name="make-model-request"),
 
   path("cities/", CityListView.as_view(), name="city-list"),
   path("vehicle-types/", VehicleTypeListView.as_view(), name="vehicle-type-list"),
