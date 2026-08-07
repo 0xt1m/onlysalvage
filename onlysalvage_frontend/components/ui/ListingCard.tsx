@@ -262,6 +262,10 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
             alt={title}
             fill
             quality={90}
+            // Card grids run up to 4 columns (see ListingResultsGrid) --
+            // without this, a missing sizes prop can make the browser pick
+            // a smaller srcset candidate than the card actually renders at.
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             className="object-cover"
           />
         ) : (

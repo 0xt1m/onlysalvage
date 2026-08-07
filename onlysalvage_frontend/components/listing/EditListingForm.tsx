@@ -664,7 +664,7 @@ export function EditListingForm({ listing }: { listing: Listing }) {
                     existingDragIndex === i && 'opacity-40'
                   )}
                 >
-                  <Image src={safeImageUrl(img.thumb_url, img.image_url)} alt={t('SellForm.photos')} fill className="object-cover pointer-events-none" />
+                  <Image src={safeImageUrl(img.thumb_url, img.image_url)} alt={t('SellForm.photos')} fill sizes="(min-width: 768px) 16vw, (min-width: 640px) 25vw, 33vw" className="object-cover pointer-events-none" />
                   {i === 0 && (
                     <Badge label={t('SellForm.cover')} variant="primary" className="absolute left-1 bottom-1" />
                   )}
@@ -736,7 +736,7 @@ export function EditListingForm({ listing }: { listing: Listing }) {
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
             {existingBeforeImages.map((img) => (
               <div key={img.id} className="relative aspect-square rounded-lg overflow-hidden border border-border">
-                <Image src={safeImageUrl(img.thumb_url, img.image_url)} alt={t('SellForm.beforeRepairPhotos')} fill className="object-cover pointer-events-none" />
+                <Image src={safeImageUrl(img.thumb_url, img.image_url)} alt={t('SellForm.beforeRepairPhotos')} fill sizes="(min-width: 768px) 16vw, (min-width: 640px) 25vw, 33vw" className="object-cover pointer-events-none" />
                 <button
                   type="button"
                   onClick={() => handleDeleteExistingImage(img.id)}

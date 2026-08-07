@@ -233,6 +233,7 @@ export function ComparePageClient() {
                       alt={l.title}
                       fill
                       quality={90}
+                      sizes="220px"
                       className="object-cover pointer-events-none"
                     />
                   ) : (

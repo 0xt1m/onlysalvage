@@ -27,7 +27,7 @@ export function DraftListingCard({ draft, onDeleted }: { draft: ListingSummary; 
     <Card className="flex-row items-center gap-3 p-3">
       <div className="relative w-20 h-16 shrink-0 rounded-md overflow-hidden bg-background border border-border flex items-center justify-center">
         {thumb ? (
-          <Image src={safeImageUrl(thumb.thumb_url, thumb.image_url)} alt={draft.title} fill className="object-cover" />
+          <Image src={safeImageUrl(thumb.thumb_url, thumb.image_url)} alt={draft.title} fill sizes="80px" className="object-cover" />
         ) : (
           <Car className="w-6 h-6 text-muted" />
         )}

@@ -259,10 +259,24 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
             {images.map((img, i) => (
               <div key={img.id} className="relative w-full h-full shrink-0">
                 <Image
-                  src={safeImageUrl(img.large_url, img.image_url)}
+                  // The untouched upload, not large_url's resized/recompressed
+                  // derivative -- this is the main viewing surface for the
+                  // listing, so it should never be any lower fidelity than
+                  // whatever the seller actually uploaded. large_url is only
+                  // the fallback for the rare case an image is still
+                  // mid-processing and image_url briefly isn't set yet.
+                  src={safeImageUrl(img.image_url, img.large_url)}
                   alt={`${title} — photo ${i + 1}`}
                   fill
-                  quality={90}
+                  quality={100}
+                  // Without this, the browser has to guess the display size
+                  // from the srcset alone and can pick a candidate smaller
+                  // than this actually renders at (basis-2/3 of a max-1600px
+                  // container on desktop, full width below the lg
+                  // breakpoint -- see the [slug] page layout), which shows
+                  // up as a blurry/blocky upscaled image despite the
+                  // underlying file being high quality.
+                  sizes="(min-width: 1024px) 66vw, 100vw"
                   className="object-cover"
                   priority={i === index}
                   draggable={false}
@@ -339,7 +353,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                 i === index ? 'border-primary' : 'border-border hover:border-muted'
               )}
             >
-              <Image src={safeImageUrl(img.thumb_url, img.image_url)} alt={`${title} thumbnail ${i + 1}`} fill className="object-cover" />
+              <Image src={safeImageUrl(img.thumb_url, img.image_url)} alt={`${title} thumbnail ${i + 1}`} fill sizes="80px" className="object-cover" />
             </button>
           ))}
         </div>
@@ -380,7 +394,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
               style={{ transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})` }}
             >
               <Image
-                src={safeImageUrl(images[index].large_url, images[index].image_url)}
+                src={safeImageUrl(images[index].image_url, images[index].large_url)}
                 alt={`${title} — photo ${index + 1}`}
                 fill
                 // Full quality here specifically -- this is the zoomable

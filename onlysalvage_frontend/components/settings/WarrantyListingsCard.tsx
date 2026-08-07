@@ -70,6 +70,7 @@ export function WarrantyListingsCard({ listings: initialListings, canToggle }: W
                 src={safeImageUrl(listing.thumbnails[0].thumb_url, listing.thumbnails[0].image_url)}
                 alt={listing.title}
                 fill
+                sizes="64px"
                 className="object-cover"
               />
             ) : (

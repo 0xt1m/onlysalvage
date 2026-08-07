@@ -292,7 +292,7 @@ export default async function ListingDetailPage({ params }: { params: Promise<{ 
                 {beforeRepairImages.map((img) => (
                   <a
                     key={img.id}
-                    href={safeImageUrl(img.large_url, img.image_url)}
+                    href={safeImageUrl(img.image_url, img.large_url)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative aspect-square rounded-lg overflow-hidden border border-border block"
@@ -301,6 +301,7 @@ export default async function ListingDetailPage({ params }: { params: Promise<{ 
                       src={safeImageUrl(img.thumb_url, img.image_url)}
                       alt={t('beforeRepairPhotoAlt')}
                       fill
+                      sizes="(min-width: 1024px) 11vw, (min-width: 768px) 16vw, (min-width: 640px) 25vw, 33vw"
                       className="object-cover"
                     />
                   </a>
