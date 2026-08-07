@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from inventory.models import Listing, ListingImage, VehicleOption, ListingReview, Make, VehicleModel, TestDriveRequest, Report, MakeModelRequest, generalize_vehicle_type
+from inventory.models import Listing, ListingImage, VehicleOption, ListingReview, Make, VehicleModel, TestDriveRequest, Report, MakeModelRequest, DamagePhotoRequest, generalize_vehicle_type
 from users.api.serializers import PublicUserSerializer, SmallUserSerializer
 from users.utils.phone import phone_to_e164
 
@@ -85,6 +85,23 @@ class TestDriveRequestSerializer(serializers.ModelSerializer):
 		fields = (
 			"id", "requester_name", "requester_email", "requester_phone",
 			"preferred_datetime", "message", "created_at",
+		)
+		read_only_fields = ("id", "created_at")
+
+	def validate(self, attrs):
+		if not attrs.get("requester_email") and not attrs.get("requester_phone"):
+			raise serializers.ValidationError({
+				"requester_email": "Provide an email or phone number so the seller can reach you.",
+			})
+		return attrs
+
+
+class DamagePhotoRequestSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = DamagePhotoRequest
+		fields = (
+			"id", "requester_name", "requester_email", "requester_phone",
+			"message", "created_at",
 		)
 		read_only_fields = ("id", "created_at")
 
@@ -206,7 +223,12 @@ class ListingSellerSerializer(PublicUserSerializer):
 
 class ListingDetailSerializer(LikeInfoMixin, serializers.ModelSerializer):
 	seller = ListingSellerSerializer(read_only=True)
-	images = ListingImageSerializer(many=True, read_only=True)
+	images = serializers.SerializerMethodField()
+	# Always accurate regardless of whether before_repair images are actually
+	# included below -- this is what the frontend uses to decide whether to
+	# show the "Request damage pictures" button at all (no point offering it
+	# for a listing that never had any before/after photos in the first place).
+	has_damage_photos = serializers.SerializerMethodField()
 	options = VehicleOptionSerializer(many=True, read_only=True)
 	reviews = ListingReviewSerializer(many=True, read_only=True)
 	make = MakeSerializer(read_only=True)
@@ -217,9 +239,37 @@ class ListingDetailSerializer(LikeInfoMixin, serializers.ModelSerializer):
 	can_renew = serializers.BooleanField(read_only=True)
 	renewal_available_at = serializers.DateTimeField(read_only=True)
 
+	def get_has_damage_photos(self, obj):
+		return any(img.photo_type == ListingImage.PhotoType.BEFORE_REPAIR for img in obj.images.all())
+
+	def get_images(self, obj):
+		all_images = list(obj.images.all())
+		request = self.context.get("request")
+		is_owner = bool(request and request.user.is_authenticated and request.user.id == obj.seller_id)
+
+		# The owner always sees their own damage photos regardless of the
+		# public toggle; everyone else needs either damage_photos_public on,
+		# or the exact token from the seller's "copy damage pictures link"
+		# action (see ListingViewSet.damage_photos_link) passed as
+		# ?damage_token=... on this same request.
+		show_damage_photos = is_owner or obj.damage_photos_public or (
+			obj.damage_photos_token and request
+			and request.query_params.get("damage_token") == obj.damage_photos_token
+		)
+
+		if not show_damage_photos:
+			all_images = [img for img in all_images if img.photo_type != ListingImage.PhotoType.BEFORE_REPAIR]
+
+		return ListingImageSerializer(all_images, many=True, context=self.context).data
+
 	class Meta:
 		model = Listing
-		fields = "__all__"
+		# Everything except the raw secret -- damage_photos_token must never
+		# reach a non-owner's response body (get_images above already checks
+		# it server-side against the ?damage_token= query param, so the
+		# frontend never actually needs the raw value itself except through
+		# the dedicated owner-only damage_photos_link action).
+		exclude = ("damage_photos_token",)
 
 class ListingCreateSerializer(serializers.ModelSerializer):
 	# Not required -- Listing.save() auto-generates it from year/make/model/
@@ -266,6 +316,7 @@ class ListingCreateSerializer(serializers.ModelSerializer):
 			"is_active",
 			"status",
 			"has_warranty",
+			"damage_photos_public",
 		]
 
 	def to_internal_value(self, data):
@@ -363,6 +414,7 @@ class ListingUpdateSerializer(serializers.ModelSerializer):
 			"is_active",
 			"status",
 			"has_warranty",
+			"damage_photos_public",
 			"images"
 		)
 		# The model auto-regenerates the slug the moment the title moves off

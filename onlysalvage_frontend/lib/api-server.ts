@@ -16,8 +16,9 @@ export async function getApiKeyStatusServer(): Promise<ApiKeyStatus | null> {
 // Cookie-forwarding counterparts of getListing()/getListings() in lib/api.ts,
 // for use in Server Components -- without these, likes_count/is_liked would
 // always reflect an anonymous request even when the visitor is logged in.
-export async function getListingServer(slug: string): Promise<Listing | null> {
-  const res = await serverFetch(`/inventory/listings/${slug}/`);
+export async function getListingServer(slug: string, damageToken?: string): Promise<Listing | null> {
+  const query = damageToken ? `?damage_token=${encodeURIComponent(damageToken)}` : "";
+  const res = await serverFetch(`/inventory/listings/${slug}/${query}`);
   if (!res.ok) return null;
   return res.json();
 }

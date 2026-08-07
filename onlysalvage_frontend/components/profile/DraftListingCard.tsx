@@ -2,13 +2,15 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { toast } from 'sonner'
 import { useLocale, useTranslations } from 'next-intl'
-import { Car, Pencil, Trash2 } from 'lucide-react'
+import { Car, Loader2, Pencil, Trash2, Upload } from 'lucide-react'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Link, useRouter } from '@/i18n/navigation'
 import { DeleteListingDialog } from '@/components/listing/DeleteListingModal'
 import { safeImageUrl } from '@/lib/utils'
+import { updateListing } from '@/lib/api'
 import type { ListingSummary } from '@/lib/types'
 
 // A saved-but-unpublished listing (see Listing.draft_saved on the backend)
@@ -21,7 +23,29 @@ export function DraftListingCard({ draft, onDeleted }: { draft: ListingSummary; 
   const locale = useLocale()
   const router = useRouter()
   const [deleting, setDeleting] = useState(false)
+  const [publishing, setPublishing] = useState(false)
   const thumb = draft.thumbnails[0]
+
+  // No client-side "is this ready" precheck -- ListingUpdateSerializer.validate
+  // is the single source of truth for what publishing requires (year/make/
+  // model/price, at least one photo, all photos finished processing), and
+  // ListingSummary doesn't carry enough of that to duplicate the check
+  // accurately anyway. Attempting the publish IS the readiness check; a
+  // draft that isn't ready yet just surfaces exactly why via the toast.
+  const handlePublish = async () => {
+    setPublishing(true)
+    const { ok, data } = await updateListing(draft.slug, { status: 'AV' })
+    setPublishing(false)
+
+    if (!ok) {
+      const firstError = data && typeof data === 'object' ? Object.values(data)[0] : null
+      toast.error(Array.isArray(firstError) ? firstError[0] : t('publishFailed'))
+      return
+    }
+
+    toast.success(t('publishSucceeded'))
+    router.refresh()
+  }
 
   return (
     <Card
@@ -50,6 +74,17 @@ export function DraftListingCard({ draft, onDeleted }: { draft: ListingSummary; 
             {t('continueDraft')}
           </Button>
         </Link>
+        <Button
+          type="button"
+          variant="secondary"
+          size="sm"
+          onClick={handlePublish}
+          disabled={publishing}
+          className="flex items-center gap-1.5"
+        >
+          {publishing ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Upload className="w-3.5 h-3.5" />}
+          {t('publishDraft')}
+        </Button>
         <Button
           type="button"
           variant="ghost"

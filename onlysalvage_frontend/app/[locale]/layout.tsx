@@ -10,6 +10,7 @@ import { Toaster } from "sonner"
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { BackToTopButton } from '@/components/layout/BackToTopButton'
+import { ScrollToTop } from '@/components/layout/ScrollToTop'
 import { AuthProvider } from '@/lib/auth-context';
 import { ThemeProvider } from '@/lib/theme-context';
 import { routing } from '@/i18n/routing';
@@ -99,6 +100,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <ThemeProvider initialTheme={theme}>
             <AuthProvider>
+              <ScrollToTop />
               <Navbar />
                 {children}
                 <Toaster />

@@ -28,7 +28,7 @@ from inventory.filters import ListingFilter
 from inventory.tasks import process_listing_image, build_image_key
 from inventory.api.bulk_import import run_bulk_import, generate_template_csv
 from inventory.models import (
-	Make, VehicleModel, VehicleOption, Like, SearchLog, ListingView, TestDriveRequest, Report, MakeModelRequest,
+	Make, VehicleModel, VehicleOption, Like, SearchLog, ListingView, TestDriveRequest, Report, MakeModelRequest, DamagePhotoRequest,
 	get_active_featured_listings, get_most_liked_listings, get_most_viewed_listings,
 	get_recommended_listings, get_similar_listings, recommendation_interest_filter,
 )
@@ -59,6 +59,30 @@ def _send_test_drive_request_email(test_drive_request):
 			f"Phone: {test_drive_request.requester_phone or '-'}\n"
 			f"Message: {test_drive_request.message or '(no additional message)'}\n\n"
 			f"View listing: {listing_url}"
+		),
+		from_email=settings.DEFAULT_FROM_EMAIL,
+		recipient_list=[seller_email],
+		fail_silently=True,
+	)
+
+
+def _send_damage_photo_request_email(damage_photo_request):
+	listing = damage_photo_request.listing
+	seller_email = listing.seller.email
+	if not seller_email:
+		return
+
+	listing_url = f"{settings.FRONTEND_URL}/inventory/{listing.slug}"
+	send_mail(
+		subject=f"New damage photo request for {listing.title}",
+		message=(
+			f"{damage_photo_request.requester_name} would like to see the damage photos "
+			f"for your listing \"{listing.title}\".\n\n"
+			f"Email: {damage_photo_request.requester_email or '-'}\n"
+			f"Phone: {damage_photo_request.requester_phone or '-'}\n"
+			f"Message: {damage_photo_request.message or '(no additional message)'}\n\n"
+			f"Reply to them directly and send your damage photos link -- copy it from "
+			f"the listing's right-click menu or its Actions section:\n{listing_url}"
 		),
 		from_email=settings.DEFAULT_FROM_EMAIL,
 		recipient_list=[seller_email],
@@ -700,6 +724,49 @@ class ListingViewSet(ModelViewSet):
 		_send_test_drive_request_email(test_drive_request)
 
 		return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+	@action(
+		detail=True,
+		methods=["post"],
+		url_path="request-damage-photos",
+		permission_classes=[AllowAny],
+		pagination_class=None,
+		filter_backends=[],
+	)
+	def request_damage_photos(self, request, slug=None):
+		listing = self.get_object()
+		serializer = DamagePhotoRequestSerializer(data=request.data)
+		serializer.is_valid(raise_exception=True)
+		damage_photo_request = serializer.save(
+			listing=listing,
+			requester=request.user if request.user.is_authenticated else None,
+		)
+
+		_send_damage_photo_request_email(damage_photo_request)
+
+		return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+	@action(
+		detail=True,
+		methods=["get"],
+		url_path="damage-photos-link",
+		permission_classes=[IsAuthenticated],
+		pagination_class=None,
+		filter_backends=[],
+	)
+	def damage_photos_link(self, request, slug=None):
+		listing = self.get_object()
+		if listing.seller_id != request.user.id:
+			return Response({"detail": "Not found."}, status=status.HTTP_404_NOT_FOUND)
+
+		if not listing.damage_photos_token:
+			# Backfills a listing saved before this feature existed -- save()
+			# is what actually generates the token (see Listing.save()).
+			listing.save()
+
+		return Response({
+			"url": f"{settings.FRONTEND_URL}/inventory/{listing.slug}?damage_token={listing.damage_photos_token}",
+		})
 
 	@action(
 		detail=True,

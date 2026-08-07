@@ -1,3 +1,4 @@
+import secrets
 from collections import Counter
 from datetime import timedelta
 
@@ -266,6 +267,19 @@ class Listing(models.Model):
 	# edits to those listings.
 	has_warranty = models.BooleanField(default=False)
 
+	# Whether "before repair" (damage) photos -- see ListingImage.PhotoType --
+	# show on the public listing page at all. Off by default: a seller has to
+	# deliberately opt in, rather than damage photos being public the moment
+	# they're uploaded. When off, a non-owner visitor sees a "Request damage
+	# pictures" button instead (see ListingDetailSerializer.get_images) and
+	# can only actually view them via the token link below.
+	damage_photos_public = models.BooleanField(default=False)
+	# Generated in save() below, once, and never rotated -- an unguessable
+	# link straight to the damage photos works without the visitor needing an
+	# account or password, and keeps working even while damage_photos_public
+	# is off (that flag only controls whether they're shown to *everyone*).
+	damage_photos_token = models.CharField(max_length=64, blank=True, editable=False, unique=True, null=True)
+
 	is_active = models.BooleanField(default=True)
 	status = models.CharField(max_length=2, choices=Status.choices, default=Status.AVAILABLE)
 	# False for the disposable draft SellForm silently creates the moment a
@@ -366,6 +380,16 @@ class Listing(models.Model):
 	def save(self, *args, **kwargs):
 		if self.has_warranty and not (self.seller_id and self.seller.offers_warranty):
 			self.has_warranty = False
+
+		# Generated once and never rotated -- this is what backs the "copy
+		# damage pictures link" action (see ListingViewSet.damage_photos_link)
+		# and the token query param ListingDetailSerializer checks to decide
+		# whether to include before_repair images for a non-owner. Exists
+		# regardless of damage_photos_public so a seller can flip that on/off
+		# without the link itself ever changing underneath someone they
+		# already sent it to.
+		if not self.damage_photos_token:
+			self.damage_photos_token = secrets.token_urlsafe(32)
 
 		placeholder_title = f"Draft {self.vin}"
 		if not self.title:
@@ -612,6 +636,39 @@ class TestDriveRequest(models.Model):
 	requester_email = models.EmailField(blank=True)
 	requester_phone = models.CharField(max_length=20, blank=True)
 	preferred_datetime = models.DateTimeField()
+	message = models.TextField(blank=True)
+	created_at = models.DateTimeField(auto_now_add=True)
+
+	class Meta:
+		ordering = ["-created_at"]
+
+	def clean(self):
+		if not self.requester_email and not self.requester_phone:
+			raise ValidationError({
+				"requester_email": "Provide an email or phone number so the seller can reach you.",
+			})
+
+
+class DamagePhotoRequest(models.Model):
+	"""A visitor's request for access to a listing's private "before repair"
+	photos (see Listing.damage_photos_public/damage_photos_token) -- same
+	shape as TestDriveRequest above and for the same reason: works for
+	anonymous visitors, so contact details are plain fields rather than
+	assumed to come from a logged-in profile. The seller is expected to
+	follow up by email themselves and send the damage_photos_token link
+	directly -- there's no in-app approve/deny flow.
+	"""
+	listing = models.ForeignKey(Listing, on_delete=models.CASCADE, related_name="damage_photo_requests")
+	requester = models.ForeignKey(
+		settings.AUTH_USER_MODEL,
+		on_delete=models.SET_NULL,
+		null=True,
+		blank=True,
+		related_name="damage_photo_requests",
+	)
+	requester_name = models.CharField(max_length=150)
+	requester_email = models.EmailField(blank=True)
+	requester_phone = models.CharField(max_length=20, blank=True)
 	message = models.TextField(blank=True)
 	created_at = models.DateTimeField(auto_now_add=True)
 

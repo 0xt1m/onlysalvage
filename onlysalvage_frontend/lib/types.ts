@@ -291,6 +291,15 @@ export interface Listing {
   renewal_count: number;
   can_renew: boolean;
   renewal_available_at: string;
+  // Whether "before repair" (damage) photos show to every visitor -- off by
+  // default. The raw damage_photos_token never reaches this response (see
+  // ListingDetailSerializer) -- only the owner can retrieve the actual link,
+  // via getDamagePhotosLink().
+  damage_photos_public: boolean;
+  // True the moment any before_repair photo exists, regardless of whether
+  // it's actually included in `images` above -- lets the frontend show
+  // "Request damage pictures" even when they're currently hidden.
+  has_damage_photos: boolean;
 }
 
 export interface ListingSummary {

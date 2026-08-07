@@ -4,13 +4,14 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { toast } from 'sonner'
 import { useTranslations } from 'next-intl'
-import { Check, ImagePlus, Loader2, Wand2, X } from 'lucide-react'
+import { Check, Eye, EyeOff, ImagePlus, Loader2, Wand2, X } from 'lucide-react'
 import { Card } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { Select } from '@/components/ui/Select'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
 import { Checkbox } from '@/components/ui/Checkbox'
+import { Switch } from '@/components/ui/Switch'
 import { Dropzone } from '@/components/ui/Dropzone'
 import { DocUploadSlot } from '@/components/listing/DocUploadSlot'
 import { VehicleOptionsPicker } from '@/components/sell/VehicleOptionsPicker'
@@ -155,6 +156,7 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
   const { user } = useAuth()
   const [form, setForm] = useState(initialForm)
   const [hasWarranty, setHasWarranty] = useState(false)
+  const [damagePhotosPublic, setDamagePhotosPublic] = useState(false)
   const [photos, setPhotos] = useState<Photo[]>([])
   const [beforePhotos, setBeforePhotos] = useState<Photo[]>([])
   const [carfaxFile, setCarfaxFile] = useState<File | null>(null)
@@ -516,6 +518,7 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
       fuel_type: form.fuel_type,
       title_document: form.title_document,
       has_warranty: offersWarranty && hasWarranty,
+      damage_photos_public: damagePhotosPublic,
       images: [
         ...photos.filter(p => p.imageId).map((p, i) => ({ id: p.imageId, order: i })),
         ...beforePhotos.filter(p => p.imageId).map((p, i) => ({ id: p.imageId, order: i })),
@@ -605,6 +608,7 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
       price: Number(form.price),
       status: 'AV',
       has_warranty: offersWarranty && hasWarranty,
+      damage_photos_public: damagePhotosPublic,
       // Drag-reordering only ever touched local state -- this is what
       // actually persists the final order, same mechanism EditListingForm
       // uses for its existing images.
@@ -868,6 +872,26 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
       <Card>
         <h2 className="text-lg font-semibold">{t('beforeRepairPhotos')}</h2>
         <p className="text-sm text-muted -mt-1">{t('beforeRepairPhotosDescription')}</p>
+
+        <div className="flex items-center justify-between gap-3 border border-border rounded-lg p-3">
+          <div className="flex items-center gap-2 min-w-0">
+            {damagePhotosPublic ? (
+              <Eye className="w-4 h-4 text-success shrink-0" />
+            ) : (
+              <EyeOff className="w-4 h-4 text-warning shrink-0" />
+            )}
+            <div className="min-w-0">
+              <p className="text-sm font-medium text-foreground">{t('damagePhotosPublic')}</p>
+              <p className="text-xs text-muted">{t('damagePhotosPublicDescription')}</p>
+            </div>
+          </div>
+          <Switch
+            defaultChecked={damagePhotosPublic}
+            onChange={setDamagePhotosPublic}
+            aria-label={t('damagePhotosPublic')}
+          />
+        </div>
+
         {draftListing ? (
           <Dropzone inputId="sell-before-photo-input" onFiles={addBeforePhotos} multiple accept="image/*">
             <ImagePlus className="w-6 h-6 text-muted" />

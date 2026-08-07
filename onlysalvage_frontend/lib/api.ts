@@ -335,6 +335,34 @@ export const scheduleTestDrive = async (
   return { ok: res.ok, data: json as Record<string, string[]> | null };
 };
 
+export const requestDamagePhotos = async (
+  slug: string,
+  data: {
+    requester_name: string;
+    requester_email?: string;
+    requester_phone?: string;
+    message?: string;
+  }
+) => {
+  const res = await fetch(`${getApiUrl()}/inventory/listings/${slug}/request-damage-photos/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify(data),
+  });
+  const json = await res.json().catch(() => null);
+  return { ok: res.ok, data: json as Record<string, string[]> | null };
+};
+
+// Owner-only -- the actual damage_photos_token never reaches a normal
+// listing fetch (see ListingDetailSerializer), so copying the link has to
+// go through this dedicated endpoint instead.
+export const getDamagePhotosLink = async (slug: string) => {
+  const res = await fetchWithAuth(`${getApiUrl()}/inventory/listings/${slug}/damage-photos-link/`);
+  if (!res || !res.ok) return null;
+  return res.json() as Promise<{ url: string }>;
+};
+
 export const likeListing = async (listingId: number) => {
   const res = await fetchWithAuth(`${getApiUrl()}/inventory/listings/${listingId}/like/`, {
     method: "POST",

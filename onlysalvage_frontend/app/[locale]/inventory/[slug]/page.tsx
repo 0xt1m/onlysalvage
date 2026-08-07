@@ -21,6 +21,8 @@ import { ShareListingButton } from '@/components/listing/ShareListingButton'
 import { ContactSellerCard } from '@/components/listing/ContactSellerCard'
 import { ScheduleTestDriveModal } from '@/components/listing/ScheduleTestDriveModal'
 import { ReportListingModal } from '@/components/listing/ReportListingModal'
+import { RequestDamagePhotosModal } from '@/components/listing/RequestDamagePhotosModal'
+import { CopyDamagePhotosLinkButton } from '@/components/listing/CopyDamagePhotosLinkButton'
 import { CompareButton } from '@/components/listing/CompareButton'
 import { RenewListingButton } from '@/components/listing/RenewListingButton'
 import { ListingNavArrows } from '@/components/listing/ListingNavArrows'
@@ -88,8 +90,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 }
 
-export default async function ListingDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ListingDetailPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ slug: string }>
+  searchParams: Promise<{ damage_token?: string }>
+}) {
   const { slug } = await params
+  const { damage_token: damageToken } = await searchParams
   const t = await getTranslations('ListingDetail')
   const tAttr = await getTranslations('VehicleAttributes')
   const tCommon = await getTranslations('Common')
@@ -99,7 +108,7 @@ export default async function ListingDetailPage({ params }: { params: Promise<{ 
   const statusVariant: Record<string, 'success' | 'warning' | 'default'> = { AV: 'success', PE: 'warning', SO: 'default' }
 
   const [listing, me] = await Promise.all([
-    getListingServer(slug),
+    getListingServer(slug, damageToken),
     getMeServer(),
   ])
 
@@ -378,6 +387,9 @@ export default async function ListingDetailPage({ params }: { params: Promise<{ 
               <CompareButton slug={listing.slug} />
               {!isOwner && listing.status !== 'SO' && <ScheduleTestDriveModal slug={listing.slug} />}
               {!isOwner && me && <ReportListingModal slug={listing.slug} />}
+              {!isOwner && listing.has_damage_photos && !listing.damage_photos_public && (
+                <RequestDamagePhotosModal slug={listing.slug} />
+              )}
             </div>
 
             {isOwner && (
@@ -406,6 +418,7 @@ export default async function ListingDetailPage({ params }: { params: Promise<{ 
                   )}
                   <PublishToggleButton slug={listing.slug} isActive={listing.is_active} />
                   <DeleteListingButton slug={listing.slug} sellerUsername={listing.seller.username} />
+                  {listing.has_damage_photos && <CopyDamagePhotosLinkButton slug={listing.slug} />}
                 </div>
                 {listing.status === 'AV' && (
                   <RenewListingButton

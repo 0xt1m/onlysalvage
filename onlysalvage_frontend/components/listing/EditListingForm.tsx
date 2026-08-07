@@ -91,6 +91,7 @@ function buildInitialForm(listing: Listing) {
     video_url: listing.video_url ?? '',
     status: listing.status,
     is_active: listing.is_active,
+    damage_photos_public: listing.damage_photos_public,
   }
 }
 
@@ -360,6 +361,7 @@ export function EditListingForm({ listing }: { listing: Listing }) {
       fuel_type: form.fuel_type,
       title_document: form.title_document,
       has_warranty: listing.seller.offers_warranty && hasWarranty,
+      damage_photos_public: form.damage_photos_public,
       options: selectedOptions,
       images: buildImagesPayload(),
       ...buildOptionalFieldsPayload(),
@@ -444,6 +446,7 @@ export function EditListingForm({ listing }: { listing: Listing }) {
       status: publishStatus,
       is_active: publishIsActive,
       has_warranty: listing.seller.offers_warranty && hasWarranty,
+      damage_photos_public: form.damage_photos_public,
       options: selectedOptions,
       images: buildImagesPayload(),
       ...buildOptionalFieldsPayload(),
@@ -767,6 +770,25 @@ export function EditListingForm({ listing }: { listing: Listing }) {
       <Card>
         <h2 className="text-lg font-semibold">{t('SellForm.beforeRepairPhotos')}</h2>
         <p className="text-sm text-muted -mt-1">{t('SellForm.beforeRepairPhotosDescription')}</p>
+
+        <div className="flex items-center justify-between gap-3 border border-border rounded-lg p-3">
+          <div className="flex items-center gap-2 min-w-0">
+            {form.damage_photos_public ? (
+              <Eye className="w-4 h-4 text-success shrink-0" />
+            ) : (
+              <EyeOff className="w-4 h-4 text-warning shrink-0" />
+            )}
+            <div className="min-w-0">
+              <p className="text-sm font-medium text-foreground">{t('SellForm.damagePhotosPublic')}</p>
+              <p className="text-xs text-muted">{t('SellForm.damagePhotosPublicDescription')}</p>
+            </div>
+          </div>
+          <Switch
+            defaultChecked={form.damage_photos_public}
+            onChange={(checked) => setForm(prev => ({ ...prev, damage_photos_public: checked }))}
+            aria-label={t('SellForm.damagePhotosPublic')}
+          />
+        </div>
 
         {existingBeforeImages.length > 0 && (
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">

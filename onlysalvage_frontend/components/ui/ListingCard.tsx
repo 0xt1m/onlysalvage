@@ -11,7 +11,7 @@ import { ContextMenu, type ContextMenuItem } from '@/components/ui/ContextMenu'
 import { cn, formatDistance, formatMileage, formatTimeAgo, isLowMileage, localizedPath, phoneTelHref } from '@/lib/utils'
 import { useLikeToggle } from '@/lib/useLikeToggle'
 import { Link, useRouter } from '@/i18n/navigation'
-import { updateListing, deleteListing, callSeller } from '@/lib/api'
+import { updateListing, deleteListing, callSeller, getDamagePhotosLink } from '@/lib/api'
 import { ReportListingDialog } from '@/components/listing/ReportListingModal'
 import { DeleteListingDialog } from '@/components/listing/DeleteListingModal'
 import { addToCompareList, isInCompareList, removeFromCompareList } from '@/lib/compareList'
@@ -20,7 +20,7 @@ import { useTranslations, useLocale } from 'next-intl'
 
 import {
   MapPin, User, Gauge, Fuel, Car, Pencil, CheckCircle2, Clock, Circle, Copy,
-  ExternalLink, Eye, EyeOff, Flag, Heart, HeartOff, Phone, Mail, GitCompare, Trash2,
+  ExternalLink, Eye, EyeOff, Flag, Heart, HeartOff, Phone, Mail, GitCompare, Trash2, Link2,
 } from "lucide-react"
 import { IconManualGearbox } from "@tabler/icons-react"
 
@@ -136,6 +136,23 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
     }
   }
 
+  // Owner-only -- the raw token never reaches a normal listing fetch (see
+  // ListingDetailSerializer.get_images), so this always hits the dedicated
+  // damage-photos-link endpoint fresh rather than reading it off card props.
+  const handleCopyDamagePhotosLink = async () => {
+    const result = await getDamagePhotosLink(slug)
+    if (!result) {
+      toast.error(t('shareFailed'))
+      return
+    }
+    try {
+      await navigator.clipboard.writeText(result.url)
+      toast.success(t('damagePhotosLinkCopied'))
+    } catch {
+      toast.error(t('shareFailed'))
+    }
+  }
+
   // Reversible -- unlike Delete (see DeleteListingDialog), this just flips
   // is_active (same PATCH mechanism as the mark-available/pending/sold
   // actions below), same as the Published checkbox in EditListingForm.
@@ -177,6 +194,7 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
     { label: t('share'), icon: Copy, onClick: handleCopyLink },
     compareMenuItem,
     { label: t('editListing'), icon: Pencil, onClick: () => router.push(`/inventory/${slug}/edit`) },
+    { label: t('copyDamagePhotosLink'), icon: Link2, onClick: handleCopyDamagePhotosLink },
     ...(currentStatusCode !== 'AV' ? [{ label: t('markAvailable'), icon: Circle, onClick: () => setListingStatus('AV') }] : []),
     ...(currentStatusCode !== 'PE' ? [{ label: t('markPending'), icon: Clock, onClick: () => setListingStatus('PE') }] : []),
     ...(currentStatusCode !== 'SO' ? [{ label: t('markSold'), icon: CheckCircle2, onClick: () => setListingStatus('SO') }] : []),

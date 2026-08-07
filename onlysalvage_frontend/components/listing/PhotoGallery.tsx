@@ -51,6 +51,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
   const [showGrid, setShowGrid] = useState(false)
   const dragStart = useRef({ x: 0, y: 0 })
   const containerRef = useRef<HTMLDivElement>(null)
+  const previewRef = useRef<HTMLDivElement>(null)
   const maxPan = useRef({ x: 0, y: 0 })
 
   // Multi-touch bookkeeping for the fullscreen viewer: `pointers` tracks every
@@ -242,6 +243,11 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
     swipeStart.current = null
     setFullscreenLoaded(false)
     setShowGrid(false)
+    // Closing fullscreen (double-click/Escape/X) drops DOM focus back to
+    // <body> instead of returning it here, which silently broke the arrow
+    // keys until the preview was clicked again -- its ArrowLeft/ArrowRight
+    // handler only fires while this element itself is focused.
+    if (!fullscreen) previewRef.current?.focus()
   }, [index, fullscreen])
 
   useEffect(() => {
@@ -256,6 +262,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
   return (
     <div className="w-full min-w-0">
       <div
+        ref={previewRef}
         className="relative aspect-video print:aspect-[16/10] bg-surface-raised group touch-pan-y select-none overflow-hidden"
         onKeyDown={(e) => {
           if (e.key === 'ArrowLeft') goTo(index - 1)
