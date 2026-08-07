@@ -322,6 +322,12 @@ export interface ListingSummary {
   call_count: number;
   views_count: number;
   has_warranty: boolean;
+  // Existence-only flags -- enough for a card's right-click menu to decide
+  // "Add Damage Photos" vs "Copy Damage Photos Link", and "Upload" vs
+  // "Update" Carfax, without carrying the actual file URLs into every
+  // listing grid response.
+  has_damage_photos: boolean;
+  has_carfax: boolean;
   // Only present when the request included a resolvable location
   // (lat/lng or zip_code) -- see ListingViewSet.get_queryset's Distance
   // annotation. Miles.

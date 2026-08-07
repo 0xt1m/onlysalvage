@@ -166,6 +166,14 @@
     "shareFailed": "Couldn't share this listing. Please try again.",
     "copyDamagePhotosLink": "Copy Damage Photos Link",
     "damagePhotosLinkCopied": "Damage photos link copied to clipboard",
+    "addDamagePhotos": "Add Damage Photos",
+    "copyVin": "Copy VIN",
+    "vinCopied": "VIN copied to clipboard",
+    "uploadCarfax": "Upload Carfax",
+    "updateCarfax": "Update Carfax",
+    "uploadingCarfax": "Uploading Carfax...",
+    "carfaxUploadSucceeded": "Carfax report uploaded",
+    "carfaxUploadFailed": "Couldn't upload the Carfax report. Please try again.",
     "unpublishSucceeded": "Listing unpublished",
     "unpublishFailed": "Failed to unpublish listing.",
     "publishSucceeded": "Listing published",
@@ -366,6 +374,15 @@
     "maskedNumber": "+1 ({areaCode}) •••-••••",
     "email": "Email",
     "loadError": "Couldn't load the seller's phone number."
+  },
+  "AddDamagePhotosModal": {
+    "title": "Add Damage Photos",
+    "description": "These are only shown to the public if you turn that on in the listing's edit page -- otherwise they stay private, same as any others already on this listing.",
+    "close": "Close",
+    "clickToSelectPhotos": "Click or drag photos here",
+    "uploading": "Uploading...",
+    "uploadFailed": "Failed",
+    "done": "Done"
   },
   "RequestDamagePhotos": {
     "requestDamagePhotos": "Request Damage Photos",

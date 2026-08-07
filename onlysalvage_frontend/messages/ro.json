@@ -166,6 +166,14 @@
     "shareFailed": "Nu am putut distribui acest anunț. Te rugăm să încerci din nou.",
     "copyDamagePhotosLink": "Copiază Link-ul Fotografiilor cu Daune",
     "damagePhotosLinkCopied": "Link-ul fotografiilor cu daune a fost copiat în clipboard",
+    "addDamagePhotos": "Adaugă Fotografii cu Daune",
+    "copyVin": "Copiază VIN",
+    "vinCopied": "VIN copiat în clipboard",
+    "uploadCarfax": "Încarcă Carfax",
+    "updateCarfax": "Actualizează Carfax",
+    "uploadingCarfax": "Se încarcă Carfax...",
+    "carfaxUploadSucceeded": "Raportul Carfax a fost încărcat",
+    "carfaxUploadFailed": "Raportul Carfax nu a putut fi încărcat. Te rugăm să încerci din nou.",
     "unpublishSucceeded": "Anunț nepublicat",
     "unpublishFailed": "Anularea publicării anunțului a eșuat.",
     "publishSucceeded": "Anunț publicat",
@@ -366,6 +374,15 @@
     "maskedNumber": "+1 ({areaCode}) •••-••••",
     "email": "E-mail",
     "loadError": "Nu am putut încărca numărul de telefon al vânzătorului."
+  },
+  "AddDamagePhotosModal": {
+    "title": "Adaugă Fotografii cu Daune",
+    "description": "Acestea sunt afișate public doar dacă activezi această opțiune în pagina de editare a anunțului -- altfel rămân private, la fel ca oricare altele deja prezente pe acest anunț.",
+    "close": "Închide",
+    "clickToSelectPhotos": "Apasă sau trage fotografii aici",
+    "uploading": "Se încarcă...",
+    "uploadFailed": "Eșuat",
+    "done": "Gata"
   },
   "RequestDamagePhotos": {
     "requestDamagePhotos": "Solicită Fotografii cu Daune",

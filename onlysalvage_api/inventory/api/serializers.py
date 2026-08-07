@@ -148,6 +148,19 @@ class ListingListSerializer(LikeInfoMixin, serializers.ModelSerializer):
 	seller = SmallUserSerializer(read_only=True)
 	thumbnails = serializers.SerializerMethodField()
 	distance = serializers.SerializerMethodField()
+	# Both existence-only checks -- just enough for a listing card's
+	# right-click menu to decide "Add Damage Photos" vs "Copy Damage Photos
+	# Link", and "Upload" vs "Update" Carfax, without exposing the actual
+	# carfax file URL (or any damage photo data) in a list response that
+	# goes out to every visitor browsing a grid.
+	has_damage_photos = serializers.SerializerMethodField()
+	has_carfax = serializers.SerializerMethodField()
+
+	def get_has_damage_photos(self, obj):
+		return any(img.photo_type == ListingImage.PhotoType.BEFORE_REPAIR for img in obj.images.all())
+
+	def get_has_carfax(self, obj):
+		return bool(obj.carfax_pdf)
 
 	def get_distance(self, obj):
 		# Only actually annotated when the request resolved a location (see
@@ -195,6 +208,8 @@ class ListingListSerializer(LikeInfoMixin, serializers.ModelSerializer):
 			"call_count",
 			"views_count",
 			"has_warranty",
+			"has_damage_photos",
+			"has_carfax",
 			"distance",
 		)
 

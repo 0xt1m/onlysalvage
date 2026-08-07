@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/Badge';
 import { LeaveReviewModal } from '@/components/profile/LeaveReviewModal';
 import { ReportSellerModal } from '@/components/profile/ReportSellerModal';
 import { ListingResultsGrid } from '@/components/listings/ListingResultsGrid';
+import { ProfileListingsSection } from '@/components/profile/ProfileListingsSection';
 import { DraftsSection } from '@/components/profile/DraftsSection';
 import { TranslatableText } from '@/components/ui/TranslatableText';
 import { cn, formatAddress, formatMonthYear, formatPhoneNumber, formatTimeAgo, mapsSearchUrl, phoneTelHref, sellerDisplayName } from '@/lib/utils';
@@ -304,10 +305,8 @@ export default async function ProfilePage({ params }: { params: Promise<{ userna
                 </div>
               )}
             </div>
-            <ListingResultsGrid
+            <ProfileListingsSection
               listings={listings}
-              variant="v"
-              columns={4}
               emptyMessage={t('noListingsYet')}
               currentUsername={me?.username}
             />

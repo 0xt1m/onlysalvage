@@ -166,6 +166,14 @@
     "shareFailed": "No se pudo compartir este anuncio. Inténtalo de nuevo.",
     "copyDamagePhotosLink": "Copiar Enlace de Fotos de Daños",
     "damagePhotosLinkCopied": "Enlace de fotos de daños copiado al portapapeles",
+    "addDamagePhotos": "Añadir Fotos de Daños",
+    "copyVin": "Copiar VIN",
+    "vinCopied": "VIN copiado al portapapeles",
+    "uploadCarfax": "Subir Carfax",
+    "updateCarfax": "Actualizar Carfax",
+    "uploadingCarfax": "Subiendo Carfax...",
+    "carfaxUploadSucceeded": "Informe Carfax subido",
+    "carfaxUploadFailed": "No se pudo subir el informe Carfax. Inténtalo de nuevo.",
     "unpublishSucceeded": "Anuncio despublicado",
     "unpublishFailed": "No se pudo anular la publicación del anuncio.",
     "publishSucceeded": "Anuncio publicado",
@@ -366,6 +374,15 @@
     "maskedNumber": "+1 ({areaCode}) •••-••••",
     "email": "Correo",
     "loadError": "No se pudo cargar el número de teléfono del vendedor."
+  },
+  "AddDamagePhotosModal": {
+    "title": "Añadir Fotos de Daños",
+    "description": "Solo se muestran al público si activas esa opción en la página de edición del anuncio -- de lo contrario permanecen privadas, igual que cualquier otra ya presente en este anuncio.",
+    "close": "Cerrar",
+    "clickToSelectPhotos": "Haz clic o arrastra fotos aquí",
+    "uploading": "Subiendo...",
+    "uploadFailed": "Falló",
+    "done": "Listo"
   },
   "RequestDamagePhotos": {
     "requestDamagePhotos": "Solicitar Fotos de Daños",

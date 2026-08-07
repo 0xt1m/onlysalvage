@@ -166,6 +166,14 @@
     "shareFailed": "Не удалось поделиться объявлением. Попробуйте снова.",
     "copyDamagePhotosLink": "Скопировать ссылку на фото повреждений",
     "damagePhotosLinkCopied": "Ссылка на фото повреждений скопирована в буфер обмена",
+    "addDamagePhotos": "Добавить фото повреждений",
+    "copyVin": "Скопировать VIN",
+    "vinCopied": "VIN скопирован в буфер обмена",
+    "uploadCarfax": "Загрузить Carfax",
+    "updateCarfax": "Обновить Carfax",
+    "uploadingCarfax": "Загрузка Carfax...",
+    "carfaxUploadSucceeded": "Отчёт Carfax загружен",
+    "carfaxUploadFailed": "Не удалось загрузить отчёт Carfax. Попробуйте ещё раз.",
     "unpublishSucceeded": "Публикация объявления отменена",
     "unpublishFailed": "Не удалось снять объявление с публикации.",
     "publishSucceeded": "Объявление опубликовано",
@@ -366,6 +374,15 @@
     "maskedNumber": "+1 ({areaCode}) •••-••••",
     "email": "Эл. почта",
     "loadError": "Не удалось загрузить номер телефона продавца."
+  },
+  "AddDamagePhotosModal": {
+    "title": "Добавить фото повреждений",
+    "description": "Эти фото показываются публично, только если вы включите это на странице редактирования объявления -- иначе они остаются приватными, как и другие уже добавленные к этому объявлению.",
+    "close": "Закрыть",
+    "clickToSelectPhotos": "Нажмите или перетащите фото сюда",
+    "uploading": "Загрузка...",
+    "uploadFailed": "Ошибка",
+    "done": "Готово"
   },
   "RequestDamagePhotos": {
     "requestDamagePhotos": "Запросить фото повреждений",

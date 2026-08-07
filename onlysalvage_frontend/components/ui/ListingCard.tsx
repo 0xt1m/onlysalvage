@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { toast } from 'sonner'
 import { InfoItem } from '@/components/ui/InfoItem'
@@ -11,9 +11,10 @@ import { ContextMenu, type ContextMenuItem } from '@/components/ui/ContextMenu'
 import { cn, formatDistance, formatMileage, formatTimeAgo, isLowMileage, localizedPath, phoneTelHref } from '@/lib/utils'
 import { useLikeToggle } from '@/lib/useLikeToggle'
 import { Link, useRouter } from '@/i18n/navigation'
-import { updateListing, deleteListing, callSeller, getDamagePhotosLink } from '@/lib/api'
+import { updateListing, deleteListing, callSeller, getDamagePhotosLink, uploadCarfaxReport } from '@/lib/api'
 import { ReportListingDialog } from '@/components/listing/ReportListingModal'
 import { DeleteListingDialog } from '@/components/listing/DeleteListingModal'
+import { AddDamagePhotosModal } from '@/components/listing/AddDamagePhotosModal'
 import { addToCompareList, isInCompareList, removeFromCompareList } from '@/lib/compareList'
 import { flyToCompareIcon, flyToWatchlistIcon } from '@/lib/flyToIcon'
 import { useTranslations, useLocale } from 'next-intl'
@@ -21,6 +22,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import {
   MapPin, User, Gauge, Fuel, Car, Pencil, CheckCircle2, Clock, Circle, Copy,
   ExternalLink, Eye, EyeOff, Flag, Heart, HeartOff, Phone, Mail, GitCompare, Trash2, Link2,
+  Barcode, ImagePlus, FileText,
 } from "lucide-react"
 import { IconManualGearbox } from "@tabler/icons-react"
 
@@ -40,6 +42,11 @@ interface ListingCardProps {
   sellerHasPhone?: boolean
   sellerEmail?: string | null
   hasWarranty?: boolean
+  vin?: string
+  // Both existence-only -- decide "Add Damage Photos" vs "Copy Damage
+  // Photos Link", and "Upload" vs "Update" Carfax, in the right-click menu.
+  hasDamagePhotos?: boolean
+  hasCarfax?: boolean
   location?: string
   distance?: number
   status?: 'available' | 'pending' | 'sold'
@@ -72,7 +79,7 @@ const STATUS_CODE: Record<'available' | 'pending' | 'sold', 'AV' | 'PE' | 'SO'> 
   sold: 'SO',
 }
 
-export function ListingCard({ listingId, title, img, slug, price, year, mileage, transmission, fuelType, seller, sellerUsername, sellerVerified, sellerHasPhone, sellerEmail, hasWarranty, location, distance, status = 'available', isActive = true, liked = false, likesCount = 0, callCount, viewsCount, variant = 'h', compact = false, createdAt, isOwner = false, className, onUnlike }: ListingCardProps) {
+export function ListingCard({ listingId, title, img, slug, price, year, mileage, transmission, fuelType, seller, sellerUsername, sellerVerified, sellerHasPhone, sellerEmail, hasWarranty, vin, hasDamagePhotos = false, hasCarfax = false, location, distance, status = 'available', isActive = true, liked = false, likesCount = 0, callCount, viewsCount, variant = 'h', compact = false, createdAt, isOwner = false, className, onUnlike }: ListingCardProps) {
   const { liked: isLiked, likesCount: count, toggle } = useLikeToggle(listingId, liked, likesCount)
   const t = useTranslations('ListingCard')
   const locale = useLocale()
@@ -81,6 +88,9 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
   const [reporting, setReporting] = useState(false)
   const [deleting, setDeleting] = useState(false)
   const [inCompare, setInCompare] = useState(false)
+  const [addingDamagePhotos, setAddingDamagePhotos] = useState(false)
+  const [uploadingCarfax, setUploadingCarfax] = useState(false)
+  const carfaxInputRef = useRef<HTMLInputElement>(null)
   const lowMileage = year !== undefined && isLowMileage(year, mileage)
 
   useEffect(() => {
@@ -153,6 +163,39 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
     }
   }
 
+  // Visible to everyone, not just the owner -- a buyer copying the VIN to
+  // paste into a Carfax/window-sticker lookup elsewhere is a normal thing
+  // to want regardless of who's viewing.
+  const handleCopyVin = async () => {
+    if (!vin) return
+    try {
+      await navigator.clipboard.writeText(vin)
+      toast.success(t('vinCopied'))
+    } catch {
+      toast.error(t('shareFailed'))
+    }
+  }
+
+  // Owner-only, triggered by the hidden file input below -- uploads
+  // straight from the right-click menu without navigating to the edit page
+  // first, same PATCH the edit form's own Carfax upload slot uses.
+  const handleCarfaxFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    e.target.value = ''
+    if (!file) return
+
+    setUploadingCarfax(true)
+    const result = await uploadCarfaxReport(slug, file)
+    setUploadingCarfax(false)
+
+    if (!result) {
+      toast.error(t('carfaxUploadFailed'))
+      return
+    }
+    toast.success(t('carfaxUploadSucceeded'))
+    router.refresh()
+  }
+
   // Reversible -- unlike Delete (see DeleteListingDialog), this just flips
   // is_active (same PATCH mechanism as the mark-available/pending/sold
   // actions below), same as the Published checkbox in EditListingForm.
@@ -189,12 +232,26 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
     onClick: handleCompareToggle,
   }
 
+  // Everyone can copy a VIN -- unlike the damage photos/Carfax actions
+  // below, this isn't owner-gated at all.
+  const copyVinMenuItem: ContextMenuItem[] = vin
+    ? [{ label: t('copyVin'), icon: Barcode, onClick: handleCopyVin }]
+    : []
+
   const ownerMenuItems: ContextMenuItem[] = [
     { label: t('openInNewTab'), icon: ExternalLink, onClick: handleOpenInNewTab },
     { label: t('share'), icon: Copy, onClick: handleCopyLink },
+    ...copyVinMenuItem,
     compareMenuItem,
     { label: t('editListing'), icon: Pencil, onClick: () => router.push(`/inventory/${slug}/edit`) },
-    { label: t('copyDamagePhotosLink'), icon: Link2, onClick: handleCopyDamagePhotosLink },
+    hasDamagePhotos
+      ? { label: t('copyDamagePhotosLink'), icon: Link2, onClick: handleCopyDamagePhotosLink }
+      : { label: t('addDamagePhotos'), icon: ImagePlus, onClick: () => setAddingDamagePhotos(true) },
+    {
+      label: uploadingCarfax ? t('uploadingCarfax') : (hasCarfax ? t('updateCarfax') : t('uploadCarfax')),
+      icon: FileText,
+      onClick: () => carfaxInputRef.current?.click(),
+    },
     ...(currentStatusCode !== 'AV' ? [{ label: t('markAvailable'), icon: Circle, onClick: () => setListingStatus('AV') }] : []),
     ...(currentStatusCode !== 'PE' ? [{ label: t('markPending'), icon: Clock, onClick: () => setListingStatus('PE') }] : []),
     ...(currentStatusCode !== 'SO' ? [{ label: t('markSold'), icon: CheckCircle2, onClick: () => setListingStatus('SO') }] : []),
@@ -207,6 +264,7 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
   const visitorMenuItems: ContextMenuItem[] = [
     { label: t('openInNewTab'), icon: ExternalLink, onClick: handleOpenInNewTab },
     { label: t('share'), icon: Copy, onClick: handleCopyLink },
+    ...copyVinMenuItem,
     compareMenuItem,
     {
       label: isLiked ? t('removeFromWatchlist') : t('addToWatchlist'),
@@ -392,6 +450,16 @@ export function ListingCard({ listingId, title, img, slug, price, year, mileage,
           }}
         />
       )}
+      {addingDamagePhotos && (
+        <AddDamagePhotosModal listingId={listingId} onClose={() => setAddingDamagePhotos(false)} />
+      )}
+      <input
+        ref={carfaxInputRef}
+        type="file"
+        accept="application/pdf"
+        className="hidden"
+        onChange={handleCarfaxFileChange}
+      />
     </div>
   )
 }
