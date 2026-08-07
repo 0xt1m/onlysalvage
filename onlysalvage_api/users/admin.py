@@ -1,4 +1,6 @@
+from django import forms
 from django.contrib import admin
+from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.utils import timezone
 from .models import User, SellerReview, VerificationRequest, ApiKey, SiteFeedback, ContactMessage
 from inventory.models import Listing
@@ -9,8 +11,31 @@ class SellerReviewInline(admin.TabularInline):
   extra = 0
   readonly_fields = ("reviewer", "rating", "comment")
 
+class UserAdminForm(forms.ModelForm):
+  # Without this, a plain ModelAdmin form renders `password` as a normal
+  # editable text box holding the raw hash -- harmless to view (hashes
+  # aren't reversible), but a real footgun to edit: saving whatever text an
+  # admin typed there would write it in as the literal password hash,
+  # unhashed, silently breaking that account's login. This mirrors what
+  # django.contrib.auth.admin.UserAdmin does for the stock User model --
+  # read-only display, actual password changes go through set_password()
+  # (the forgot-password flow, or `user.set_password(...); user.save()` in
+  # a shell) instead of this form.
+  password = ReadOnlyPasswordHashField(
+    label="Password",
+    help_text="Raw passwords aren't stored, so there's no way to see this user's actual password. To change it, use the forgot-password flow, or set_password() from a Django shell.",
+  )
+
+  class Meta:
+    model = User
+    fields = "__all__"
+
+  def clean_password(self):
+    return self.initial.get("password")
+
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
+  form = UserAdminForm
   inlines = [SellerReviewInline]
   list_display = ("username", "email", "is_dealer", "is_verified", "is_active", "date_joined")
   list_filter = ("is_active", "is_dealer", "is_verified")

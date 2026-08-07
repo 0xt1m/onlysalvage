@@ -156,6 +156,17 @@ TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID", "")
 TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN", "")
 TWILIO_VERIFY_SERVICE_SID = os.environ.get("TWILIO_VERIFY_SERVICE_SID", "")
 
+# Master switch for requiring phone verification at registration (see
+# UserSerializer.validate() in users/api/serializers.py) -- off by default.
+# Flip to "True" to restore the original behavior (phone required + must be
+# verified via SendRegistrationPhoneCodeView/CheckRegistrationPhoneCodeView
+# before an account can be created) with no other changes needed. The
+# frontend has its own mirrored NEXT_PUBLIC_PHONE_VERIFICATION_ENABLED (see
+# onlysalvage_frontend/.env.example) that must be flipped together with this
+# one -- it controls whether the sign-up/settings UI even shows the phone
+# verification step, independent of this backend-side enforcement.
+PHONE_VERIFICATION_ENABLED = os.environ.get("PHONE_VERIFICATION_ENABLED", "False") == "True"
+
 # Delivers /support page ContactMessage submissions (see users/utils/telegram.py)
 # straight to a Telegram chat instead of email. TELEGRAM_CHAT_ID is whichever
 # chat should receive them -- a personal DM with the bot, or a group it's been

@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.contrib.gis.geos import Point
 from inventory.models import Listing
@@ -165,7 +166,10 @@ class UserSerializer(serializers.ModelSerializer):
     # accounts created before this requirement, or via Google sign-up (which
     # never collects a phone at all, see GoogleLoginView), shouldn't get
     # blocked from saving unrelated profile changes just for lacking one.
-    if self.instance is None:
+    # Also gated behind PHONE_VERIFICATION_ENABLED (settings.py) -- flip that
+    # back to True to restore this exact requirement with no other changes
+    # needed; phone stays fully optional at registration while it's off.
+    if self.instance is None and settings.PHONE_VERIFICATION_ENABLED:
       phone = attrs.get("phone")
       if not phone:
         raise serializers.ValidationError({"phone": "Phone number is required."})

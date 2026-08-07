@@ -18,6 +18,12 @@ import { formatPhoneDigits, formatPhoneNumber, isPhoneNumberComplete, normalizeU
 import { GoogleSignInButton } from '@/components/auth/GoogleSignInButton';
 import { useRegistrationPhoneVerification } from '@/components/ui/RegistrationPhoneVerification';
 
+// Mirrors the backend's PHONE_VERIFICATION_ENABLED (see settings.py) --
+// both need to be flipped together (this one requires a rebuild, being
+// NEXT_PUBLIC_*). Off means: no verify button/code panel shown, and phone
+// isn't required to sign up at all, matching what the backend now accepts.
+const PHONE_VERIFICATION_ENABLED = process.env.NEXT_PUBLIC_PHONE_VERIFICATION_ENABLED === 'true';
+
 const initialForm = {
   username: '',
   email: '',
@@ -65,8 +71,10 @@ export function SignUpForm() {
     if (!form.city.trim()) next.city = t('errors.cityRequired');
     if (!form.state) next.state = t('errors.stateRequired');
     if (!/^\d{5}$/.test(form.zip_code.trim())) next.zip_code = t('errors.zipInvalid');
-    if (!isPhoneNumberComplete(form.phone)) next.phone = t('errors.phoneInvalid');
-    else if (!phoneVerified) next.phone = t('errors.phoneNotVerified');
+    if (PHONE_VERIFICATION_ENABLED) {
+      if (!isPhoneNumberComplete(form.phone)) next.phone = t('errors.phoneInvalid');
+      else if (!phoneVerified) next.phone = t('errors.phoneNotVerified');
+    }
     if (form.is_dealer && !form.business_name.trim()) next.business_name = t('errors.businessNameRequired');
     if (form.is_dealer && !form.street_address.trim()) next.street_address = t('errors.streetAddressRequired');
 
@@ -164,9 +172,9 @@ export function SignUpForm() {
           }}
           placeholder={t('phonePlaceholder')}
           error={errors.phone}
-          endButton={phoneVerification.verifyButton}
+          endButton={PHONE_VERIFICATION_ENABLED ? phoneVerification.verifyButton : undefined}
         />
-        {phoneVerification.panel}
+        {PHONE_VERIFICATION_ENABLED && phoneVerification.panel}
 
         <div className="flex flex-wrap gap-3">
           <div className="flex-1 min-w-[140px]">

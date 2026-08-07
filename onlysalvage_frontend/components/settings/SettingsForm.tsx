@@ -22,6 +22,10 @@ import { cn, formatPhoneDigits, formatPhoneNumber, isPhoneNumberComplete, normal
 import { US_STATES } from '@/lib/types'
 import type { Profile, ListingSummary } from '@/lib/types'
 
+// Mirrors the backend's PHONE_VERIFICATION_ENABLED (see settings.py) and
+// SignUpForm's identical constant -- all three need to be flipped together.
+const PHONE_VERIFICATION_ENABLED = process.env.NEXT_PUBLIC_PHONE_VERIFICATION_ENABLED === 'true';
+
 type VerificationStatus = 'verified' | 'pending' | 'rejected' | 'none'
 
 interface SettingsFormProps {
@@ -141,7 +145,7 @@ export function SettingsForm({ profile, email, verificationStatus, warrantyListi
       setPhoneError(t('phoneInvalid'))
       return
     }
-    if (form.phone.trim() && !phoneVerification.verified) {
+    if (PHONE_VERIFICATION_ENABLED && form.phone.trim() && !phoneVerification.verified) {
       setPhoneError(t('phoneNotVerified'))
       return
     }
@@ -252,9 +256,9 @@ export function SettingsForm({ profile, email, verificationStatus, warrantyListi
               }}
               placeholder={t('phonePlaceholder')}
               error={phoneError}
-              endButton={phoneVerification.verifyButton}
+              endButton={PHONE_VERIFICATION_ENABLED ? phoneVerification.verifyButton : undefined}
             />
-            {phoneVerification.panel}
+            {PHONE_VERIFICATION_ENABLED && phoneVerification.panel}
             <Input label={t('website')} value={form.website} onChange={setField('website')} placeholder={t('websitePlaceholder')} />
             {/* Exact street address is only ever shown/settable for dealers --
                 private sellers only appear at city/state granularity on their
