@@ -15,9 +15,13 @@ interface PhotoGalleryProps {
 }
 
 const ZOOM_MIN = 1
-const ZOOM_MAX = 3
+// Was 3 -- too low to actually inspect damage closely now that the
+// fullscreen view serves the untouched original upload (often well beyond
+// 2400px wide for a direct phone photo) instead of a capped/recompressed
+// derivative, so there's real detail left to zoom into.
+const ZOOM_MAX = 6
 const ZOOM_STEP = 0.5
-const WHEEL_ZOOM_STEP = 0.1
+const WHEEL_ZOOM_STEP = 0.15
 const SWIPE_THRESHOLD = 50
 
 function pointerDistance(a: { x: number; y: number }, b: { x: number; y: number }) {
