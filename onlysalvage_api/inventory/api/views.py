@@ -765,7 +765,7 @@ class ListingViewSet(ModelViewSet):
 			listing.save()
 
 		return Response({
-			"url": f"{settings.FRONTEND_URL}/inventory/{listing.slug}?damage_token={listing.damage_photos_token}",
+			"url": f"{settings.FRONTEND_URL}/inventory/{listing.slug}/damage-photos?damage_token={listing.damage_photos_token}",
 		})
 
 	@action(

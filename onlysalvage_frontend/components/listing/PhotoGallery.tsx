@@ -15,10 +15,9 @@ interface PhotoGalleryProps {
 }
 
 const ZOOM_MIN = 1
-// Was 3 -- too low to actually inspect damage closely now that the
-// fullscreen view serves the untouched original upload (often well beyond
-// 2400px wide for a direct phone photo) instead of a capped/recompressed
-// derivative, so there's real detail left to zoom into.
+// Was 3 -- too low to actually inspect damage closely against large_url's
+// 2400px cap (see the fullscreen Image's src comment below for why this
+// serves that derivative rather than the untouched original).
 const ZOOM_MAX = 6
 const ZOOM_STEP = 0.5
 const WHEEL_ZOOM_STEP = 0.15
@@ -298,15 +297,17 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                   src={safeImageUrl(img.large_url, img.image_url)}
                   alt={`${title} — photo ${i + 1}`}
                   fill
-                  quality={90}
-                  // Without this, the browser has to guess the display size
-                  // from the srcset alone and can pick a candidate smaller
-                  // than this actually renders at (basis-2/3 of a max-1600px
-                  // container on desktop, full width below the lg
-                  // breakpoint -- see the [slug] page layout), which shows
-                  // up as a blurry/blocky upscaled image despite the
-                  // underlying file being high quality.
-                  sizes="(min-width: 1024px) 66vw, 100vw"
+                  // large_url is already a properly-sized (2400px cap),
+                  // already-compressed WebP generated once at upload time --
+                  // running it through Next's own image optimizer on top of
+                  // that just adds a redundant resize/re-encode pass, which
+                  // is genuinely slow (1s+) the first time any given photo
+                  // is viewed at a given width, since nothing's cached yet.
+                  // Serving it straight from CloudFront instead means it's
+                  // never slow, at the cost of always sending the same
+                  // ~2400px file regardless of viewport (an acceptable
+                  // trade here: the file's already reasonably sized).
+                  unoptimized
                   className="object-cover"
                   priority={i === index}
                   draggable={false}
@@ -424,17 +425,25 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
               style={{ transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})` }}
             >
               <Image
-                src={safeImageUrl(images[index].image_url, images[index].large_url)}
+                // large_url, not the untouched original -- same reasoning as
+                // the carousel above. This was the actual cause of the
+                // multi-second first-load delay: even at quality=90 (not
+                // 100), asking Next to resize/re-encode a multi-MB original
+                // on the fly is genuinely slow, and it has to happen fresh
+                // for every never-before-viewed width. large_url is already
+                // a properly-sized, pre-compressed WebP with nothing left
+                // for Next to usefully do to it -- see the pixel-diff
+                // verification in this session's history, it's
+                // indistinguishable from the original at normal viewing
+                // sizes. unoptimized skips Next's processing entirely, so
+                // this loads exactly as fast as CloudFront can serve it,
+                // every time, not just after the first viewer eats the
+                // cold-cache cost.
+                src={safeImageUrl(images[index].large_url, images[index].image_url)}
                 alt={`${title} — photo ${index + 1}`}
                 fill
-                // Not 100 -- still the untouched original underneath (real
-                // detail to zoom into), but forcing a near-lossless
-                // recompression on top was noticeably slow to encode on
-                // first view with nothing shown while it happened. 90 is
-                // effectively indistinguishable and much cheaper to compute.
-                quality={90}
+                unoptimized
                 className={cn('object-contain pointer-events-none transition-opacity', fullscreenLoaded ? 'opacity-100' : 'opacity-0')}
-                sizes="100vw"
                 priority
                 draggable={false}
                 onLoad={() => setFullscreenLoaded(true)}

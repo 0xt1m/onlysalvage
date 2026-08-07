@@ -14,6 +14,10 @@ interface CheckboxProps {
     // dense multi-column grid of items (FilterDropdown's colors) where the
     // usual size makes labels wrap or crowd their neighbors.
     labelClassName?: string
+    // For a checkbox with no visible `label` text of its own -- e.g. one
+    // sitting next to an already-labeled card, where a redundant on-screen
+    // label would just duplicate what's right beside it.
+    'aria-label'?: string
 }
 
 export function Checkbox({
@@ -23,7 +27,8 @@ export function Checkbox({
     onChange,
     disabled = false,
     className,
-    labelClassName
+    labelClassName,
+    'aria-label': ariaLabel
 }: CheckboxProps) {
     const [checked, setChecked] = useState(defaultChecked)
 
@@ -51,6 +56,7 @@ export function Checkbox({
                 checked={checked}
                 onChange={(e) => handleChange(e.target.checked)}
                 disabled={disabled}
+                aria-label={ariaLabel}
                 className='hidden'
             />
             <div className={cn(

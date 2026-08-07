@@ -10,7 +10,7 @@ import { Badge } from '@/components/ui/Badge';
 import { LeaveReviewModal } from '@/components/profile/LeaveReviewModal';
 import { ReportSellerModal } from '@/components/profile/ReportSellerModal';
 import { ListingResultsGrid } from '@/components/listings/ListingResultsGrid';
-import { DraftListingCard } from '@/components/profile/DraftListingCard';
+import { DraftsSection } from '@/components/profile/DraftsSection';
 import { TranslatableText } from '@/components/ui/TranslatableText';
 import { cn, formatAddress, formatMonthYear, formatPhoneNumber, formatTimeAgo, mapsSearchUrl, phoneTelHref, sellerDisplayName } from '@/lib/utils';
 import { Phone, Globe, Mail, MapPin, Star, Plus, BadgeCheck, Calendar, Car, Settings, ShieldCheck, Upload } from 'lucide-react';
@@ -316,15 +316,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ userna
           {isOwner && (
             <Card id="drafts" className="scroll-mt-26">
               <h3 className="text-lg font-semibold">{t('draftsTitle')}</h3>
-              {drafts.length === 0 ? (
-                <p className="text-sm text-muted">{t('draftsEmptyMessage')}</p>
-              ) : (
-                <div className="flex flex-col gap-2">
-                  {drafts.map((draft) => (
-                    <DraftListingCard key={draft.id} draft={draft} />
-                  ))}
-                </div>
-              )}
+              <DraftsSection drafts={drafts} />
             </Card>
           )}
 

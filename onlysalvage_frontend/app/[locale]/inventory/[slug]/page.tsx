@@ -1,6 +1,5 @@
 import { getTranslations, getLocale } from 'next-intl/server'
 import { Link } from '@/i18n/navigation'
-import Image from 'next/image'
 import type { Metadata } from 'next'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
@@ -44,7 +43,7 @@ import {
   TITLE_DOCUMENTS,
   COLORS,
 } from '@/lib/types'
-import { Gauge, Fuel, FileText, Pencil, Star, Phone, MapPin, User, Flame, BadgeCheck, Barcode, CarFront, Eye, ArrowRight, Calendar } from 'lucide-react'
+import { Gauge, Fuel, FileText, Pencil, Star, Phone, MapPin, User, Flame, BadgeCheck, Barcode, CarFront, Eye, ArrowRight, Calendar, ImageOff } from 'lucide-react'
 import { IconManualGearbox, IconSteeringWheel } from '@tabler/icons-react'
 
 export const dynamic = 'force-dynamic'
@@ -297,25 +296,12 @@ export default async function ListingDetailPage({
             <Card className="print:hidden">
               <h3 className="text-lg font-semibold">{t('beforeRepairPhotos')}</h3>
               <p className="text-sm text-muted -mt-1">{t('beforeRepairPhotosDescription')}</p>
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
-                {beforeRepairImages.map((img) => (
-                  <a
-                    key={img.id}
-                    href={safeImageUrl(img.image_url, img.large_url)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative aspect-square rounded-lg overflow-hidden border border-border block"
-                  >
-                    <Image
-                      src={safeImageUrl(img.thumb_url, img.image_url)}
-                      alt={t('beforeRepairPhotoAlt')}
-                      fill
-                      sizes="(min-width: 1024px) 11vw, (min-width: 768px) 16vw, (min-width: 640px) 25vw, 33vw"
-                      className="object-cover"
-                    />
-                  </a>
-                ))}
-              </div>
+              <Link href={`/inventory/${listing.slug}/damage-photos`}>
+                <Button variant="secondary" className="flex items-center justify-center gap-2 w-full sm:w-auto">
+                  <ImageOff className="w-4 h-4" />
+                  {t('viewBeforeRepairPhotos', { count: beforeRepairImages.length })}
+                </Button>
+              </Link>
             </Card>
           )}
 
