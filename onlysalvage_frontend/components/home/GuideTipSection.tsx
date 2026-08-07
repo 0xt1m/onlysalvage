@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { Lightbulb, ArrowRight } from 'lucide-react'
 import { Card } from '@/components/ui/Card'
@@ -17,10 +17,22 @@ export function GuideTipSection({ categories }: { categories: Category[] }) {
     category.tips.map((tip, ti) => ({ ...tip, ci, ti }))
   )
 
-  // Picked once on mount (not per-render) -- a fresh pick on every full page
-  // load, same as any other client component's initial state, without
-  // needing to fight Next's RSC caching for something this trivial.
-  const [index] = useState(() => Math.floor(Math.random() * allTips.length))
+  // Starts at a fixed index so the server-rendered HTML and the client's
+  // first render match exactly -- picking randomly inside the initial
+  // useState (as this used to) meant the server and the client each rolled
+  // their own independent random index, guaranteeing a hydration mismatch
+  // (React error #418, "text content does not match server-rendered HTML")
+  // on every single page load. The actual random pick happens in this
+  // effect instead, which only runs client-side after hydration has already
+  // completed -- a plain post-mount UI update, not part of the hydration
+  // pass, so there's nothing for the server and client to disagree about.
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    setIndex(Math.floor(Math.random() * allTips.length))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   const tip = allTips[index]
 
   if (!tip) return null

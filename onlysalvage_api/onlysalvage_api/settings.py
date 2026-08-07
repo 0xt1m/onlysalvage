@@ -369,7 +369,20 @@ if _redis_cache_url:
 # Security headers/cookie flags -- meaningful once DEBUG=False; harmless to
 # compute in dev too since they just end up False/0 there (the dev server
 # runs over plain HTTP with no proxy in front of it).
-SECURE_SSL_REDIRECT = not DEBUG
+#
+# SECURE_SSL_REDIRECT is deliberately NOT tied to DEBUG like the others below
+# -- nginx (see deploy/nginx.conf) already 301s every external HTTP request
+# to HTTPS before Django ever sees it, so this would be pure redundancy for
+# real traffic. Worse, it actively breaks the internal Next.js -> Django
+# calls (INTERNAL_API_URL, see onlysalvage_frontend/lib/apiUrl.ts), which
+# deliberately go straight to gunicorn's loopback port over plain HTTP with
+# no X-Forwarded-Proto header (that hop never touches nginx) -- Django would
+# "helpfully" 301 those to https://127.0.0.1:8001/..., which doesn't exist,
+# and Node's fetch would then throw a raw TLS ClientHello at gunicorn's
+# plain-HTTP listener (shows up in gunicorn's log as a garbled "Invalid HTTP
+# method"). Leave this False; DJANGO_ALLOWED_HOSTS + the other settings here
+# still fully protect real external traffic.
+SECURE_SSL_REDIRECT = False
 SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
 SECURE_CONTENT_TYPE_NOSNIFF = True

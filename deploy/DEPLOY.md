@@ -67,8 +67,7 @@ cp .env.example .env.production.local
 # NEXT_PUBLIC_SITE_URL=https://onlysalvage.com
 # NEXT_PUBLIC_GOOGLE_CLIENT_ID=<same OAuth client ID as the backend>
 # NEXT_PUBLIC_API_PATH=/api          <- important, see lib/apiUrl.ts
-# INTERNAL_API_URL=http://unix:/run/onlysalvage/api.sock:/api  (or wherever
-#   gunicorn is actually reachable from this box -- see note below)
+# INTERNAL_API_URL=http://127.0.0.1:8001/api   <- see note below, NOT the unix socket
 
 npm run build
 
@@ -77,11 +76,14 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now onlysalvage-frontend
 ```
 
-`INTERNAL_API_URL` note: Next.js's own `fetch` can't talk to a Unix socket
-directly. Simplest fix is to have gunicorn also bind a loopback TCP port
-(add `--bind 127.0.0.1:8001` alongside the socket bind in
-`onlysalvage-api.service`) and set `INTERNAL_API_URL=http://127.0.0.1:8001/api`
--- keeps server-to-server traffic off the public nginx path entirely.
+`INTERNAL_API_URL` note: Next.js's own `fetch` can't talk to a Unix socket at
+all -- `http://unix:/run/onlysalvage/api.sock:/api` is NOT a valid value and
+fails with `getaddrinfo EAI_AGAIN unix` (Node tries to DNS-resolve the
+literal hostname "unix"). Use the loopback TCP port gunicorn also binds
+instead (`onlysalvage-api.service` already passes `--bind 127.0.0.1:8001`
+alongside the socket bind for exactly this reason):
+`INTERNAL_API_URL=http://127.0.0.1:8001/api`. Server-to-server traffic still
+never touches the public nginx path either way.
 
 ## nginx + TLS
 
