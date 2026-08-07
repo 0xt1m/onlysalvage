@@ -1,0 +1,291 @@
+@import "tailwindcss";
+
+:root {
+  /* Base */
+  --background: #f0f7fb;      /* very light blue-tinted white */
+  --surface: #ffffff;          /* pure white cards */
+  --surface-raised: #e3f0f7;  /* subtle hover state */
+
+  /* Primary (your dark blue) */
+  --primary: #0b3954;
+  --primary-hover: #0e4a6e;
+  --primary-light: #1a6694;
+
+  /* Hero/banner panels -- deliberately separate from --primary so these
+     large blocks stay a deep navy instead of following --primary's dark-mode
+     brightening (which exists for legibility on small elements like buttons). */
+  --hero: #0b3954;
+
+  /* Accent (your red/coral) */
+  --accent: #ff6663;
+  --accent-hover: #e54e4b;
+  --accent-light: #ff9291;
+
+  /* Text */
+  --foreground: #0b1f2b;      /* very dark navy, softer than pure black */
+  --muted: #5a7f96;           /* muted blue-grey */
+
+  /* Borders */
+  --border: #cde0ec;
+
+  /* Semantic */
+  --success: #1a9e6a;
+  --warning: #d4870f;
+  --error: #ff6663;
+}
+
+/* Explicit choice (cookie, set server-side on <html> so there's no flash --
+   see app/[locale]/layout.tsx) always wins over system preference. */
+:root[data-theme="dark"] {
+  --background: #070f14;
+  --surface: #0f2333;
+  --surface-raised: #16303f;
+
+  --primary: #1a6694;
+  --primary-hover: #2a7cae;
+  --primary-light: #4a9fd4;
+
+  --hero: #0a2436;
+
+  --accent: #ff6663;
+  --accent-hover: #e54e4b;
+  --accent-light: #ff9291;
+
+  --foreground: #e8f4f8;
+  --muted: #8ba9bd;
+
+  --border: #1a3a4f;
+
+  --success: #2eb87e;
+  --warning: #f5a623;
+  --error: #ff6663;
+}
+
+/* No cookie yet (first-time visitor): fall back to the OS/browser
+   preference. Pure CSS, so this applies to the very first byte of HTML --
+   no inline script and no flash, unlike a localStorage-based approach. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #070f14;
+    --surface: #0f2333;
+    --surface-raised: #16303f;
+
+    --primary: #1a6694;
+    --primary-hover: #2a7cae;
+    --primary-light: #4a9fd4;
+
+    --hero: #0a2436;
+
+    --accent: #ff6663;
+    --accent-hover: #e54e4b;
+    --accent-light: #ff9291;
+
+    --foreground: #e8f4f8;
+    --muted: #8ba9bd;
+
+    --border: #1a3a4f;
+
+    --success: #2eb87e;
+    --warning: #f5a623;
+    --error: #ff6663;
+  }
+}
+
+@theme inline {
+  /* Breakpoints */
+  /* Sits between the default base (0px) and sm (640px) so page-container
+     side padding can step up once for bigger phones (~420px+, e.g. Pro Max/
+     Ultra-class devices) before jumping all the way to sm's tablet padding. */
+  --breakpoint-xs: 26.25rem;
+
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+  --color-hero: var(--hero);
+
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+
+  /* Typography */
+  --font-sans: var(--font-geist-sans);
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem; 
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 2px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  /* Printed pages (e.g. PrintListingButton) should always read like the
+     light theme, regardless of what's active on screen -- !important is
+     what makes this win over :root[data-theme="dark"] here, since that rule
+     isn't itself !important and would otherwise be more specific than a
+     plain :root. */
+  :root {
+    --background: #f0f7fb !important;
+    --surface: #ffffff !important;
+    --surface-raised: #e3f0f7 !important;
+
+    --primary: #0b3954 !important;
+    --primary-hover: #0e4a6e !important;
+    --primary-light: #1a6694 !important;
+
+    --hero: #0b3954 !important;
+
+    --accent: #ff6663 !important;
+    --accent-hover: #e54e4b !important;
+    --accent-light: #ff9291 !important;
+
+    --foreground: #0b1f2b !important;
+    --muted: #5a7f96 !important;
+
+    --border: #cde0ec !important;
+
+    --success: #1a9e6a !important;
+    --warning: #d4870f !important;
+    --error: #ff6663 !important;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Car loader (components/ui/CarLoader) -- used both for the thin strip
+   hanging under the navbar during route transitions (NavbarCarLoader) and
+   as a standalone loading state inside page content (e.g. InventoryBrowser's
+   own results-loading state). Split into two layers on purpose:
+     - car-loader-track: horizontal position + overall fade, via `left`
+       (percentage-based, not a pixel transform, so it scales with whatever
+       width the track actually renders at).
+     - car-loader-body: everything else (flat while driving, then squash +
+       rotate on impact), via `transform` on the icon itself.
+   Keeping `left` and `transform` on separate elements is what lets both
+   animate at once without one clobbering the other's `transform`. */
+@keyframes car-loader-track {
+  0%   { left: -12%; opacity: 1; }
+  58%  { left: 90%;  opacity: 1; }
+  62%  { left: 93%;  opacity: 1; }
+  84%  { left: 93%;  opacity: 0; }
+  100% { left: -12%; opacity: 0; }
+}
+
+@keyframes car-loader-body {
+  /* Flat, level drive -- no bounce -- straight through to the wall. */
+  0%   { transform: translateY(0) rotate(0deg) scale(1); }
+  58%  { transform: translateY(0) rotate(0deg) scale(1); }
+  /* Impact -- hits the wall, crumples, settles, then the track above fades
+     the whole thing out before it respawns for the next lap. */
+  62%  { transform: translateY(10%)  rotate(-16deg) scaleX(0.5)  scaleY(1.35); }
+  68%  { transform: translateY(8%)   rotate(11deg)  scaleX(0.4)  scaleY(1.5);  }
+  74%  { transform: translateY(10%)  rotate(-6deg)  scaleX(0.42) scaleY(1.48); }
+  84%  { transform: translateY(8%)   rotate(0deg)   scaleX(0.4)  scaleY(1.5);  }
+  100% { transform: translateY(0)    rotate(0deg)   scale(1); }
+}
+
+@keyframes car-loader-spark {
+  0%, 58%  { opacity: 0; transform: scale(0); }
+  63%      { opacity: 1; transform: scale(1.1); }
+  72%      { opacity: 0; transform: scale(1.8); }
+  100%     { opacity: 0; transform: scale(0); }
+}
+
+.car-loader-track {
+  animation: car-loader-track 2.4s ease-in-out infinite;
+}
+
+.car-loader-body {
+  animation: car-loader-body 2.4s ease-in-out infinite;
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 0.25));
+}
+
+.car-loader-spark {
+  animation: car-loader-spark 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .car-loader-track, .car-loader-body, .car-loader-spark {
+    animation: none;
+  }
+  .car-loader-track {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+/* Firefox -- no per-pseudo-element control there, just a thin/auto width
+   switch plus a thumb/track color pair. Kept in sync with the ::-webkit-*
+   rules below via the same theme variables, so both engines land on the
+   same look in light and dark mode. --muted (not --border) for the thumb --
+   --border is nearly the same pale blue as --background, so a --border
+   thumb all but disappears against the page instead of reading as styled. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) transparent;
+}
+
+/* Chromium/Safari: thin rounded thumb, muted blue-grey at rest and the
+   brand coral on hover, fading into a transparent track instead of the
+   OS's default flat grey bar. */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--muted);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}

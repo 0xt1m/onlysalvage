@@ -1,0 +1,1595 @@
+{
+  "Common": {
+    "appName": "OnlySalvage",
+    "viewAll": "Переглянути всі",
+    "showPassword": "Показати пароль",
+    "hidePassword": "Приховати пароль"
+  },
+  "Nav": {
+    "logo": "Логотип",
+    "home": "Головна",
+    "inventory": "Каталог",
+    "support": "Підтримка 24/7",
+    "sell": "Продати",
+    "switchToLight": "Увімкнути світлу тему",
+    "switchToDark": "Увімкнути темну тему",
+    "switchLanguage": "Змінити мову",
+    "likedCars": "Обрані авто",
+    "compare": "Порівняння",
+    "myProfile": "Мій профіль",
+    "viewProfile": "Переглянути профіль",
+    "logOut": "Вийти",
+    "logIn": "Увійти",
+    "signUp": "Реєстрація",
+    "openMenu": "Відкрити меню",
+    "closeMenu": "Закрити меню",
+    "settings": "Налаштування"
+  },
+  "Footer": {
+    "tagline": "Ваш надійний майданчик для купівлі та продажу автомобілів. Швидко, просто й надійно.",
+    "company": "Компанія",
+    "about": "Про нас",
+    "shopByMake": "Огляд за маркою",
+    "shopByBodyStyle": "Огляд за типом кузова",
+    "sellers": "Продавці",
+    "guide": "Гід по сайту",
+    "checklist": "Чекліст покупця",
+    "apiDocs": "Документація API",
+    "feedback": "Зворотний зв'язок",
+    "contact": "Контакти",
+    "careers": "Кар'єра",
+    "legal": "Правова інформація",
+    "privacyPolicy": "Політика конфіденційності",
+    "termsOfService": "Умови використання",
+    "followUs": "Слідкуйте за нами",
+    "copyright": "© 2026 OnlySalvage. Усі права захищено.",
+    "privacy": "Конфіденційність",
+    "terms": "Умови"
+  },
+  "Home": {
+    "heroTitle": "Простий спосіб купити та продати аварійні авто",
+    "heroSubtitle": "Переглядайте перевірені оголошення аварійних та відновлених авто від приватних продавців і дилерів, або розмістіть своє авто за кілька хвилин.",
+    "trust": {
+      "verifiedTitle": "Перевірені оголошення",
+      "verifiedDescription": "Кожне авто прив'язане до реального акаунту продавця, зі статусом документів (аварійне чи відновлене), вказаним одразу.",
+      "ratedTitle": "Рейтинги продавців і покупців",
+      "ratedDescription": "Здійснюйте угоди впевнено завдяки нашій двосторонній системі відгуків.",
+      "supportTitle": "Підтримка 24/7",
+      "supportDescription": "Питання чи проблеми? Наша команда доступна цілодобово.",
+      "reachTitle": "Загальнонаціональний охоплення",
+      "reachDescription": "Шукайте аварійні та відновлені оголошення від приватних продавців і дилерів по всій країні."
+    },
+    "guideTip": {
+      "label": "А ви знали?",
+      "viewGuide": "Переглянути гід"
+    },
+    "checklistTeaser": {
+      "label": "Перед покупкою",
+      "heading": "Чекліст покупця",
+      "description": "Усе, що варто перевірити перед купівлею аварійного авто, в одному чеклісті для друку.",
+      "viewChecklist": "Переглянути чекліст"
+    },
+    "howItWorks": {
+      "title": "Як це працює",
+      "subtitle": "Купівля чи продаж аварійного авто на OnlySalvage складається з трьох простих кроків",
+      "step1Title": "Знайдіть або розмістіть авто",
+      "step1Description": "Перегляньте аварійні та відновлені оголошення поруч із вами, або розмістіть своє авто за кілька хвилин -- просто введіть VIN, і ми заповнимо деталі.",
+      "step2Title": "Зв'яжіться з продавцем",
+      "step2Description": "Розкрийте номер телефону продавця і зв'яжіться напряму, щоб поставити запитання чи домовитися про огляд.",
+      "step3Title": "Огляньте та купіть",
+      "step3Description": "Огляньте авто особисто (або організуйте професійний огляд), а потім завершіть угоду напряму з продавцем."
+    },
+    "featuredTitle": "Рекомендовані авто",
+    "featuredSubtitle": "Відібрані оголошення, які зараз просувають продавці",
+    "newArrivalsTitle": "Нові надходження",
+    "newArrivalsSubtitle": "Останні автомобілі, додані на майданчик",
+    "noListingsYet": "Оголошень поки немає. Будьте першим, хто розмістить авто!",
+    "recommendedTitle": "Рекомендовано для вас",
+    "recommendedSubtitle": "На основі того, що ви шукали та переглядали",
+    "becauseYouViewedTitle": "Оскільки ви переглядали {title}",
+    "becauseYouViewedSubtitle": "Схожі оголошення, які можуть вам сподобатися",
+    "ctaTitle": "Готові продати своє аварійне авто?",
+    "ctaDescription": "Розмістіть аварійне чи відновлене авто за кілька хвилин -- просто введіть VIN, і ми заповнимо деталі за вас.",
+    "sellYourCar": "Продати авто",
+    "mostLikedTitle": "Найпопулярніші",
+    "mostLikedSubtitle": "Доступні оголошення, які зараз подобаються покупцям найбільше",
+    "topSellersTitle": "Найкращі продавці",
+    "topSellersSubtitle": "Продавці з найвищим середнім рейтингом від реальних покупців",
+    "shopByMakeTitle": "Огляд за маркою",
+    "shopByMakeSubtitle": "Переглядайте оголошення за виробником",
+    "shopByBodyStyleTitle": "Огляд за типом кузова",
+    "shopByBodyStyleSubtitle": "Переглядайте оголошення за типом кузова",
+    "shopByCityTitle": "Огляд за містами",
+    "shopByCitySubtitle": "Переглядайте оголошення в популярних містах",
+    "verifiedSellersTitle": "Перевірені продавці",
+    "verifiedSellersSubtitle": "Продавці, які підтвердили свою особу в процесі перевірки",
+    "verifiedListingsTitle": "Оголошення від перевірених продавців",
+    "verifiedListingsSubtitle": "Додаткова впевненість при купівлі у перевіреного акаунту",
+    "mostViewedTitle": "Найпопулярніші",
+    "mostViewedSubtitle": "Доступні оголошення, які зараз привертають найбільше уваги"
+  },
+  "SearchBlock": {
+    "search": "Пошук",
+    "searchPlaceholder": "Пошук за маркою, моделлю або ключовим словом",
+    "filters": {
+      "inventory": "Каталог",
+      "under5000": "До $5,000",
+      "under10000": "До $10,000",
+      "over10000": "Понад $10,000",
+      "allWheelDrive": "Повний привід",
+      "rebuiltTitle": "Відновлений",
+      "privateSellers": "Приватні продавці",
+      "nearby": "Поруч",
+      "recommended": "Рекомендовані"
+    },
+    "surpriseMe": "Здивуй мене"
+  },
+  "ListingCard": {
+    "mileage": "Пробіг",
+    "transmission": "Коробка передач",
+    "fuelType": "Тип палива",
+    "seller": "Продавець",
+    "location": "Місцезнаходження",
+    "contactSeller": "Зв'яжіться з продавцем",
+    "noPhotoYet": "Фото поки немає",
+    "callsReceived": "{count, plural, one {# дзвінок} few {# дзвінки} many {# дзвінків} other {# дзвінка}}",
+    "viewsCount": "{count, plural, one {# перегляд} few {# перегляди} many {# переглядів} other {# перегляду}}",
+    "statusAvailable": "ДОСТУПНО",
+    "statusPending": "ОЧІКУЄ",
+    "statusSold": "ПРОДАНО",
+    "inactiveBadge": "Неактивне",
+    "lowMileage": "Малий пробіг",
+    "verifiedSeller": "Перевірений продавець",
+    "warrantyBadge": "Гарантія",
+    "openInNewTab": "Відкрити в новій вкладці",
+    "editListing": "Редагувати оголошення",
+    "markAvailable": "Позначити як доступно",
+    "markSold": "Позначити як продано",
+    "markPending": "Позначити як очікує",
+    "share": "Копіювати посилання",
+    "addToCompare": "Додати до порівняння",
+    "removeFromCompare": "Прибрати з порівняння",
+    "addedToCompare": "Додано до порівняння",
+    "removedFromCompare": "Видалено з порівняння",
+    "unpublish": "Скасувати публікацію",
+    "publish": "Опублікувати",
+    "callSeller": "Подзвонити продавцю",
+    "callFailed": "Не вдалося отримати номер телефону продавця.",
+    "emailSeller": "Написати продавцю",
+    "report": "Поскаржитися",
+    "viewSellerProfile": "Профіль продавця",
+    "addToWatchlist": "Додати в обране",
+    "removeFromWatchlist": "Прибрати з обраного",
+    "statusUpdateSucceeded": "Статус оголошення оновлено",
+    "statusUpdateFailed": "Не вдалося оновити статус оголошення.",
+    "linkCopied": "Посилання скопійовано в буфер обміну",
+    "shareFailed": "Не вдалося поділитися оголошенням. Спробуйте ще раз.",
+    "unpublishSucceeded": "Публікацію оголошення скасовано",
+    "unpublishFailed": "Не вдалося скасувати публікацію оголошення.",
+    "publishSucceeded": "Оголошення опубліковано",
+    "publishFailed": "Не вдалося опублікувати оголошення.",
+    "deleteListing": "Видалити оголошення"
+  },
+  "ListingResultsGrid": {
+    "noListingsFound": "Оголошень не знайдено."
+  },
+  "Filters": {
+    "search": "Пошук...",
+    "noResults": "Нічого не знайдено",
+    "apply": "Застосувати",
+    "min": "Від",
+    "max": "До",
+    "any": "Будь-яка",
+    "deselectAll": "Зняти все",
+    "invalidNumber": "Введіть правильне число"
+  },
+  "Inventory": {
+    "browseTitle": "Перегляньте наш каталог",
+    "filters": "Фільтри",
+    "closeFilters": "Закрити фільтри",
+    "reset": "Скинути",
+    "applyFilters": "Застосувати фільтри",
+    "distance": "Відстань",
+    "zipCode": "Поштовий індекс",
+    "anyDistance": "Будь-яка відстань",
+    "locating": "Визначення місця...",
+    "usingYourLocation": "Використовується ваше місцезнаходження",
+    "useMyLocation": "Використати моє місцезнаходження",
+    "apply": "Застосувати",
+    "year": "Рік",
+    "make": "Марка",
+    "model": "Модель",
+    "selectMakeFirst": "Спочатку оберіть марку",
+    "price": "Ціна",
+    "mileage": "Пробіг",
+    "vehicleType": "Тип кузова",
+    "transmission": "Коробка передач",
+    "driveType": "Тип приводу",
+    "fuelType": "Тип палива",
+    "exteriorColor": "Колір кузова",
+    "interiorColor": "Колір салону",
+    "titleStatus": "Статус документів",
+    "seller": "Продавець",
+    "noGeolocationSupport": "Ваш браузер не підтримує геолокацію.",
+    "geolocationFailed": "Не вдалося визначити ваше місцезнаходження -- спробуйте ввести поштовий індекс.",
+    "within": "У межах {miles} миль",
+    "searching": "Пошук...",
+    "listingsFound": "{count, plural, one {# оголошення знайдено} few {# оголошення знайдено} many {# оголошень знайдено} other {# оголошення знайдено}}",
+    "largeCards": "Великі картки",
+    "compactCards": "Компактні картки",
+    "listView": "Список",
+    "noListingsMatchFilters": "Жодне оголошення не відповідає вашим фільтрам.",
+    "loading": "Завантаження...",
+    "loadMore": "Завантажити ще",
+    "sortOptions": {
+      "newest": "Спочатку нові",
+      "priceAsc": "Ціна: за зростанням",
+      "priceDesc": "Ціна: за спаданням",
+      "mileageAsc": "Пробіг: за зростанням",
+      "yearDesc": "Рік: спочатку нові",
+      "distance": "Найближчі"
+    }
+  },
+  "MakesPage": {
+    "metaTitle": "Огляд за маркою",
+    "metaDescription": "Переглядайте аварійні та відновлені автомобілі за маркою на OnlySalvage.",
+    "breadcrumbHome": "Головна",
+    "breadcrumbMakes": "Марки",
+    "title": "Огляд за маркою",
+    "subtitle": "Переглядайте оголошення за виробником",
+    "noMakesYet": "Поки немає доступних марок."
+  },
+  "MakePage": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbMakes": "Марки",
+    "title": "{make} на продаж",
+    "subtitle": "{count, plural, one {# оголошення доступне} few {# оголошення доступні} many {# оголошень доступні} other {# оголошення доступні}}",
+    "noListingsYet": "Наразі немає оголошень {make}.",
+    "viewAllInInventory": "{count, plural, one {Переглянути це оголошення в каталозі} few {Переглянути всі # оголошення в каталозі} many {Переглянути всі # оголошень в каталозі} other {Переглянути всі # оголошення в каталозі}}"
+  },
+  "MakeModelPage": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbMakes": "Марки",
+    "title": "{make} {model} на продаж",
+    "subtitle": "{count, plural, one {# оголошення доступне} few {# оголошення доступні} many {# оголошень доступні} other {# оголошення доступні}}",
+    "noListingsYet": "Наразі немає оголошень {make} {model}.",
+    "viewAllInInventory": "{count, plural, one {Переглянути це оголошення в каталозі} few {Переглянути всі # оголошення в каталозі} many {Переглянути всі # оголошень в каталозі} other {Переглянути всі # оголошення в каталозі}}"
+  },
+  "BodyStylesPage": {
+    "metaTitle": "Огляд за типом кузова",
+    "metaDescription": "Переглядайте аварійні та відновлені автомобілі за типом кузова на OnlySalvage.",
+    "breadcrumbHome": "Головна",
+    "breadcrumbBodyStyles": "Типи кузова",
+    "title": "Огляд за типом кузова",
+    "subtitle": "Переглядайте оголошення за типом кузова"
+  },
+  "BodyStylePage": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbBodyStyles": "Типи кузова",
+    "title": "{type} на продаж",
+    "subtitle": "{count, plural, one {# оголошення доступне} few {# оголошення доступні} many {# оголошень доступні} other {# оголошення доступні}}",
+    "noListingsYet": "Наразі немає оголошень типу {type}.",
+    "viewAllInInventory": "{count, plural, one {Переглянути це оголошення в каталозі} few {Переглянути всі # оголошення в каталозі} many {Переглянути всі # оголошень в каталозі} other {Переглянути всі # оголошення в каталозі}}"
+  },
+  "CitiesPage": {
+    "metaTitle": "Огляд за містами",
+    "metaDescription": "Переглядайте автомобілі після аварій та відновлені автомобілі на продаж за містами на OnlySalvage.",
+    "breadcrumbHome": "Головна",
+    "breadcrumbCities": "Міста",
+    "title": "Огляд за містами",
+    "subtitle": "Переглядайте оголошення в популярних містах",
+    "noCitiesYet": "Поки що немає доступних сторінок міст."
+  },
+  "CityPage": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbCities": "Міста",
+    "title": "Відновлені автомобілі на продаж у {city}, {state}",
+    "subtitle": "{count, plural, one {# оголошення доступне} few {# оголошення доступні} many {# оголошень доступні} other {# оголошення доступні}}",
+    "noListingsYet": "Наразі немає оголошень у {city}.",
+    "viewAllInInventory": "{count, plural, one {Переглянути це оголошення в каталозі} few {Переглянути всі # оголошення в каталозі} many {Переглянути всі # оголошень в каталозі} other {Переглянути всі # оголошення в каталозі}}"
+  },
+  "ListingDetail": {
+    "statusAvailable": "Доступно",
+    "statusPending": "Очікує",
+    "statusSold": "Продано",
+    "statusInactive": "Неактивне",
+    "actionsTitle": "Дії",
+    "verifiedSeller": "Перевірений продавець",
+    "listingNotFound": "Оголошення не знайдено",
+    "listingNotFoundDescription": "Ми не змогли знайти оголошення за адресою \"{slug}\".",
+    "breadcrumbHome": "Головна",
+    "breadcrumbInventory": "Каталог",
+    "printListing": "Друк",
+    "share": "Поділитися",
+    "linkCopied": "Посилання скопійовано",
+    "shareFailed": "Не вдалося поділитися оголошенням. Спробуйте ще раз.",
+    "vehicleDetails": "Деталі авто",
+    "year": "Рік",
+    "make": "Марка",
+    "model": "Модель",
+    "trim": "Комплектація",
+    "type": "Тип",
+    "vin": "VIN",
+    "mileage": "Пробіг",
+    "transmission": "Коробка передач",
+    "drivetrain": "Привід",
+    "fuelType": "Тип палива",
+    "engine": "Двигун",
+    "mpg": "Витрата палива",
+    "cityMpgLabel": "Витрата в місті",
+    "hwyMpgLabel": "Витрата на трасі",
+    "exterior": "Колір кузова",
+    "interior": "Колір салону",
+    "titleStatus": "Статус документів",
+    "owners": "Власники",
+    "posted": "Розміщено",
+    "viewCarfaxReport": "Переглянути звіт Carfax",
+    "viewAlignmentReport": "Переглянути звіт про розвал-сходження",
+    "viewInspectionReport": "Переглянути звіт огляду",
+    "beforeRepairPhotos": "Фото до ремонту",
+    "beforeRepairPhotosDescription": "Як виглядало пошкодження до усунення.",
+    "beforeRepairPhotoAlt": "Фото до ремонту",
+    "featuresAndOptions": "Комплектація та опції",
+    "description": "Опис",
+    "noDescriptionProvided": "Опис не надано.",
+    "videoTitle": "Відео",
+    "watchVideo": "Дивитися відео",
+    "editListing": "Редагувати оголошення",
+    "markPending": "Позначити як очікує",
+    "markSold": "Позначити як продано",
+    "markAvailable": "Позначити як доступне",
+    "callsReceived": "{count, plural, one {# дзвінок} few {# дзвінки} many {# дзвінків} other {# дзвінка}}",
+    "viewsCount": "{count, plural, one {# перегляд} few {# перегляди} many {# переглядів} other {# перегляду}}",
+    "seller": "Продавець",
+    "moreFromThisSeller": "Більше від цього продавця",
+    "similarListings": "Схожі оголошення",
+    "similarListingsSubtitle": "Інші оголошення, які можуть вас зацікавити",
+    "copyVin": "Копіювати VIN",
+    "vinCopied": "VIN скопійовано",
+    "vinCopyFailed": "Не вдалося скопіювати VIN",
+    "renewListing": "Оновити оголошення",
+    "renewAvailableInDays": "{count, plural, one {Ви зможете оновити оголошення через # день} few {Ви зможете оновити оголошення через # дні} many {Ви зможете оновити оголошення через # днів} other {Ви зможете оновити оголошення через # дня}}",
+    "renewalsExhausted": "Це оголошення вже використало всі оновлення. Видаліть його та опублікуйте знову, щоб оновити дату розміщення.",
+    "renewSucceeded": "Оголошення оновлено",
+    "renewFailed": "Не вдалося оновити оголошення",
+    "previousListing": "Назад",
+    "nextListing": "Далі",
+    "listingPosition": "{current} з {total}"
+  },
+  "ContactSellerCard": {
+    "title": "Зв'язатися з продавцем",
+    "loading": "Завантаження...",
+    "reveal": "Показати",
+    "maskedNumber": "+1 ({areaCode}) •••-••••",
+    "email": "Ел. пошта",
+    "loadError": "Не вдалося завантажити номер телефону продавця."
+  },
+  "ScheduleTestDrive": {
+    "scheduleTestDrive": "Тест-драйв",
+    "close": "Закрити",
+    "nameLabel": "Ваше ім'я",
+    "emailLabel": "Електронна пошта",
+    "emailPlaceholder": "you@example.com",
+    "phoneLabel": "Номер телефону",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "preferredDateTimeLabel": "Бажана дата й час",
+    "messageLabel": "Додаткове повідомлення",
+    "messagePlaceholder": "Щось іще, про що варто знати продавцю?",
+    "cancel": "Скасувати",
+    "submitting": "Надсилання...",
+    "submit": "Надіслати запит",
+    "submitFailed": "Щось пішло не так. Спробуйте ще раз.",
+    "successTitle": "Запит надіслано!",
+    "successDescription": "Продавець незабаром зв'яжеться з вами, щоб підтвердити тест-драйв.",
+    "errors": {
+      "nameRequired": "Введіть ваше ім'я.",
+      "contactRequired": "Введіть електронну пошту або номер телефону, щоб продавець міг з вами зв'язатися.",
+      "emailInvalid": "Введіть дійсну електронну адресу.",
+      "phoneInvalid": "Введіть повний 10-значний номер телефону.",
+      "dateRequired": "Виберіть бажану дату й час.",
+      "dateInPast": "Виберіть час у майбутньому."
+    }
+  },
+  "ListingStatusButton": {
+    "updateFailed": "Не вдалося оновити статус оголошення.",
+    "updateSucceeded": "Статус оголошення оновлено",
+    "updating": "Оновлення..."
+  },
+  "SellForm": {
+    "vehicleDetails": "Деталі авто",
+    "vin": "VIN",
+    "vinPlaceholder": "17 символів",
+    "decodeVin": "Розшифрувати VIN",
+    "decoding": "Розшифровка...",
+    "year": "Рік",
+    "make": "Марка",
+    "selectMake": "Виберіть марку",
+    "model": "Модель",
+    "selectMakeFirst": "Спочатку виберіть марку",
+    "loading": "Завантаження...",
+    "noModelsYet": "Для цієї марки поки немає моделей",
+    "selectModel": "Виберіть модель",
+    "trim": "Комплектація",
+    "trimPlaceholder": "Необов'язково, напр. EX",
+    "vehicleType": "Тип кузова",
+    "specs": "Характеристики",
+    "mileage": "Пробіг",
+    "optional": "Необов'язково",
+    "engine": "Двигун",
+    "enginePlaceholder": "Необов'язково, напр. 2.0L I4",
+    "transmission": "Коробка передач",
+    "drivetrain": "Привід",
+    "fuelType": "Тип палива",
+    "cityMpg": "Витрата в місті (миль/гал)",
+    "highwayMpg": "Витрата на трасі (миль/гал)",
+    "conditionAndPricing": "Стан і ціна",
+    "titleStatus": "Статус документів",
+    "owners": "Власники",
+    "exteriorColor": "Колір кузова",
+    "interiorColor": "Колір салону",
+    "askingPrice": "Ціна продажу ($)",
+    "retailPrice": "Роздрібна ціна ($)",
+    "includeWarranty": "На цей автомобіль поширюється моя гарантія дилера",
+    "description": "Опис",
+    "descriptionPlaceholder": "Опишіть стан, комплектацію та історію авто. Вкажіть, де сталося пошкодження і який ремонт було зроблено, напр. \"Лобове зіткнення, замінено бампер, капот і фари.\"",
+    "video": "Відео",
+    "videoDescription": "Додайте посилання на відео огляду або тест-драйву, якщо воно у вас є — посилання з YouTube, Vimeo та Google Drive вбудовуються автоматично.",
+    "videoUrl": "URL відео",
+    "videoUrlPlaceholder": "https://youtube.com/watch?v=...",
+    "featuresAndOptions": "Комплектація та опції",
+    "featuresAndOptionsDescription": "Виберіть опції, якими обладнане це авто.",
+    "photos": "Фотографії",
+    "uploadsLocked": "Вкажіть VIN вище, щоб розблокувати завантаження фото та документів.",
+    "creatingDraft": "Налаштовуємо ваше оголошення...",
+    "uploading": "Завантаження...",
+    "uploaded": "Завантажено",
+    "uploadFailed": "Помилка завантаження",
+    "clickToSelectPhotos": "Натисніть, щоб вибрати фото",
+    "dragToReorder": "Перетягуйте фото, щоб змінити порядок. Перше фото використовується як обкладинка.",
+    "cover": "Обкладинка",
+    "failed": "Помилка",
+    "removePhoto": "Видалити фото",
+    "previewAlt": "Фото {index}",
+    "beforeRepairPhotos": "Фото до ремонту",
+    "beforeRepairPhotosDescription": "Необов'язково. Покажіть, як виглядало пошкодження до усунення.",
+    "beforeRepairPreviewAlt": "Фото до ремонту {index}",
+    "documentsTitle": "Документи",
+    "carfaxReport": "Звіт Carfax",
+    "reportDescription": "Необов'язково. Покупці зможуть переглянути цей PDF на сторінці оголошення.",
+    "clickToSelectPdf": "Натисніть, щоб вибрати PDF",
+    "removeCarfaxReport": "Видалити звіт Carfax",
+    "alignmentReport": "Звіт про розвал-сходження",
+    "removeAlignmentReport": "Видалити звіт про розвал-сходження",
+    "inspectionReport": "Звіт огляду",
+    "removeInspectionReport": "Видалити звіт огляду",
+    "publishing": "Публікація...",
+    "publishListing": "Опублікувати",
+    "saveDraft": "Зберегти чернетку",
+    "savingDraft": "Збереження...",
+    "listedAt": "Розміщено за ${price}",
+    "listingLiveDescription": "Ваше оголошення вже доступне. Обробка фото може зайняти трохи часу.",
+    "listAnotherCar": "Розмістити ще одне авто",
+    "errors": {
+      "vinFormat": "VIN має містити 17 символів (без I, O чи Q).",
+      "yearInvalid": "Введіть дійсний рік.",
+      "makeRequired": "Виберіть марку.",
+      "modelRequired": "Виберіть модель.",
+      "priceRequired": "Введіть ціну продажу.",
+      "photosRequired": "Додайте принаймні одне фото перед публікацією.",
+      "vinRequiredFirst": "Спочатку введіть дійсний 17-символьний VIN.",
+      "vinTaken": "Цей VIN вже вказано в іншому активному оголошенні."
+    },
+    "toasts": {
+      "vinDecodeFailed": "Не вдалося розшифрувати цей VIN.",
+      "makeNotSupported": "Розпізнану марку \"{make}\" поки не підтримується -- виберіть її вручну.",
+      "modelNotListed": "Розпізнана модель \"{model}\" не вказана для {make} -- виберіть її вручну.",
+      "vinDecoded": "VIN успішно розшифровано.",
+      "fixErrors": "Будь ласка, виправте помилки нижче.",
+      "listingLive": "Ваше оголошення опубліковано!",
+      "vinTaken": "Цей VIN вже вказано в іншому активному оголошенні. <link>Переглянути оголошення</link>.",
+      "uploadsInProgress": "Зачекайте, поки фото завантажаться, перш ніж публікувати.",
+      "draftSaved": "Чернетку збережено. Ви можете завершити її пізніше у своєму профілі.",
+      "draftSaveFailed": "Не вдалося зберегти чернетку. Спробуйте ще раз."
+    }
+  },
+  "EditListingForm": {
+    "status": "Статус",
+    "statusAvailable": "Доступно",
+    "statusPending": "Очікує",
+    "statusSold": "Продано",
+    "published": "Опубліковано",
+    "publishedDescription": "Видно в пошуку та каталозі.",
+    "unpublishedNotice": "Неопубліковані оголошення приховані від покупців, але доступні за прямим посиланням.",
+    "draftNotice": "Це оголошення ще не опубліковано. Заповніть решту полів і натисніть «Опублікувати», коли будете готові, або збережіть прогрес і поверніться пізніше.",
+    "photoRemoved": "Фото видалено",
+    "photoRemoveFailed": "Не вдалося видалити фото",
+    "fixErrorsAndRetry": "Будь ласка, виправте помилки нижче і спробуйте ще раз.",
+    "listingUpdated": "Оголошення оновлено",
+    "clickToAddMorePhotos": "Натисніть, щоб додати більше фото",
+    "dragToReorderNewPhotos": "Перетягуйте, щоб змінити порядок нових фото (вони будуть додані після наявних).",
+    "viewCurrentReport": "Переглянути поточний звіт",
+    "replace": "Замінити",
+    "saving": "Збереження...",
+    "saveChanges": "Зберегти зміни"
+  },
+  "Auth": {
+    "appTagline1": "Простий майданчик для купівлі та продажу авто. Швидко, надійно і прозоро. На OnlySalvage ви можете оцінювати продавців і покупців.",
+    "signUpTitle": "Реєстрація"
+  },
+  "GoogleSignIn": {
+    "signInFailed": "Не вдалося увійти через Google. Спробуйте ще раз."
+  },
+  "CompleteProfile": {
+    "title": "Завершіть налаштування профілю",
+    "description": "Нам потрібне лише ваше місцезнаходження, щоб покупці поруч могли знаходити ваші оголошення, а ви могли шукати за відстанню.",
+    "city": "Місто",
+    "state": "Штат",
+    "zipCode": "Поштовий індекс",
+    "select": "Виберіть",
+    "submit": "Зберегти і продовжити",
+    "saving": "Збереження...",
+    "errors": {
+      "cityRequired": "Місто обов'язкове.",
+      "stateRequired": "Виберіть штат.",
+      "zipInvalid": "Введіть дійсний 5-значний поштовий індекс.",
+      "updateFailed": "Щось пішло не так. Спробуйте ще раз."
+    }
+  },
+  "LoginForm": {
+    "sellRedirectToast": "Щоб продавати авто, потрібен акаунт -- увійдіть або зареєструйтеся, щоб продовжити.",
+    "invalidCredentials": "Невірні облікові дані",
+    "logIn": "Увійти",
+    "username": "Ім'я користувача:",
+    "password": "Пароль:",
+    "forgotPassword": "Забули пароль?",
+    "orDivider": "або",
+    "signUp": "Реєстрація"
+  },
+  "SignUpForm": {
+    "createAccount": "Створіть свій акаунт",
+    "orDivider": "або зареєструйтеся через пошту",
+    "username": "Ім'я користувача",
+    "email": "Електронна пошта",
+    "password": "Пароль",
+    "confirmPassword": "Підтвердіть пароль",
+    "phoneNumber": "Номер телефону",
+    "optional": "Необов'язково",
+    "city": "Місто",
+    "state": "Штат",
+    "select": "Виберіть",
+    "zipCode": "Поштовий індекс",
+    "dealerCheckbox": "Я реєструюся як дилер/компанія",
+    "businessName": "Назва компанії",
+    "streetAddress": "Вулиця та номер будинку",
+    "website": "Вебсайт",
+    "creatingAccount": "Створення акаунту...",
+    "signUp": "Зареєструватися",
+    "alreadyHaveAccount": "Вже маєте акаунт?",
+    "logIn": "Увійти",
+    "errors": {
+      "usernameRequired": "Ім'я користувача обов'язкове.",
+      "emailInvalid": "Введіть дійсну електронну адресу.",
+      "passwordTooShort": "Пароль має містити щонайменше 8 символів.",
+      "passwordMismatch": "Паролі не збігаються.",
+      "cityRequired": "Місто обов'язкове.",
+      "stateRequired": "Виберіть штат.",
+      "zipInvalid": "Введіть дійсний 5-значний поштовий індекс.",
+      "phoneInvalid": "Введіть повний 10-значний номер телефону.",
+      "businessNameRequired": "Назва компанії обов'язкова для дилерів.",
+      "streetAddressRequired": "Адреса обов'язкова для дилерів.",
+      "phoneNotVerified": "Спочатку підтвердіть номер телефону."
+    },
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "ForgotPasswordForm": {
+    "checkYourEmail": "Перевірте свою пошту",
+    "checkYourEmailDescription": "Якщо акаунт з таким іменем користувача чи поштою існує, ми надіслали посилання для скидання пароля.",
+    "backToLogin": "Повернутися до входу",
+    "title": "Забули пароль?",
+    "description": "Введіть ім'я користувача або пошту, і ми надішлемо посилання для скидання пароля.",
+    "usernameOrEmail": "Ім'я користувача або пошта",
+    "sending": "Надсилання...",
+    "sendResetLink": "Надіслати посилання"
+  },
+  "ResetPasswordForm": {
+    "invalidLinkTitle": "Недійсне посилання для скидання",
+    "invalidLinkDescription": "Це посилання для скидання пароля відсутнє або пошкоджене. Запросіть нове нижче.",
+    "requestNewLink": "Запросити нове посилання",
+    "passwordUpdatedTitle": "Пароль оновлено",
+    "passwordUpdatedDescription": "Тепер ви можете увійти з новим паролем.",
+    "goToLogin": "Перейти до входу",
+    "title": "Встановіть новий пароль",
+    "newPassword": "Новий пароль",
+    "confirmPassword": "Підтвердіть пароль",
+    "saving": "Збереження...",
+    "resetPassword": "Скинути пароль",
+    "errors": {
+      "passwordTooShort": "Пароль має містити щонайменше 8 символів.",
+      "passwordMismatch": "Паролі не збігаються.",
+      "linkInvalidOrExpired": "Це посилання недійсне або термін його дії закінчився."
+    }
+  },
+  "RequestVerification": {
+    "requestVerification": "Запросити верифікацію акаунта",
+    "pending": "Перевірка на розгляді",
+    "previouslyDeclined": "Ваш попередній запит було відхилено.",
+    "submitting": "Надсилання...",
+    "requestSucceeded": "Запит на перевірку надіслано",
+    "requestFailed": "Щось пішло не так. Спробуйте ще раз."
+  },
+  "ApiAccess": {
+    "title": "Доступ до API",
+    "description": "Керуйте своїми оголошеннями програмно за допомогою персонального API-токена.",
+    "viewDocs": "Переглянути документацію API",
+    "noteLabel": "Для чого ви будете його використовувати? (необов'язково)",
+    "notePlaceholder": "напр., синхронізація каталогу з нашою системою керування дилерським центром",
+    "verifiedHint": "Ви перевірений продавець, тож отримаєте доступ одразу.",
+    "requestAccess": "Запросити доступ до API",
+    "submitting": "Надсилання...",
+    "requestSucceeded": "Запит на доступ до API надіслано -- ми розглянемо його найближчим часом.",
+    "requestApprovedInstantly": "Вас схвалено! Згенеруйте токен нижче.",
+    "requestFailed": "Щось пішло не так. Спробуйте ще раз.",
+    "requestAgain": "Запросити ще раз",
+    "pendingReview": "Ваш запит перебуває на розгляді.",
+    "denied": "Ваш запит було відхилено.",
+    "revoked": "Ваш доступ до API було відкликано.",
+    "approved": "Схвалено -- згенеруйте токен, щоб почати користуватися API.",
+    "generateToken": "Згенерувати токен",
+    "generateSucceeded": "Токен згенеровано",
+    "generateFailed": "Не вдалося згенерувати токен. Спробуйте ще раз.",
+    "tokenShownOnce": "Скопіюйте цей токен зараз -- побачити його ще раз не вийде.",
+    "copy": "Копіювати",
+    "tokenCopied": "Токен скопійовано",
+    "tokenCopyFailed": "Не вдалося скопіювати токен",
+    "regenerate": "Перегенерувати",
+    "revoke": "Відкликати",
+    "revokeSucceeded": "Токен API відкликано",
+    "revokeFailed": "Не вдалося відкликати токен. Спробуйте ще раз.",
+    "lastUsed": "Востаннє використано {date}",
+    "cancel": "Скасувати",
+    "confirmRegenerateTitle": "Перегенерувати токен?",
+    "confirmRegenerateDescription": "Ваш поточний токен одразу перестане працювати. Усі інтеграції, що його використовують, потрібно буде оновити новим токеном.",
+    "confirmRevokeTitle": "Відкликати доступ до API?",
+    "confirmRevokeDescription": "Ваш токен одразу перестане працювати. Щоб отримати новий, доведеться запросити доступ ще раз."
+  },
+  "Profile": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbProfile": "Профіль",
+    "userNotFoundTitle": "Користувача не знайдено",
+    "userNotFoundDescription": "Ми не змогли знайти профіль \"{username}\".",
+    "dealerBadge": "Дилер",
+    "verifiedBadge": "Перевірений продавець",
+    "financingBadge": "Фінансування від дилера",
+    "memberSince": "На сайті з {date}",
+    "carsSold": "{count, plural, one {# авто продано} few {# авто продано} many {# авто продано} other {# авто продано}}",
+    "navProfile": "Профіль",
+    "navListings": "Оголошення",
+    "navWarranty": "Гарантія",
+    "navDrafts": "Чернетки",
+    "navWatchlist": "Обране",
+    "aboutTitle": "Про мене",
+    "noDescriptionYet": "Опису поки немає.",
+    "contactInfoTitle": "Контактна інформація",
+    "warrantyTitle": "Інформація про гарантію",
+    "visibleToEveryone": "(видно всім)",
+    "onlyVisibleToYou": "(видно лише вам)",
+    "noContactInfo": "Контактну інформацію не надано.",
+    "reviewsTitle": "Відгуки",
+    "noReviewsYet": "Відгуків поки немає.",
+    "listingsTitle": "Оголошення",
+    "sellACar": "Продати авто",
+    "bulkUpload": "Масове завантаження",
+    "noListingsYet": "Оголошень поки немає.",
+    "draftsTitle": "Чернетки",
+    "draftsEmptyMessage": "У вас немає збережених чернеток.",
+    "draftStarted": "Розпочато {date}",
+    "continueDraft": "Продовжити",
+    "deleteDraft": "Видалити чернетку",
+    "watchlistTitle": "Обране",
+    "watchlistEmptyMessage": "Ви ще не вподобали жодного оголошення. Перегляньте каталог і натисніть на сердечко біля авто, яке вам сподобалось.",
+    "settings": "Налаштування"
+  },
+  "Settings": {
+    "title": "Налаштування",
+    "breadcrumbHome": "Головна",
+    "breadcrumbSettings": "Налаштування",
+    "viewPublicProfile": "Переглянути публічний профіль",
+    "navProfile": "Профіль",
+    "navSubscriptions": "Підписки",
+    "navWarranty": "Гарантія",
+    "navSecurity": "Безпека",
+    "navApi": "Доступ до API",
+    "subscriptionsTitle": "Підписки",
+    "subscriptionsDescription": "Підписки поки недоступні -- тут з'являться сповіщення про збережені пошуки та плани просування для продавців, коли їх реалізують.",
+    "warrantyTitle": "Гарантія",
+    "warrantyDescription": "Налаштуйте гарантію дилера та виберіть, які з ваших оголошень її включають.",
+    "warrantyListingsTitle": "Ваші оголошення",
+    "warrantyNoListings": "У вас поки немає оголошень.",
+    "warrantyIncluded": "Гарантію включено",
+    "warrantyUpdateFailed": "Не вдалося оновити статус гарантії. Спробуйте ще раз.",
+    "securityTitle": "Безпека",
+    "usernameChangeQuestion": "Хочете змінити ім'я користувача?",
+    "contactSupport": "Зв'яжіться з підтримкою",
+    "usernameChangeNotSupported": "-- ми поки не підтримуємо пряму зміну імені користувача.",
+    "dangerZone": "Небезпечна зона"
+  },
+  "SubscriptionTiers": {
+    "mostPopular": "Найпопулярніший",
+    "comingSoon": "Скоро",
+    "free": {
+      "name": "Безкоштовно",
+      "price": "$0",
+      "priceSuffix": "",
+      "tagline": "Для приватних продавців, які продають час від часу.",
+      "features": {
+        "0": "До 3 активних оголошень",
+        "1": "Стандартна видимість у пошуку",
+        "2": "Повідомлення від покупців і відстеження дзвінків",
+        "3": "Базовий профіль продавця"
+      }
+    },
+    "plus": {
+      "name": "Plus",
+      "price": "$19",
+      "priceSuffix": "/міс",
+      "tagline": "Для продавців, яким потрібно більше уваги до оголошень.",
+      "features": {
+        "0": "Усе з тарифу «Безкоштовно»",
+        "1": "Пріоритетне розміщення в результатах пошуку",
+        "2": "Ротація на головній сторінці",
+        "3": "Необмежена кількість активних оголошень",
+        "4": "Пріоритетна підтримка"
+      }
+    },
+    "dealerPro": {
+      "name": "Dealer Pro",
+      "price": "$49",
+      "priceSuffix": "/міс",
+      "tagline": "Для дилерів з великим обсягом продажів.",
+      "features": {
+        "0": "Усе з тарифу Plus",
+        "1": "Пріоритетний розгляд значка перевіреного дилера",
+        "2": "Аналітика ефективності оголошень",
+        "3": "Масове завантаження фото та VIN",
+        "4": "Персональний менеджер",
+        "5": "Ранній доступ до нових функцій"
+      }
+    }
+  },
+  "EditProfileModal": {
+    "editProfile": "Редагувати профіль",
+    "close": "Закрити",
+    "changeProfilePicture": "Змінити фото профілю",
+    "email": "Електронна пошта",
+    "emailPlaceholder": "you@example.com",
+    "emailRequired": "Електронна пошта обов'язкова.",
+    "emailInvalid": "Введіть дійсну електронну адресу.",
+    "businessName": "Назва компанії",
+    "optional": "Необов'язково",
+    "businessNameLockedPlaceholder": "Позначте \"Продаю як дилер/компанія\" нижче, щоб встановити це",
+    "businessNameRequired": "Назва компанії обов'язкова для дилерів.",
+    "streetAddressRequired": "Адреса обов'язкова для дилерів.",
+    "phoneNumber": "Номер телефону",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "phoneInvalid": "Введіть повний 10-значний номер телефону.",
+    "website": "Вебсайт",
+    "websitePlaceholder": "https://example.com",
+    "streetAddress": "Вулиця та номер будинку",
+    "streetAddressPlaceholder": "вул. Головна, 123",
+    "editField": "Редагувати",
+    "city": "Місто",
+    "state": "Штат",
+    "zipCode": "Поштовий індекс",
+    "description": "Опис",
+    "descriptionPlaceholder": "Розкажіть покупцям трохи про себе чи свій бізнес",
+    "dealerCheckbox": "Я продаю як дилер/компанія",
+    "financingCheckbox": "Я пропоную фінансування від дилера",
+    "warrantyCheckbox": "Я надаю гарантію на автомобілі",
+    "warrantyDuration": "Термін гарантії",
+    "warrantyDurationPlaceholder": "напр. 12 місяців / 12 000 миль",
+    "warrantyDurationRequired": "Вкажіть термін гарантії.",
+    "warrantyDescription": "Умови гарантії",
+    "warrantyDescriptionPlaceholder": "Опишіть, що покриває гарантія",
+    "showEmailCheckbox": "Показувати мою пошту в публічному профілі",
+    "cancel": "Скасувати",
+    "saving": "Збереження...",
+    "saveChanges": "Зберегти зміни",
+    "updateFailed": "Не вдалося оновити профіль. Спробуйте ще раз.",
+    "updateSucceeded": "Профіль оновлено",
+    "phoneNotVerified": "Будь ласка, підтвердіть новий номер телефону перед збереженням."
+  },
+  "DeleteAccountButton": {
+    "deleteAccount": "Видалити акаунт",
+    "close": "Закрити",
+    "confirmTitle": "Видалити ваш акаунт?",
+    "confirmDescription": "Це деактивує ваш акаунт і вийде з нього. Ваші оголошення, обране та профіль більше не будуть видимі іншим. Це не можна скасувати в налаштуваннях акаунту -- зв'яжіться з підтримкою, якщо передумаєте.",
+    "cancel": "Скасувати",
+    "deleting": "Видалення...",
+    "deleteMyAccount": "Видалити мій акаунт",
+    "deleteFailed": "Не вдалося видалити акаунт. Спробуйте ще раз.",
+    "deleteSucceeded": "Ваш акаунт видалено."
+  },
+  "LeaveReviewModal": {
+    "leaveReview": "Залишити відгук",
+    "close": "Закрити",
+    "ratingLabel": "Оцінка",
+    "starAriaLabel": "{value, plural, one {# зірка} few {# зірки} many {# зірок} other {# зірки}}",
+    "ratingRequired": "Будь ласка, виберіть оцінку в зірках.",
+    "commentLabel": "Коментар (необов'язково)",
+    "commentPlaceholder": "Поділіться деталями свого досвіду з цим продавцем",
+    "cancel": "Скасувати",
+    "submitting": "Надсилання...",
+    "submitReview": "Надіслати відгук",
+    "submitFailed": "Не вдалося надіслати відгук. Спробуйте ще раз.",
+    "submitSucceeded": "Відгук надіслано"
+  },
+  "ReportReasons": {
+    "FAKE_VIN": "VIN не відповідає автомобілю",
+    "DUP_VIN": "Цей VIN вже вказано в іншому оголошенні",
+    "MISLEADING": "Інформація в оголошенні вводить в оману або неправдива",
+    "SOLD": "Автомобіль вже продано в іншому місці",
+    "SCAM": "Підозра на шахрайство",
+    "HARASSMENT": "Домагання або образлива поведінка",
+    "FAKE_PROFILE": "Фейковий профіль або видавання себе за іншого",
+    "INAPPROPRIATE": "Неприйнятний контент",
+    "SPAM": "Спам",
+    "OTHER": "Інше"
+  },
+  "CompareButton": {
+    "addToCompare": "Додати до порівняння",
+    "removeFromCompare": "Прибрати з порівняння",
+    "added": "Додано до порівняння",
+    "removed": "Видалено з порівняння",
+    "viewCompare": "Переглянути порівняння"
+  },
+  "ComparePage": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbCompare": "Порівняння",
+    "title": "Порівняння автомобілів",
+    "subtitle": "Порівняйте до 4 автомобілів одночасно.",
+    "emptyTitle": "Поки що нічого порівнювати",
+    "emptyDescription": "Додайте кілька автомобілів для порівняння з каталогу або сторінки оголошення, а потім поверніться сюди.",
+    "browseInventory": "Переглянути каталог",
+    "comparingCount": "{count, plural, one {Порівнюється # автомобіль} few {Порівнюється # автомобілі} many {Порівнюється # автомобілів} other {Порівнюється # автомобіля}}",
+    "clearAll": "Очистити все",
+    "dragToReorder": "Перетягніть автомобіль, щоб змінити порядок порівняння.",
+    "remove": "Видалити",
+    "specs": {
+      "year": "Рік",
+      "mileage": "Пробіг",
+      "transmission": "Коробка передач",
+      "drive": "Привід",
+      "fuelType": "Тип палива",
+      "engine": "Двигун",
+      "cityMpg": "Витрата в місті (миль/галон)",
+      "hwyMpg": "Витрата на трасі (миль/галон)",
+      "exteriorColor": "Колір кузова",
+      "interiorColor": "Колір салону",
+      "titleStatus": "Статус документа",
+      "owners": "Власники",
+      "warranty": "Гарантія",
+      "vin": "VIN",
+      "seller": "Продавець",
+      "features": "Особливості"
+    }
+  },
+  "ReportListingModal": {
+    "report": "Поскаржитися",
+    "title": "Поскаржитися на оголошення",
+    "close": "Закрити",
+    "reasonLabel": "Причина",
+    "reasonPlaceholder": "Виберіть причину",
+    "reasonRequired": "Будь ласка, виберіть причину.",
+    "detailsLabel": "Додаткові деталі (необов'язково)",
+    "detailsPlaceholder": "Все, що допоможе нам перевірити це оголошення",
+    "cancel": "Скасувати",
+    "submitting": "Надсилання...",
+    "submitReport": "Надіслати скаргу",
+    "submitFailed": "Не вдалося надіслати скаргу. Спробуйте ще раз.",
+    "submitSucceeded": "Дякуємо, що повідомили. Наша команда перевірить це оголошення.",
+    "done": "Готово"
+  },
+  "ReportSellerModal": {
+    "report": "Поскаржитися",
+    "title": "Поскаржитися на продавця",
+    "close": "Закрити",
+    "reasonLabel": "Причина",
+    "reasonPlaceholder": "Виберіть причину",
+    "reasonRequired": "Будь ласка, виберіть причину.",
+    "detailsLabel": "Додаткові деталі (необов'язково)",
+    "detailsPlaceholder": "Все, що допоможе нам перевірити цей акаунт",
+    "cancel": "Скасувати",
+    "submitting": "Надсилання...",
+    "submitReport": "Надіслати скаргу",
+    "submitFailed": "Не вдалося надіслати скаргу. Спробуйте ще раз.",
+    "submitSucceeded": "Дякуємо, що повідомили. Наша команда перевірить цей акаунт.",
+    "done": "Готово"
+  },
+  "ChangePasswordForm": {
+    "currentPassword": "Поточний пароль",
+    "newPassword": "Новий пароль",
+    "confirmNewPassword": "Підтвердіть новий пароль",
+    "updating": "Оновлення...",
+    "updatePassword": "Оновити пароль",
+    "updateSucceeded": "Пароль оновлено",
+    "errors": {
+      "newPasswordTooShort": "Новий пароль має містити щонайменше 8 символів.",
+      "passwordMismatch": "Новий пароль і підтвердження не збігаються.",
+      "updateFailed": "Не вдалося оновити пароль."
+    }
+  },
+  "Feedback": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbFeedback": "Зворотний зв'язок",
+    "title": "Зворотний зв'язок",
+    "subtitle": "Знайшли помилку чи маєте ідею, як зробити OnlySalvage кращим? Розкажіть нам про це нижче.",
+    "categoryLabel": "Категорія",
+    "subjectLabel": "Тема",
+    "subjectPlaceholder": "Короткий опис",
+    "subjectRequired": "Тема є обов'язковою.",
+    "messageLabel": "Повідомлення",
+    "messagePlaceholder": "Опишіть помилку або вашу пропозицію якомога детальніше.",
+    "messageRequired": "Повідомлення є обов'язковим.",
+    "contextLabel": "Де це сталося? (необов'язково)",
+    "contextPlaceholder": "напр., сторінка оголошення, форма продажу, мобільний застосунок",
+    "emailLabel": "Ваша пошта (необов'язково)",
+    "emailPlaceholder": "Щоб ми могли зв'язатися з вами, якщо знадобиться",
+    "submit": "Надіслати відгук",
+    "submitting": "Надсилання...",
+    "submitFailed": "Щось пішло не так. Спробуйте ще раз.",
+    "submitSucceededTitle": "Дякуємо за відгук!",
+    "submitSucceededDescription": "Ми отримали ваше повідомлення і розглянемо його. Якщо ви залишили пошту, ми зв'яжемося з вами, якщо знадобляться додаткові деталі.",
+    "submitAnother": "Надіслати ще один"
+  },
+  "FeedbackCategories": {
+    "BUG": "Повідомлення про помилку",
+    "SUG": "Пропозиція",
+    "OTH": "Інше"
+  },
+  "ContactForm": {
+    "nameLabel": "Ім'я (необов'язково)",
+    "namePlaceholder": "Ваше ім'я",
+    "emailLabel": "Ел. пошта",
+    "emailPlaceholder": "Щоб ми могли відповісти",
+    "emailRequired": "Вкажіть ел. пошту, щоб ми могли з вами зв'язатися.",
+    "messageLabel": "Повідомлення",
+    "messagePlaceholder": "Чим ми можемо допомогти?",
+    "messageRequired": "Повідомлення обов'язкове.",
+    "submit": "Надіслати повідомлення",
+    "submitting": "Надсилання...",
+    "submitFailed": "Щось пішло не так. Спробуйте ще раз.",
+    "submitSucceeded": "Повідомлення надіслано -- ми скоро з вами зв'яжемося.",
+    "submitAnother": "Надіслати ще одне"
+  },
+  "Support": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbSupport": "Підтримка",
+    "title": "Підтримка",
+    "subtitle": "Ми тут, щоб допомогти, 24/7. Перегляньте поширені запитання нижче або зв'яжіться з нами напряму.",
+    "browseGuide": "Переглянути повний гід",
+    "browseGuideTitle": "Хочете дізнатися більше?",
+    "browseGuideDescription": "Перегляньте повний гід по сайту з покроковими інструкціями щодо купівлі, продажу та всього іншого.",
+    "viewInGuide": "Переглянути в гіді",
+    "buyingTitle": "Купівля",
+    "sellingTitle": "Продаж",
+    "accountTitle": "Акаунт",
+    "stillNeedHelpTitle": "Потрібна ще допомога?",
+    "stillNeedHelpDescription": "Надішліть нам повідомлення, і ми відповімо якнайшвидше.",
+    "availability": "Доступні 24/7 -- відповідаємо на більшість повідомлень протягом дня.",
+    "feedbackTitle": "Маєте відгук?",
+    "feedbackDescription": "Знайшли помилку чи маєте ідею для нової функції? Розкажіть нам.",
+    "feedbackLink": "Запропонувати функцію або повідомити про помилку",
+    "buyingFaqs": [
+      {
+        "question": "Як зв'язатися з продавцем?",
+        "answer": "Відкрийте оголошення і скористайтеся карткою \"Зв'язатися з продавцем\". Ви можете розкрити номер телефону одним кліком або переглянути профіль, щоб побачити інші оголошення та відгуки."
+      },
+      {
+        "question": "Як зберегти оголошення, щоб переглянути пізніше?",
+        "answer": "Натисніть на іконку сердечка на будь-якій картці оголошення. Якщо ви увійшли в акаунт, воно збережеться в Обраному вашого акаунту, щоб ви могли знайти його з будь-якого пристрою. Якщо ви не увійшли, воно збережеться в цьому браузері."
+      },
+      {
+        "question": "Що означає значок \"Рекомендовано\"?",
+        "answer": "Рекомендовані оголошення -- це авто, які адміністратор вирішив виділити на головній сторінці на обмежений час. Це не впливає на ціну чи стан оголошення -- лише на його видимість."
+      },
+      {
+        "question": "Чи можна довіряти рейтингу продавця?",
+        "answer": "Рейтинги продавців залишають реальні покупці зі свого акаунту, по одному відгуку на покупця на продавця, і продавці не можуть оцінювати самі себе."
+      }
+    ],
+    "sellingFaqs": [
+      {
+        "question": "Як розмістити своє авто на продаж?",
+        "answer": "Перейдіть до розділу \"Продати\" та введіть свій VIN -- ми автоматично визначимо рік, марку та модель вашого авто. Додайте фото, встановіть ціну і опублікуйте."
+      },
+      {
+        "question": "Як редагувати оголошення або позначити його проданим?",
+        "answer": "Відкрийте своє оголошення і натисніть \"Редагувати оголошення\". Там ви зможете оновити деталі, змінити порядок фото або змінити статус на Очікує чи Продано."
+      },
+      {
+        "question": "Чи бачить всі мій номер телефону?",
+        "answer": "Ні. За замовчуванням показується лише код міста -- повний номер залишається прихованим, поки покупець не вирішить його розкрити."
+      },
+      {
+        "question": "Яка різниця між приватним продавцем і дилером?",
+        "answer": "Ви можете позначити свій акаунт як дилерський/бізнесовий у своєму профілі. Дилерські акаунти показують значок \"Дилер\" на своїх оголошеннях і в профілі."
+      }
+    ],
+    "accountFaqs": [
+      {
+        "question": "Я забув пароль. Що робити?",
+        "answer": "Перейдіть на сторінку входу та натисніть \"Забули пароль?\" -- ми надішлемо вам посилання для скидання на пошту."
+      },
+      {
+        "question": "Чи можу я залишити відгук про продавця?",
+        "answer": "Так, з його сторінки профілю. Вам потрібно увійти в акаунт, і ви не можете оцінити власний профіль."
+      },
+      {
+        "question": "Як оновити свій профіль чи контактну інформацію?",
+        "answer": "Відвідайте сторінку свого профілю і натисніть \"Редагувати профіль\", щоб оновити назву компанії, телефон, місцезнаходження, опис і фото."
+      }
+    ]
+  },
+  "Sellers": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbSellers": "Продавці",
+    "title": "Продавці",
+    "subtitle": "Перегляньте всіх, хто зараз продає на OnlySalvage.",
+    "noSellersMatch": "Жодного продавця не знайдено за запитом \"{search}\".",
+    "noSellersYet": "Продавців поки немає."
+  },
+  "SellerCard": {
+    "verifiedBadge": "Перевірено",
+    "dealerBadge": "Дилер",
+    "financingBadge": "Фінансування від дилера",
+    "noReviewsYet": "Відгуків поки немає",
+    "listingsCount": "{count, plural, one {# оголошення} few {# оголошення} many {# оголошень} other {# оголошення}}",
+    "openInNewTab": "Відкрити в новій вкладці",
+    "share": "Копіювати посилання",
+    "linkCopied": "Посилання скопійовано в буфер обміну",
+    "shareFailed": "Не вдалося скопіювати посилання. Спробуйте ще раз.",
+    "editProfile": "Редагувати профіль",
+    "leaveReview": "Залишити відгук",
+    "reportSeller": "Поскаржитися на продавця",
+    "callSeller": "Подзвонити продавцю",
+    "callFailed": "Не вдалося отримати номер телефону продавця.",
+    "emailSeller": "Написати продавцю",
+    "copyAddress": "Копіювати адресу",
+    "addressCopied": "Адресу скопійовано в буфер обміну",
+    "addressCopyFailed": "Не вдалося скопіювати адресу. Спробуйте ще раз."
+  },
+  "SellerSearchBar": {
+    "searchPlaceholder": "Пошук продавців за іменем...",
+    "search": "Пошук"
+  },
+  "Liked": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbWatchlist": "Обране",
+    "title": "Ваше обране",
+    "emptyMessage": "Ви ще не вподобали жодного оголошення. Перегляньте каталог і натисніть на сердечко біля авто, яке вам сподобалось."
+  },
+  "LocalWatchlist": {
+    "emptyMessage": "Ви ще не вподобали жодного оголошення. Перегляньте каталог і натисніть на сердечко біля авто, яке вам сподобалось. Увійдіть в акаунт, щоб зберігати обране на всіх пристроях."
+  },
+  "Sell": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbSell": "Продати",
+    "title": "Продайте своє авто",
+    "subtitle": "Розмістіть своє авто на продаж на OnlySalvage безкоштовно",
+    "bulkUploadLink": "Масове завантаження (CSV)"
+  },
+  "SellBulk": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbSell": "Продати",
+    "breadcrumbBulk": "Масове завантаження",
+    "title": "Масове завантаження оголошень",
+    "subtitle": "Додайте кілька автомобілів одразу, завантаживши CSV-файл. Кожен рядок стає чернеткою, яку можна переглянути й опублікувати окремо.",
+    "uploadTitle": "Імпорт з CSV",
+    "uploadDescription": "Завантажте шаблон, заповніть по одному рядку на кожен автомобіль, а потім завантажте його тут.",
+    "downloadTemplate": "Завантажити шаблон",
+    "templateDownloadFailed": "Не вдалося завантажити шаблон. Спробуйте ще раз.",
+    "importButton": "Імпортувати оголошення",
+    "importing": "Імпортуємо...",
+    "importFailed": "Не вдалося імпортувати файл. Спробуйте ще раз.",
+    "importSummary": "Імпортовано {imported} з {total} оголошень.",
+    "importSummaryNone": "Жоден з {total} рядків не вдалося імпортувати -- див. помилки нижче.",
+    "colRow": "Рядок",
+    "colVin": "VIN",
+    "colStatus": "Статус",
+    "colDetails": "Деталі",
+    "imported": "Імпортовано",
+    "failed": "Помилка",
+    "reviewDraft": "Переглянути чернетку →",
+    "goToDrafts": "Перейти до чернеток"
+  },
+  "EditListingPage": {
+    "listingNotFoundTitle": "Оголошення не знайдено",
+    "listingNotFoundDescription": "Ми не змогли знайти оголошення за адресою \"{slug}\".",
+    "breadcrumbHome": "Головна",
+    "breadcrumbInventory": "Каталог",
+    "breadcrumbEdit": "Редагувати",
+    "title": "Редагувати оголошення"
+  },
+  "NearYouSection": {
+    "geolocationNotSupported": "Ваш браузер не підтримує геолокацію.",
+    "geolocationFailed": "Не вдалося визначити ваше місцезнаходження -- перевірте дозвіл на геолокацію в браузері і спробуйте ще раз.",
+    "title": "Поруч із вами",
+    "subtitle": "Оголошення найближче до вашого місцезнаходження",
+    "findCarsNearYou": "Знайдіть авто поруч із вами",
+    "emptyNearby": "Оголошень у радіусі 50 миль поки немає -- перевірте пізніше або перегляньте весь каталог.",
+    "promptText": "Спершу перегляньте оголошення найближче до вашого місцезнаходження.",
+    "showNearbyListings": "Показати оголошення поруч"
+  },
+  "ListingLikeButton": {
+    "likesCount": "{count, plural, one {# лайк} few {# лайки} many {# лайків} other {# лайка}}"
+  },
+  "PhotoGallery": {
+    "viewFullscreen": "Переглянути фото на весь екран",
+    "previousPhoto": "Попереднє фото",
+    "nextPhoto": "Наступне фото",
+    "closeFullscreen": "Закрити повноекранний режим",
+    "zoomOut": "Зменшити",
+    "zoomIn": "Збільшити",
+    "viewPhotoNumber": "Переглянути фото {index}"
+  },
+  "ImageCropModal": {
+    "title": "Обріжте своє фото",
+    "close": "Закрити",
+    "description": "Перетягніть, щоб змістити, прокрутіть або зведіть пальці, щоб масштабувати. Фото профілю найкраще виглядає квадратним.",
+    "zoom": "Масштаб",
+    "cancel": "Скасувати",
+    "applying": "Застосування...",
+    "usePhoto": "Використати фото"
+  },
+  "BackToTopButton": {
+    "backToTop": "Нагору"
+  },
+  "LikeButton": {
+    "like": "Вподобати"
+  },
+  "Price": {
+    "contactForPrice": "Ціна за запитом"
+  },
+  "PrivacyPolicy": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbPrivacy": "Політика конфіденційності",
+    "title": "Політика конфіденційності",
+    "lastUpdated": "Останнє оновлення: липень 2026",
+    "intro": "OnlySalvage (\"ми\", \"нас\" або \"наш\") керує майданчиком OnlySalvage, де приватні продавці та дилери розміщують аварійні та відновлені авто на продаж. Ця Політика конфіденційності пояснює, яку інформацію ми збираємо, як ми її використовуємо та який вибір у вас є.",
+    "sections": [
+      {
+        "heading": "Інформація, яку ми збираємо",
+        "body": "Коли ви створюєте акаунт, ми збираємо ваше ім'я користувача, електронну пошту, номер телефону (необов'язково) та місцезнаходження (місто, штат, поштовий індекс), щоб покупці могли знаходити оголошення поруч. Коли ви розміщуєте авто, ми збираємо дані про авто та будь-які фото чи документи (наприклад, звіт Carfax, звіт про розвал-сходження чи огляд), які ви завантажуєте. Ми також автоматично збираємо базові дані про використання, як-от відвідані сторінки та загальну інформацію про пристрій, щоб підтримувати і покращувати сайт."
+      },
+      {
+        "heading": "Як ми використовуємо вашу інформацію",
+        "body": "Ми використовуємо вашу інформацію для роботи майданчика: створення та показу вашого публічного профілю продавця, з'єднання покупців і продавців, обробки оголошень, обчислення результатів пошуку за відстанню та надсилання вам листів, пов'язаних з акаунтом, як-от скидання пароля. Ми не продаємо вашу особисту інформацію третім особам."
+      },
+      {
+        "heading": "Що можуть бачити інші користувачі",
+        "body": "Ваше ім'я користувача, місто та штат, фото профілю, назва компанії (якщо ви дилер), а також будь-які оголошення чи відгуки, які ви залишили, видимі іншим користувачам. Ваш номер телефону розкривається покупцю лише якщо він вирішить його розкрити, а електронна пошта прихована за замовчуванням -- ви можете зробити її видимою у своєму публічному профілі в налаштуваннях акаунту."
+      },
+      {
+        "heading": "Файли cookie та локальне сховище",
+        "body": "Ми використовуємо файли cookie, щоб тримати вас у системі та запам'ятовувати вашу сесію. Якщо ви не увійшли в акаунт, ваше обране (вподобані оголошення) зберігається в локальному сховищі вашого браузера, а не на наших серверах. Ми не використовуємо сторонні рекламні чи трекінгові файли cookie."
+      },
+      {
+        "heading": "Безпека даних",
+        "body": "Ми вживаємо розумних заходів для захисту вашої інформації, включно з шифрованими з'єднаннями (HTTPS) та безпечним зберіганням паролів. Однак жоден спосіб передачі чи зберігання даних не є стовідсотково безпечним, і ми не можемо гарантувати абсолютну безпеку."
+      },
+      {
+        "heading": "Ваш вибір",
+        "body": "Ви можете оновити чи виправити інформацію свого профілю в будь-який час у налаштуваннях акаунту. Ви можете деактивувати свій акаунт зі сторінки профілю або звернутися до нас із запитом на видалення ваших даних."
+      },
+      {
+        "heading": "Конфіденційність дітей",
+        "body": "OnlySalvage не призначений для дітей віком до 13 років, і ми свідомо не збираємо особисту інформацію дітей молодше 13 років."
+      },
+      {
+        "heading": "Зміни до цієї Політики",
+        "body": "Ми можемо час від часу оновлювати цю Політику конфіденційності. Якщо ми внесемо суттєві зміни, ми оновимо дату вгорі цієї сторінки."
+      },
+      {
+        "heading": "Зв'яжіться з нами",
+        "body": "Якщо у вас є запитання щодо цієї Політики конфіденційності або того, як ми обробляємо вашу інформацію, зв'яжіться з нами за адресою support@onlysalvage.com."
+      }
+    ]
+  },
+  "TermsOfService": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbTerms": "Умови використання",
+    "title": "Умови використання",
+    "lastUpdated": "Останнє оновлення: липень 2026",
+    "intro": "Ці Умови використання (\"Умови\") регулюють ваше використання OnlySalvage. Створюючи акаунт або користуючись сайтом, ви погоджуєтеся з цими Умовами.",
+    "sections": [
+      {
+        "heading": "Право на використання",
+        "body": "Вам має бути щонайменше 18 років, щоб створити акаунт або розмістити авто на OnlySalvage."
+      },
+      {
+        "heading": "Ваш акаунт",
+        "body": "Ви відповідаєте за збереження безпеки вашого пароля та за всю активність у вашому акаунті. Повідомте нас негайно, якщо вважаєте, що ваш акаунт скомпрометовано."
+      },
+      {
+        "heading": "Оголошення",
+        "body": "Розміщуючи авто, ви погоджуєтеся, що надана вами інформація -- включно з VIN, статусом документів (чистий, відновлений чи аварійний), пробігом, станом і фото -- є точною наскільки вам відомо. Ви відповідаєте за зміст своїх оголошень і повинні мати законне право продавати авто."
+      },
+      {
+        "heading": "OnlySalvage -- це майданчик, а не сторона угоди",
+        "body": "OnlySalvage з'єднує покупців і продавців -- ми не є стороною жодної угоди між ними і не перевіряємо, не сертифікуємо та не гарантуємо жодне авто, розміщене на сайті. Покупцям наполегливо радимо оглянути авто особисто (або організувати професійний огляд) і перевірити його документи та історію перед покупкою."
+      },
+      {
+        "heading": "Відгуки",
+        "body": "Відгуки повинні відображати реальну угоду чи взаємодію. Відгуки, які є шахрайськими, образливими або залишені для маніпуляції рейтингом продавця, можуть бути видалені."
+      },
+      {
+        "heading": "Заборонена поведінка",
+        "body": "Ви погоджуєтеся не: розміщувати авто, яке ви не маєте права продавати, спотворювати стан авто чи статус документів, переслідувати інших користувачів або використовувати сайт у будь-яких незаконних цілях."
+      },
+      {
+        "heading": "Платежі",
+        "body": "Розміщення авто на OnlySalvage наразі безкоштовне. Якщо в майбутньому ми запровадимо платні функції, ми чітко повідомимо про будь-які платежі до їх стягнення."
+      },
+      {
+        "heading": "Відмова від відповідальності",
+        "body": "OnlySalvage надається \"як є\" без жодних гарантій. Максимально дозволеною законом мірою, OnlySalvage не несе відповідальності за жодний спір, втрату чи збиток, що виникає з угоди між покупцем і продавцем."
+      },
+      {
+        "heading": "Припинення дії",
+        "body": "Ми можемо призупинити чи припинити дію акаунтів, які порушують ці Умови або які, на нашу думку, становлять ризик для інших користувачів."
+      },
+      {
+        "heading": "Зміни до цих Умов",
+        "body": "Ми можемо час від часу оновлювати ці Умови. Продовження використання OnlySalvage після зміни означає, що ви приймаєте оновлені Умови."
+      },
+      {
+        "heading": "Зв'яжіться з нами",
+        "body": "Є запитання щодо цих Умов? Зв'яжіться з нами за адресою support@onlysalvage.com."
+      }
+    ]
+  },
+  "AboutUs": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbAbout": "Про нас",
+    "title": "Про OnlySalvage",
+    "subtitle": "Простий спосіб купити та продати аварійні авто.",
+    "sections": [
+      {
+        "heading": "Наша місія",
+        "body": "Аварійні та відновлені авто -- одні з найкращих пропозицій на ринку вживаних авто, але традиційно знайти їх означало сумнівні аукціонні сайти, відсутність відповідальності продавця та документи, які приховують до останнього. OnlySalvage створено, щоб це виправити -- майданчик, де кожне оголошення прив'язане до реального, оціненого акаунту продавця, а статус документів (аварійний чи відновлений) розкривається одразу, а не в дрібному шрифті."
+      },
+      {
+        "heading": "Що ми робимо",
+        "body": "Ми з'єднуємо приватних продавців і дилерів з покупцями, які шукають вигідну пропозицію на аварійне чи відновлене авто. Продавці можуть розмістити авто за кілька хвилин -- просто введіть VIN, і ми автоматично визначимо рік, марку та модель. Покупці можуть шукати за місцезнаходженням, ціною, пробігом і статусом документів, писати продавцям напряму та перевіряти рейтинг продавця перед покупкою."
+      },
+      {
+        "heading": "Побудовано на довірі",
+        "body": "Кожен акаунт на OnlySalvage реальний -- жодних анонімних оголошень. Покупці та продавці оцінюють одне одного після угоди, тому репутація продавця заслужена, а не заявлена. Ми також надаємо підтримку 24/7, якщо щось піде не так."
+      },
+      {
+        "heading": "Зв'яжіться з нами",
+        "body": "Маєте запитання, відгук чи ідею партнерства? Ми будемо раді почути вас за адресою support@onlysalvage.com."
+      }
+    ]
+  },
+  "Developers": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbDevelopers": "Розробникам",
+    "title": "Документація API",
+    "subtitle": "Керуйте своїм каталогом програмно -- додавайте оголошення, змінюйте статус і завантажуйте фото, не відкриваючи сайт.",
+    "tableOfContents": "Зміст",
+    "searchEndpoints": "Пошук ендпоінтів...",
+    "noEndpointsFound": "Жодні ендпоінти не відповідають вашому пошуку.",
+    "gettingStartedTitle": "Початок роботи",
+    "gettingStartedStep1": "Запросіть доступ у розділі",
+    "gettingStartedStep1Link": "Налаштування > Доступ до API",
+    "gettingStartedStep2": "Перевіреного продавця схвалюють одразу; інакше ми розглянемо ваш запит найближчим часом.",
+    "gettingStartedStep3": "Після схвалення згенеруйте токен -- він показується лише один раз, тож збережіть його в надійному місці.",
+    "gettingStartedStep4": "Додавайте його як Bearer-токен до кожного запиту на ендпоінти нижче.",
+    "authTitle": "Автентифікація",
+    "authDescription": "Кожен запит (окрім публічних довідкових ендпоінтів) повинен містити ваш токен у заголовку Authorization:",
+    "authNote": "Токени прив'язані до вашого акаунту -- кожне оголошення, яке ви створюєте, редагуєте чи читаєте через API, обмежене лише вашим власним каталогом.",
+    "lifecycleTitle": "Життєвий цикл оголошення",
+    "lifecycleDescription": "Оголошення, створене через API, завжди починається як чернетка -- так само, як і при створенні вручну на сайті -- воно не може бути опубліковане без хоча б одного фото, а цей запит не може містити фото.",
+    "lifecycleStep1": "Надішліть POST-запит для нового оголошення -- воно буде створене як чернетка.",
+    "lifecycleStep2": "Завантажте до нього одне або кілька фото.",
+    "lifecycleStep3": "Надішліть POST-запит для зміни статусу (напр. \"AV\"), щоб опублікувати його.",
+    "endpointsTitle": "Ендпоінти",
+    "endpointMeTitle": "Отримати ваш акаунт",
+    "endpointMe": "Акаунт, якому належить ваш токен",
+    "endpointChoicesTitle": "Список значень полів",
+    "endpointChoices": "Допустимі значення для status, vehicle_type, fuel_type тощо",
+    "endpointMakesTitle": "Список марок",
+    "endpointMakes": "Список усіх марок автомобілів (токен не потрібен)",
+    "endpointModelsTitle": "Список моделей",
+    "endpointModels": "Список моделей для заданої марки (токен не потрібен)",
+    "endpointListTitle": "Список ваших оголошень",
+    "endpointList": "Список ваших власних оголошень -- з можливістю фільтрації, див. нижче",
+    "endpointCreateTitle": "Створити оголошення",
+    "endpointCreate": "Створити нове оголошення (завжди починається як чернетка)",
+    "endpointRetrieveTitle": "Отримати оголошення",
+    "endpointRetrieve": "Отримати одне з ваших оголошень",
+    "endpointUpdateTitle": "Оновити оголошення",
+    "endpointUpdate": "Редагувати поля оголошення (підтримуються часткові оновлення)",
+    "endpointDeleteTitle": "Видалити оголошення",
+    "endpointDelete": "Остаточно видалити оголошення та його фото",
+    "endpointStatusTitle": "Змінити статус оголошення",
+    "endpointStatus": "Змінити лише статус оголошення",
+    "endpointRenewTitle": "Поновити оголошення",
+    "endpointRenew": "Повернути придатне оголошення на початок списку",
+    "endpointImagesListTitle": "Список фото",
+    "endpointImagesList": "Список фото оголошення",
+    "endpointImagesUploadTitle": "Завантажити фото",
+    "endpointImagesUpload": "Завантажити фото, файлом або через image_url",
+    "endpointImageDeleteTitle": "Видалити фото",
+    "endpointImageDelete": "Видалити одне фото",
+    "languageLabel": "Мова",
+    "miscTitle": "Корисно знати",
+    "miscRateLimit": "Кількість запитів обмежена до 120 на хвилину для одного акаунту.",
+    "miscOwnership": "Кожен ендпоінт обмежений лише вашими власними оголошеннями -- прочитати чи змінити каталог іншого продавця через цей API неможливо.",
+    "miscErrors": "Помилки валідації повертаються у вигляді JSON-об'єкта, що зіставляє назви полів із повідомленнями про помилки -- так само, як і в решті API сайту.",
+    "miscPagination": "Списки відповідей розбиваються на сторінки (за замовчуванням 50 на сторінку, до 200 із ?page_size=); використовуйте посилання next/previous у відповіді, щоб перейти до решти."
+  },
+  "Guide": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbGuide": "Гід",
+    "title": "Гід по сайту",
+    "subtitle": "Кілька порад щодо функцій, які не одразу впадають в очі.",
+    "searchPlaceholder": "Пошук у гіді...",
+    "noResults": "Жодна порада не відповідає вашому запиту.",
+    "tableOfContents": "Зміст",
+    "goTo": "Перейти до",
+    "walkthroughsTitle": "Покрокові інструкції",
+    "categories": [
+      {
+        "title": "Перегляд і купівля",
+        "tips": [
+          {
+            "heading": "Клацніть правою кнопкою на оголошенні для швидких дій",
+            "body": "Клацніть правою кнопкою на будь-якій картці оголошення, щоб відкрити його в новій вкладці, скопіювати посилання, додати до порівняння чи обраного, зв'язатися з продавцем або поскаржитися -- без відкриття самого оголошення."
+          },
+          {
+            "heading": "Порівнюйте авто між собою",
+            "body": "Додайте кілька оголошень до порівняння (з меню картки або зі сторінки оголошення) і перегляньте їх поруч, щоб зважити ціну, пробіг і характеристики."
+          },
+          {
+            "heading": "Обране стежить за доступністю",
+            "body": "Авто, яке ви вподобали, автоматично зникає з обраного, якщо воно продане або зняте з публікації -- і саме з'являється знову, якщо стане доступним."
+          },
+          {
+            "heading": "Сортування за відстанню",
+            "body": "Введіть свій поштовий індекс (або дозвольте доступ до геолокації) у фільтрах каталогу, щоб сортувати оголошення за відстанню до них."
+          },
+          {
+            "heading": "Рекомендації покращуються, поки ви переглядаєте",
+            "body": "Розділ «Рекомендовано» на головній сторінці та в каталозі навчається на тому, що ви шукаєте й переглядаєте -- чим більше ви ним користуєтесь, тим кращим він стає."
+          },
+          {
+            "heading": "Що означає «Рекомендовано»",
+            "body": "Рекомендовані оголошення -- це авто, які адміністратор вирішив виділити на головній сторінці на обмежений час. Це не впливає на ціну чи стан оголошення -- лише на його видимість."
+          },
+          {
+            "heading": "Зв'яжіться з продавцем напряму",
+            "body": "Відкрийте оголошення і скористайтеся карткою «Зв'язатися з продавцем», щоб розкрити номер телефону одним кліком, або перегляньте профіль продавця, щоб побачити інші оголошення та відгуки."
+          },
+          {
+            "heading": "Як залишити відгук",
+            "body": "Рейтинги залишають реальні покупці зі свого акаунту -- по одному відгуку на покупця на продавця, і продавці не можуть оцінювати самі себе, тож те, що ви бачите, відображає реальний досвід.",
+            "steps": [
+              "Відвідайте сторінку профілю продавця.",
+              "Натисніть «Залишити відгук».",
+              "Оберіть рейтинг у зірках і напишіть коментар.",
+              "Надішліть -- ви можете залишити відгук про продавця лише один раз."
+            ]
+          },
+          {
+            "heading": "Ваші власні оголошення виділяються під час перегляду",
+            "body": "Хоч би де ви бачили одне зі своїх оголошень серед результатів пошуку -- у каталозі, у своєму профілі, будь-де -- воно виділене підсвіченою рамкою, щоб ви могли одразу його помітити."
+          },
+          {
+            "heading": "Як купити автомобіль",
+            "body": "Від першого пошуку до отримання ключів -- ось типовий шлях від перегляду до купівлі на OnlySalvage.",
+            "steps": [
+              "Шукайте в каталозі за допомогою фільтрів марки, моделі, ціни та місцезнаходження.",
+              "Порівнюйте обрані варіанти поруч, щоб зважити ціну, пробіг і стан.",
+              "Домовтеся про тест-драйв із продавцем, коли звузите вибір.",
+              "Пройдіться по Чеклісту покупця перед тим, як прийняти рішення, щоб нічого не пропустити."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Продаж і керування оголошеннями",
+        "tips": [
+          {
+            "heading": "Чернетки зберігають ваш прогрес",
+            "body": "Почніть створювати оголошення й виходьте, коли завгодно -- щойно ви його один раз збережете, воно залишиться у вкладці «Чернетки» вашого профілю, щоб ви могли завершити його пізніше."
+          },
+          {
+            "heading": "Редагування або керування вже опублікованим оголошенням",
+            "body": "Відкрийте своє оголошення й натисніть «Редагувати оголошення», щоб оновити деталі, змінити порядок фото або статус -- або клацніть правою кнопкою на будь-якій картці (у профілі, інвентарі, будь-де) для тих самих дій як швидкого доступу: позначте його як Доступне, Очікує чи Продане, опублікуйте/зніміть з публікації, редагуйте або видаліть -- усе без відкриття сторінки редагування."
+          },
+          {
+            "heading": "Призупиняйте замість видалення",
+            "body": "Вимкніть «Опубліковано» на сторінці редагування, щоб приховати оголошення всюди, крім вашого власного профілю (де воно позначається як «Неактивне»). Увімкніть знову будь-коли -- нічого не втрачається."
+          },
+          {
+            "heading": "Оновлюйте, щоб підняти оголошення вгору",
+            "body": "Щойно активному оголошенню виповнюється щонайменше 7 днів, оновіть його з розділу «Дії», щоб повернути на початок результатів пошуку -- до 3 разів."
+          },
+          {
+            "heading": "Дилери можуть масово завантажувати через CSV",
+            "body": "У розділі «Продати > Масове завантаження» дилери можуть додати одразу багато автомобілів з таблиці. Кожен рядок стає чернеткою, яку можна переглянути й опублікувати окремо.",
+            "steps": [
+              "Перейдіть до «Продати > Масове завантаження».",
+              "Завантажте шаблон CSV.",
+              "Заповніть по одному рядку на кожен автомобіль і завантажте файл.",
+              "Перегляньте імпортовані чернетки, додайте фото і опублікуйте кожну окремо."
+            ]
+          },
+          {
+            "heading": "Автозаповнення за VIN",
+            "body": "Введіть VIN на початку створення оголошення, і рік, марка, модель та дані двигуна заповняться автоматично."
+          },
+          {
+            "heading": "Продаж як дилер",
+            "body": "Позначте свій акаунт як дилерський/бізнесовий у налаштуваннях профілю. Дилерські акаунти показують значок «Дилер» на своїх оголошеннях і в профілі, а також отримують доступ до масового завантаження CSV."
+          },
+          {
+            "heading": "Ваш номер телефону залишається приватним",
+            "body": "За замовчуванням в оголошенні показується лише код міста -- повний номер залишається прихованим, поки покупець не вирішить його розкрити."
+          },
+          {
+            "heading": "Як продати автомобіль: покроково",
+            "body": "Повний процес від VIN до опублікованого оголошення, від початку до кінця.",
+            "steps": [
+              "Перейдіть до розділу «Продати» та введіть VIN -- рік, марка, модель і дані двигуна заповняться автоматично.",
+              "Додайте чіткі фото автомобіля (зовнішній вигляд, салон і будь-які пошкодження).",
+              "Встановіть ціну та додайте опис.",
+              "Опублікуйте його -- або збережіть як чернетку, щоб завершити пізніше.",
+              "Керуйте ним будь-коли: позначте як Очікує чи Продане, призупиніть або оновіть, щоб залишатися на початку результатів пошуку."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Акаунт та інструменти для розробників",
+        "tips": [
+          {
+            "heading": "Пройдіть верифікацію",
+            "body": "Запросіть верифікацію продавця в Налаштуваннях, щоб отримати значок перевірки, який допомагає покупцям довіряти вашим оголошенням."
+          },
+          {
+            "heading": "Керуйте своїм каталогом через API",
+            "body": "Перевірені продавці отримують миттєвий доступ до API в розділі Налаштування > Доступ до API -- згенеруйте токен і керуйте оголошеннями програмно. Деталі дивіться в документації API."
+          },
+          {
+            "heading": "Скиньте пароль",
+            "body": "Перейдіть на сторінку входу та натисніть «Забули пароль?» -- ми надішлемо вам посилання для скидання на пошту.",
+            "steps": [
+              "Перейдіть на сторінку входу.",
+              "Натисніть «Забули пароль?»",
+              "Перевірте пошту на наявність посилання для скидання.",
+              "Встановіть новий пароль і увійдіть в акаунт."
+            ]
+          },
+          {
+            "heading": "Оновіть свій профіль",
+            "body": "Відвідайте сторінку свого профілю і натисніть «Редагувати профіль», щоб оновити назву компанії, телефон, місцезнаходження, опис і фото."
+          }
+        ]
+      }
+    ]
+  },
+  "VehicleAttributes": {
+    "vehicleType": {
+      "SDN": "Седан",
+      "TK": "Пікап",
+      "SUV": "Позашляховик",
+      "WGN": "Універсал",
+      "CPE": "Купе",
+      "HBK": "Хетчбек",
+      "VAN": "Фургон"
+    },
+    "transmission": {
+      "ATM": "Автоматична",
+      "MAN": "Механічна",
+      "CVT": "CVT (варіатор)",
+      "DTC": "DCT (робот)",
+      "ECVT": "eCVT"
+    },
+    "drive": {
+      "FWD": "Передній привід",
+      "RWD": "Задній привід",
+      "AWD": "Повний привід",
+      "4WD": "Повний привід (4x4)",
+      "EAWD": "Електричний повний привід",
+      "OTH": "Інше"
+    },
+    "fuelType": {
+      "GAS": "Бензин",
+      "DIS": "Дизель",
+      "HYB": "Гібрид",
+      "ELC": "Електро"
+    },
+    "titleDocument": {
+      "RE": "Відновлений",
+      "SA": "Аварійний",
+      "CT": "Чистий (Повна загибель)"
+    },
+    "color": {
+      "BLK": "Чорний",
+      "WHT": "Білий",
+      "SIL": "Сріблястий",
+      "GRY": "Сірий",
+      "RED": "Червоний",
+      "BLU": "Синій",
+      "BRW": "Коричневий",
+      "TAN": "Бежевий",
+      "GRN": "Зелений",
+      "ORG": "Помаранчевий",
+      "YEL": "Жовтий",
+      "GLD": "Золотистий",
+      "MAR": "Бордовий",
+      "PUR": "Фіолетовий"
+    },
+    "sellerType": {
+      "Private": "Приватний продавець",
+      "Dealer": "Дилер",
+      "Financing": "Пропонує фінансування",
+      "Verified": "Перевірений продавець"
+    },
+    "optionCategory": {
+      "CMF": "Комфорт і салон",
+      "TEC": "Технології та мультимедіа",
+      "SAF": "Безпека та допомога водієві",
+      "EXT": "Екстер'єр і зручності",
+      "PRF": "Продуктивність і буксирування"
+    }
+  },
+  "TranslatableText": {
+    "translate": "Перекласти",
+    "viewOriginal": "Показати оригінал",
+    "translationFailed": "Не вдалося перекласти. Спробуйте ще раз."
+  },
+  "PhoneVerification": {
+    "verified": "Телефон підтверджено",
+    "sending": "Надсилання...",
+    "codeSent": "Код підтвердження надіслано.",
+    "sendFailed": "Не вдалося надіслати код підтвердження. Спробуйте ще раз.",
+    "codeLabel": "Код підтвердження",
+    "codePlaceholder": "6-значний код",
+    "confirmCode": "Підтвердити",
+    "verifying": "Перевірка...",
+    "resendCode": "Надіслати код повторно",
+    "invalidCode": "Невірний або прострочений код.",
+    "verifySucceeded": "Номер телефону підтверджено.",
+    "verify": "Підтвердити",
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "DeleteListingModal": {
+    "close": "Закрити",
+    "confirmTitle": "Видалити це оголошення?",
+    "confirmDescription": "Це остаточно видалить оголошення разом з усіма фото та документами. Скасувати цю дію неможливо.",
+    "cancel": "Скасувати",
+    "deleting": "Видалення...",
+    "deleteListing": "Видалити оголошення",
+    "deleteFailed": "Не вдалося видалити оголошення.",
+    "deleteSucceeded": "Оголошення видалено."
+  },
+  "Checklist": {
+    "breadcrumbHome": "Головна",
+    "breadcrumbChecklist": "Чекліст покупця",
+    "title": "Чекліст покупця",
+    "subtitle": "Усе, що варто перевірити перед купівлею аварійного авто -- позначайте кожен пункт у міру виконання.",
+    "progress": "{checked} з {total} позначено",
+    "reset": "Скинути",
+    "print": "Друк",
+    "aboutRebuilt": {
+      "title": "Що насправді означають статуси «Відновлений» і «Аварійний»",
+      "paragraph1": "Статус «Відновлений» або «Аварійний» означає лише, що автомобіль колись був визнаний повною загибеллю -- це нічого не каже про якість ремонту. СТО, яка виконала роботу правильно, може повернути розбитий автомобіль до справді безпечного й надійного стану, іноді навіть кращого, ніж у багатьох авто зі статусом «Чистий».",
+      "paragraph2": "Статус «Чистий» також не є гарантією. Якщо власник оплачує ремонт із власної кишені замість подання страхового позову, аварія ніде не фіксується, і статус документів залишається «Чистий», хоч би яким серйозним було пошкодження. Сам по собі статус документів не скаже вам, як насправді доглядали за автомобілем.",
+      "paragraph3": "Саме тому кроки цього чекліста -- звіт про історію автомобіля, звірка VIN і професійний огляд -- важливіші за статус, вказаний у документах. Вони стосуються авто зі статусом «Чистий» так само, як і відновленого."
+    }
+  }
+}

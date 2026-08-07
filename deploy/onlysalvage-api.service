@@ -1,0 +1,32 @@
+[Unit]
+Description=OnlySalvage Django API (gunicorn)
+After=network.target
+
+[Service]
+Type=simple
+User=onlysalvage
+Group=onlysalvage
+WorkingDirectory=/opt/onlysalvage/onlysalvage_api
+EnvironmentFile=/opt/onlysalvage/onlysalvage_api/.env
+# Two binds: the Unix socket is what nginx proxies public traffic to (see
+# deploy/nginx.conf); the loopback TCP port is for the Next.js server itself
+# to reach (see INTERNAL_API_URL in onlysalvage_frontend/.env.production.local
+# -- Next's fetch() can't target a Unix socket directly).
+ExecStart=/opt/onlysalvage/onlysalvage_api/venv/bin/gunicorn \
+    onlysalvage_api.wsgi:application \
+    --bind unix:/run/onlysalvage/api.sock \
+    --bind 127.0.0.1:8001 \
+    --workers 3 \
+    --timeout 30 \
+    --access-logfile - \
+    --error-logfile -
+RuntimeDirectory=onlysalvage
+RuntimeDirectoryMode=0750
+Restart=on-failure
+RestartSec=5
+
+# journald captures this process's stdout/stderr automatically -- see
+# LOGGING in settings.py. View with: journalctl -u onlysalvage-api -f
+
+[Install]
+WantedBy=multi-user.target

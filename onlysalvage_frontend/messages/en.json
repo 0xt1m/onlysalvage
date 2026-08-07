@@ -1,0 +1,1595 @@
+{
+  "Common": {
+    "appName": "OnlySalvage",
+    "viewAll": "View all",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  },
+  "Nav": {
+    "logo": "Logo",
+    "home": "Home",
+    "inventory": "Inventory",
+    "support": "Support 24/7",
+    "sell": "Sell",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode",
+    "switchLanguage": "Switch language",
+    "likedCars": "Liked Cars",
+    "compare": "Compare",
+    "myProfile": "My profile",
+    "viewProfile": "View profile",
+    "logOut": "Log out",
+    "logIn": "Log in",
+    "signUp": "Sign up",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "settings": "Settings"
+  },
+  "Footer": {
+    "tagline": "Your trusted marketplace for buying and selling cars. Fast, simple, and reliable.",
+    "company": "Company",
+    "about": "About",
+    "shopByMake": "Shop by Make",
+    "shopByBodyStyle": "Shop by Body Style",
+    "sellers": "Sellers",
+    "guide": "Site Guide",
+    "checklist": "Buyer's Checklist",
+    "apiDocs": "API Documentation",
+    "feedback": "Feedback",
+    "contact": "Contact",
+    "careers": "Careers",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "followUs": "Follow Us",
+    "copyright": "© 2026 OnlySalvage. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "Home": {
+    "heroTitle": "The straightforward way to buy and sell salvage cars",
+    "heroSubtitle": "Browse verified salvage and rebuilt listings from private sellers and dealers, or list your own salvage vehicle in minutes.",
+    "trust": {
+      "verifiedTitle": "Verified Listings",
+      "verifiedDescription": "Every vehicle is tied to a real seller account, with title status (salvage or rebuilt) disclosed up front.",
+      "ratedTitle": "Rated Sellers & Buyers",
+      "ratedDescription": "Transact with confidence using our two-way seller review system.",
+      "supportTitle": "24/7 Support",
+      "supportDescription": "Questions or issues? Our team is available around the clock.",
+      "reachTitle": "Nationwide Reach",
+      "reachDescription": "Search salvage and rebuilt listings from private sellers and dealers across the country."
+    },
+    "guideTip": {
+      "label": "Did you know?",
+      "viewGuide": "View Guide"
+    },
+    "checklistTeaser": {
+      "label": "Before you buy",
+      "heading": "Buyer's Checklist",
+      "description": "Everything to check before buying a salvage vehicle, in one printable checklist.",
+      "viewChecklist": "View Checklist"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Buying or selling a salvage car on OnlySalvage takes three simple steps",
+      "step1Title": "Search or List",
+      "step1Description": "Browse salvage and rebuilt listings near you, or list your own vehicle in minutes -- just enter a VIN and we'll fill in the details.",
+      "step2Title": "Contact the Seller",
+      "step2Description": "Reveal the seller's phone number and reach out directly to ask questions or arrange a viewing.",
+      "step3Title": "Inspect & Buy",
+      "step3Description": "Inspect the vehicle in person (or arrange a professional inspection), then complete the sale directly with the seller."
+    },
+    "featuredTitle": "Featured Cars",
+    "featuredSubtitle": "Hand-picked listings currently promoted by their sellers",
+    "newArrivalsTitle": "New Arrivals",
+    "newArrivalsSubtitle": "The latest vehicles added to the marketplace",
+    "noListingsYet": "No listings yet. Be the first to list a car!",
+    "recommendedTitle": "Recommended for You",
+    "recommendedSubtitle": "Based on what you've been searching for and viewing",
+    "becauseYouViewedTitle": "Because You Viewed {title}",
+    "becauseYouViewedSubtitle": "Similar listings you might like",
+    "ctaTitle": "Ready to sell your salvage car?",
+    "ctaDescription": "List your salvage or rebuilt vehicle in minutes -- just enter your VIN and we'll pull in the details for you.",
+    "sellYourCar": "Sell Your Car",
+    "mostLikedTitle": "Most Liked",
+    "mostLikedSubtitle": "Available listings buyers are loving right now",
+    "topSellersTitle": "Top Rated Sellers",
+    "topSellersSubtitle": "Sellers with the highest average rating from real buyers",
+    "shopByMakeTitle": "Shop by Make",
+    "shopByMakeSubtitle": "Browse salvage and rebuilt listings by manufacturer",
+    "shopByBodyStyleTitle": "Shop by Body Style",
+    "shopByBodyStyleSubtitle": "Browse salvage and rebuilt listings by body style",
+    "shopByCityTitle": "Shop by City",
+    "shopByCitySubtitle": "Browse salvage and rebuilt listings in popular cities",
+    "verifiedSellersTitle": "Verified Sellers",
+    "verifiedSellersSubtitle": "Sellers who have confirmed their identity with our verification process",
+    "verifiedListingsTitle": "Listings from Verified Sellers",
+    "verifiedListingsSubtitle": "Extra peace of mind buying from a verified account",
+    "mostViewedTitle": "Most Viewed",
+    "mostViewedSubtitle": "Available listings getting the most attention right now"
+  },
+  "SearchBlock": {
+    "search": "Search",
+    "searchPlaceholder": "Search by make, model, or keyword",
+    "filters": {
+      "inventory": "Inventory",
+      "under5000": "Under $5,000",
+      "under10000": "Under $10,000",
+      "over10000": "Over $10,000",
+      "allWheelDrive": "All-Wheel Drive",
+      "rebuiltTitle": "Rebuilt Title",
+      "privateSellers": "Private Sellers",
+      "nearby": "Nearby",
+      "recommended": "Recommended"
+    },
+    "surpriseMe": "Surprise Me"
+  },
+  "ListingCard": {
+    "mileage": "Mileage",
+    "transmission": "Transmission",
+    "fuelType": "Fuel type",
+    "seller": "Seller",
+    "location": "Location",
+    "contactSeller": "Contact the seller",
+    "noPhotoYet": "No photo yet",
+    "callsReceived": "{count, plural, one {# call} other {# calls}}",
+    "viewsCount": "{count, plural, one {# view} other {# views}}",
+    "statusAvailable": "AVAILABLE",
+    "statusPending": "PENDING",
+    "statusSold": "SOLD",
+    "inactiveBadge": "Inactive",
+    "lowMileage": "Low Mileage",
+    "verifiedSeller": "Verified Seller",
+    "warrantyBadge": "Warranty",
+    "openInNewTab": "Open in New Tab",
+    "editListing": "Edit Listing",
+    "markAvailable": "Mark Available",
+    "markSold": "Mark Sold",
+    "markPending": "Mark Pending",
+    "share": "Copy Link Address",
+    "addToCompare": "Add to Compare",
+    "removeFromCompare": "Remove from Compare",
+    "addedToCompare": "Added to comparison",
+    "removedFromCompare": "Removed from comparison",
+    "unpublish": "Unpublish",
+    "publish": "Publish",
+    "callSeller": "Call Seller",
+    "callFailed": "Couldn't get this seller's phone number.",
+    "emailSeller": "Email Seller",
+    "report": "Report",
+    "viewSellerProfile": "View Seller's Profile",
+    "addToWatchlist": "Add to Watchlist",
+    "removeFromWatchlist": "Remove from Watchlist",
+    "statusUpdateSucceeded": "Listing status updated",
+    "statusUpdateFailed": "Failed to update listing status.",
+    "linkCopied": "Link copied to clipboard",
+    "shareFailed": "Couldn't share this listing. Please try again.",
+    "unpublishSucceeded": "Listing unpublished",
+    "unpublishFailed": "Failed to unpublish listing.",
+    "publishSucceeded": "Listing published",
+    "publishFailed": "Failed to publish listing.",
+    "deleteListing": "Delete listing"
+  },
+  "ListingResultsGrid": {
+    "noListingsFound": "No listings found."
+  },
+  "Filters": {
+    "search": "Search...",
+    "noResults": "No results",
+    "apply": "Apply",
+    "min": "Min",
+    "max": "Max",
+    "any": "Any",
+    "deselectAll": "Deselect all",
+    "invalidNumber": "Enter a valid number"
+  },
+  "Inventory": {
+    "browseTitle": "Browse our inventory",
+    "filters": "Filters",
+    "closeFilters": "Close filters",
+    "reset": "Reset",
+    "applyFilters": "Apply Filters",
+    "distance": "Distance",
+    "zipCode": "Zip code",
+    "anyDistance": "Any distance",
+    "locating": "Locating...",
+    "usingYourLocation": "Using your location",
+    "useMyLocation": "Use my location",
+    "apply": "Apply",
+    "year": "Year",
+    "make": "Make",
+    "model": "Model",
+    "selectMakeFirst": "Select a make first",
+    "price": "Price",
+    "mileage": "Mileage",
+    "vehicleType": "Vehicle Type",
+    "transmission": "Transmission",
+    "driveType": "Drive Type",
+    "fuelType": "Fuel Type",
+    "exteriorColor": "Exterior Color",
+    "interiorColor": "Interior Color",
+    "titleStatus": "Title Status",
+    "seller": "Seller",
+    "noGeolocationSupport": "Your browser doesn't support geolocation.",
+    "geolocationFailed": "Couldn't get your location -- try a zip code instead.",
+    "within": "Within {miles} miles",
+    "searching": "Searching...",
+    "listingsFound": "{count, plural, one {# listing found} other {# listings found}}",
+    "largeCards": "Large cards",
+    "compactCards": "Compact cards",
+    "listView": "List view",
+    "noListingsMatchFilters": "No listings match your filters.",
+    "loading": "Loading...",
+    "loadMore": "Load More",
+    "sortOptions": {
+      "newest": "Newest",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "mileageAsc": "Mileage: Low to High",
+      "yearDesc": "Year: Newest First",
+      "distance": "Nearest"
+    }
+  },
+  "MakesPage": {
+    "metaTitle": "Shop by Make",
+    "metaDescription": "Browse salvage and rebuilt vehicles by make on OnlySalvage.",
+    "breadcrumbHome": "Home",
+    "breadcrumbMakes": "Makes",
+    "title": "Shop by Make",
+    "subtitle": "Browse salvage and rebuilt listings by manufacturer",
+    "noMakesYet": "No makes available yet."
+  },
+  "MakePage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbMakes": "Makes",
+    "title": "{make} for Sale",
+    "subtitle": "{count, plural, one {# listing available} other {# listings available}}",
+    "noListingsYet": "No {make} listings available right now.",
+    "viewAllInInventory": "{count, plural, one {View this listing in Inventory} other {View all # listings in Inventory}}"
+  },
+  "MakeModelPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbMakes": "Makes",
+    "title": "{make} {model} for Sale",
+    "subtitle": "{count, plural, one {# listing available} other {# listings available}}",
+    "noListingsYet": "No {make} {model} listings available right now.",
+    "viewAllInInventory": "{count, plural, one {View this listing in Inventory} other {View all # listings in Inventory}}"
+  },
+  "BodyStylesPage": {
+    "metaTitle": "Shop by Body Style",
+    "metaDescription": "Browse salvage and rebuilt vehicles by body style on OnlySalvage.",
+    "breadcrumbHome": "Home",
+    "breadcrumbBodyStyles": "Body Styles",
+    "title": "Shop by Body Style",
+    "subtitle": "Browse salvage and rebuilt listings by body style"
+  },
+  "BodyStylePage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbBodyStyles": "Body Styles",
+    "title": "{type} for Sale",
+    "subtitle": "{count, plural, one {# listing available} other {# listings available}}",
+    "noListingsYet": "No {type} listings available right now.",
+    "viewAllInInventory": "{count, plural, one {View this listing in Inventory} other {View all # listings in Inventory}}"
+  },
+  "CitiesPage": {
+    "metaTitle": "Shop by City",
+    "metaDescription": "Browse salvage and rebuilt vehicles for sale by city on OnlySalvage.",
+    "breadcrumbHome": "Home",
+    "breadcrumbCities": "Cities",
+    "title": "Shop by City",
+    "subtitle": "Browse salvage and rebuilt listings in popular cities",
+    "noCitiesYet": "No city pages available yet."
+  },
+  "CityPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCities": "Cities",
+    "title": "Rebuilt & Salvage Cars for Sale in {city}, {state}",
+    "subtitle": "{count, plural, one {# listing available} other {# listings available}}",
+    "noListingsYet": "No listings available in {city} right now.",
+    "viewAllInInventory": "{count, plural, one {View this listing in Inventory} other {View all # listings in Inventory}}"
+  },
+  "ListingDetail": {
+    "statusAvailable": "Available",
+    "statusPending": "Pending",
+    "statusSold": "Sold",
+    "statusInactive": "Inactive",
+    "actionsTitle": "Actions",
+    "verifiedSeller": "Verified Seller",
+    "listingNotFound": "Listing not found",
+    "listingNotFoundDescription": "We couldn't find a listing at \"{slug}\".",
+    "breadcrumbHome": "Home",
+    "breadcrumbInventory": "Inventory",
+    "printListing": "Print",
+    "share": "Share",
+    "linkCopied": "Link copied to clipboard",
+    "shareFailed": "Couldn't share this listing. Please try again.",
+    "vehicleDetails": "Vehicle Details",
+    "year": "Year",
+    "make": "Make",
+    "model": "Model",
+    "trim": "Trim",
+    "type": "Type",
+    "vin": "VIN",
+    "mileage": "Mileage",
+    "transmission": "Transmission",
+    "drivetrain": "Drivetrain",
+    "fuelType": "Fuel Type",
+    "engine": "Engine",
+    "mpg": "MPG",
+    "cityMpgLabel": "City MPG",
+    "hwyMpgLabel": "Highway MPG",
+    "exterior": "Exterior",
+    "interior": "Interior",
+    "titleStatus": "Title Status",
+    "owners": "Owners",
+    "posted": "Posted",
+    "viewCarfaxReport": "View Carfax Report",
+    "viewAlignmentReport": "View Alignment Report",
+    "viewInspectionReport": "View Inspection Report",
+    "beforeRepairPhotos": "Before Repair Photos",
+    "beforeRepairPhotosDescription": "What the damage looked like before it was fixed.",
+    "beforeRepairPhotoAlt": "Before repair photo",
+    "featuresAndOptions": "Features & Options",
+    "description": "Description",
+    "noDescriptionProvided": "No description provided.",
+    "videoTitle": "Video",
+    "watchVideo": "Watch video",
+    "editListing": "Edit Listing",
+    "markPending": "Mark Pending",
+    "markSold": "Mark Sold",
+    "markAvailable": "Mark Available",
+    "callsReceived": "{count, plural, one {# call} other {# calls}}",
+    "viewsCount": "{count, plural, one {# view} other {# views}}",
+    "seller": "Seller",
+    "moreFromThisSeller": "More from this seller",
+    "similarListings": "Similar Listings",
+    "similarListingsSubtitle": "Other listings you might be interested in",
+    "copyVin": "Copy VIN",
+    "vinCopied": "VIN copied",
+    "vinCopyFailed": "Failed to copy VIN",
+    "renewListing": "Renew Listing",
+    "renewAvailableInDays": "{count, plural, one {You can renew this listing in # day} other {You can renew this listing in # days}}",
+    "renewalsExhausted": "This listing has used all of its renewals. Delete and repost it to refresh its listing date.",
+    "renewSucceeded": "Listing renewed",
+    "renewFailed": "Failed to renew listing",
+    "previousListing": "Previous",
+    "nextListing": "Next",
+    "listingPosition": "{current} of {total}"
+  },
+  "ContactSellerCard": {
+    "title": "Contact the Seller",
+    "loading": "Loading...",
+    "reveal": "Reveal",
+    "maskedNumber": "+1 ({areaCode}) •••-••••",
+    "email": "Email",
+    "loadError": "Couldn't load the seller's phone number."
+  },
+  "ScheduleTestDrive": {
+    "scheduleTestDrive": "Test Drive",
+    "close": "Close",
+    "nameLabel": "Your Name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "preferredDateTimeLabel": "Preferred Date & Time",
+    "messageLabel": "Additional Message",
+    "messagePlaceholder": "Anything else the seller should know?",
+    "cancel": "Cancel",
+    "submitting": "Sending...",
+    "submit": "Request Test Drive",
+    "submitFailed": "Something went wrong. Please try again.",
+    "successTitle": "Request sent!",
+    "successDescription": "The seller will contact you soon to confirm your test drive.",
+    "errors": {
+      "nameRequired": "Enter your name.",
+      "contactRequired": "Enter an email or phone number so the seller can reach you.",
+      "emailInvalid": "Enter a valid email address.",
+      "phoneInvalid": "Enter a complete 10-digit phone number.",
+      "dateRequired": "Select a preferred date and time.",
+      "dateInPast": "Select a time in the future."
+    }
+  },
+  "ListingStatusButton": {
+    "updateFailed": "Failed to update listing status.",
+    "updateSucceeded": "Listing status updated",
+    "updating": "Updating..."
+  },
+  "SellForm": {
+    "vehicleDetails": "Vehicle Details",
+    "vin": "VIN",
+    "vinPlaceholder": "17 characters",
+    "decodeVin": "Decode VIN",
+    "decoding": "Decoding...",
+    "year": "Year",
+    "make": "Make",
+    "selectMake": "Select make",
+    "model": "Model",
+    "selectMakeFirst": "Select a make first",
+    "loading": "Loading...",
+    "noModelsYet": "No models yet for this make",
+    "selectModel": "Select model",
+    "trim": "Trim",
+    "trimPlaceholder": "Optional, e.g. EX",
+    "vehicleType": "Vehicle Type",
+    "specs": "Specs",
+    "mileage": "Mileage",
+    "optional": "Optional",
+    "engine": "Engine",
+    "enginePlaceholder": "Optional, e.g. 2.0L I4",
+    "transmission": "Transmission",
+    "drivetrain": "Drivetrain",
+    "fuelType": "Fuel Type",
+    "cityMpg": "City MPG",
+    "highwayMpg": "Highway MPG",
+    "conditionAndPricing": "Condition & Pricing",
+    "titleStatus": "Title Status",
+    "owners": "Owners",
+    "exteriorColor": "Exterior Color",
+    "interiorColor": "Interior Color",
+    "askingPrice": "Asking Price ($)",
+    "retailPrice": "Retail Price ($)",
+    "includeWarranty": "This vehicle includes my dealer warranty",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe the vehicle's condition, features, and history. Consider noting where the damage occurred and what repairs have been made, e.g. \"Front-end collision, repaired with new bumper, hood, and headlights.\"",
+    "video": "Video",
+    "videoDescription": "Link a walkaround or test-drive video, if you have one -- YouTube, Vimeo, and Google Drive links embed automatically.",
+    "videoUrl": "Video URL",
+    "videoUrlPlaceholder": "https://youtube.com/watch?v=...",
+    "featuresAndOptions": "Features & Options",
+    "featuresAndOptionsDescription": "Select any features this vehicle includes.",
+    "photos": "Photos",
+    "uploadsLocked": "Enter a VIN above to unlock photo and document uploads.",
+    "creatingDraft": "Setting up your listing...",
+    "uploading": "Uploading...",
+    "uploaded": "Uploaded",
+    "uploadFailed": "Upload failed",
+    "clickToSelectPhotos": "Click to select photos",
+    "dragToReorder": "Drag photos to reorder. The first photo is used as the cover.",
+    "cover": "Cover",
+    "failed": "Failed",
+    "removePhoto": "Remove photo",
+    "previewAlt": "Photo {index}",
+    "beforeRepairPhotos": "Before Repair Photos",
+    "beforeRepairPhotosDescription": "Optional. Show what the damage looked like before it was fixed.",
+    "beforeRepairPreviewAlt": "Before repair photo {index}",
+    "documentsTitle": "Documents",
+    "carfaxReport": "Carfax Report",
+    "reportDescription": "Optional. Buyers can view this PDF from the listing page.",
+    "clickToSelectPdf": "Click to select a PDF",
+    "removeCarfaxReport": "Remove Carfax report",
+    "alignmentReport": "Alignment Report",
+    "removeAlignmentReport": "Remove alignment report",
+    "inspectionReport": "Inspection Report",
+    "removeInspectionReport": "Remove inspection report",
+    "publishing": "Publishing...",
+    "publishListing": "Publish",
+    "saveDraft": "Save Draft",
+    "savingDraft": "Saving...",
+    "listedAt": "Listed at ${price}",
+    "listingLiveDescription": "Your listing is now available. It may take a moment for photos to finish processing.",
+    "listAnotherCar": "List Another Car",
+    "errors": {
+      "vinFormat": "VIN must be 17 characters (no I, O, or Q).",
+      "yearInvalid": "Enter a valid year.",
+      "makeRequired": "Select a make.",
+      "modelRequired": "Select a model.",
+      "priceRequired": "Enter an asking price.",
+      "photosRequired": "Add at least one photo before publishing.",
+      "vinRequiredFirst": "Enter a valid 17-character VIN first.",
+      "vinTaken": "This VIN already has an active listing (available or pending)."
+    },
+    "toasts": {
+      "vinDecodeFailed": "Couldn't decode that VIN.",
+      "makeNotSupported": "Decoded make \"{make}\" isn't supported yet -- please select it manually.",
+      "modelNotListed": "Decoded model \"{model}\" isn't listed for {make} -- please select it manually.",
+      "vinDecoded": "VIN decoded successfully.",
+      "fixErrors": "Please fix the errors below.",
+      "listingLive": "Your listing is live!",
+      "vinTaken": "This VIN already has an active listing (available or pending). <link>View the listing</link>.",
+      "uploadsInProgress": "Wait for your photos to finish uploading before publishing.",
+      "draftSaved": "Draft saved. You can finish it later from your profile.",
+      "draftSaveFailed": "Couldn't save your draft. Please try again."
+    }
+  },
+  "EditListingForm": {
+    "status": "Status",
+    "statusAvailable": "Available",
+    "statusPending": "Pending",
+    "statusSold": "Sold",
+    "published": "Published",
+    "publishedDescription": "Visible in search and browse.",
+    "unpublishedNotice": "Unpublished listings are hidden from buyers but stay accessible via their direct link.",
+    "draftNotice": "This listing hasn't been published yet. Finish filling it in and hit Publish when you're ready, or save your progress and come back to it later.",
+    "photoRemoved": "Photo removed",
+    "photoRemoveFailed": "Failed to remove photo",
+    "fixErrorsAndRetry": "Please fix the errors below and try again.",
+    "listingUpdated": "Listing updated",
+    "clickToAddMorePhotos": "Click to add more photos",
+    "dragToReorderNewPhotos": "Drag to reorder new photos (they'll be added after existing ones).",
+    "viewCurrentReport": "View current report",
+    "replace": "Replace",
+    "saving": "Saving...",
+    "saveChanges": "Save Changes"
+  },
+  "Auth": {
+    "appTagline1": "Easy place to buy and sell cars. Quick, reliable and transparent. OnlySalvage is a place where you can rate sellers and buyers.",
+    "signUpTitle": "Sign Up"
+  },
+  "GoogleSignIn": {
+    "signInFailed": "Google sign-in failed. Please try again."
+  },
+  "CompleteProfile": {
+    "title": "Complete your profile",
+    "description": "Just need your location so buyers nearby can find your listings, and you can search by distance too.",
+    "city": "City",
+    "state": "State",
+    "zipCode": "Zip Code",
+    "select": "Select",
+    "submit": "Save and continue",
+    "saving": "Saving...",
+    "errors": {
+      "cityRequired": "City is required.",
+      "stateRequired": "Select a state.",
+      "zipInvalid": "Enter a valid 5-digit zip code.",
+      "updateFailed": "Something went wrong. Please try again."
+    }
+  },
+  "LoginForm": {
+    "sellRedirectToast": "You need an account to sell cars -- log in or sign up to continue.",
+    "invalidCredentials": "Invalid credentials",
+    "logIn": "Log in",
+    "username": "Username:",
+    "password": "Password:",
+    "forgotPassword": "Forgot password?",
+    "signUp": "Sign up",
+    "orDivider": "or"
+  },
+  "SignUpForm": {
+    "createAccount": "Create your account",
+    "orDivider": "or sign up with email",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "phoneNumber": "Phone Number",
+    "optional": "Optional",
+    "city": "City",
+    "state": "State",
+    "select": "Select",
+    "zipCode": "Zip Code",
+    "dealerCheckbox": "I'm signing up as a dealer/business",
+    "businessName": "Business Name",
+    "streetAddress": "Street Address",
+    "website": "Website",
+    "creatingAccount": "Creating account...",
+    "signUp": "Sign up",
+    "alreadyHaveAccount": "Already have an account?",
+    "logIn": "Log in",
+    "errors": {
+      "usernameRequired": "Username is required.",
+      "emailInvalid": "Enter a valid email address.",
+      "passwordTooShort": "Password must be at least 8 characters.",
+      "passwordMismatch": "Passwords do not match.",
+      "cityRequired": "City is required.",
+      "stateRequired": "Select a state.",
+      "zipInvalid": "Enter a valid 5-digit zip code.",
+      "phoneInvalid": "Enter a complete 10-digit phone number.",
+      "businessNameRequired": "Business name is required for dealers.",
+      "streetAddressRequired": "Street address is required for dealers.",
+      "phoneNotVerified": "Please verify your phone number first."
+    },
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "ForgotPasswordForm": {
+    "checkYourEmail": "Check your email",
+    "checkYourEmailDescription": "If an account matches that username or email, we've sent a link to reset the password.",
+    "backToLogin": "Back to log in",
+    "title": "Forgot your password?",
+    "description": "Enter your username or email and we'll send you a reset link.",
+    "usernameOrEmail": "Username or email",
+    "sending": "Sending...",
+    "sendResetLink": "Send reset link"
+  },
+  "ResetPasswordForm": {
+    "invalidLinkTitle": "Invalid reset link",
+    "invalidLinkDescription": "This password reset link is missing or malformed. Request a new one below.",
+    "requestNewLink": "Request a new link",
+    "passwordUpdatedTitle": "Password updated",
+    "passwordUpdatedDescription": "You can now log in with your new password.",
+    "goToLogin": "Go to log in",
+    "title": "Set a new password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "saving": "Saving...",
+    "resetPassword": "Reset password",
+    "errors": {
+      "passwordTooShort": "Password must be at least 8 characters.",
+      "passwordMismatch": "Passwords do not match.",
+      "linkInvalidOrExpired": "This reset link is invalid or has expired."
+    }
+  },
+  "RequestVerification": {
+    "requestVerification": "Request Account Verification",
+    "pending": "Verification pending",
+    "previouslyDeclined": "Your previous request was declined.",
+    "submitting": "Submitting...",
+    "requestSucceeded": "Verification requested",
+    "requestFailed": "Something went wrong. Please try again."
+  },
+  "ApiAccess": {
+    "title": "API Access",
+    "description": "Manage your listings programmatically with a personal API token.",
+    "viewDocs": "View API docs",
+    "noteLabel": "What will you use it for? (optional)",
+    "notePlaceholder": "e.g. syncing inventory from our dealer management system",
+    "verifiedHint": "You're a verified seller, so you'll get access right away.",
+    "requestAccess": "Request API Access",
+    "submitting": "Submitting...",
+    "requestSucceeded": "API access requested -- we'll review it shortly.",
+    "requestApprovedInstantly": "You're approved! Generate your token below.",
+    "requestFailed": "Something went wrong. Please try again.",
+    "requestAgain": "Request Again",
+    "pendingReview": "Your request is pending review.",
+    "denied": "Your request was declined.",
+    "revoked": "Your API access has been revoked.",
+    "approved": "Approved -- generate a token to start using the API.",
+    "generateToken": "Generate Token",
+    "generateSucceeded": "Token generated",
+    "generateFailed": "Couldn't generate a token. Please try again.",
+    "tokenShownOnce": "Copy this token now -- you won't be able to see it again.",
+    "copy": "Copy",
+    "tokenCopied": "Token copied",
+    "tokenCopyFailed": "Couldn't copy the token",
+    "regenerate": "Regenerate",
+    "revoke": "Revoke",
+    "revokeSucceeded": "API token revoked",
+    "revokeFailed": "Couldn't revoke your token. Please try again.",
+    "lastUsed": "Last used {date}",
+    "cancel": "Cancel",
+    "confirmRegenerateTitle": "Regenerate token?",
+    "confirmRegenerateDescription": "Your current token will stop working immediately. Any integration using it will need to be updated with the new one.",
+    "confirmRevokeTitle": "Revoke API access?",
+    "confirmRevokeDescription": "Your token will stop working immediately. You'll need to request access again to get a new one."
+  },
+  "Profile": {
+    "breadcrumbHome": "Home",
+    "breadcrumbProfile": "Profile",
+    "userNotFoundTitle": "User not found",
+    "userNotFoundDescription": "We couldn't find a profile for \"{username}\".",
+    "dealerBadge": "Dealer",
+    "verifiedBadge": "Verified Seller",
+    "financingBadge": "Buy Here Pay Here",
+    "memberSince": "Member since {date}",
+    "carsSold": "{count, plural, one {# car sold} other {# cars sold}}",
+    "navProfile": "Profile",
+    "navListings": "Listings",
+    "navWarranty": "Warranty",
+    "navDrafts": "Drafts",
+    "navWatchlist": "Watchlist",
+    "aboutTitle": "About",
+    "noDescriptionYet": "No description yet.",
+    "contactInfoTitle": "Contact Info",
+    "warrantyTitle": "Warranty Information",
+    "visibleToEveryone": "(visible to everyone)",
+    "onlyVisibleToYou": "(only visible to you)",
+    "noContactInfo": "No contact info provided.",
+    "reviewsTitle": "Reviews",
+    "noReviewsYet": "No reviews yet.",
+    "listingsTitle": "Listings",
+    "sellACar": "Sell a Car",
+    "bulkUpload": "Bulk Upload",
+    "noListingsYet": "No listings yet.",
+    "draftsTitle": "Drafts",
+    "draftsEmptyMessage": "You don't have any saved drafts.",
+    "draftStarted": "Started {date}",
+    "continueDraft": "Continue",
+    "deleteDraft": "Delete draft",
+    "watchlistTitle": "Watchlist",
+    "watchlistEmptyMessage": "You haven't liked any listings yet. Browse the inventory and tap the heart on a car you like.",
+    "settings": "Settings"
+  },
+  "Settings": {
+    "title": "Settings",
+    "breadcrumbHome": "Home",
+    "breadcrumbSettings": "Settings",
+    "viewPublicProfile": "View Public Profile",
+    "navProfile": "Profile",
+    "navSubscriptions": "Subscriptions",
+    "navWarranty": "Warranty",
+    "navSecurity": "Security",
+    "navApi": "API Access",
+    "subscriptionsTitle": "Subscriptions",
+    "subscriptionsDescription": "Subscriptions aren't available yet -- this is where saved-search alerts and seller promotion plans will show up once they're built.",
+    "warrantyTitle": "Warranty",
+    "warrantyDescription": "Set up your dealer warranty and choose which of your listings include it.",
+    "warrantyListingsTitle": "Your Listings",
+    "warrantyNoListings": "You don't have any listings yet.",
+    "warrantyIncluded": "Warranty included",
+    "warrantyUpdateFailed": "Couldn't update warranty status. Try again.",
+    "securityTitle": "Security",
+    "usernameChangeQuestion": "Want to change your username?",
+    "contactSupport": "Contact support",
+    "usernameChangeNotSupported": "-- we don't support changing it directly yet.",
+    "dangerZone": "Danger Zone"
+  },
+  "SubscriptionTiers": {
+    "mostPopular": "Most Popular",
+    "comingSoon": "Coming Soon",
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "priceSuffix": "",
+      "tagline": "For casual private sellers.",
+      "features": {
+        "0": "List up to 3 active vehicles",
+        "1": "Standard search visibility",
+        "2": "Buyer messaging & call tracking",
+        "3": "Basic seller profile"
+      }
+    },
+    "plus": {
+      "name": "Plus",
+      "price": "$19",
+      "priceSuffix": "/mo",
+      "tagline": "For sellers who want more eyes on their listings.",
+      "features": {
+        "0": "Everything in Free",
+        "1": "Featured placement in search results",
+        "2": "Homepage rotation",
+        "3": "Unlimited active listings",
+        "4": "Priority customer support"
+      }
+    },
+    "dealerPro": {
+      "name": "Dealer Pro",
+      "price": "$49",
+      "priceSuffix": "/mo",
+      "tagline": "Built for dealerships moving serious volume.",
+      "features": {
+        "0": "Everything in Plus",
+        "1": "Priority review for the Verified Dealer badge",
+        "2": "Listing performance analytics",
+        "3": "Bulk photo & VIN upload tools",
+        "4": "Dedicated account manager",
+        "5": "Early access to new features"
+      }
+    }
+  },
+  "EditProfileModal": {
+    "editProfile": "Edit Profile",
+    "close": "Close",
+    "changeProfilePicture": "Change profile picture",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "emailRequired": "Email is required.",
+    "emailInvalid": "Enter a valid email address.",
+    "businessName": "Business Name",
+    "optional": "Optional",
+    "businessNameLockedPlaceholder": "Check \"selling as a dealer/business\" below to set this",
+    "businessNameRequired": "Business name is required for dealers.",
+    "streetAddressRequired": "Street address is required for dealers.",
+    "phoneNumber": "Phone Number",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "phoneInvalid": "Enter a complete 10-digit phone number.",
+    "website": "Website",
+    "websitePlaceholder": "https://example.com",
+    "streetAddress": "Street Address",
+    "streetAddressPlaceholder": "123 Main St",
+    "editField": "Edit",
+    "city": "City",
+    "state": "State",
+    "zipCode": "Zip Code",
+    "description": "Description",
+    "descriptionPlaceholder": "Tell buyers a bit about yourself or your business",
+    "dealerCheckbox": "I'm selling as a dealer/business",
+    "financingCheckbox": "I offer Buy Here Pay Here financing",
+    "warrantyCheckbox": "I offer a warranty on my vehicles",
+    "warrantyDuration": "Warranty Duration",
+    "warrantyDurationPlaceholder": "e.g. 12 months / 12,000 miles",
+    "warrantyDurationRequired": "Enter a warranty duration.",
+    "warrantyDescription": "Warranty Details",
+    "warrantyDescriptionPlaceholder": "Describe what's covered by the warranty",
+    "showEmailCheckbox": "Show my email on my public profile",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "saveChanges": "Save Changes",
+    "updateFailed": "Failed to update profile. Please try again.",
+    "updateSucceeded": "Profile updated",
+    "phoneNotVerified": "Please verify your new phone number before saving."
+  },
+  "DeleteAccountButton": {
+    "deleteAccount": "Delete Account",
+    "close": "Close",
+    "confirmTitle": "Delete your account?",
+    "confirmDescription": "This deactivates your account and signs you out. Your listings, watchlist, and profile won't be visible to others anymore. This can't be undone from your account settings -- contact support if you change your mind.",
+    "cancel": "Cancel",
+    "deleting": "Deleting...",
+    "deleteMyAccount": "Delete My Account",
+    "deleteFailed": "Failed to delete account. Please try again.",
+    "deleteSucceeded": "Your account has been deleted."
+  },
+  "LeaveReviewModal": {
+    "leaveReview": "Leave a Review",
+    "close": "Close",
+    "ratingLabel": "Rating",
+    "starAriaLabel": "{value, plural, one {# star} other {# stars}}",
+    "ratingRequired": "Please select a star rating.",
+    "commentLabel": "Comment (optional)",
+    "commentPlaceholder": "Share details about your experience with this seller",
+    "cancel": "Cancel",
+    "submitting": "Submitting...",
+    "submitReview": "Submit Review",
+    "submitFailed": "Failed to submit review. Please try again.",
+    "submitSucceeded": "Review submitted"
+  },
+  "ReportReasons": {
+    "FAKE_VIN": "VIN doesn't match the vehicle",
+    "DUP_VIN": "VIN is already listed on another ad",
+    "MISLEADING": "Listing details are misleading or inaccurate",
+    "SOLD": "Vehicle has already been sold elsewhere",
+    "SCAM": "Suspected scam or fraud",
+    "HARASSMENT": "Harassment or abusive behavior",
+    "FAKE_PROFILE": "Fake or impersonating profile",
+    "INAPPROPRIATE": "Inappropriate content",
+    "SPAM": "Spam",
+    "OTHER": "Other"
+  },
+  "CompareButton": {
+    "addToCompare": "Add to Compare",
+    "removeFromCompare": "Remove from Compare",
+    "added": "Added to comparison",
+    "removed": "Removed from comparison",
+    "viewCompare": "View Compare"
+  },
+  "ComparePage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCompare": "Compare",
+    "title": "Compare Vehicles",
+    "subtitle": "Compare up to 4 vehicles side by side.",
+    "emptyTitle": "Nothing to compare yet",
+    "emptyDescription": "Add a few vehicles to compare from the inventory or a listing page, then come back here.",
+    "browseInventory": "Browse Inventory",
+    "comparingCount": "{count, plural, one {Comparing # vehicle} other {Comparing # vehicles}}",
+    "clearAll": "Clear All",
+    "dragToReorder": "Drag a vehicle to reorder the comparison.",
+    "remove": "Remove",
+    "specs": {
+      "year": "Year",
+      "mileage": "Mileage",
+      "transmission": "Transmission",
+      "drive": "Drivetrain",
+      "fuelType": "Fuel Type",
+      "engine": "Engine",
+      "cityMpg": "City MPG",
+      "hwyMpg": "Highway MPG",
+      "exteriorColor": "Exterior Color",
+      "interiorColor": "Interior Color",
+      "titleStatus": "Title Status",
+      "owners": "Owners",
+      "warranty": "Warranty",
+      "vin": "VIN",
+      "seller": "Seller",
+      "features": "Features"
+    }
+  },
+  "ReportListingModal": {
+    "report": "Report",
+    "title": "Report this Listing",
+    "close": "Close",
+    "reasonLabel": "Reason",
+    "reasonPlaceholder": "Select a reason",
+    "reasonRequired": "Please select a reason.",
+    "detailsLabel": "Additional details (optional)",
+    "detailsPlaceholder": "Anything else that would help us review this listing",
+    "cancel": "Cancel",
+    "submitting": "Submitting...",
+    "submitReport": "Submit Report",
+    "submitFailed": "Failed to submit report. Please try again.",
+    "submitSucceeded": "Thanks for letting us know. Our team will review this listing.",
+    "done": "Done"
+  },
+  "ReportSellerModal": {
+    "report": "Report",
+    "title": "Report this Seller",
+    "close": "Close",
+    "reasonLabel": "Reason",
+    "reasonPlaceholder": "Select a reason",
+    "reasonRequired": "Please select a reason.",
+    "detailsLabel": "Additional details (optional)",
+    "detailsPlaceholder": "Anything else that would help us review this account",
+    "cancel": "Cancel",
+    "submitting": "Submitting...",
+    "submitReport": "Submit Report",
+    "submitFailed": "Failed to submit report. Please try again.",
+    "submitSucceeded": "Thanks for letting us know. Our team will review this account.",
+    "done": "Done"
+  },
+  "ChangePasswordForm": {
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "updating": "Updating...",
+    "updatePassword": "Update Password",
+    "updateSucceeded": "Password updated",
+    "errors": {
+      "newPasswordTooShort": "New password must be at least 8 characters.",
+      "passwordMismatch": "New password and confirmation don't match.",
+      "updateFailed": "Failed to update password."
+    }
+  },
+  "Feedback": {
+    "breadcrumbHome": "Home",
+    "breadcrumbFeedback": "Feedback",
+    "title": "Feedback",
+    "subtitle": "Found a bug or have an idea to make OnlySalvage better? Tell us about it below.",
+    "categoryLabel": "Category",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "A short summary",
+    "subjectRequired": "Subject is required.",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe the bug or your suggestion in as much detail as you can.",
+    "messageRequired": "Message is required.",
+    "contextLabel": "Where did this happen? (optional)",
+    "contextPlaceholder": "e.g. listing detail page, sell form, mobile app",
+    "emailLabel": "Your email (optional)",
+    "emailPlaceholder": "So we can follow up, if needed",
+    "submit": "Send Feedback",
+    "submitting": "Sending...",
+    "submitFailed": "Something went wrong. Please try again.",
+    "submitSucceededTitle": "Thanks for the feedback!",
+    "submitSucceededDescription": "We've received your message and will take a look. If you left an email, we'll follow up if we need more details.",
+    "submitAnother": "Submit Another"
+  },
+  "FeedbackCategories": {
+    "BUG": "Bug Report",
+    "SUG": "Suggestion",
+    "OTH": "Other"
+  },
+  "ContactForm": {
+    "nameLabel": "Name (optional)",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "So we can reply",
+    "emailRequired": "Provide an email so we can get back to you.",
+    "messageLabel": "Message",
+    "messagePlaceholder": "How can we help?",
+    "messageRequired": "Message is required.",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "submitFailed": "Something went wrong. Please try again.",
+    "submitSucceeded": "Message sent -- we'll get back to you soon.",
+    "submitAnother": "Send Another"
+  },
+  "Support": {
+    "breadcrumbHome": "Home",
+    "breadcrumbSupport": "Support",
+    "title": "Support",
+    "subtitle": "We're here to help, 24/7. Have a look through common questions below, or reach out directly.",
+    "browseGuide": "Browse the Full Guide",
+    "browseGuideTitle": "Want to learn more?",
+    "browseGuideDescription": "Check out the full site guide for step-by-step walkthroughs of buying, selling, and everything in between.",
+    "viewInGuide": "View in Guide",
+    "buyingTitle": "Buying",
+    "sellingTitle": "Selling",
+    "accountTitle": "Account",
+    "stillNeedHelpTitle": "Still need help?",
+    "stillNeedHelpDescription": "Send us a message and we'll get back to you as soon as we can.",
+    "availability": "Available 24/7 -- we respond to most messages within a day.",
+    "feedbackTitle": "Have feedback?",
+    "feedbackDescription": "Found a bug or have an idea for a feature? Let us know.",
+    "feedbackLink": "Suggest a Feature or Report a Bug",
+    "buyingFaqs": [
+      {
+        "question": "How do I contact a seller?",
+        "answer": "Open the listing and use the \"Contact the Seller\" card. You can reveal their phone number with one click, or view their profile to see their other listings and reviews."
+      },
+      {
+        "question": "How do I save a listing to look at later?",
+        "answer": "Tap the heart icon on any listing card. If you're logged in, it's saved to your account's Watchlist so you can find it from any device. If you're not logged in, it's saved to this browser instead."
+      },
+      {
+        "question": "What does the \"Featured\" badge mean?",
+        "answer": "Featured listings are cars an admin has chosen to highlight on the homepage for a limited time. It doesn't affect the listing's price or condition -- just its visibility."
+      },
+      {
+        "question": "Can I trust a seller's rating?",
+        "answer": "Seller ratings are left by real buyers from their account, one review per buyer per seller, and sellers can't review themselves."
+      }
+    ],
+    "sellingFaqs": [
+      {
+        "question": "How do I list my car for sale?",
+        "answer": "Go to Sell and enter your VIN -- we'll automatically look up your car's year, make, and model. Add photos, set a price, and publish."
+      },
+      {
+        "question": "How do I edit a listing or mark it as sold?",
+        "answer": "Open your listing and click \"Edit Listing.\" From there you can update details, reorder photos, or change its status to Pending or Sold."
+      },
+      {
+        "question": "Is my phone number visible to everyone?",
+        "answer": "No. Only your area code shows by default -- the full number stays hidden until a buyer chooses to reveal it."
+      },
+      {
+        "question": "What's the difference between a private seller and a dealer?",
+        "answer": "You can mark your account as a dealer/business from your profile. Dealer accounts show a \"Dealer\" badge on their listings and profile."
+      }
+    ],
+    "accountFaqs": [
+      {
+        "question": "I forgot my password. What do I do?",
+        "answer": "Go to the login page and click \"Forgot password?\" -- we'll email you a reset link."
+      },
+      {
+        "question": "Can I leave a review for a seller?",
+        "answer": "Yes, from their profile page. You'll need to be logged in, and you can't review your own profile."
+      },
+      {
+        "question": "How do I update my profile or contact info?",
+        "answer": "Visit your profile page and click \"Edit Profile\" to update your business name, phone, location, description, and photo."
+      }
+    ]
+  },
+  "Sellers": {
+    "breadcrumbHome": "Home",
+    "breadcrumbSellers": "Sellers",
+    "title": "Sellers",
+    "subtitle": "Browse everyone currently selling on OnlySalvage.",
+    "noSellersMatch": "No sellers match \"{search}\".",
+    "noSellersYet": "No sellers yet."
+  },
+  "SellerCard": {
+    "verifiedBadge": "Verified",
+    "dealerBadge": "Dealer",
+    "financingBadge": "Buy Here Pay Here",
+    "noReviewsYet": "No reviews yet",
+    "listingsCount": "{count, plural, one {# listing} other {# listings}}",
+    "openInNewTab": "Open in New Tab",
+    "share": "Copy Link Address",
+    "linkCopied": "Link copied to clipboard",
+    "shareFailed": "Couldn't copy this link. Please try again.",
+    "editProfile": "Edit Profile",
+    "leaveReview": "Leave a Review",
+    "reportSeller": "Report Seller",
+    "callSeller": "Call Seller",
+    "callFailed": "Couldn't get this seller's phone number.",
+    "emailSeller": "Email Seller",
+    "copyAddress": "Copy Address",
+    "addressCopied": "Address copied to clipboard",
+    "addressCopyFailed": "Couldn't copy this address. Please try again."
+  },
+  "SellerSearchBar": {
+    "searchPlaceholder": "Search sellers by name...",
+    "search": "Search"
+  },
+  "Liked": {
+    "breadcrumbHome": "Home",
+    "breadcrumbWatchlist": "Watchlist",
+    "title": "Your Watchlist",
+    "emptyMessage": "You haven't liked any listings yet. Browse the inventory and tap the heart on a car you like."
+  },
+  "LocalWatchlist": {
+    "emptyMessage": "You haven't liked any listings yet. Browse the inventory and tap the heart on a car you like. Log in to keep your watchlist across devices."
+  },
+  "Sell": {
+    "breadcrumbHome": "Home",
+    "breadcrumbSell": "Sell",
+    "title": "Sell Your Car",
+    "subtitle": "List your vehicle for sale on OnlySalvage for free",
+    "bulkUploadLink": "Bulk upload (CSV)"
+  },
+  "SellBulk": {
+    "breadcrumbHome": "Home",
+    "breadcrumbSell": "Sell",
+    "breadcrumbBulk": "Bulk Upload",
+    "title": "Bulk Upload Listings",
+    "subtitle": "Add multiple vehicles at once by uploading a CSV file. Each row becomes a draft you can review and publish individually.",
+    "uploadTitle": "Import from CSV",
+    "uploadDescription": "Download the template, fill in one row per vehicle, then upload it here.",
+    "downloadTemplate": "Download template",
+    "templateDownloadFailed": "Couldn't download the template. Please try again.",
+    "importButton": "Import listings",
+    "importing": "Importing...",
+    "importFailed": "Couldn't import the file. Please try again.",
+    "importSummary": "{imported} of {total} listings imported.",
+    "importSummaryNone": "None of the {total} rows could be imported -- see the errors below.",
+    "colRow": "Row",
+    "colVin": "VIN",
+    "colStatus": "Status",
+    "colDetails": "Details",
+    "imported": "Imported",
+    "failed": "Failed",
+    "reviewDraft": "Review draft →",
+    "goToDrafts": "Go to Drafts"
+  },
+  "EditListingPage": {
+    "listingNotFoundTitle": "Listing not found",
+    "listingNotFoundDescription": "We couldn't find a listing at \"{slug}\".",
+    "breadcrumbHome": "Home",
+    "breadcrumbInventory": "Inventory",
+    "breadcrumbEdit": "Edit",
+    "title": "Edit Listing"
+  },
+  "NearYouSection": {
+    "geolocationNotSupported": "Your browser doesn't support geolocation.",
+    "geolocationFailed": "Couldn't get your location -- check your browser's location permission and try again.",
+    "title": "Near You",
+    "subtitle": "Listings closest to your location",
+    "findCarsNearYou": "Find cars near you",
+    "emptyNearby": "No listings within 50 miles yet -- check back soon, or browse all inventory.",
+    "promptText": "See listings closest to your location first.",
+    "showNearbyListings": "Show Nearby Listings"
+  },
+  "ListingLikeButton": {
+    "likesCount": "{count, plural, one {# like} other {# likes}}"
+  },
+  "PhotoGallery": {
+    "viewFullscreen": "View photo fullscreen",
+    "previousPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "closeFullscreen": "Close fullscreen",
+    "zoomOut": "Zoom out",
+    "zoomIn": "Zoom in",
+    "viewPhotoNumber": "View photo {index}"
+  },
+  "ImageCropModal": {
+    "title": "Crop your photo",
+    "close": "Close",
+    "description": "Drag to reposition, scroll or pinch to zoom. Your profile picture works best as a square.",
+    "zoom": "Zoom",
+    "cancel": "Cancel",
+    "applying": "Applying...",
+    "usePhoto": "Use Photo"
+  },
+  "BackToTopButton": {
+    "backToTop": "Back to top"
+  },
+  "LikeButton": {
+    "like": "Like"
+  },
+  "Price": {
+    "contactForPrice": "Contact for price"
+  },
+  "PrivacyPolicy": {
+    "breadcrumbHome": "Home",
+    "breadcrumbPrivacy": "Privacy Policy",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: July 2026",
+    "intro": "OnlySalvage (\"we\", \"us\", or \"our\") operates the OnlySalvage marketplace, where private sellers and dealers list salvage and rebuilt vehicles for sale. This Privacy Policy explains what information we collect, how we use it, and the choices you have.",
+    "sections": [
+      {
+        "heading": "Information We Collect",
+        "body": "When you create an account, we collect your username, email address, phone number (optional), and location (city, state, zip code) so buyers can find listings near them. When you list a vehicle, we collect the vehicle's details and any photos or documents (such as Carfax, alignment, or inspection reports) you choose to upload. We also automatically collect basic usage data, like pages visited and general device information, to help us maintain and improve the site."
+      },
+      {
+        "heading": "How We Use Your Information",
+        "body": "We use your information to operate the marketplace: creating and displaying your public seller profile, connecting buyers and sellers, processing listings, calculating distance-based search results, and sending you account-related emails such as password resets. We do not sell your personal information to third parties."
+      },
+      {
+        "heading": "What Other Users Can See",
+        "body": "Your username, city and state, profile photo, business name (if you're a dealer), and any listings or reviews you've posted are visible to other users. Your phone number is only revealed to a buyer if they choose to reveal it, and your email address is private by default -- you can choose to make it visible on your public profile from your account settings."
+      },
+      {
+        "heading": "Cookies & Local Storage",
+        "body": "We use cookies to keep you signed in and to remember your session. If you're not logged in, your watchlist (liked listings) is stored in your browser's local storage instead of our servers. We don't use third-party advertising or tracking cookies."
+      },
+      {
+        "heading": "Data Security",
+        "body": "We take reasonable steps to protect your information, including encrypted connections (HTTPS) and secure password storage. However, no method of transmission or storage is 100% secure, and we can't guarantee absolute security."
+      },
+      {
+        "heading": "Your Choices",
+        "body": "You can update or correct your profile information at any time from your account settings. You can deactivate your account from your profile page, or contact us to request deletion of your data."
+      },
+      {
+        "heading": "Children's Privacy",
+        "body": "OnlySalvage is not directed at children under 13, and we do not knowingly collect personal information from children under 13."
+      },
+      {
+        "heading": "Changes to This Policy",
+        "body": "We may update this Privacy Policy from time to time. If we make material changes, we'll update the date at the top of this page."
+      },
+      {
+        "heading": "Contact Us",
+        "body": "If you have questions about this Privacy Policy or how we handle your information, contact us at support@onlysalvage.com."
+      }
+    ]
+  },
+  "TermsOfService": {
+    "breadcrumbHome": "Home",
+    "breadcrumbTerms": "Terms of Service",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: July 2026",
+    "intro": "These Terms of Service (\"Terms\") govern your use of OnlySalvage. By creating an account or using the site, you agree to these Terms.",
+    "sections": [
+      {
+        "heading": "Eligibility",
+        "body": "You must be at least 18 years old to create an account or list a vehicle on OnlySalvage."
+      },
+      {
+        "heading": "Your Account",
+        "body": "You're responsible for keeping your password secure and for all activity under your account. Let us know right away if you believe your account has been compromised."
+      },
+      {
+        "heading": "Listings",
+        "body": "When you list a vehicle, you agree that the information you provide -- including the VIN, title status (clean, rebuilt, or salvage), mileage, condition, and photos -- is accurate to the best of your knowledge. You're responsible for the content of your listings and must have the legal right to sell the vehicle."
+      },
+      {
+        "heading": "OnlySalvage Is a Marketplace, Not a Party to the Sale",
+        "body": "OnlySalvage connects buyers and sellers -- we are not a party to any transaction between them, and we don't inspect, certify, or guarantee any vehicle listed on the site. Buyers are strongly encouraged to inspect a vehicle in person (or arrange a professional inspection) and review its title and history before completing a purchase."
+      },
+      {
+        "heading": "Reviews",
+        "body": "Reviews must reflect a genuine transaction or interaction. Reviews that are fraudulent, abusive, or left to manipulate a seller's rating may be removed."
+      },
+      {
+        "heading": "Prohibited Conduct",
+        "body": "You agree not to: list a vehicle you don't have the right to sell, misrepresent a vehicle's condition or title status, harass other users, or use the site for any unlawful purpose."
+      },
+      {
+        "heading": "Fees",
+        "body": "Listing a vehicle on OnlySalvage is currently free. If we introduce paid features in the future, we'll clearly disclose any fees before you're charged."
+      },
+      {
+        "heading": "Disclaimers & Limitation of Liability",
+        "body": "OnlySalvage is provided \"as is\" without warranties of any kind. To the fullest extent permitted by law, OnlySalvage is not liable for any dispute, loss, or damage arising from a transaction between a buyer and a seller."
+      },
+      {
+        "heading": "Termination",
+        "body": "We may suspend or terminate accounts that violate these Terms or that we believe pose a risk to other users."
+      },
+      {
+        "heading": "Changes to These Terms",
+        "body": "We may update these Terms from time to time. Continued use of OnlySalvage after a change means you accept the updated Terms."
+      },
+      {
+        "heading": "Contact Us",
+        "body": "Questions about these Terms? Contact us at support@onlysalvage.com."
+      }
+    ]
+  },
+  "AboutUs": {
+    "breadcrumbHome": "Home",
+    "breadcrumbAbout": "About",
+    "title": "About OnlySalvage",
+    "subtitle": "The straightforward way to buy and sell salvage cars.",
+    "sections": [
+      {
+        "heading": "Our Mission",
+        "body": "Salvage and rebuilt vehicles are some of the best deals on the used car market, but finding them has traditionally meant sketchy auction sites, no seller accountability, and titles that get glossed over until it's too late. OnlySalvage was built to fix that -- a marketplace where every listing is tied to a real, rated seller account, and where the title status (salvage or rebuilt) is disclosed up front, not buried in the fine print."
+      },
+      {
+        "heading": "What We Do",
+        "body": "We connect private sellers and dealers with buyers looking for a deal on a salvage or rebuilt vehicle. Sellers can list a car in minutes -- just enter a VIN and we'll pull in the year, make, and model automatically. Buyers can search by location, price, mileage, and title status, message sellers directly, and check a seller's rating before they buy."
+      },
+      {
+        "heading": "Built on Trust",
+        "body": "Every account on OnlySalvage is real -- no anonymous listings. Buyers and sellers rate each other after a transaction, so a seller's reputation is earned, not claimed. We also provide 24/7 support if something goes wrong."
+      },
+      {
+        "heading": "Get in Touch",
+        "body": "Have a question, feedback, or a partnership idea? We'd love to hear from you at support@onlysalvage.com."
+      }
+    ]
+  },
+  "Developers": {
+    "breadcrumbHome": "Home",
+    "breadcrumbDevelopers": "Developers",
+    "title": "API Documentation",
+    "subtitle": "Manage your inventory programmatically -- add listings, update status, and upload photos without opening the site.",
+    "tableOfContents": "Contents",
+    "searchEndpoints": "Search endpoints...",
+    "noEndpointsFound": "No endpoints match your search.",
+    "gettingStartedTitle": "Getting Started",
+    "gettingStartedStep1": "Request access from",
+    "gettingStartedStep1Link": "Settings > API Access",
+    "gettingStartedStep2": "A verified seller is approved instantly; otherwise we'll review your request shortly.",
+    "gettingStartedStep3": "Once approved, generate your token -- it's shown exactly once, so copy it somewhere safe.",
+    "gettingStartedStep4": "Include it as a Bearer token on every request to the endpoints below.",
+    "authTitle": "Authentication",
+    "authDescription": "Every request (except the public reference endpoints) must include your token in the Authorization header:",
+    "authNote": "Tokens are tied to your account -- every listing you create, edit, or read through the API is scoped to your own inventory only.",
+    "lifecycleTitle": "Listing Lifecycle",
+    "lifecycleDescription": "A listing created through the API always starts as a draft, the same as starting one by hand on the site -- it can't publish without at least one photo, and this call can't carry one.",
+    "lifecycleStep1": "POST a new listing -- it's created as a draft.",
+    "lifecycleStep2": "Upload one or more photos to it.",
+    "lifecycleStep3": "POST a status change (e.g. \"AV\") to publish it.",
+    "endpointsTitle": "Endpoints",
+    "endpointMeTitle": "Get Your Account",
+    "endpointMe": "The account your token belongs to",
+    "endpointChoicesTitle": "List Field Choices",
+    "endpointChoices": "Valid values for status, vehicle_type, fuel_type, etc.",
+    "endpointMakesTitle": "List Makes",
+    "endpointMakes": "List all vehicle makes (no token required)",
+    "endpointModelsTitle": "List Models",
+    "endpointModels": "List models for a given make (no token required)",
+    "endpointListTitle": "List Your Listings",
+    "endpointList": "List your own listings -- filterable, see below",
+    "endpointCreateTitle": "Create a Listing",
+    "endpointCreate": "Create a new listing (always starts as a draft)",
+    "endpointRetrieveTitle": "Retrieve a Listing",
+    "endpointRetrieve": "Get a single listing of yours",
+    "endpointUpdateTitle": "Update a Listing",
+    "endpointUpdate": "Edit a listing's fields (partial updates supported)",
+    "endpointDeleteTitle": "Delete a Listing",
+    "endpointDelete": "Permanently delete a listing and its photos",
+    "endpointStatusTitle": "Change Listing Status",
+    "endpointStatus": "Change just a listing's status",
+    "endpointRenewTitle": "Renew a Listing",
+    "endpointRenew": "Bump an eligible listing back to the top",
+    "endpointImagesListTitle": "List Photos",
+    "endpointImagesList": "List a listing's photos",
+    "endpointImagesUploadTitle": "Upload a Photo",
+    "endpointImagesUpload": "Upload a photo, by file or image_url",
+    "endpointImageDeleteTitle": "Delete a Photo",
+    "endpointImageDelete": "Remove a single photo",
+    "languageLabel": "Language",
+    "miscTitle": "Good to Know",
+    "miscRateLimit": "Requests are rate-limited to 120 per minute per account.",
+    "miscOwnership": "Every endpoint is scoped to your own listings -- there's no way to read or modify another seller's inventory through this API.",
+    "miscErrors": "Validation errors come back as a JSON object mapping field names to error messages, same as the rest of the site's API.",
+    "miscPagination": "List responses are paginated (50 per page by default, up to 200 with ?page_size=); use the returned next/previous links to page through the rest."
+  },
+  "Guide": {
+    "breadcrumbHome": "Home",
+    "breadcrumbGuide": "Guide",
+    "title": "Site Guide",
+    "subtitle": "A few tips for features that aren't obvious right away.",
+    "searchPlaceholder": "Search the guide...",
+    "noResults": "No tips match your search.",
+    "tableOfContents": "Contents",
+    "goTo": "Go to",
+    "walkthroughsTitle": "Step-by-Step Guides",
+    "categories": [
+      {
+        "title": "Browsing & Buying",
+        "tips": [
+          {
+            "heading": "Right-click a listing for quick actions",
+            "body": "Right-click any listing card to open it in a new tab, copy its link, add it to Compare or your Watchlist, contact the seller, or report it -- without opening the listing first."
+          },
+          {
+            "heading": "Compare vehicles side by side",
+            "body": "Add a few listings to Compare (from the card menu or a listing page) and view them together to weigh price, mileage, and specs at a glance."
+          },
+          {
+            "heading": "Your watchlist tracks availability",
+            "body": "Tap the heart icon on any listing card to save it -- logged in, it's kept in your account's Watchlist so you can find it from any device; logged out, it's saved to this browser instead. Either way, a car is automatically removed if it sells or is taken down, and reappears on its own if it becomes available again."
+          },
+          {
+            "heading": "Sort by distance",
+            "body": "Enter your zip code (or allow location access) in the inventory filters to sort listings by how far away they are."
+          },
+          {
+            "heading": "Recommendations improve as you browse",
+            "body": "The Recommended section on the home page and inventory page learns from what you search for and view -- the more you use it, the better it gets."
+          },
+          {
+            "heading": "What \"Featured\" means",
+            "body": "Featured listings are cars an admin has chosen to highlight on the homepage for a limited time. It doesn't affect the listing's price or condition -- just its visibility."
+          },
+          {
+            "heading": "Contact a seller directly",
+            "body": "Open the listing and use the \"Contact the Seller\" card to reveal their phone number with one click, or view their profile to see their other listings and reviews."
+          },
+          {
+            "heading": "How to leave a review",
+            "body": "Ratings are left by real buyers from their own account -- one review per buyer per seller, and sellers can't review themselves, so what you see reflects real experience.",
+            "steps": [
+              "Visit the seller's profile page.",
+              "Click \"Leave a Review.\"",
+              "Choose a star rating and write a comment.",
+              "Submit -- you can only review a seller once."
+            ]
+          },
+          {
+            "heading": "Your own listings stand out while browsing",
+            "body": "Wherever you see one of your own listings mixed in with search results -- inventory, your profile, anywhere -- it's outlined with a highlighted border so you can spot it at a glance."
+          },
+          {
+            "heading": "How to buy a car",
+            "body": "From your first search to picking up the keys -- here's the typical path from browsing to buying on OnlySalvage.",
+            "steps": [
+              "Search inventory using filters for make, model, price, and location.",
+              "Compare your shortlist side by side to weigh price, mileage, and condition.",
+              "Schedule a test drive with the seller once you've narrowed it down.",
+              "Go through the Buyer's Checklist before you commit, so nothing gets missed."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Selling & Managing Listings",
+        "tips": [
+          {
+            "heading": "Drafts save your progress",
+            "body": "Start a listing and leave whenever you want -- once you save it once, it's kept in your profile's Drafts tab so you can finish it later."
+          },
+          {
+            "heading": "Editing or managing a listing you've already published",
+            "body": "Open your listing and click \"Edit Listing\" to update details, reorder photos, or change its status -- or right-click it from any card (your profile, inventory, anywhere) for the same actions as a shortcut: mark it Available, Pending, or Sold, publish/unpublish it, edit it, or delete it, all without opening the edit page."
+          },
+          {
+            "heading": "Pause instead of delete",
+            "body": "Turn off \"Published\" on the edit page to hide a listing everywhere except your own profile (shown with an Inactive badge). Turn it back on anytime -- nothing is lost."
+          },
+          {
+            "heading": "Renew to bump your listing back up",
+            "body": "Once a live listing is at least 7 days old, renew it from its Actions section to move it back to the top of search results -- up to 3 times."
+          },
+          {
+            "heading": "Bulk Upload",
+            "body": "From Sell > Bulk Upload, dealers can add many vehicles at once from a spreadsheet. Each row becomes a draft to review and publish individually.",
+            "steps": [
+              "Go to Sell > Bulk Upload.",
+              "Download the CSV template.",
+              "Fill in one row per vehicle and upload the file.",
+              "Review the imported drafts, add photos, and publish each one."
+            ]
+          },
+          {
+            "heading": "VIN auto-fill",
+            "body": "Enter a VIN when starting a listing and the year, make, model, and engine details fill in automatically."
+          },
+          {
+            "heading": "Selling as a dealer",
+            "body": "Mark your account as a dealer/business from your profile settings. Dealer accounts show a \"Dealer\" badge on their listings and profile, and unlock CSV bulk upload."
+          },
+          {
+            "heading": "Your phone number stays private",
+            "body": "Only your area code shows by default on a listing -- the full number stays hidden until a buyer chooses to reveal it."
+          },
+          {
+            "heading": "How to sell a car, step by step",
+            "body": "The full flow from VIN to published listing, start to finish.",
+            "steps": [
+              "Go to Sell and enter your VIN -- year, make, model, and engine fill in automatically.",
+              "Add clear photos of the car (exterior, interior, and any damage).",
+              "Set your price and add a description.",
+              "Publish it -- or save it as a draft to finish later.",
+              "Manage it anytime: mark it Pending or Sold, pause it, or renew it to stay at the top of search results."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Account & Developer Tools",
+        "tips": [
+          {
+            "heading": "Get verified",
+            "body": "Request seller verification from Settings to earn a verification badge that helps buyers trust your listings."
+          },
+          {
+            "heading": "Manage your inventory with the API",
+            "body": "Verified sellers get instant API access from Settings > API Access -- generate a token and manage your listings programmatically. See the API docs for details."
+          },
+          {
+            "heading": "Reset your password",
+            "body": "Go to the login page and click \"Forgot password?\" -- we'll email you a reset link.",
+            "steps": [
+              "Go to the login page.",
+              "Click \"Forgot password?\"",
+              "Check your email for a reset link.",
+              "Set a new password and log in."
+            ]
+          },
+          {
+            "heading": "Update your profile",
+            "body": "Visit your profile page and click \"Edit Profile\" to update your business name, phone, location, description, and photo."
+          }
+        ]
+      }
+    ]
+  },
+  "VehicleAttributes": {
+    "vehicleType": {
+      "SDN": "Sedan",
+      "TK": "Truck",
+      "SUV": "SUV",
+      "WGN": "Wagon",
+      "CPE": "Coupe",
+      "HBK": "Hatchback",
+      "VAN": "Van"
+    },
+    "transmission": {
+      "ATM": "Automatic",
+      "MAN": "Manual",
+      "CVT": "CVT",
+      "DTC": "DCT",
+      "ECVT": "eCVT"
+    },
+    "drive": {
+      "FWD": "Front Wheel Drive",
+      "RWD": "Rear Wheel Drive",
+      "AWD": "All Wheel Drive",
+      "4WD": "Four Wheel Drive",
+      "EAWD": "Electric All Wheel Drive",
+      "OTH": "Other"
+    },
+    "fuelType": {
+      "GAS": "Gasoline",
+      "DIS": "Diesel",
+      "HYB": "Hybrid",
+      "ELC": "Electric"
+    },
+    "titleDocument": {
+      "RE": "Rebuilt",
+      "SA": "Salvage",
+      "CT": "Clean (Total Loss)"
+    },
+    "color": {
+      "BLK": "Black",
+      "WHT": "White",
+      "SIL": "Silver",
+      "GRY": "Grey",
+      "RED": "Red",
+      "BLU": "Blue",
+      "BRW": "Brown",
+      "TAN": "Beige/Tan",
+      "GRN": "Green",
+      "ORG": "Orange",
+      "YEL": "Yellow",
+      "GLD": "Gold",
+      "MAR": "Maroon",
+      "PUR": "Purple"
+    },
+    "sellerType": {
+      "Private": "Private Seller",
+      "Dealer": "Dealer",
+      "Financing": "Offers Financing",
+      "Verified": "Verified Seller"
+    },
+    "optionCategory": {
+      "CMF": "Comfort & Interior",
+      "TEC": "Technology & Infotainment",
+      "SAF": "Safety & Driver Assistance",
+      "EXT": "Exterior & Convenience",
+      "PRF": "Performance & Towing"
+    }
+  },
+  "TranslatableText": {
+    "translate": "Translate",
+    "viewOriginal": "View original",
+    "translationFailed": "Translation failed. Please try again."
+  },
+  "PhoneVerification": {
+    "verified": "Phone verified",
+    "sending": "Sending...",
+    "codeSent": "Verification code sent.",
+    "sendFailed": "Failed to send verification code. Please try again.",
+    "codeLabel": "Verification code",
+    "codePlaceholder": "6-digit code",
+    "confirmCode": "Confirm",
+    "verifying": "Verifying...",
+    "resendCode": "Resend code",
+    "invalidCode": "Incorrect or expired code.",
+    "verifySucceeded": "Phone number verified.",
+    "verify": "Verify",
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "DeleteListingModal": {
+    "close": "Close",
+    "confirmTitle": "Delete this listing?",
+    "confirmDescription": "This permanently deletes the listing and all its photos and documents. This cannot be undone.",
+    "cancel": "Cancel",
+    "deleting": "Deleting...",
+    "deleteListing": "Delete listing",
+    "deleteFailed": "Failed to delete listing.",
+    "deleteSucceeded": "Listing deleted."
+  },
+  "Checklist": {
+    "breadcrumbHome": "Home",
+    "breadcrumbChecklist": "Buyer's Checklist",
+    "title": "Buyer's Checklist",
+    "subtitle": "Everything to check before buying a salvage vehicle -- check off each item as you go.",
+    "progress": "{checked} of {total} checked",
+    "reset": "Reset",
+    "print": "Print",
+    "aboutRebuilt": {
+      "title": "Understanding Rebuilt & Salvage Titles",
+      "paragraph1": "A rebuilt or salvage title only means a vehicle was once declared a total loss -- it says nothing about the quality of the repair. A shop that does the job right can bring a wrecked car back to a genuinely safe, reliable condition, sometimes a better one than plenty of \"clean\" title vehicles on the road.",
+      "paragraph2": "A clean title isn't a guarantee either. If an owner pays for repairs out of pocket instead of filing an insurance claim, the accident is never reported, and the title stays \"clean\" no matter how severe the damage was. Title status alone can't tell you how a car was actually treated.",
+      "paragraph3": "That's why the steps in this checklist -- a vehicle history report, a VIN match, and a professional inspection -- matter more than the title status printed on the paperwork. They apply just as much to a \"clean\" title car as to a rebuilt one."
+    }
+  }
+}

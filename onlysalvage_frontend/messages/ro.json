@@ -1,0 +1,1595 @@
+{
+  "Common": {
+    "appName": "OnlySalvage",
+    "viewAll": "Vezi tot",
+    "showPassword": "Afișează parola",
+    "hidePassword": "Ascunde parola"
+  },
+  "Nav": {
+    "logo": "Logo",
+    "home": "Acasă",
+    "inventory": "Inventar",
+    "support": "Asistență 24/7",
+    "sell": "Vinde",
+    "switchToLight": "Comută la modul luminos",
+    "switchToDark": "Comută la modul întunecat",
+    "switchLanguage": "Schimbă limba",
+    "likedCars": "Mașini apreciate",
+    "compare": "Comparare",
+    "myProfile": "Profilul meu",
+    "viewProfile": "Vezi profilul",
+    "logOut": "Deconectare",
+    "logIn": "Conectare",
+    "signUp": "Înregistrare",
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
+    "settings": "Setări"
+  },
+  "Footer": {
+    "tagline": "Piața de încredere pentru cumpărarea și vânzarea de mașini. Rapid, simplu și de încredere.",
+    "company": "Companie",
+    "about": "Despre noi",
+    "shopByMake": "Caută după marcă",
+    "shopByBodyStyle": "Caută după caroserie",
+    "sellers": "Vânzători",
+    "guide": "Ghidul site-ului",
+    "checklist": "Lista de verificare a cumpărătorului",
+    "apiDocs": "Documentație API",
+    "feedback": "Feedback",
+    "contact": "Contact",
+    "careers": "Cariere",
+    "legal": "Legal",
+    "privacyPolicy": "Politica de confidențialitate",
+    "termsOfService": "Termeni și condiții",
+    "followUs": "Urmărește-ne",
+    "copyright": "© 2026 OnlySalvage. Toate drepturile rezervate.",
+    "privacy": "Confidențialitate",
+    "terms": "Termeni"
+  },
+  "Home": {
+    "heroTitle": "Modul simplu de a cumpăra și vinde mașini avariate",
+    "heroSubtitle": "Răsfoiește anunțuri verificate de mașini avariate și recondiționate de la vânzători privați și dealeri, sau publică-ți propria mașină avariată în câteva minute.",
+    "trust": {
+      "verifiedTitle": "Anunțuri verificate",
+      "verifiedDescription": "Fiecare vehicul este asociat unui cont real de vânzător, cu statutul titlului (avariat sau recondiționat) menționat clar de la început.",
+      "ratedTitle": "Vânzători și cumpărători evaluați",
+      "ratedDescription": "Tranzacționează cu încredere folosind sistemul nostru de recenzii reciproce pentru vânzători.",
+      "supportTitle": "Asistență 24/7",
+      "supportDescription": "Ai întrebări sau probleme? Echipa noastră este disponibilă non-stop.",
+      "reachTitle": "Acoperire națională",
+      "reachDescription": "Caută anunțuri de mașini avariate și recondiționate de la vânzători privați și dealeri din toată țara."
+    },
+    "guideTip": {
+      "label": "Știai că?",
+      "viewGuide": "Vezi ghidul"
+    },
+    "checklistTeaser": {
+      "label": "Înainte să cumperi",
+      "heading": "Lista de verificare a cumpărătorului",
+      "description": "Tot ce trebuie verificat înainte de a cumpăra un vehicul avariat, într-o singură listă de verificare printabilă.",
+      "viewChecklist": "Vezi lista de verificare"
+    },
+    "howItWorks": {
+      "title": "Cum funcționează",
+      "subtitle": "Cumpărarea sau vânzarea unei mașini avariate pe OnlySalvage se face în trei pași simpli",
+      "step1Title": "Caută sau publică un anunț",
+      "step1Description": "Răsfoiește anunțuri de mașini avariate și recondiționate din apropierea ta, sau publică-ți propriul vehicul în câteva minute -- introdu doar un VIN și completăm noi detaliile.",
+      "step2Title": "Contactează vânzătorul",
+      "step2Description": "Dezvăluie numărul de telefon al vânzătorului și contactează-l direct pentru a pune întrebări sau a stabili o vizionare.",
+      "step3Title": "Inspectează și cumpără",
+      "step3Description": "Inspectează vehiculul personal (sau organizează o inspecție profesională), apoi finalizează vânzarea direct cu vânzătorul."
+    },
+    "featuredTitle": "Mașini recomandate",
+    "featuredSubtitle": "Anunțuri alese manual, promovate în prezent de vânzătorii lor",
+    "newArrivalsTitle": "Noutăți",
+    "newArrivalsSubtitle": "Cele mai recente vehicule adăugate pe platformă",
+    "noListingsYet": "Niciun anunț momentan. Fii primul care publică o mașină!",
+    "recommendedTitle": "Recomandate pentru tine",
+    "recommendedSubtitle": "Pe baza a ceea ce ai căutat și vizualizat",
+    "becauseYouViewedTitle": "Pentru că ai vizualizat {title}",
+    "becauseYouViewedSubtitle": "Anunțuri similare care ți-ar putea plăcea",
+    "ctaTitle": "Ești gata să-ți vinzi mașina avariată?",
+    "ctaDescription": "Publică-ți vehiculul avariat sau recondiționat în câteva minute -- introdu doar VIN-ul și completăm noi detaliile pentru tine.",
+    "sellYourCar": "Vinde-ți mașina",
+    "mostLikedTitle": "Cele mai apreciate",
+    "mostLikedSubtitle": "Anunțuri disponibile pe care cumpărătorii le apreciază acum",
+    "topSellersTitle": "Cei mai bine cotați vânzători",
+    "topSellersSubtitle": "Vânzători cu cel mai mare rating mediu din partea cumpărătorilor reali",
+    "shopByMakeTitle": "Caută după marcă",
+    "shopByMakeSubtitle": "Răsfoiește anunțuri de mașini avariate și recondiționate după producător",
+    "shopByBodyStyleTitle": "Caută după caroserie",
+    "shopByBodyStyleSubtitle": "Răsfoiește anunțuri de mașini avariate și recondiționate după tipul caroseriei",
+    "shopByCityTitle": "Caută după oraș",
+    "shopByCitySubtitle": "Răsfoiește anunțuri de mașini avariate și recondiționate în orașe populare",
+    "verifiedSellersTitle": "Vânzători verificați",
+    "verifiedSellersSubtitle": "Vânzători care și-au confirmat identitatea prin procesul nostru de verificare",
+    "verifiedListingsTitle": "Anunțuri de la vânzători verificați",
+    "verifiedListingsSubtitle": "Liniște sporită atunci când cumperi de la un cont verificat",
+    "mostViewedTitle": "Cele mai vizualizate",
+    "mostViewedSubtitle": "Anunțuri disponibile care atrag cea mai multă atenție acum"
+  },
+  "SearchBlock": {
+    "search": "Caută",
+    "searchPlaceholder": "Caută după marcă, model sau cuvânt cheie",
+    "filters": {
+      "inventory": "Inventar",
+      "under5000": "Sub 5.000 $",
+      "under10000": "Sub 10.000 $",
+      "over10000": "Peste 10.000 $",
+      "allWheelDrive": "Tracțiune integrală",
+      "rebuiltTitle": "Titlu recondiționat",
+      "privateSellers": "Vânzători privați",
+      "nearby": "În apropiere",
+      "recommended": "Recomandate"
+    },
+    "surpriseMe": "Surprinde-mă"
+  },
+  "ListingCard": {
+    "mileage": "Kilometraj",
+    "transmission": "Transmisie",
+    "fuelType": "Tip combustibil",
+    "seller": "Vânzător",
+    "location": "Locație",
+    "contactSeller": "Contactează vânzătorul",
+    "noPhotoYet": "Fără fotografie momentan",
+    "callsReceived": "{count, plural, one {# apel} few {# apeluri} other {# apeluri}}",
+    "viewsCount": "{count, plural, one {# vizualizare} few {# vizualizări} other {# vizualizări}}",
+    "statusAvailable": "DISPONIBIL",
+    "statusPending": "ÎN AȘTEPTARE",
+    "statusSold": "VÂNDUT",
+    "inactiveBadge": "Inactiv",
+    "lowMileage": "Kilometraj redus",
+    "verifiedSeller": "Vânzător verificat",
+    "warrantyBadge": "Garanție",
+    "openInNewTab": "Deschide în filă nouă",
+    "editListing": "Editează anunțul",
+    "markAvailable": "Marchează ca disponibil",
+    "markSold": "Marchează ca vândut",
+    "markPending": "Marchează ca în așteptare",
+    "share": "Copiază adresa linkului",
+    "addToCompare": "Adaugă la comparare",
+    "removeFromCompare": "Elimină din comparare",
+    "addedToCompare": "Adăugat la comparare",
+    "removedFromCompare": "Eliminat din comparare",
+    "unpublish": "Anulează publicarea",
+    "publish": "Publică",
+    "callSeller": "Sună vânzătorul",
+    "callFailed": "Nu am putut obține numărul de telefon al acestui vânzător.",
+    "emailSeller": "Trimite e-mail vânzătorului",
+    "report": "Raportează",
+    "viewSellerProfile": "Vezi profilul vânzătorului",
+    "addToWatchlist": "Adaugă la lista de urmărire",
+    "removeFromWatchlist": "Elimină din lista de urmărire",
+    "statusUpdateSucceeded": "Statutul anunțului a fost actualizat",
+    "statusUpdateFailed": "Actualizarea statutului anunțului a eșuat.",
+    "linkCopied": "Link copiat în clipboard",
+    "shareFailed": "Nu am putut distribui acest anunț. Te rugăm să încerci din nou.",
+    "unpublishSucceeded": "Anunț nepublicat",
+    "unpublishFailed": "Anularea publicării anunțului a eșuat.",
+    "publishSucceeded": "Anunț publicat",
+    "publishFailed": "Publicarea anunțului a eșuat.",
+    "deleteListing": "Șterge anunțul"
+  },
+  "ListingResultsGrid": {
+    "noListingsFound": "Niciun anunț găsit."
+  },
+  "Filters": {
+    "search": "Caută...",
+    "noResults": "Niciun rezultat",
+    "apply": "Aplică",
+    "min": "Min",
+    "max": "Max",
+    "any": "Oricare",
+    "deselectAll": "Deselectează tot",
+    "invalidNumber": "Introdu un număr valid"
+  },
+  "Inventory": {
+    "browseTitle": "Răsfoiește inventarul nostru",
+    "filters": "Filtre",
+    "closeFilters": "Închide filtrele",
+    "reset": "Resetează",
+    "applyFilters": "Aplică filtrele",
+    "distance": "Distanță",
+    "zipCode": "Cod poștal",
+    "anyDistance": "Orice distanță",
+    "locating": "Se localizează...",
+    "usingYourLocation": "Se folosește locația ta",
+    "useMyLocation": "Folosește locația mea",
+    "apply": "Aplică",
+    "year": "An",
+    "make": "Marcă",
+    "model": "Model",
+    "selectMakeFirst": "Selectează mai întâi o marcă",
+    "price": "Preț",
+    "mileage": "Kilometraj",
+    "vehicleType": "Tip vehicul",
+    "transmission": "Transmisie",
+    "driveType": "Tip tracțiune",
+    "fuelType": "Tip combustibil",
+    "exteriorColor": "Culoare exterior",
+    "interiorColor": "Culoare interior",
+    "titleStatus": "Statutul titlului",
+    "seller": "Vânzător",
+    "noGeolocationSupport": "Browserul tău nu acceptă geolocalizarea.",
+    "geolocationFailed": "Nu am putut obține locația ta -- încearcă în schimb un cod poștal.",
+    "within": "În raza de {miles} mile",
+    "searching": "Se caută...",
+    "listingsFound": "{count, plural, one {# anunț găsit} few {# anunțuri găsite} other {# anunțuri găsite}}",
+    "largeCards": "Carduri mari",
+    "compactCards": "Carduri compacte",
+    "listView": "Vizualizare listă",
+    "noListingsMatchFilters": "Niciun anunț nu corespunde filtrelor tale.",
+    "loading": "Se încarcă...",
+    "loadMore": "Încarcă mai multe",
+    "sortOptions": {
+      "newest": "Cele mai noi",
+      "priceAsc": "Preț: crescător",
+      "priceDesc": "Preț: descrescător",
+      "mileageAsc": "Kilometraj: crescător",
+      "yearDesc": "An: cele mai noi primele",
+      "distance": "Cele mai apropiate"
+    }
+  },
+  "MakesPage": {
+    "metaTitle": "Caută după marcă",
+    "metaDescription": "Răsfoiește vehicule avariate și recondiționate după marcă pe OnlySalvage.",
+    "breadcrumbHome": "Acasă",
+    "breadcrumbMakes": "Mărci",
+    "title": "Caută după marcă",
+    "subtitle": "Răsfoiește anunțuri de mașini avariate și recondiționate după producător",
+    "noMakesYet": "Nicio marcă disponibilă momentan."
+  },
+  "MakePage": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbMakes": "Mărci",
+    "title": "{make} de vânzare",
+    "subtitle": "{count, plural, one {# anunț disponibil} few {# anunțuri disponibile} other {# anunțuri disponibile}}",
+    "noListingsYet": "Niciun anunț {make} disponibil momentan.",
+    "viewAllInInventory": "{count, plural, one {Vezi acest anunț în Inventar} few {Vezi toate cele # anunțuri în Inventar} other {Vezi toate cele # anunțuri în Inventar}}"
+  },
+  "MakeModelPage": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbMakes": "Mărci",
+    "title": "{make} {model} de vânzare",
+    "subtitle": "{count, plural, one {# anunț disponibil} few {# anunțuri disponibile} other {# anunțuri disponibile}}",
+    "noListingsYet": "Niciun anunț {make} {model} disponibil momentan.",
+    "viewAllInInventory": "{count, plural, one {Vezi acest anunț în Inventar} few {Vezi toate cele # anunțuri în Inventar} other {Vezi toate cele # anunțuri în Inventar}}"
+  },
+  "BodyStylesPage": {
+    "metaTitle": "Caută după caroserie",
+    "metaDescription": "Răsfoiește vehicule avariate și recondiționate după tipul caroseriei pe OnlySalvage.",
+    "breadcrumbHome": "Acasă",
+    "breadcrumbBodyStyles": "Tipuri de caroserie",
+    "title": "Caută după caroserie",
+    "subtitle": "Răsfoiește anunțuri de mașini avariate și recondiționate după tipul caroseriei"
+  },
+  "BodyStylePage": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbBodyStyles": "Tipuri de caroserie",
+    "title": "{type} de vânzare",
+    "subtitle": "{count, plural, one {# anunț disponibil} few {# anunțuri disponibile} other {# anunțuri disponibile}}",
+    "noListingsYet": "Niciun anunț {type} disponibil momentan.",
+    "viewAllInInventory": "{count, plural, one {Vezi acest anunț în Inventar} few {Vezi toate cele # anunțuri în Inventar} other {Vezi toate cele # anunțuri în Inventar}}"
+  },
+  "CitiesPage": {
+    "metaTitle": "Caută după oraș",
+    "metaDescription": "Răsfoiește vehicule avariate și recondiționate de vânzare după oraș pe OnlySalvage.",
+    "breadcrumbHome": "Acasă",
+    "breadcrumbCities": "Orașe",
+    "title": "Caută după oraș",
+    "subtitle": "Răsfoiește anunțuri de mașini avariate și recondiționate în orașe populare",
+    "noCitiesYet": "Nicio pagină de oraș disponibilă momentan."
+  },
+  "CityPage": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbCities": "Orașe",
+    "title": "Mașini recondiționate și avariate de vânzare în {city}, {state}",
+    "subtitle": "{count, plural, one {# anunț disponibil} few {# anunțuri disponibile} other {# anunțuri disponibile}}",
+    "noListingsYet": "Niciun anunț disponibil în {city} momentan.",
+    "viewAllInInventory": "{count, plural, one {Vezi acest anunț în Inventar} few {Vezi toate cele # anunțuri în Inventar} other {Vezi toate cele # anunțuri în Inventar}}"
+  },
+  "ListingDetail": {
+    "statusAvailable": "Disponibil",
+    "statusPending": "În așteptare",
+    "statusSold": "Vândut",
+    "statusInactive": "Inactiv",
+    "actionsTitle": "Acțiuni",
+    "verifiedSeller": "Vânzător verificat",
+    "listingNotFound": "Anunț negăsit",
+    "listingNotFoundDescription": "Nu am putut găsi un anunț la \"{slug}\".",
+    "breadcrumbHome": "Acasă",
+    "breadcrumbInventory": "Inventar",
+    "printListing": "Printează",
+    "share": "Distribuie",
+    "linkCopied": "Link copiat în clipboard",
+    "shareFailed": "Nu am putut distribui acest anunț. Te rugăm să încerci din nou.",
+    "vehicleDetails": "Detalii vehicul",
+    "year": "An",
+    "make": "Marcă",
+    "model": "Model",
+    "trim": "Variantă",
+    "type": "Tip",
+    "vin": "VIN",
+    "mileage": "Kilometraj",
+    "transmission": "Transmisie",
+    "drivetrain": "Tracțiune",
+    "fuelType": "Tip combustibil",
+    "engine": "Motor",
+    "mpg": "MPG",
+    "cityMpgLabel": "MPG oraș",
+    "hwyMpgLabel": "MPG autostradă",
+    "exterior": "Exterior",
+    "interior": "Interior",
+    "titleStatus": "Statutul titlului",
+    "owners": "Proprietari",
+    "posted": "Publicat",
+    "viewCarfaxReport": "Vezi raportul Carfax",
+    "viewAlignmentReport": "Vezi raportul de geometrie",
+    "viewInspectionReport": "Vezi raportul de inspecție",
+    "beforeRepairPhotos": "Fotografii înainte de reparație",
+    "beforeRepairPhotosDescription": "Cum arăta dauna înainte de a fi reparată.",
+    "beforeRepairPhotoAlt": "Fotografie înainte de reparație",
+    "featuresAndOptions": "Caracteristici și dotări",
+    "description": "Descriere",
+    "noDescriptionProvided": "Nicio descriere oferită.",
+    "videoTitle": "Video",
+    "watchVideo": "Vizionează videoclipul",
+    "editListing": "Editează anunțul",
+    "markPending": "Marchează ca în așteptare",
+    "markSold": "Marchează ca vândut",
+    "markAvailable": "Marchează ca disponibil",
+    "callsReceived": "{count, plural, one {# apel} few {# apeluri} other {# apeluri}}",
+    "viewsCount": "{count, plural, one {# vizualizare} few {# vizualizări} other {# vizualizări}}",
+    "seller": "Vânzător",
+    "moreFromThisSeller": "Mai multe de la acest vânzător",
+    "similarListings": "Anunțuri similare",
+    "similarListingsSubtitle": "Alte anunțuri care te-ar putea interesa",
+    "copyVin": "Copiază VIN",
+    "vinCopied": "VIN copiat",
+    "vinCopyFailed": "Copierea VIN-ului a eșuat",
+    "renewListing": "Reînnoiește anunțul",
+    "renewAvailableInDays": "{count, plural, one {Poți reînnoi acest anunț în # zi} few {Poți reînnoi acest anunț în # zile} other {Poți reînnoi acest anunț în # zile}}",
+    "renewalsExhausted": "Acest anunț și-a folosit toate reînnoirile. Șterge-l și republică-l pentru a-i actualiza data de publicare.",
+    "renewSucceeded": "Anunț reînnoit",
+    "renewFailed": "Reînnoirea anunțului a eșuat",
+    "previousListing": "Anterior",
+    "nextListing": "Următor",
+    "listingPosition": "{current} din {total}"
+  },
+  "ContactSellerCard": {
+    "title": "Contactează vânzătorul",
+    "loading": "Se încarcă...",
+    "reveal": "Afișează",
+    "maskedNumber": "+1 ({areaCode}) •••-••••",
+    "email": "E-mail",
+    "loadError": "Nu am putut încărca numărul de telefon al vânzătorului."
+  },
+  "ScheduleTestDrive": {
+    "scheduleTestDrive": "Test Drive",
+    "close": "Închide",
+    "nameLabel": "Numele tău",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "tu@exemplu.com",
+    "phoneLabel": "Număr de telefon",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "preferredDateTimeLabel": "Data și ora preferată",
+    "messageLabel": "Mesaj suplimentar",
+    "messagePlaceholder": "Mai este ceva ce ar trebui să știe vânzătorul?",
+    "cancel": "Anulează",
+    "submitting": "Se trimite...",
+    "submit": "Solicită un test drive",
+    "submitFailed": "Ceva nu a funcționat. Te rugăm să încerci din nou.",
+    "successTitle": "Cerere trimisă!",
+    "successDescription": "Vânzătorul te va contacta în curând pentru a confirma test drive-ul.",
+    "errors": {
+      "nameRequired": "Introdu numele tău.",
+      "contactRequired": "Introdu un e-mail sau un număr de telefon pentru ca vânzătorul să te poată contacta.",
+      "emailInvalid": "Introdu o adresă de e-mail validă.",
+      "phoneInvalid": "Introdu un număr de telefon complet, din 10 cifre.",
+      "dateRequired": "Selectează o dată și oră preferată.",
+      "dateInPast": "Selectează o oră din viitor."
+    }
+  },
+  "ListingStatusButton": {
+    "updateFailed": "Actualizarea statutului anunțului a eșuat.",
+    "updateSucceeded": "Statutul anunțului a fost actualizat",
+    "updating": "Se actualizează..."
+  },
+  "SellForm": {
+    "vehicleDetails": "Detalii vehicul",
+    "vin": "VIN",
+    "vinPlaceholder": "17 caractere",
+    "decodeVin": "Decodează VIN",
+    "decoding": "Se decodează...",
+    "year": "An",
+    "make": "Marcă",
+    "selectMake": "Selectează marca",
+    "model": "Model",
+    "selectMakeFirst": "Selectează mai întâi o marcă",
+    "loading": "Se încarcă...",
+    "noModelsYet": "Niciun model momentan pentru această marcă",
+    "selectModel": "Selectează modelul",
+    "trim": "Variantă",
+    "trimPlaceholder": "Opțional, ex. EX",
+    "vehicleType": "Tip vehicul",
+    "specs": "Specificații",
+    "mileage": "Kilometraj",
+    "optional": "Opțional",
+    "engine": "Motor",
+    "enginePlaceholder": "Opțional, ex. 2.0L I4",
+    "transmission": "Transmisie",
+    "drivetrain": "Tracțiune",
+    "fuelType": "Tip combustibil",
+    "cityMpg": "MPG oraș",
+    "highwayMpg": "MPG autostradă",
+    "conditionAndPricing": "Stare și preț",
+    "titleStatus": "Statutul titlului",
+    "owners": "Proprietari",
+    "exteriorColor": "Culoare exterior",
+    "interiorColor": "Culoare interior",
+    "askingPrice": "Preț cerut ($)",
+    "retailPrice": "Preț de listă ($)",
+    "includeWarranty": "Acest vehicul include garanția dealerului meu",
+    "description": "Descriere",
+    "descriptionPlaceholder": "Descrie starea, dotările și istoricul vehiculului. Ia în calcul să menționezi unde a avut loc dauna și ce reparații au fost făcute, de ex. \"Coliziune frontală, reparată cu bară, capotă și faruri noi.\"",
+    "video": "Video",
+    "videoDescription": "Adaugă un link către un videoclip de prezentare sau test drive, dacă ai unul — linkurile de pe YouTube, Vimeo și Google Drive se încorporează automat.",
+    "videoUrl": "URL video",
+    "videoUrlPlaceholder": "https://youtube.com/watch?v=...",
+    "featuresAndOptions": "Caracteristici și dotări",
+    "featuresAndOptionsDescription": "Selectează dotările pe care le include acest vehicul.",
+    "photos": "Fotografii",
+    "uploadsLocked": "Introdu un VIN mai sus pentru a debloca încărcarea fotografiilor și documentelor.",
+    "creatingDraft": "Se configurează anunțul tău...",
+    "uploading": "Se încarcă...",
+    "uploaded": "Încărcat",
+    "uploadFailed": "Încărcare eșuată",
+    "clickToSelectPhotos": "Apasă pentru a selecta fotografii",
+    "dragToReorder": "Trage fotografiile pentru a le reordona. Prima fotografie este folosită drept copertă.",
+    "cover": "Copertă",
+    "failed": "Eșuat",
+    "removePhoto": "Elimină fotografia",
+    "previewAlt": "Fotografia {index}",
+    "beforeRepairPhotos": "Fotografii înainte de reparație",
+    "beforeRepairPhotosDescription": "Opțional. Arată cum arăta dauna înainte de a fi reparată.",
+    "beforeRepairPreviewAlt": "Fotografie înainte de reparație {index}",
+    "documentsTitle": "Documente",
+    "carfaxReport": "Raport Carfax",
+    "reportDescription": "Opțional. Cumpărătorii pot vizualiza acest PDF de pe pagina anunțului.",
+    "clickToSelectPdf": "Apasă pentru a selecta un PDF",
+    "removeCarfaxReport": "Elimină raportul Carfax",
+    "alignmentReport": "Raport de geometrie",
+    "removeAlignmentReport": "Elimină raportul de geometrie",
+    "inspectionReport": "Raport de inspecție",
+    "removeInspectionReport": "Elimină raportul de inspecție",
+    "publishing": "Se publică...",
+    "publishListing": "Publică",
+    "saveDraft": "Salvează ciorna",
+    "savingDraft": "Se salvează...",
+    "listedAt": "Listat la ${price}",
+    "listingLiveDescription": "Anunțul tău este acum disponibil. Poate dura puțin până se termină procesarea fotografiilor.",
+    "listAnotherCar": "Listează o altă mașină",
+    "errors": {
+      "vinFormat": "VIN-ul trebuie să aibă 17 caractere (fără I, O sau Q).",
+      "yearInvalid": "Introdu un an valid.",
+      "makeRequired": "Selectează o marcă.",
+      "modelRequired": "Selectează un model.",
+      "priceRequired": "Introdu un preț cerut.",
+      "photosRequired": "Adaugă cel puțin o fotografie înainte de publicare.",
+      "vinRequiredFirst": "Introdu mai întâi un VIN valid din 17 caractere.",
+      "vinTaken": "Acest VIN are deja un anunț activ (disponibil sau în așteptare)."
+    },
+    "toasts": {
+      "vinDecodeFailed": "Nu am putut decoda acest VIN.",
+      "makeNotSupported": "Marca decodată \"{make}\" nu este încă acceptată -- te rugăm să o selectezi manual.",
+      "modelNotListed": "Modelul decodat \"{model}\" nu este listat pentru {make} -- te rugăm să îl selectezi manual.",
+      "vinDecoded": "VIN decodat cu succes.",
+      "fixErrors": "Te rugăm să corectezi erorile de mai jos.",
+      "listingLive": "Anunțul tău este live!",
+      "vinTaken": "Acest VIN are deja un anunț activ (disponibil sau în așteptare). <link>Vezi anunțul</link>.",
+      "uploadsInProgress": "Așteaptă ca fotografiile să termine de încărcat înainte de publicare.",
+      "draftSaved": "Ciornă salvată. O poți finaliza mai târziu din profilul tău.",
+      "draftSaveFailed": "Nu s-a putut salva ciorna. Încearcă din nou."
+    }
+  },
+  "EditListingForm": {
+    "status": "Statut",
+    "statusAvailable": "Disponibil",
+    "statusPending": "În așteptare",
+    "statusSold": "Vândut",
+    "published": "Publicat",
+    "publishedDescription": "Vizibil în căutare și răsfoire.",
+    "unpublishedNotice": "Anunțurile nepublicate sunt ascunse de cumpărători, dar rămân accesibile prin linkul lor direct.",
+    "draftNotice": "Acest anunț nu a fost publicat încă. Completează restul câmpurilor și apasă Publică atunci când ești gata, sau salvează progresul și revino mai târziu.",
+    "photoRemoved": "Fotografie eliminată",
+    "photoRemoveFailed": "Eliminarea fotografiei a eșuat",
+    "fixErrorsAndRetry": "Te rugăm să corectezi erorile de mai jos și să încerci din nou.",
+    "listingUpdated": "Anunț actualizat",
+    "clickToAddMorePhotos": "Apasă pentru a adăuga mai multe fotografii",
+    "dragToReorderNewPhotos": "Trage pentru a reordona fotografiile noi (vor fi adăugate după cele existente).",
+    "viewCurrentReport": "Vezi raportul curent",
+    "replace": "Înlocuiește",
+    "saving": "Se salvează...",
+    "saveChanges": "Salvează modificările"
+  },
+  "Auth": {
+    "appTagline1": "Locul ușor pentru a cumpăra și vinde mașini. Rapid, de încredere și transparent. OnlySalvage este locul unde poți evalua vânzători și cumpărători.",
+    "signUpTitle": "Înregistrare"
+  },
+  "GoogleSignIn": {
+    "signInFailed": "Conectarea cu Google a eșuat. Te rugăm să încerci din nou."
+  },
+  "CompleteProfile": {
+    "title": "Completează-ți profilul",
+    "description": "Avem nevoie doar de locația ta, ca cumpărătorii din apropiere să-ți poată găsi anunțurile, iar tu să poți căuta și după distanță.",
+    "city": "Oraș",
+    "state": "Stat",
+    "zipCode": "Cod poștal",
+    "select": "Selectează",
+    "submit": "Salvează și continuă",
+    "saving": "Se salvează...",
+    "errors": {
+      "cityRequired": "Orașul este obligatoriu.",
+      "stateRequired": "Selectează un stat.",
+      "zipInvalid": "Introdu un cod poștal valid din 5 cifre.",
+      "updateFailed": "Ceva nu a funcționat. Te rugăm să încerci din nou."
+    }
+  },
+  "LoginForm": {
+    "sellRedirectToast": "Ai nevoie de un cont pentru a vinde mașini -- conectează-te sau înregistrează-te pentru a continua.",
+    "invalidCredentials": "Date de conectare invalide",
+    "logIn": "Conectare",
+    "username": "Nume de utilizator:",
+    "password": "Parolă:",
+    "forgotPassword": "Ai uitat parola?",
+    "signUp": "Înregistrare",
+    "orDivider": "sau"
+  },
+  "SignUpForm": {
+    "createAccount": "Creează-ți contul",
+    "orDivider": "sau înregistrează-te cu e-mail",
+    "username": "Nume de utilizator",
+    "email": "E-mail",
+    "password": "Parolă",
+    "confirmPassword": "Confirmă parola",
+    "phoneNumber": "Număr de telefon",
+    "optional": "Opțional",
+    "city": "Oraș",
+    "state": "Stat",
+    "select": "Selectează",
+    "zipCode": "Cod poștal",
+    "dealerCheckbox": "Mă înregistrez ca dealer/afacere",
+    "businessName": "Numele afacerii",
+    "streetAddress": "Adresa",
+    "website": "Website",
+    "creatingAccount": "Se creează contul...",
+    "signUp": "Înregistrare",
+    "alreadyHaveAccount": "Ai deja un cont?",
+    "logIn": "Conectare",
+    "errors": {
+      "usernameRequired": "Numele de utilizator este obligatoriu.",
+      "emailInvalid": "Introdu o adresă de e-mail validă.",
+      "passwordTooShort": "Parola trebuie să aibă cel puțin 8 caractere.",
+      "passwordMismatch": "Parolele nu coincid.",
+      "cityRequired": "Orașul este obligatoriu.",
+      "stateRequired": "Selectează un stat.",
+      "zipInvalid": "Introdu un cod poștal valid din 5 cifre.",
+      "phoneInvalid": "Introdu un număr de telefon complet, din 10 cifre.",
+      "businessNameRequired": "Numele afacerii este obligatoriu pentru dealeri.",
+      "streetAddressRequired": "Adresa este obligatorie pentru dealeri.",
+      "phoneNotVerified": "Te rugăm să-ți verifici mai întâi numărul de telefon."
+    },
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "ForgotPasswordForm": {
+    "checkYourEmail": "Verifică-ți e-mailul",
+    "checkYourEmailDescription": "Dacă un cont corespunde acelui nume de utilizator sau e-mail, ți-am trimis un link pentru resetarea parolei.",
+    "backToLogin": "Înapoi la conectare",
+    "title": "Ai uitat parola?",
+    "description": "Introdu numele de utilizator sau e-mailul și îți vom trimite un link de resetare.",
+    "usernameOrEmail": "Nume de utilizator sau e-mail",
+    "sending": "Se trimite...",
+    "sendResetLink": "Trimite link de resetare"
+  },
+  "ResetPasswordForm": {
+    "invalidLinkTitle": "Link de resetare invalid",
+    "invalidLinkDescription": "Acest link de resetare a parolei lipsește sau este incorect. Solicită unul nou mai jos.",
+    "requestNewLink": "Solicită un link nou",
+    "passwordUpdatedTitle": "Parolă actualizată",
+    "passwordUpdatedDescription": "Acum te poți conecta cu noua ta parolă.",
+    "goToLogin": "Mergi la conectare",
+    "title": "Setează o parolă nouă",
+    "newPassword": "Parolă nouă",
+    "confirmPassword": "Confirmă parola",
+    "saving": "Se salvează...",
+    "resetPassword": "Resetează parola",
+    "errors": {
+      "passwordTooShort": "Parola trebuie să aibă cel puțin 8 caractere.",
+      "passwordMismatch": "Parolele nu coincid.",
+      "linkInvalidOrExpired": "Acest link de resetare este invalid sau a expirat."
+    }
+  },
+  "RequestVerification": {
+    "requestVerification": "Solicită verificarea contului",
+    "pending": "Verificare în așteptare",
+    "previouslyDeclined": "Cererea ta anterioară a fost respinsă.",
+    "submitting": "Se trimite...",
+    "requestSucceeded": "Verificare solicitată",
+    "requestFailed": "Ceva nu a funcționat. Te rugăm să încerci din nou."
+  },
+  "ApiAccess": {
+    "title": "Acces API",
+    "description": "Gestionează-ți anunțurile programatic cu un token API personal.",
+    "viewDocs": "Vezi documentația API",
+    "noteLabel": "Pentru ce îl vei folosi? (opțional)",
+    "notePlaceholder": "ex. sincronizarea stocului din sistemul nostru de gestiune pentru dealeri",
+    "verifiedHint": "Ești un vânzător verificat, așa că vei primi acces imediat.",
+    "requestAccess": "Solicită acces API",
+    "submitting": "Se trimite...",
+    "requestSucceeded": "Acces API solicitat -- îl vom analiza în curând.",
+    "requestApprovedInstantly": "Ești aprobat! Generează-ți tokenul mai jos.",
+    "requestFailed": "Ceva nu a funcționat. Te rugăm să încerci din nou.",
+    "requestAgain": "Solicită din nou",
+    "pendingReview": "Cererea ta este în curs de analiză.",
+    "denied": "Cererea ta a fost respinsă.",
+    "revoked": "Accesul tău API a fost revocat.",
+    "approved": "Aprobat -- generează un token pentru a începe să folosești API-ul.",
+    "generateToken": "Generează token",
+    "generateSucceeded": "Token generat",
+    "generateFailed": "Nu am putut genera un token. Te rugăm să încerci din nou.",
+    "tokenShownOnce": "Copiază acest token acum -- nu îl vei mai putea vedea din nou.",
+    "copy": "Copiază",
+    "tokenCopied": "Token copiat",
+    "tokenCopyFailed": "Nu am putut copia tokenul",
+    "regenerate": "Regenerează",
+    "revoke": "Revocă",
+    "revokeSucceeded": "Token API revocat",
+    "revokeFailed": "Nu am putut revoca tokenul tău. Te rugăm să încerci din nou.",
+    "lastUsed": "Utilizat ultima dată {date}",
+    "cancel": "Anulează",
+    "confirmRegenerateTitle": "Regenerezi tokenul?",
+    "confirmRegenerateDescription": "Tokenul tău actual va înceta să funcționeze imediat. Orice integrare care îl folosește va trebui actualizată cu cel nou.",
+    "confirmRevokeTitle": "Revoci accesul API?",
+    "confirmRevokeDescription": "Tokenul tău va înceta să funcționeze imediat. Va trebui să soliciți din nou acces pentru a obține unul nou."
+  },
+  "Profile": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbProfile": "Profil",
+    "userNotFoundTitle": "Utilizator negăsit",
+    "userNotFoundDescription": "Nu am putut găsi un profil pentru \"{username}\".",
+    "dealerBadge": "Dealer",
+    "verifiedBadge": "Vânzător verificat",
+    "financingBadge": "Cumpără aici, plătește aici",
+    "memberSince": "Membru din {date}",
+    "carsSold": "{count, plural, one {# mașină vândută} few {# mașini vândute} other {# mașini vândute}}",
+    "navProfile": "Profil",
+    "navListings": "Anunțuri",
+    "navWarranty": "Garanție",
+    "navDrafts": "Ciorne",
+    "navWatchlist": "Listă de urmărire",
+    "aboutTitle": "Despre",
+    "noDescriptionYet": "Nicio descriere momentan.",
+    "contactInfoTitle": "Informații de contact",
+    "warrantyTitle": "Informații despre garanție",
+    "visibleToEveryone": "(vizibil pentru toată lumea)",
+    "onlyVisibleToYou": "(vizibil doar pentru tine)",
+    "noContactInfo": "Nicio informație de contact oferită.",
+    "reviewsTitle": "Recenzii",
+    "noReviewsYet": "Nicio recenzie momentan.",
+    "listingsTitle": "Anunțuri",
+    "sellACar": "Vinde o mașină",
+    "bulkUpload": "Încărcare în masă",
+    "noListingsYet": "Niciun anunț momentan.",
+    "draftsTitle": "Ciorne",
+    "draftsEmptyMessage": "Nu ai nicio ciornă salvată.",
+    "draftStarted": "Începută {date}",
+    "continueDraft": "Continuă",
+    "deleteDraft": "Șterge ciorna",
+    "watchlistTitle": "Listă de urmărire",
+    "watchlistEmptyMessage": "Nu ai apreciat încă niciun anunț. Răsfoiește inventarul și apasă pe inimioară la o mașină care îți place.",
+    "settings": "Setări"
+  },
+  "Settings": {
+    "title": "Setări",
+    "breadcrumbHome": "Acasă",
+    "breadcrumbSettings": "Setări",
+    "viewPublicProfile": "Vezi profilul public",
+    "navProfile": "Profil",
+    "navSubscriptions": "Abonamente",
+    "navWarranty": "Garanție",
+    "navSecurity": "Securitate",
+    "navApi": "Acces API",
+    "subscriptionsTitle": "Abonamente",
+    "subscriptionsDescription": "Abonamentele nu sunt încă disponibile -- aici vor apărea alertele pentru căutări salvate și planurile de promovare pentru vânzători, odată ce vor fi implementate.",
+    "warrantyTitle": "Garanție",
+    "warrantyDescription": "Configurează garanția ta de dealer și alege care dintre anunțurile tale o include.",
+    "warrantyListingsTitle": "Anunțurile tale",
+    "warrantyNoListings": "Nu ai niciun anunț momentan.",
+    "warrantyIncluded": "Garanție inclusă",
+    "warrantyUpdateFailed": "Nu am putut actualiza statutul garanției. Încearcă din nou.",
+    "securityTitle": "Securitate",
+    "usernameChangeQuestion": "Vrei să-ți schimbi numele de utilizator?",
+    "contactSupport": "Contactează asistența",
+    "usernameChangeNotSupported": "-- nu susținem încă schimbarea directă a acestuia.",
+    "dangerZone": "Zonă periculoasă"
+  },
+  "SubscriptionTiers": {
+    "mostPopular": "Cel mai popular",
+    "comingSoon": "În curând",
+    "free": {
+      "name": "Gratuit",
+      "price": "$0",
+      "priceSuffix": "",
+      "tagline": "Pentru vânzători privați ocazionali.",
+      "features": {
+        "0": "Listează până la 3 vehicule active",
+        "1": "Vizibilitate standard în căutări",
+        "2": "Mesagerie cu cumpărători și urmărire apeluri",
+        "3": "Profil de vânzător de bază"
+      }
+    },
+    "plus": {
+      "name": "Plus",
+      "price": "$19",
+      "priceSuffix": "/lună",
+      "tagline": "Pentru vânzătorii care vor mai multă vizibilitate pentru anunțurile lor.",
+      "features": {
+        "0": "Tot ce include planul Gratuit",
+        "1": "Poziționare recomandată în rezultatele căutării",
+        "2": "Rotație pe pagina principală",
+        "3": "Anunțuri active nelimitate",
+        "4": "Asistență clienți prioritară"
+      }
+    },
+    "dealerPro": {
+      "name": "Dealer Pro",
+      "price": "$49",
+      "priceSuffix": "/lună",
+      "tagline": "Conceput pentru dealeri cu volum mare de vânzări.",
+      "features": {
+        "0": "Tot ce include planul Plus",
+        "1": "Analiză prioritară pentru insigna de Dealer Verificat",
+        "2": "Analiză performanță anunțuri",
+        "3": "Instrumente de încărcare în masă a fotografiilor și VIN-urilor",
+        "4": "Manager de cont dedicat",
+        "5": "Acces timpuriu la funcții noi"
+      }
+    }
+  },
+  "EditProfileModal": {
+    "editProfile": "Editează profilul",
+    "close": "Închide",
+    "changeProfilePicture": "Schimbă fotografia de profil",
+    "email": "E-mail",
+    "emailPlaceholder": "tu@exemplu.com",
+    "emailRequired": "E-mailul este obligatoriu.",
+    "emailInvalid": "Introdu o adresă de e-mail validă.",
+    "businessName": "Numele afacerii",
+    "optional": "Opțional",
+    "businessNameLockedPlaceholder": "Bifează \"vând ca dealer/afacere\" mai jos pentru a seta acest câmp",
+    "businessNameRequired": "Numele afacerii este obligatoriu pentru dealeri.",
+    "streetAddressRequired": "Adresa este obligatorie pentru dealeri.",
+    "phoneNumber": "Număr de telefon",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "phoneInvalid": "Introdu un număr de telefon complet, din 10 cifre.",
+    "website": "Website",
+    "websitePlaceholder": "https://exemplu.com",
+    "streetAddress": "Adresa",
+    "streetAddressPlaceholder": "Str. Principală 123",
+    "editField": "Editează",
+    "city": "Oraș",
+    "state": "Stat",
+    "zipCode": "Cod poștal",
+    "description": "Descriere",
+    "descriptionPlaceholder": "Spune-le cumpărătorilor câte ceva despre tine sau afacerea ta",
+    "dealerCheckbox": "Vând ca dealer/afacere",
+    "financingCheckbox": "Ofer finanțare Cumpără aici, plătește aici",
+    "warrantyCheckbox": "Ofer garanție pentru vehiculele mele",
+    "warrantyDuration": "Durata garanției",
+    "warrantyDurationPlaceholder": "ex. 12 luni / 12.000 mile",
+    "warrantyDurationRequired": "Introdu o durată a garanției.",
+    "warrantyDescription": "Detalii garanție",
+    "warrantyDescriptionPlaceholder": "Descrie ce este acoperit de garanție",
+    "showEmailCheckbox": "Afișează e-mailul meu pe profilul public",
+    "cancel": "Anulează",
+    "saving": "Se salvează...",
+    "saveChanges": "Salvează modificările",
+    "updateFailed": "Actualizarea profilului a eșuat. Te rugăm să încerci din nou.",
+    "updateSucceeded": "Profil actualizat",
+    "phoneNotVerified": "Te rugăm să-ți verifici noul număr de telefon înainte de a salva."
+  },
+  "DeleteAccountButton": {
+    "deleteAccount": "Șterge contul",
+    "close": "Închide",
+    "confirmTitle": "Ștergi contul tău?",
+    "confirmDescription": "Aceasta îți dezactivează contul și te deconectează. Anunțurile, lista de urmărire și profilul tău nu vor mai fi vizibile pentru alții. Această acțiune nu poate fi anulată din setările contului tău -- contactează asistența dacă te răzgândești.",
+    "cancel": "Anulează",
+    "deleting": "Se șterge...",
+    "deleteMyAccount": "Șterge-mi contul",
+    "deleteFailed": "Ștergerea contului a eșuat. Te rugăm să încerci din nou.",
+    "deleteSucceeded": "Contul tău a fost șters."
+  },
+  "LeaveReviewModal": {
+    "leaveReview": "Lasă o recenzie",
+    "close": "Închide",
+    "ratingLabel": "Evaluare",
+    "starAriaLabel": "{value, plural, one {# stea} few {# stele} other {# stele}}",
+    "ratingRequired": "Te rugăm să selectezi o evaluare cu stele.",
+    "commentLabel": "Comentariu (opțional)",
+    "commentPlaceholder": "Împărtășește detalii despre experiența ta cu acest vânzător",
+    "cancel": "Anulează",
+    "submitting": "Se trimite...",
+    "submitReview": "Trimite recenzia",
+    "submitFailed": "Trimiterea recenziei a eșuat. Te rugăm să încerci din nou.",
+    "submitSucceeded": "Recenzie trimisă"
+  },
+  "ReportReasons": {
+    "FAKE_VIN": "VIN-ul nu corespunde vehiculului",
+    "DUP_VIN": "VIN-ul este deja listat într-un alt anunț",
+    "MISLEADING": "Detaliile anunțului sunt înșelătoare sau incorecte",
+    "SOLD": "Vehiculul a fost deja vândut în altă parte",
+    "SCAM": "Suspiciune de escrocherie sau fraudă",
+    "HARASSMENT": "Hărțuire sau comportament abuziv",
+    "FAKE_PROFILE": "Profil fals sau care se dă drept altcineva",
+    "INAPPROPRIATE": "Conținut inadecvat",
+    "SPAM": "Spam",
+    "OTHER": "Altele"
+  },
+  "CompareButton": {
+    "addToCompare": "Adaugă la comparare",
+    "removeFromCompare": "Elimină din comparare",
+    "added": "Adăugat la comparare",
+    "removed": "Eliminat din comparare",
+    "viewCompare": "Vezi comparația"
+  },
+  "ComparePage": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbCompare": "Comparare",
+    "title": "Compară vehicule",
+    "subtitle": "Compară până la 4 vehicule unul lângă altul.",
+    "emptyTitle": "Nimic de comparat momentan",
+    "emptyDescription": "Adaugă câteva vehicule la comparare din inventar sau de pe pagina unui anunț, apoi revino aici.",
+    "browseInventory": "Răsfoiește inventarul",
+    "comparingCount": "{count, plural, one {Se compară # vehicul} few {Se compară # vehicule} other {Se compară # vehicule}}",
+    "clearAll": "Șterge tot",
+    "dragToReorder": "Trage un vehicul pentru a reordona comparația.",
+    "remove": "Elimină",
+    "specs": {
+      "year": "An",
+      "mileage": "Kilometraj",
+      "transmission": "Transmisie",
+      "drive": "Tracțiune",
+      "fuelType": "Tip combustibil",
+      "engine": "Motor",
+      "cityMpg": "MPG oraș",
+      "hwyMpg": "MPG autostradă",
+      "exteriorColor": "Culoare exterior",
+      "interiorColor": "Culoare interior",
+      "titleStatus": "Statutul titlului",
+      "owners": "Proprietari",
+      "warranty": "Garanție",
+      "vin": "VIN",
+      "seller": "Vânzător",
+      "features": "Caracteristici"
+    }
+  },
+  "ReportListingModal": {
+    "report": "Raportează",
+    "title": "Raportează acest anunț",
+    "close": "Închide",
+    "reasonLabel": "Motiv",
+    "reasonPlaceholder": "Selectează un motiv",
+    "reasonRequired": "Te rugăm să selectezi un motiv.",
+    "detailsLabel": "Detalii suplimentare (opțional)",
+    "detailsPlaceholder": "Orice altceva ne-ar putea ajuta să revizuim acest anunț",
+    "cancel": "Anulează",
+    "submitting": "Se trimite...",
+    "submitReport": "Trimite raportul",
+    "submitFailed": "Trimiterea raportului a eșuat. Te rugăm să încerci din nou.",
+    "submitSucceeded": "Mulțumim că ne-ai anunțat. Echipa noastră va revizui acest anunț.",
+    "done": "Gata"
+  },
+  "ReportSellerModal": {
+    "report": "Raportează",
+    "title": "Raportează acest vânzător",
+    "close": "Închide",
+    "reasonLabel": "Motiv",
+    "reasonPlaceholder": "Selectează un motiv",
+    "reasonRequired": "Te rugăm să selectezi un motiv.",
+    "detailsLabel": "Detalii suplimentare (opțional)",
+    "detailsPlaceholder": "Orice altceva ne-ar putea ajuta să revizuim acest cont",
+    "cancel": "Anulează",
+    "submitting": "Se trimite...",
+    "submitReport": "Trimite raportul",
+    "submitFailed": "Trimiterea raportului a eșuat. Te rugăm să încerci din nou.",
+    "submitSucceeded": "Mulțumim că ne-ai anunțat. Echipa noastră va revizui acest cont.",
+    "done": "Gata"
+  },
+  "ChangePasswordForm": {
+    "currentPassword": "Parola curentă",
+    "newPassword": "Parolă nouă",
+    "confirmNewPassword": "Confirmă parola nouă",
+    "updating": "Se actualizează...",
+    "updatePassword": "Actualizează parola",
+    "updateSucceeded": "Parolă actualizată",
+    "errors": {
+      "newPasswordTooShort": "Parola nouă trebuie să aibă cel puțin 8 caractere.",
+      "passwordMismatch": "Parola nouă și confirmarea nu coincid.",
+      "updateFailed": "Actualizarea parolei a eșuat."
+    }
+  },
+  "Feedback": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbFeedback": "Feedback",
+    "title": "Feedback",
+    "subtitle": "Ai găsit o eroare sau ai o idee pentru a face OnlySalvage mai bun? Spune-ne mai jos.",
+    "categoryLabel": "Categorie",
+    "subjectLabel": "Subiect",
+    "subjectPlaceholder": "Un rezumat scurt",
+    "subjectRequired": "Subiectul este obligatoriu.",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Descrie eroarea sau sugestia ta cât mai detaliat posibil.",
+    "messageRequired": "Mesajul este obligatoriu.",
+    "contextLabel": "Unde s-a întâmplat asta? (opțional)",
+    "contextPlaceholder": "ex. pagina de detalii a anunțului, formularul de vânzare, aplicația mobilă",
+    "emailLabel": "E-mailul tău (opțional)",
+    "emailPlaceholder": "Ca să te putem contacta, dacă este necesar",
+    "submit": "Trimite feedback",
+    "submitting": "Se trimite...",
+    "submitFailed": "Ceva nu a funcționat. Te rugăm să încerci din nou.",
+    "submitSucceededTitle": "Mulțumim pentru feedback!",
+    "submitSucceededDescription": "Am primit mesajul tău și îl vom analiza. Dacă ai lăsat un e-mail, te vom contacta dacă avem nevoie de mai multe detalii.",
+    "submitAnother": "Trimite un alt feedback"
+  },
+  "FeedbackCategories": {
+    "BUG": "Raport de eroare",
+    "SUG": "Sugestie",
+    "OTH": "Altele"
+  },
+  "ContactForm": {
+    "nameLabel": "Nume (opțional)",
+    "namePlaceholder": "Numele tău",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Ca să-ți putem răspunde",
+    "emailRequired": "Furnizează un e-mail ca să te putem contacta.",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Cu ce te putem ajuta?",
+    "messageRequired": "Mesajul este obligatoriu.",
+    "submit": "Trimite mesajul",
+    "submitting": "Se trimite...",
+    "submitFailed": "Ceva nu a funcționat. Te rugăm să încerci din nou.",
+    "submitSucceeded": "Mesaj trimis -- te vom contacta în curând.",
+    "submitAnother": "Trimite altul"
+  },
+  "Support": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbSupport": "Asistență",
+    "title": "Asistență",
+    "subtitle": "Suntem aici să te ajutăm, non-stop. Aruncă o privire peste întrebările frecvente de mai jos, sau contactează-ne direct.",
+    "browseGuide": "Răsfoiește ghidul complet",
+    "browseGuideTitle": "Vrei să afli mai multe?",
+    "browseGuideDescription": "Consultă ghidul complet al site-ului pentru instrucțiuni pas cu pas despre cumpărare, vânzare și tot ce e la mijloc.",
+    "viewInGuide": "Vezi în ghid",
+    "buyingTitle": "Cumpărare",
+    "sellingTitle": "Vânzare",
+    "accountTitle": "Cont",
+    "stillNeedHelpTitle": "Tot mai ai nevoie de ajutor?",
+    "stillNeedHelpDescription": "Trimite-ne un mesaj și îți vom răspunde cât mai curând posibil.",
+    "availability": "Disponibili non-stop -- răspundem la majoritatea mesajelor în decurs de o zi.",
+    "feedbackTitle": "Ai un feedback pentru noi?",
+    "feedbackDescription": "Ai găsit o eroare sau ai o idee pentru o funcție nouă? Anunță-ne.",
+    "feedbackLink": "Sugerează o funcție sau raportează o eroare",
+    "buyingFaqs": [
+      {
+        "question": "Cum contactez un vânzător?",
+        "answer": "Deschide anunțul și folosește cardul \"Contactează vânzătorul\". Poți dezvălui numărul lui de telefon cu un singur clic, sau poți vizualiza profilul lui pentru a vedea celelalte anunțuri și recenzii ale sale."
+      },
+      {
+        "question": "Cum salvez un anunț pentru a-l vedea mai târziu?",
+        "answer": "Apasă pe iconița inimioară de pe orice card de anunț. Dacă ești conectat, este salvat în Lista de urmărire a contului tău, astfel încât să-l poți găsi de pe orice dispozitiv. Dacă nu ești conectat, este salvat în schimb în acest browser."
+      },
+      {
+        "question": "Ce înseamnă insigna \"Recomandat\"?",
+        "answer": "Anunțurile recomandate sunt mașini pe care un administrator a ales să le evidențieze pe pagina principală pentru o perioadă limitată. Acest lucru nu afectează prețul sau starea anunțului -- doar vizibilitatea acestuia."
+      },
+      {
+        "question": "Pot avea încredere în evaluarea unui vânzător?",
+        "answer": "Evaluările vânzătorilor sunt lăsate de cumpărători reali din contul lor, câte o recenzie per cumpărător per vânzător, iar vânzătorii nu se pot evalua pe ei înșiși."
+      }
+    ],
+    "sellingFaqs": [
+      {
+        "question": "Cum îmi listez mașina spre vânzare?",
+        "answer": "Mergi la Vinde și introdu VIN-ul tău -- vom căuta automat anul, marca și modelul mașinii tale. Adaugă fotografii, stabilește un preț și publică."
+      },
+      {
+        "question": "Cum editez un anunț sau îl marchez ca vândut?",
+        "answer": "Deschide anunțul tău și apasă pe \"Editează anunțul.\" De acolo poți actualiza detaliile, reordona fotografiile sau schimba statutul în În așteptare sau Vândut."
+      },
+      {
+        "question": "Numărul meu de telefon este vizibil pentru toată lumea?",
+        "answer": "Nu. În mod implicit se afișează doar codul zonal -- numărul complet rămâne ascuns până când un cumpărător alege să-l dezvăluie."
+      },
+      {
+        "question": "Care este diferența dintre un vânzător privat și un dealer?",
+        "answer": "Îți poți marca contul ca dealer/afacere din profilul tău. Conturile de dealer afișează o insignă \"Dealer\" pe anunțurile și profilul lor."
+      }
+    ],
+    "accountFaqs": [
+      {
+        "question": "Mi-am uitat parola. Ce trebuie să fac?",
+        "answer": "Mergi la pagina de conectare și apasă pe \"Ai uitat parola?\" -- îți vom trimite prin e-mail un link de resetare."
+      },
+      {
+        "question": "Pot lăsa o recenzie pentru un vânzător?",
+        "answer": "Da, de pe pagina profilului său. Trebuie să fii conectat și nu îți poți evalua propriul profil."
+      },
+      {
+        "question": "Cum îmi actualizez profilul sau informațiile de contact?",
+        "answer": "Vizitează pagina profilului tău și apasă pe \"Editează profilul\" pentru a actualiza numele afacerii, telefonul, locația, descrierea și fotografia."
+      }
+    ]
+  },
+  "Sellers": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbSellers": "Vânzători",
+    "title": "Vânzători",
+    "subtitle": "Răsfoiește toți cei care vând momentan pe OnlySalvage.",
+    "noSellersMatch": "Niciun vânzător nu corespunde \"{search}\".",
+    "noSellersYet": "Niciun vânzător momentan."
+  },
+  "SellerCard": {
+    "verifiedBadge": "Verificat",
+    "dealerBadge": "Dealer",
+    "financingBadge": "Cumpără aici, plătește aici",
+    "noReviewsYet": "Nicio recenzie momentan",
+    "listingsCount": "{count, plural, one {# anunț} few {# anunțuri} other {# anunțuri}}",
+    "openInNewTab": "Deschide în filă nouă",
+    "share": "Copiază adresa linkului",
+    "linkCopied": "Link copiat în clipboard",
+    "shareFailed": "Nu am putut copia acest link. Te rugăm să încerci din nou.",
+    "editProfile": "Editează profilul",
+    "leaveReview": "Lasă o recenzie",
+    "reportSeller": "Raportează vânzătorul",
+    "callSeller": "Sună vânzătorul",
+    "callFailed": "Nu am putut obține numărul de telefon al acestui vânzător.",
+    "emailSeller": "Trimite e-mail vânzătorului",
+    "copyAddress": "Copiază adresa",
+    "addressCopied": "Adresă copiată în clipboard",
+    "addressCopyFailed": "Nu am putut copia această adresă. Te rugăm să încerci din nou."
+  },
+  "SellerSearchBar": {
+    "searchPlaceholder": "Caută vânzători după nume...",
+    "search": "Caută"
+  },
+  "Liked": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbWatchlist": "Listă de urmărire",
+    "title": "Lista ta de urmărire",
+    "emptyMessage": "Nu ai apreciat încă niciun anunț. Răsfoiește inventarul și apasă pe inimioară la o mașină care îți place."
+  },
+  "LocalWatchlist": {
+    "emptyMessage": "Nu ai apreciat încă niciun anunț. Răsfoiește inventarul și apasă pe inimioară la o mașină care îți place. Conectează-te pentru a-ți păstra lista de urmărire pe toate dispozitivele."
+  },
+  "Sell": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbSell": "Vinde",
+    "title": "Vinde-ți mașina",
+    "subtitle": "Listează-ți vehiculul spre vânzare pe OnlySalvage gratuit",
+    "bulkUploadLink": "Încărcare în masă (CSV)"
+  },
+  "SellBulk": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbSell": "Vinde",
+    "breadcrumbBulk": "Încărcare în masă",
+    "title": "Încărcare în masă a anunțurilor",
+    "subtitle": "Adaugă mai multe vehicule odată, încărcând un fișier CSV. Fiecare rând devine o ciornă pe care o poți revizui și publica individual.",
+    "uploadTitle": "Import din CSV",
+    "uploadDescription": "Descarcă șablonul, completează câte un rând pentru fiecare vehicul, apoi încarcă-l aici.",
+    "downloadTemplate": "Descarcă șablonul",
+    "templateDownloadFailed": "Șablonul nu a putut fi descărcat. Încearcă din nou.",
+    "importButton": "Importă anunțurile",
+    "importing": "Se importă...",
+    "importFailed": "Fișierul nu a putut fi importat. Încearcă din nou.",
+    "importSummary": "{imported} din {total} anunțuri importate.",
+    "importSummaryNone": "Niciun rând din cele {total} nu a putut fi importat -- vezi erorile de mai jos.",
+    "colRow": "Rând",
+    "colVin": "VIN",
+    "colStatus": "Stare",
+    "colDetails": "Detalii",
+    "imported": "Importat",
+    "failed": "Eșuat",
+    "reviewDraft": "Revizuiește ciorna →",
+    "goToDrafts": "Mergi la Ciorne"
+  },
+  "EditListingPage": {
+    "listingNotFoundTitle": "Anunț negăsit",
+    "listingNotFoundDescription": "Nu am putut găsi un anunț la \"{slug}\".",
+    "breadcrumbHome": "Acasă",
+    "breadcrumbInventory": "Inventar",
+    "breadcrumbEdit": "Editare",
+    "title": "Editează anunțul"
+  },
+  "NearYouSection": {
+    "geolocationNotSupported": "Browserul tău nu acceptă geolocalizarea.",
+    "geolocationFailed": "Nu am putut obține locația ta -- verifică permisiunea de locație a browserului tău și încearcă din nou.",
+    "title": "Aproape de tine",
+    "subtitle": "Anunțuri cele mai apropiate de locația ta",
+    "findCarsNearYou": "Găsește mașini aproape de tine",
+    "emptyNearby": "Niciun anunț în raza de 50 de mile momentan -- revino curând, sau răsfoiește tot inventarul.",
+    "promptText": "Vezi mai întâi anunțurile cele mai apropiate de locația ta.",
+    "showNearbyListings": "Arată anunțurile din apropiere"
+  },
+  "ListingLikeButton": {
+    "likesCount": "{count, plural, one {# apreciere} few {# aprecieri} other {# aprecieri}}"
+  },
+  "PhotoGallery": {
+    "viewFullscreen": "Vezi fotografia pe ecran complet",
+    "previousPhoto": "Fotografia anterioară",
+    "nextPhoto": "Fotografia următoare",
+    "closeFullscreen": "Închide ecranul complet",
+    "zoomOut": "Micșorează",
+    "zoomIn": "Mărește",
+    "viewPhotoNumber": "Vezi fotografia {index}"
+  },
+  "ImageCropModal": {
+    "title": "Decupează fotografia ta",
+    "close": "Închide",
+    "description": "Trage pentru a repoziționa, derulează sau ciupește pentru a mări/micșora. Fotografia ta de profil arată cel mai bine ca pătrat.",
+    "zoom": "Zoom",
+    "cancel": "Anulează",
+    "applying": "Se aplică...",
+    "usePhoto": "Folosește fotografia"
+  },
+  "BackToTopButton": {
+    "backToTop": "Înapoi sus"
+  },
+  "LikeButton": {
+    "like": "Apreciază"
+  },
+  "Price": {
+    "contactForPrice": "Contactează pentru preț"
+  },
+  "PrivacyPolicy": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbPrivacy": "Politica de confidențialitate",
+    "title": "Politica de confidențialitate",
+    "lastUpdated": "Ultima actualizare: iulie 2026",
+    "intro": "OnlySalvage (\"noi\", \"nouă\" sau \"al nostru\") operează piața OnlySalvage, unde vânzătorii privați și dealerii listează spre vânzare vehicule avariate și recondiționate. Această Politică de confidențialitate explică ce informații colectăm, cum le folosim și ce opțiuni ai.",
+    "sections": [
+      {
+        "heading": "Informațiile pe care le colectăm",
+        "body": "Când îți creezi un cont, colectăm numele de utilizator, adresa de e-mail, numărul de telefon (opțional) și locația (oraș, stat, cod poștal), astfel încât cumpărătorii din apropiere să-ți poată găsi anunțurile. Când listezi un vehicul, colectăm detaliile vehiculului și orice fotografii sau documente (precum rapoarte Carfax, de geometrie sau de inspecție) pe care alegi să le încarci. De asemenea, colectăm automat date de bază despre utilizare, precum paginile vizitate și informații generale despre dispozitiv, pentru a ne ajuta să menținem și să îmbunătățim site-ul."
+      },
+      {
+        "heading": "Cum folosim informațiile tale",
+        "body": "Folosim informațiile tale pentru a opera piața: crearea și afișarea profilului tău public de vânzător, conectarea cumpărătorilor cu vânzătorii, procesarea anunțurilor, calcularea rezultatelor de căutare bazate pe distanță și trimiterea de e-mailuri legate de cont, precum resetările de parolă. Nu vindem informațiile tale personale către terți."
+      },
+      {
+        "heading": "Ce pot vedea alți utilizatori",
+        "body": "Numele tău de utilizator, orașul și statul, fotografia de profil, numele afacerii (dacă ești dealer) și orice anunțuri sau recenzii pe care le-ai postat sunt vizibile pentru ceilalți utilizatori. Numărul tău de telefon este dezvăluit unui cumpărător doar dacă acesta alege să-l dezvăluie, iar adresa ta de e-mail este privată în mod implicit -- poți alege să o faci vizibilă pe profilul tău public din setările contului tău."
+      },
+      {
+        "heading": "Cookie-uri și stocare locală",
+        "body": "Folosim cookie-uri pentru a te menține conectat și pentru a-ți reține sesiunea. Dacă nu ești conectat, lista ta de urmărire (anunțurile apreciate) este stocată în stocarea locală a browserului tău, în loc de serverele noastre. Nu folosim cookie-uri de publicitate sau urmărire de la terți."
+      },
+      {
+        "heading": "Securitatea datelor",
+        "body": "Luăm măsuri rezonabile pentru a-ți proteja informațiile, inclusiv conexiuni criptate (HTTPS) și stocare securizată a parolelor. Cu toate acestea, nicio metodă de transmitere sau stocare nu este 100% sigură și nu putem garanta o securitate absolută."
+      },
+      {
+        "heading": "Opțiunile tale",
+        "body": "Poți actualiza sau corecta informațiile din profilul tău în orice moment, din setările contului tău. Îți poți dezactiva contul din pagina profilului tău, sau ne poți contacta pentru a solicita ștergerea datelor tale."
+      },
+      {
+        "heading": "Confidențialitatea copiilor",
+        "body": "OnlySalvage nu se adresează copiilor sub 13 ani și nu colectăm cu bună știință informații personale de la copii sub 13 ani."
+      },
+      {
+        "heading": "Modificări ale acestei politici",
+        "body": "Este posibil să actualizăm această Politică de confidențialitate din când în când. Dacă facem modificări semnificative, vom actualiza data din partea de sus a acestei pagini."
+      },
+      {
+        "heading": "Contactează-ne",
+        "body": "Dacă ai întrebări despre această Politică de confidențialitate sau despre modul în care gestionăm informațiile tale, contactează-ne la support@onlysalvage.com."
+      }
+    ]
+  },
+  "TermsOfService": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbTerms": "Termeni și condiții",
+    "title": "Termeni și condiții",
+    "lastUpdated": "Ultima actualizare: iulie 2026",
+    "intro": "Acești Termeni și condiții (\"Termeni\") guvernează utilizarea de către tine a OnlySalvage. Prin crearea unui cont sau utilizarea site-ului, ești de acord cu acești Termeni.",
+    "sections": [
+      {
+        "heading": "Eligibilitate",
+        "body": "Trebuie să ai cel puțin 18 ani pentru a crea un cont sau a lista un vehicul pe OnlySalvage."
+      },
+      {
+        "heading": "Contul tău",
+        "body": "Ești responsabil pentru păstrarea în siguranță a parolei tale și pentru toate activitățile din contul tău. Anunță-ne imediat dacă crezi că contul tău a fost compromis."
+      },
+      {
+        "heading": "Anunțuri",
+        "body": "Când listezi un vehicul, ești de acord că informațiile pe care le furnizezi -- inclusiv VIN-ul, statutul titlului (curat, recondiționat sau avariat), kilometrajul, starea și fotografiile -- sunt corecte după cunoștințele tale. Ești responsabil pentru conținutul anunțurilor tale și trebuie să ai dreptul legal de a vinde vehiculul."
+      },
+      {
+        "heading": "OnlySalvage este o piață, nu parte la vânzare",
+        "body": "OnlySalvage conectează cumpărătorii și vânzătorii -- nu suntem parte la nicio tranzacție dintre ei și nu inspectăm, certificăm sau garantăm niciun vehicul listat pe site. Cumpărătorii sunt încurajați puternic să inspecteze un vehicul personal (sau să organizeze o inspecție profesională) și să verifice titlul și istoricul acestuia înainte de a finaliza o achiziție."
+      },
+      {
+        "heading": "Recenzii",
+        "body": "Recenziile trebuie să reflecte o tranzacție sau interacțiune reală. Recenziile care sunt frauduloase, abuzive sau lăsate pentru a manipula evaluarea unui vânzător pot fi eliminate."
+      },
+      {
+        "heading": "Conduită interzisă",
+        "body": "Ești de acord să nu: listezi un vehicul pe care nu ai dreptul să-l vinzi, denaturezi starea sau statutul titlului unui vehicul, hărțuiești alți utilizatori sau folosești site-ul în orice scop ilegal."
+      },
+      {
+        "heading": "Taxe",
+        "body": "Listarea unui vehicul pe OnlySalvage este momentan gratuită. Dacă vom introduce în viitor funcții cu plată, vom dezvălui clar orice taxe înainte de a fi taxat."
+      },
+      {
+        "heading": "Declinări de responsabilitate și limitarea răspunderii",
+        "body": "OnlySalvage este oferit \"ca atare\" fără garanții de niciun fel. În limita maximă permisă de lege, OnlySalvage nu este răspunzător pentru niciun litigiu, pierdere sau daună rezultate dintr-o tranzacție dintre un cumpărător și un vânzător."
+      },
+      {
+        "heading": "Încetare",
+        "body": "Putem suspenda sau închide conturile care încalcă acești Termeni sau despre care credem că prezintă un risc pentru alți utilizatori."
+      },
+      {
+        "heading": "Modificări ale acestor termeni",
+        "body": "Este posibil să actualizăm acești Termeni din când în când. Continuarea utilizării OnlySalvage după o modificare înseamnă că accepți Termenii actualizați."
+      },
+      {
+        "heading": "Contactează-ne",
+        "body": "Întrebări despre acești Termeni? Contactează-ne la support@onlysalvage.com."
+      }
+    ]
+  },
+  "AboutUs": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbAbout": "Despre noi",
+    "title": "Despre OnlySalvage",
+    "subtitle": "Modul simplu de a cumpăra și vinde mașini avariate.",
+    "sections": [
+      {
+        "heading": "Misiunea noastră",
+        "body": "Vehiculele avariate și recondiționate sunt printre cele mai bune afaceri de pe piața mașinilor la mâna a doua, dar găsirea lor a însemnat în mod tradițional site-uri de licitații dubioase, lipsă de responsabilitate din partea vânzătorilor și titluri trecute cu vederea până când era prea târziu. OnlySalvage a fost creat pentru a rezolva asta -- o piață în care fiecare anunț este asociat unui cont real, evaluat, de vânzător, iar statutul titlului (avariat sau recondiționat) este menționat clar de la început, nu ascuns în litere mici."
+      },
+      {
+        "heading": "Ce facem",
+        "body": "Conectăm vânzătorii privați și dealerii cu cumpărători care caută o afacere bună la un vehicul avariat sau recondiționat. Vânzătorii pot lista o mașină în câteva minute -- introduc doar un VIN și preluăm automat anul, marca și modelul. Cumpărătorii pot căuta după locație, preț, kilometraj și statutul titlului, pot trimite mesaje direct vânzătorilor și pot verifica evaluarea unui vânzător înainte de a cumpăra."
+      },
+      {
+        "heading": "Construit pe încredere",
+        "body": "Fiecare cont de pe OnlySalvage este real -- fără anunțuri anonime. Cumpărătorii și vânzătorii se evaluează reciproc după o tranzacție, astfel încât reputația unui vânzător este câștigată, nu revendicată. De asemenea, oferim asistență 24/7 dacă ceva nu merge bine."
+      },
+      {
+        "heading": "Ia legătura cu noi",
+        "body": "Ai o întrebare, un feedback sau o idee de parteneriat? Ne-ar plăcea să auzim de la tine la support@onlysalvage.com."
+      }
+    ]
+  },
+  "Developers": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbDevelopers": "Dezvoltatori",
+    "title": "Documentație API",
+    "subtitle": "Gestionează-ți stocul programatic -- adaugă anunțuri, actualizează statusul și încarcă fotografii fără să deschizi site-ul.",
+    "tableOfContents": "Cuprins",
+    "searchEndpoints": "Caută endpoint-uri...",
+    "noEndpointsFound": "Niciun endpoint nu corespunde căutării tale.",
+    "gettingStartedTitle": "Primii pași",
+    "gettingStartedStep1": "Solicită acces din",
+    "gettingStartedStep1Link": "Setări > Acces API",
+    "gettingStartedStep2": "Un vânzător verificat este aprobat instant; altfel vom analiza cererea ta în curând.",
+    "gettingStartedStep3": "Odată aprobat, generează-ți tokenul -- este afișat o singură dată, așa că copiază-l undeva în siguranță.",
+    "gettingStartedStep4": "Include-l ca token Bearer la fiecare cerere către endpoint-urile de mai jos.",
+    "authTitle": "Autentificare",
+    "authDescription": "Fiecare cerere (cu excepția endpoint-urilor publice de referință) trebuie să includă tokenul tău în header-ul Authorization:",
+    "authNote": "Tokenurile sunt asociate contului tău -- fiecare anunț pe care îl creezi, editezi sau citești prin API este limitat doar la propriul tău stoc.",
+    "lifecycleTitle": "Ciclul de viață al unui anunț",
+    "lifecycleDescription": "Un anunț creat prin API începe întotdeauna ca ciornă, la fel ca atunci când începi unul manual pe site -- nu poate fi publicat fără cel puțin o fotografie, iar acest apel nu poate include una.",
+    "lifecycleStep1": "Trimite POST pentru un anunț nou -- este creat ca ciornă.",
+    "lifecycleStep2": "Încarcă una sau mai multe fotografii pentru el.",
+    "lifecycleStep3": "Trimite POST pentru o schimbare de status (ex. \"AV\") pentru a-l publica.",
+    "endpointsTitle": "Endpoint-uri",
+    "endpointMeTitle": "Contul tău",
+    "endpointMe": "Contul căruia îi aparține tokenul tău",
+    "endpointChoicesTitle": "Valori pentru câmpuri",
+    "endpointChoices": "Valori valide pentru status, vehicle_type, fuel_type etc.",
+    "endpointMakesTitle": "Listează mărcile",
+    "endpointMakes": "Listează toate mărcile de vehicule (fără token necesar)",
+    "endpointModelsTitle": "Listează modelele",
+    "endpointModels": "Listează modelele pentru o marcă dată (fără token necesar)",
+    "endpointListTitle": "Anunțurile tale",
+    "endpointList": "Listează propriile tale anunțuri -- filtrabil, vezi mai jos",
+    "endpointCreateTitle": "Creează un anunț",
+    "endpointCreate": "Creează un anunț nou (începe întotdeauna ca ciornă)",
+    "endpointRetrieveTitle": "Obține un anunț",
+    "endpointRetrieve": "Obține un singur anunț de-al tău",
+    "endpointUpdateTitle": "Actualizează un anunț",
+    "endpointUpdate": "Editează câmpurile unui anunț (sunt acceptate actualizări parțiale)",
+    "endpointDeleteTitle": "Șterge un anunț",
+    "endpointDelete": "Șterge definitiv un anunț și fotografiile sale",
+    "endpointStatusTitle": "Schimbă statusul",
+    "endpointStatus": "Schimbă doar statusul unui anunț",
+    "endpointRenewTitle": "Reînnoiește un anunț",
+    "endpointRenew": "Readu un anunț eligibil în fruntea listei",
+    "endpointImagesListTitle": "Listează fotografiile",
+    "endpointImagesList": "Listează fotografiile unui anunț",
+    "endpointImagesUploadTitle": "Încarcă o fotografie",
+    "endpointImagesUpload": "Încarcă o fotografie, prin fișier sau image_url",
+    "endpointImageDeleteTitle": "Șterge o fotografie",
+    "endpointImageDelete": "Elimină o singură fotografie",
+    "languageLabel": "Limbă",
+    "miscTitle": "Bine de știut",
+    "miscRateLimit": "Cererile sunt limitate la 120 pe minut per cont.",
+    "miscOwnership": "Fiecare endpoint este limitat la propriile tale anunțuri -- nu există nicio modalitate de a citi sau modifica stocul altui vânzător prin acest API.",
+    "miscErrors": "Erorile de validare revin ca un obiect JSON care asociază numele câmpurilor cu mesajele de eroare, la fel ca restul API-ului site-ului.",
+    "miscPagination": "Răspunsurile de tip listă sunt paginate (50 pe pagină implicit, până la 200 cu ?page_size=); folosește linkurile next/previous returnate pentru a parcurge restul."
+  },
+  "Guide": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbGuide": "Ghid",
+    "title": "Ghidul site-ului",
+    "subtitle": "Câteva sfaturi pentru funcții care nu sunt evidente de la prima vedere.",
+    "searchPlaceholder": "Caută în ghid...",
+    "noResults": "Niciun sfat nu corespunde căutării tale.",
+    "tableOfContents": "Cuprins",
+    "goTo": "Mergi la",
+    "walkthroughsTitle": "Ghiduri pas cu pas",
+    "categories": [
+      {
+        "title": "Navigare și cumpărare",
+        "tips": [
+          {
+            "heading": "Click dreapta pe un anunț pentru acțiuni rapide",
+            "body": "Fă click dreapta pe orice card de anunț pentru a-l deschide într-un tab nou, a-i copia linkul, a-l adăuga la Comparare sau la Lista de urmărire, a contacta vânzătorul sau a-l raporta -- fără să deschizi mai întâi anunțul."
+          },
+          {
+            "heading": "Compară vehicule unul lângă altul",
+            "body": "Adaugă câteva anunțuri la Comparare (din meniul cardului sau de pe pagina anunțului) și vizualizează-le împreună pentru a compara rapid prețul, kilometrajul și specificațiile."
+          },
+          {
+            "heading": "Lista ta de urmărire ține evidența disponibilității",
+            "body": "Apasă pe iconița inimioară de pe orice card de anunț pentru a-l salva -- conectat fiind, este păstrat în Lista de urmărire a contului tău, ca să-l poți găsi de pe orice dispozitiv; neconectat fiind, este salvat în schimb în acest browser. În ambele cazuri, o mașină este eliminată automat dacă se vinde sau este retrasă, și reapare de la sine dacă devine din nou disponibilă."
+          },
+          {
+            "heading": "Sortează după distanță",
+            "body": "Introdu codul tău poștal (sau permite accesul la locație) în filtrele stocului pentru a sorta anunțurile după cât de departe sunt."
+          },
+          {
+            "heading": "Recomandările se îmbunătățesc pe măsură ce navighezi",
+            "body": "Secțiunea Recomandate de pe pagina principală și de pe pagina stocului învață din ceea ce cauți și vizualizezi -- cu cât o folosești mai mult, cu atât devine mai bună."
+          },
+          {
+            "heading": "Ce înseamnă \"Recomandat\"",
+            "body": "Anunțurile recomandate sunt mașini pe care un administrator a ales să le evidențieze pe pagina principală pentru o perioadă limitată. Acest lucru nu afectează prețul sau starea anunțului -- doar vizibilitatea acestuia."
+          },
+          {
+            "heading": "Contactează direct un vânzător",
+            "body": "Deschide anunțul și folosește cardul \"Contactează vânzătorul\" pentru a-i dezvălui numărul de telefon cu un singur clic, sau vizualizează-i profilul pentru a vedea celelalte anunțuri și recenzii ale sale."
+          },
+          {
+            "heading": "Cum să lași o recenzie",
+            "body": "Evaluările sunt lăsate de cumpărători reali din propriul lor cont -- câte o recenzie per cumpărător per vânzător, iar vânzătorii nu se pot evalua pe ei înșiși, așa că ceea ce vezi reflectă o experiență reală.",
+            "steps": [
+              "Vizitează pagina de profil a vânzătorului.",
+              "Apasă pe \"Lasă o recenzie\".",
+              "Alege o evaluare cu stele și scrie un comentariu.",
+              "Trimite -- poți evalua un vânzător o singură dată."
+            ]
+          },
+          {
+            "heading": "Propriile tale anunțuri ies în evidență în timpul navigării",
+            "body": "Oriunde vezi unul dintre propriile tale anunțuri printre rezultatele căutării -- stoc, profilul tău, oriunde -- acesta este conturat cu un chenar evidențiat, ca să-l poți recunoaște dintr-o privire."
+          },
+          {
+            "heading": "Cum să cumperi o mașină",
+            "body": "De la prima căutare până la ridicarea cheilor -- acesta este traseul obișnuit de la navigare la cumpărare pe OnlySalvage.",
+            "steps": [
+              "Caută în stoc folosind filtrele pentru marcă, model, preț și locație.",
+              "Compară-ți lista scurtă una lângă alta pentru a cântări prețul, kilometrajul și starea.",
+              "Programează un test drive cu vânzătorul odată ce ai redus opțiunile.",
+              "Parcurge Lista de verificare a cumpărătorului înainte să te decizi, ca să nu-ți scape nimic."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Vânzare și gestionarea anunțurilor",
+        "tips": [
+          {
+            "heading": "Ciornele îți salvează progresul",
+            "body": "Începe un anunț și pleacă oricând dorești -- odată ce îl salvezi o dată, rămâne în fila Ciorne din profilul tău, ca să îl termini mai târziu."
+          },
+          {
+            "heading": "Editarea sau gestionarea unui anunț deja publicat",
+            "body": "Deschide anunțul tău și apasă pe \"Editează anunțul\" pentru a actualiza detaliile, a reordona fotografiile sau a-i schimba statutul -- sau fă click dreapta pe el din orice card (profilul tău, inventar, oriunde) pentru aceleași acțiuni ca o comandă rapidă: marchează-l Disponibil, În așteptare sau Vândut, publică/retrage-l, editează-l sau șterge-l, totul fără să deschizi pagina de editare."
+          },
+          {
+            "heading": "Pune pe pauză în loc să ștergi",
+            "body": "Dezactivează \"Publicat\" pe pagina de editare pentru a ascunde un anunț peste tot, cu excepția propriului tău profil (afișat cu eticheta Inactiv). Reactivează-l oricând -- nimic nu se pierde."
+          },
+          {
+            "heading": "Reînnoiește pentru a readuce anunțul în fruntea listei",
+            "body": "Odată ce un anunț activ are cel puțin 7 zile vechime, reînnoiește-l din secțiunea sa de Acțiuni pentru a-l muta înapoi în fruntea rezultatelor căutării -- de până la 3 ori."
+          },
+          {
+            "heading": "Dealerii pot încărca în masă prin CSV",
+            "body": "Din Vinde > Încărcare în masă, dealerii pot adăuga mai multe vehicule deodată dintr-o foaie de calcul. Fiecare rând devine o ciornă de analizat și publicat individual.",
+            "steps": [
+              "Mergi la Vinde > Încărcare în masă.",
+              "Descarcă șablonul CSV.",
+              "Completează câte un rând pentru fiecare vehicul și încarcă fișierul.",
+              "Analizează ciornele importate, adaugă fotografii și publică fiecare anunț."
+            ]
+          },
+          {
+            "heading": "Completare automată după VIN",
+            "body": "Introdu un VIN când începi un anunț, iar anul, marca, modelul și detaliile motorului se completează automat."
+          },
+          {
+            "heading": "Vânzare ca dealer",
+            "body": "Marchează-ți contul ca dealer/afacere din setările profilului tău. Conturile de dealer afișează o insignă \"Dealer\" pe anunțurile și profilul lor, și deblochează încărcarea în masă prin CSV."
+          },
+          {
+            "heading": "Numărul tău de telefon rămâne privat",
+            "body": "În mod implicit, pe un anunț se afișează doar codul zonal -- numărul complet rămâne ascuns până când un cumpărător alege să-l dezvăluie."
+          },
+          {
+            "heading": "Cum să vinzi o mașină, pas cu pas",
+            "body": "Fluxul complet de la VIN până la anunțul publicat, de la început până la sfârșit.",
+            "steps": [
+              "Mergi la Vinde și introdu VIN-ul tău -- anul, marca, modelul și motorul se completează automat.",
+              "Adaugă fotografii clare ale mașinii (exterior, interior și eventualele daune).",
+              "Stabilește prețul și adaugă o descriere.",
+              "Publică-l -- sau salvează-l ca ciornă pentru a-l termina mai târziu.",
+              "Gestionează-l oricând: marchează-l În așteptare sau Vândut, pune-l pe pauză sau reînnoiește-l pentru a rămâne în fruntea rezultatelor căutării."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cont și instrumente pentru dezvoltatori",
+        "tips": [
+          {
+            "heading": "Obține verificarea",
+            "body": "Solicită verificarea ca vânzător din Setări pentru a obține o insignă de verificare care îi ajută pe cumpărători să aibă încredere în anunțurile tale."
+          },
+          {
+            "heading": "Gestionează-ți stocul cu API-ul",
+            "body": "Vânzătorii verificați primesc acces API instant din Setări > Acces API -- generează un token și gestionează-ți anunțurile programatic. Vezi documentația API pentru detalii."
+          },
+          {
+            "heading": "Resetează-ți parola",
+            "body": "Mergi la pagina de conectare și apasă pe \"Ai uitat parola?\" -- îți vom trimite prin e-mail un link de resetare.",
+            "steps": [
+              "Mergi la pagina de conectare.",
+              "Apasă pe \"Ai uitat parola?\"",
+              "Verifică-ți e-mailul pentru linkul de resetare.",
+              "Stabilește o parolă nouă și conectează-te."
+            ]
+          },
+          {
+            "heading": "Actualizează-ți profilul",
+            "body": "Vizitează pagina profilului tău și apasă pe \"Editează profilul\" pentru a actualiza numele afacerii, telefonul, locația, descrierea și fotografia."
+          }
+        ]
+      }
+    ]
+  },
+  "VehicleAttributes": {
+    "vehicleType": {
+      "SDN": "Sedan",
+      "TK": "Camionetă",
+      "SUV": "SUV",
+      "WGN": "Break",
+      "CPE": "Coupe",
+      "HBK": "Hatchback",
+      "VAN": "Furgonetă"
+    },
+    "transmission": {
+      "ATM": "Automată",
+      "MAN": "Manuală",
+      "CVT": "CVT",
+      "DTC": "DCT",
+      "ECVT": "eCVT"
+    },
+    "drive": {
+      "FWD": "Tracțiune față",
+      "RWD": "Tracțiune spate",
+      "AWD": "Tracțiune integrală",
+      "4WD": "Tracțiune pe 4 roți",
+      "EAWD": "Tracțiune integrală electrică",
+      "OTH": "Altele"
+    },
+    "fuelType": {
+      "GAS": "Benzină",
+      "DIS": "Diesel",
+      "HYB": "Hibrid",
+      "ELC": "Electric"
+    },
+    "titleDocument": {
+      "RE": "Recondiționat",
+      "SA": "Avariat",
+      "CT": "Curat (daună totală)"
+    },
+    "color": {
+      "BLK": "Negru",
+      "WHT": "Alb",
+      "SIL": "Argintiu",
+      "GRY": "Gri",
+      "RED": "Roșu",
+      "BLU": "Albastru",
+      "BRW": "Maro",
+      "TAN": "Bej/Nisipiu",
+      "GRN": "Verde",
+      "ORG": "Portocaliu",
+      "YEL": "Galben",
+      "GLD": "Auriu",
+      "MAR": "Grena",
+      "PUR": "Mov"
+    },
+    "sellerType": {
+      "Private": "Vânzător privat",
+      "Dealer": "Dealer",
+      "Financing": "Oferă finanțare Cumpără aici, plătește aici",
+      "Verified": "Vânzător verificat"
+    },
+    "optionCategory": {
+      "CMF": "Confort și interior",
+      "TEC": "Tehnologie și infotainment",
+      "SAF": "Siguranță și asistență la condus",
+      "EXT": "Exterior și confort",
+      "PRF": "Performanță și remorcare"
+    }
+  },
+  "TranslatableText": {
+    "translate": "Tradu",
+    "viewOriginal": "Vezi originalul",
+    "translationFailed": "Traducerea a eșuat. Te rugăm să încerci din nou."
+  },
+  "PhoneVerification": {
+    "verified": "Telefon verificat",
+    "sending": "Se trimite...",
+    "codeSent": "Cod de verificare trimis.",
+    "sendFailed": "Trimiterea codului de verificare a eșuat. Te rugăm să încerci din nou.",
+    "codeLabel": "Cod de verificare",
+    "codePlaceholder": "Cod din 6 cifre",
+    "confirmCode": "Confirmă",
+    "verifying": "Se verifică...",
+    "resendCode": "Retrimite codul",
+    "invalidCode": "Cod incorect sau expirat.",
+    "verifySucceeded": "Număr de telefon verificat.",
+    "verify": "Verifică",
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "DeleteListingModal": {
+    "close": "Închide",
+    "confirmTitle": "Ștergi acest anunț?",
+    "confirmDescription": "Aceasta șterge definitiv anunțul și toate fotografiile și documentele sale. Această acțiune nu poate fi anulată.",
+    "cancel": "Anulează",
+    "deleting": "Se șterge...",
+    "deleteListing": "Șterge anunțul",
+    "deleteFailed": "Ștergerea anunțului a eșuat.",
+    "deleteSucceeded": "Anunț șters."
+  },
+  "Checklist": {
+    "breadcrumbHome": "Acasă",
+    "breadcrumbChecklist": "Lista de verificare a cumpărătorului",
+    "title": "Lista de verificare a cumpărătorului",
+    "subtitle": "Tot ce trebuie verificat înainte de a cumpăra un vehicul avariat -- bifează fiecare element pe măsură ce avansezi.",
+    "progress": "{checked} din {total} bifate",
+    "reset": "Resetează",
+    "print": "Printează",
+    "aboutRebuilt": {
+      "title": "Ce înseamnă cu adevărat titlurile recondiționate și avariate",
+      "paragraph1": "Un titlu recondiționat sau avariat înseamnă doar că un vehicul a fost declarat cândva daună totală -- nu spune nimic despre calitatea reparației. Un atelier care face treaba corect poate readuce o mașină avariată într-o stare cu adevărat sigură și fiabilă, uneori mai bună decât a multor vehicule cu titlu \"curat\" aflate pe drum.",
+      "paragraph2": "Nici titlul curat nu este o garanție. Dacă un proprietar plătește reparațiile din buzunar în loc să depună o cerere de despăgubire la asigurare, accidentul nu este niciodată raportat, iar titlul rămâne \"curat\" indiferent cât de gravă a fost dauna. Statutul titlului, luat singur, nu îți poate spune cum a fost tratată de fapt mașina.",
+      "paragraph3": "De aceea, pașii din această listă de verificare -- un raport de istoric al vehiculului, o verificare a VIN-ului și o inspecție profesională -- contează mai mult decât statutul titlului tipărit pe documente. Se aplică la fel de bine unei mașini cu titlu \"curat\" ca și uneia recondiționate."
+    }
+  }
+}

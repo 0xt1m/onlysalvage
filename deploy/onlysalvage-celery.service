@@ -1,0 +1,23 @@
+[Unit]
+Description=OnlySalvage Celery worker (background image processing, etc.)
+After=network.target
+
+[Service]
+Type=simple
+User=onlysalvage
+Group=onlysalvage
+WorkingDirectory=/opt/onlysalvage/onlysalvage_api
+EnvironmentFile=/opt/onlysalvage/onlysalvage_api/.env
+ExecStart=/opt/onlysalvage/onlysalvage_api/venv/bin/celery \
+    -A onlysalvage_api worker \
+    --loglevel=info \
+    --concurrency=2
+Restart=on-failure
+RestartSec=5
+
+# Requires a reachable Redis (CELERY_BROKER_URL in .env) -- see
+# inventory/tasks.py for what this actually processes (photo resizing/
+# thumbnailing after upload). journalctl -u onlysalvage-celery -f to watch.
+
+[Install]
+WantedBy=multi-user.target

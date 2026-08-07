@@ -1,0 +1,1595 @@
+{
+  "Common": {
+    "appName": "OnlySalvage",
+    "viewAll": "Ver todo",
+    "showPassword": "Mostrar contraseña",
+    "hidePassword": "Ocultar contraseña"
+  },
+  "Nav": {
+    "logo": "Logotipo",
+    "home": "Inicio",
+    "inventory": "Inventario",
+    "support": "Soporte 24/7",
+    "sell": "Vender",
+    "switchToLight": "Cambiar a modo claro",
+    "switchToDark": "Cambiar a modo oscuro",
+    "switchLanguage": "Cambiar idioma",
+    "likedCars": "Autos favoritos",
+    "compare": "Comparar",
+    "myProfile": "Mi perfil",
+    "viewProfile": "Ver perfil",
+    "logOut": "Cerrar sesión",
+    "logIn": "Iniciar sesión",
+    "signUp": "Registrarse",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "settings": "Configuración"
+  },
+  "Footer": {
+    "tagline": "Tu mercado de confianza para comprar y vender autos. Rápido, sencillo y confiable.",
+    "company": "Empresa",
+    "about": "Acerca de",
+    "shopByMake": "Comprar por marca",
+    "shopByBodyStyle": "Comprar por tipo de carrocería",
+    "sellers": "Vendedores",
+    "guide": "Guía del sitio",
+    "checklist": "Lista de verificación del comprador",
+    "apiDocs": "Documentación de la API",
+    "feedback": "Comentarios",
+    "contact": "Contacto",
+    "careers": "Empleo",
+    "legal": "Legal",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio",
+    "followUs": "Síguenos",
+    "copyright": "© 2026 OnlySalvage. Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "Home": {
+    "heroTitle": "La forma sencilla de comprar y vender autos de salvamento",
+    "heroSubtitle": "Explora anuncios verificados de autos de salvamento y reconstruidos de vendedores particulares y concesionarios, o publica tu propio vehículo en minutos.",
+    "trust": {
+      "verifiedTitle": "Anuncios verificados",
+      "verifiedDescription": "Cada vehículo está vinculado a una cuenta de vendedor real, con el estado del título (salvamento o reconstruido) indicado desde el principio.",
+      "ratedTitle": "Vendedores y compradores calificados",
+      "ratedDescription": "Realiza transacciones con confianza gracias a nuestro sistema de reseñas bidireccional.",
+      "supportTitle": "Soporte 24/7",
+      "supportDescription": "¿Preguntas o problemas? Nuestro equipo está disponible en todo momento.",
+      "reachTitle": "Alcance nacional",
+      "reachDescription": "Busca anuncios de autos de salvamento y reconstruidos de vendedores particulares y concesionarios en todo el país."
+    },
+    "guideTip": {
+      "label": "¿Sabías qué?",
+      "viewGuide": "Ver guía"
+    },
+    "checklistTeaser": {
+      "label": "Antes de comprar",
+      "heading": "Lista de verificación del comprador",
+      "description": "Todo lo que debes revisar antes de comprar un vehículo de salvamento, en una lista imprimible.",
+      "viewChecklist": "Ver lista de verificación"
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "subtitle": "Comprar o vender un auto de salvamento en OnlySalvage lleva tres simples pasos",
+      "step1Title": "Busca o publica un anuncio",
+      "step1Description": "Explora anuncios de autos de salvamento y reconstruidos cerca de ti, o publica tu propio vehículo en minutos -- solo ingresa el VIN y completaremos los detalles.",
+      "step2Title": "Contacta al vendedor",
+      "step2Description": "Revela el número de teléfono del vendedor y contáctalo directamente para hacer preguntas o coordinar una visita.",
+      "step3Title": "Inspecciona y compra",
+      "step3Description": "Inspecciona el vehículo en persona (o contrata una inspección profesional) y luego completa la compra directamente con el vendedor."
+    },
+    "featuredTitle": "Autos destacados",
+    "featuredSubtitle": "Anuncios seleccionados que los vendedores están promocionando actualmente",
+    "newArrivalsTitle": "Recién llegados",
+    "newArrivalsSubtitle": "Los vehículos más recientes añadidos al mercado",
+    "noListingsYet": "Aún no hay anuncios. ¡Sé el primero en publicar un auto!",
+    "recommendedTitle": "Recomendado para ti",
+    "recommendedSubtitle": "Según lo que has estado buscando y viendo",
+    "becauseYouViewedTitle": "Porque viste {title}",
+    "becauseYouViewedSubtitle": "Anuncios similares que podrían gustarte",
+    "ctaTitle": "¿Listo para vender tu auto de salvamento?",
+    "ctaDescription": "Publica tu vehículo de salvamento o reconstruido en minutos -- solo ingresa tu VIN y completaremos los detalles por ti.",
+    "sellYourCar": "Vender tu auto",
+    "mostLikedTitle": "Más populares",
+    "mostLikedSubtitle": "Anuncios disponibles que los compradores están prefiriendo ahora mismo",
+    "topSellersTitle": "Mejores vendedores",
+    "topSellersSubtitle": "Vendedores con la calificación promedio más alta de compradores reales",
+    "shopByMakeTitle": "Comprar por marca",
+    "shopByMakeSubtitle": "Explora los anuncios por fabricante",
+    "shopByBodyStyleTitle": "Comprar por tipo de carrocería",
+    "shopByBodyStyleSubtitle": "Explora los anuncios por tipo de carrocería",
+    "shopByCityTitle": "Comprar por ciudad",
+    "shopByCitySubtitle": "Explora los anuncios en ciudades populares",
+    "verifiedSellersTitle": "Vendedores verificados",
+    "verifiedSellersSubtitle": "Vendedores que han confirmado su identidad con nuestro proceso de verificación",
+    "verifiedListingsTitle": "Anuncios de vendedores verificados",
+    "verifiedListingsSubtitle": "Tranquilidad adicional al comprar a una cuenta verificada",
+    "mostViewedTitle": "Más vistos",
+    "mostViewedSubtitle": "Anuncios disponibles que están recibiendo más atención ahora mismo"
+  },
+  "SearchBlock": {
+    "search": "Buscar",
+    "searchPlaceholder": "Busca por marca, modelo o palabra clave",
+    "filters": {
+      "inventory": "Inventario",
+      "under5000": "Menos de $5,000",
+      "under10000": "Menos de $10,000",
+      "over10000": "Más de $10,000",
+      "allWheelDrive": "Tracción integral",
+      "rebuiltTitle": "Título reconstruido",
+      "privateSellers": "Vendedores particulares",
+      "nearby": "Cerca de ti",
+      "recommended": "Recomendado"
+    },
+    "surpriseMe": "Sorpréndeme"
+  },
+  "ListingCard": {
+    "mileage": "Kilometraje",
+    "transmission": "Transmisión",
+    "fuelType": "Tipo de combustible",
+    "seller": "Vendedor",
+    "location": "Ubicación",
+    "contactSeller": "Contactar al vendedor",
+    "noPhotoYet": "Sin foto todavía",
+    "callsReceived": "{count, plural, one {# llamada} other {# llamadas}}",
+    "viewsCount": "{count, plural, one {# vista} other {# vistas}}",
+    "statusAvailable": "DISPONIBLE",
+    "statusPending": "PENDIENTE",
+    "statusSold": "VENDIDO",
+    "inactiveBadge": "Inactivo",
+    "lowMileage": "Bajo kilometraje",
+    "verifiedSeller": "Vendedor verificado",
+    "warrantyBadge": "Garantía",
+    "openInNewTab": "Abrir en Nueva Pestaña",
+    "editListing": "Editar Anuncio",
+    "markAvailable": "Marcar como Disponible",
+    "markSold": "Marcar como Vendido",
+    "markPending": "Marcar como Pendiente",
+    "share": "Copiar enlace",
+    "addToCompare": "Añadir a Comparar",
+    "removeFromCompare": "Quitar de Comparar",
+    "addedToCompare": "Añadido a la comparación",
+    "removedFromCompare": "Eliminado de la comparación",
+    "unpublish": "Anular publicación",
+    "publish": "Publicar",
+    "callSeller": "Llamar al Vendedor",
+    "callFailed": "No se pudo obtener el número de teléfono del vendedor.",
+    "emailSeller": "Enviar Correo al Vendedor",
+    "report": "Reportar",
+    "viewSellerProfile": "Ver perfil del vendedor",
+    "addToWatchlist": "Añadir a favoritos",
+    "removeFromWatchlist": "Quitar de favoritos",
+    "statusUpdateSucceeded": "Estado del anuncio actualizado",
+    "statusUpdateFailed": "No se pudo actualizar el estado del anuncio.",
+    "linkCopied": "Enlace copiado al portapapeles",
+    "shareFailed": "No se pudo compartir este anuncio. Inténtalo de nuevo.",
+    "unpublishSucceeded": "Anuncio despublicado",
+    "unpublishFailed": "No se pudo anular la publicación del anuncio.",
+    "publishSucceeded": "Anuncio publicado",
+    "publishFailed": "No se pudo publicar el anuncio.",
+    "deleteListing": "Eliminar anuncio"
+  },
+  "ListingResultsGrid": {
+    "noListingsFound": "No se encontraron anuncios."
+  },
+  "Filters": {
+    "search": "Buscar...",
+    "noResults": "Sin resultados",
+    "apply": "Aplicar",
+    "min": "Mín",
+    "max": "Máx",
+    "any": "Cualquiera",
+    "deselectAll": "Deseleccionar todo",
+    "invalidNumber": "Ingresa un número válido"
+  },
+  "Inventory": {
+    "browseTitle": "Explora nuestro inventario",
+    "filters": "Filtros",
+    "closeFilters": "Cerrar filtros",
+    "reset": "Restablecer",
+    "applyFilters": "Aplicar filtros",
+    "distance": "Distancia",
+    "zipCode": "Código postal",
+    "anyDistance": "Cualquier distancia",
+    "locating": "Localizando...",
+    "usingYourLocation": "Usando tu ubicación",
+    "useMyLocation": "Usar mi ubicación",
+    "apply": "Aplicar",
+    "year": "Año",
+    "make": "Marca",
+    "model": "Modelo",
+    "selectMakeFirst": "Selecciona primero una marca",
+    "price": "Precio",
+    "mileage": "Kilometraje",
+    "vehicleType": "Tipo de vehículo",
+    "transmission": "Transmisión",
+    "driveType": "Tipo de tracción",
+    "fuelType": "Tipo de combustible",
+    "exteriorColor": "Color exterior",
+    "interiorColor": "Color interior",
+    "titleStatus": "Estado del título",
+    "seller": "Vendedor",
+    "noGeolocationSupport": "Tu navegador no admite geolocalización.",
+    "geolocationFailed": "No se pudo obtener tu ubicación -- prueba con un código postal.",
+    "within": "En un radio de {miles} millas",
+    "searching": "Buscando...",
+    "listingsFound": "{count, plural, one {# anuncio encontrado} other {# anuncios encontrados}}",
+    "largeCards": "Tarjetas grandes",
+    "compactCards": "Tarjetas compactas",
+    "listView": "Vista de lista",
+    "noListingsMatchFilters": "Ningún anuncio coincide con tus filtros.",
+    "loading": "Cargando...",
+    "loadMore": "Cargar más",
+    "sortOptions": {
+      "newest": "Más recientes",
+      "priceAsc": "Precio: menor a mayor",
+      "priceDesc": "Precio: mayor a menor",
+      "mileageAsc": "Kilometraje: menor a mayor",
+      "yearDesc": "Año: más reciente primero",
+      "distance": "Más cercano"
+    }
+  },
+  "MakesPage": {
+    "metaTitle": "Comprar por marca",
+    "metaDescription": "Explora vehículos de salvamento y reconstruidos por marca en OnlySalvage.",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbMakes": "Marcas",
+    "title": "Comprar por marca",
+    "subtitle": "Explora los anuncios por fabricante",
+    "noMakesYet": "Aún no hay marcas disponibles."
+  },
+  "MakePage": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbMakes": "Marcas",
+    "title": "{make} en venta",
+    "subtitle": "{count, plural, one {# anuncio disponible} other {# anuncios disponibles}}",
+    "noListingsYet": "No hay anuncios de {make} disponibles en este momento.",
+    "viewAllInInventory": "{count, plural, one {Ver este anuncio en el inventario} other {Ver los # anuncios en el inventario}}"
+  },
+  "MakeModelPage": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbMakes": "Marcas",
+    "title": "{make} {model} en venta",
+    "subtitle": "{count, plural, one {# anuncio disponible} other {# anuncios disponibles}}",
+    "noListingsYet": "No hay anuncios de {make} {model} disponibles en este momento.",
+    "viewAllInInventory": "{count, plural, one {Ver este anuncio en el inventario} other {Ver los # anuncios en el inventario}}"
+  },
+  "BodyStylesPage": {
+    "metaTitle": "Comprar por tipo de carrocería",
+    "metaDescription": "Explora vehículos de salvamento y reconstruidos por tipo de carrocería en OnlySalvage.",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbBodyStyles": "Tipos de carrocería",
+    "title": "Comprar por tipo de carrocería",
+    "subtitle": "Explora los anuncios por tipo de carrocería"
+  },
+  "BodyStylePage": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbBodyStyles": "Tipos de carrocería",
+    "title": "{type} en venta",
+    "subtitle": "{count, plural, one {# anuncio disponible} other {# anuncios disponibles}}",
+    "noListingsYet": "No hay anuncios de tipo {type} disponibles en este momento.",
+    "viewAllInInventory": "{count, plural, one {Ver este anuncio en el inventario} other {Ver los # anuncios en el inventario}}"
+  },
+  "CitiesPage": {
+    "metaTitle": "Comprar por ciudad",
+    "metaDescription": "Explora vehículos de salvamento y reconstruidos en venta por ciudad en OnlySalvage.",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbCities": "Ciudades",
+    "title": "Comprar por ciudad",
+    "subtitle": "Explora los anuncios en ciudades populares",
+    "noCitiesYet": "Aún no hay páginas de ciudades disponibles."
+  },
+  "CityPage": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbCities": "Ciudades",
+    "title": "Autos de salvamento y reconstruidos en venta en {city}, {state}",
+    "subtitle": "{count, plural, one {# anuncio disponible} other {# anuncios disponibles}}",
+    "noListingsYet": "No hay anuncios disponibles en {city} en este momento.",
+    "viewAllInInventory": "{count, plural, one {Ver este anuncio en el inventario} other {Ver los # anuncios en el inventario}}"
+  },
+  "ListingDetail": {
+    "statusAvailable": "Disponible",
+    "statusPending": "Pendiente",
+    "statusSold": "Vendido",
+    "statusInactive": "Inactivo",
+    "actionsTitle": "Acciones",
+    "verifiedSeller": "Vendedor verificado",
+    "listingNotFound": "Anuncio no encontrado",
+    "listingNotFoundDescription": "No pudimos encontrar un anuncio en \"{slug}\".",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbInventory": "Inventario",
+    "printListing": "Imprimir",
+    "share": "Compartir",
+    "linkCopied": "Enlace copiado",
+    "shareFailed": "No se pudo compartir este anuncio. Inténtalo de nuevo.",
+    "vehicleDetails": "Detalles del vehículo",
+    "year": "Año",
+    "make": "Marca",
+    "model": "Modelo",
+    "trim": "Versión",
+    "type": "Tipo",
+    "vin": "VIN",
+    "mileage": "Kilometraje",
+    "transmission": "Transmisión",
+    "drivetrain": "Tracción",
+    "fuelType": "Tipo de combustible",
+    "engine": "Motor",
+    "mpg": "Consumo",
+    "cityMpgLabel": "Consumo en ciudad",
+    "hwyMpgLabel": "Consumo en carretera",
+    "exterior": "Color exterior",
+    "interior": "Color interior",
+    "titleStatus": "Estado del título",
+    "owners": "Propietarios",
+    "posted": "Publicado",
+    "viewCarfaxReport": "Ver informe Carfax",
+    "viewAlignmentReport": "Ver informe de alineación",
+    "viewInspectionReport": "Ver informe de inspección",
+    "beforeRepairPhotos": "Fotos antes de la reparación",
+    "beforeRepairPhotosDescription": "Cómo se veía el daño antes de repararlo.",
+    "beforeRepairPhotoAlt": "Foto antes de la reparación",
+    "featuresAndOptions": "Características y opciones",
+    "description": "Descripción",
+    "noDescriptionProvided": "No se proporcionó descripción.",
+    "videoTitle": "Video",
+    "watchVideo": "Ver video",
+    "editListing": "Editar anuncio",
+    "markPending": "Marcar como pendiente",
+    "markSold": "Marcar como vendido",
+    "markAvailable": "Marcar como disponible",
+    "callsReceived": "{count, plural, one {# llamada} other {# llamadas}}",
+    "viewsCount": "{count, plural, one {# vista} other {# vistas}}",
+    "seller": "Vendedor",
+    "moreFromThisSeller": "Más de este vendedor",
+    "similarListings": "Anuncios similares",
+    "similarListingsSubtitle": "Otros anuncios que podrían interesarte",
+    "copyVin": "Copiar VIN",
+    "vinCopied": "VIN copiado",
+    "vinCopyFailed": "No se pudo copiar el VIN",
+    "renewListing": "Renovar anuncio",
+    "renewAvailableInDays": "{count, plural, one {Podrás renovar este anuncio en # día} other {Podrás renovar este anuncio en # días}}",
+    "renewalsExhausted": "Este anuncio ya usó todas sus renovaciones. Elimínalo y publícalo de nuevo para actualizar su fecha.",
+    "renewSucceeded": "Anuncio renovado",
+    "renewFailed": "No se pudo renovar el anuncio",
+    "previousListing": "Anterior",
+    "nextListing": "Siguiente",
+    "listingPosition": "{current} de {total}"
+  },
+  "ContactSellerCard": {
+    "title": "Contactar al vendedor",
+    "loading": "Cargando...",
+    "reveal": "Mostrar",
+    "maskedNumber": "+1 ({areaCode}) •••-••••",
+    "email": "Correo",
+    "loadError": "No se pudo cargar el número de teléfono del vendedor."
+  },
+  "ScheduleTestDrive": {
+    "scheduleTestDrive": "Prueba de manejo",
+    "close": "Cerrar",
+    "nameLabel": "Tu nombre",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "you@example.com",
+    "phoneLabel": "Número de teléfono",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "preferredDateTimeLabel": "Fecha y hora preferida",
+    "messageLabel": "Mensaje adicional",
+    "messagePlaceholder": "¿Algo más que el vendedor deba saber?",
+    "cancel": "Cancelar",
+    "submitting": "Enviando...",
+    "submit": "Enviar solicitud",
+    "submitFailed": "Algo salió mal. Inténtalo de nuevo.",
+    "successTitle": "¡Solicitud enviada!",
+    "successDescription": "El vendedor se pondrá en contacto contigo pronto para confirmar la prueba de manejo.",
+    "errors": {
+      "nameRequired": "Ingresa tu nombre.",
+      "contactRequired": "Ingresa un correo electrónico o número de teléfono para que el vendedor pueda contactarte.",
+      "emailInvalid": "Ingresa un correo electrónico válido.",
+      "phoneInvalid": "Ingresa un número de teléfono completo de 10 dígitos.",
+      "dateRequired": "Selecciona una fecha y hora preferida.",
+      "dateInPast": "Selecciona un horario futuro."
+    }
+  },
+  "ListingStatusButton": {
+    "updateFailed": "No se pudo actualizar el estado del anuncio.",
+    "updateSucceeded": "Estado del anuncio actualizado",
+    "updating": "Actualizando..."
+  },
+  "SellForm": {
+    "vehicleDetails": "Detalles del vehículo",
+    "vin": "VIN",
+    "vinPlaceholder": "17 caracteres",
+    "decodeVin": "Decodificar VIN",
+    "decoding": "Decodificando...",
+    "year": "Año",
+    "make": "Marca",
+    "selectMake": "Selecciona una marca",
+    "model": "Modelo",
+    "selectMakeFirst": "Selecciona primero una marca",
+    "loading": "Cargando...",
+    "noModelsYet": "Aún no hay modelos para esta marca",
+    "selectModel": "Selecciona un modelo",
+    "trim": "Versión",
+    "trimPlaceholder": "Opcional, p. ej. EX",
+    "vehicleType": "Tipo de vehículo",
+    "specs": "Especificaciones",
+    "mileage": "Kilometraje",
+    "optional": "Opcional",
+    "engine": "Motor",
+    "enginePlaceholder": "Opcional, p. ej. 2.0L I4",
+    "transmission": "Transmisión",
+    "drivetrain": "Tracción",
+    "fuelType": "Tipo de combustible",
+    "cityMpg": "MPG ciudad",
+    "highwayMpg": "MPG carretera",
+    "conditionAndPricing": "Condición y precio",
+    "titleStatus": "Estado del título",
+    "owners": "Propietarios",
+    "exteriorColor": "Color exterior",
+    "interiorColor": "Color interior",
+    "askingPrice": "Precio de venta ($)",
+    "retailPrice": "Precio de venta al público ($)",
+    "includeWarranty": "Este vehículo incluye mi garantía de concesionario",
+    "description": "Descripción",
+    "descriptionPlaceholder": "Describe el estado, las características y el historial del vehículo. Considera indicar dónde ocurrió el daño y qué reparaciones se hicieron, p. ej. \"Colisión frontal, reparada con parachoques, capó y faros nuevos.\"",
+    "video": "Video",
+    "videoDescription": "Agrega un video de recorrido o prueba de manejo, si tienes uno; los enlaces de YouTube, Vimeo y Google Drive se incrustan automáticamente.",
+    "videoUrl": "URL del video",
+    "videoUrlPlaceholder": "https://youtube.com/watch?v=...",
+    "featuresAndOptions": "Características y opciones",
+    "featuresAndOptionsDescription": "Selecciona las características que incluye este vehículo.",
+    "photos": "Fotos",
+    "uploadsLocked": "Ingresa un VIN arriba para habilitar la carga de fotos y documentos.",
+    "creatingDraft": "Preparando tu anuncio...",
+    "uploading": "Subiendo...",
+    "uploaded": "Subido",
+    "uploadFailed": "Error al subir",
+    "clickToSelectPhotos": "Haz clic para seleccionar fotos",
+    "dragToReorder": "Arrastra las fotos para reordenarlas. La primera foto se usa como portada.",
+    "cover": "Portada",
+    "failed": "Error",
+    "removePhoto": "Eliminar foto",
+    "previewAlt": "Foto {index}",
+    "beforeRepairPhotos": "Fotos antes de la reparación",
+    "beforeRepairPhotosDescription": "Opcional. Muestra cómo se veía el daño antes de repararlo.",
+    "beforeRepairPreviewAlt": "Foto antes de la reparación {index}",
+    "documentsTitle": "Documentos",
+    "carfaxReport": "Informe Carfax",
+    "reportDescription": "Opcional. Los compradores podrán ver este PDF desde la página del anuncio.",
+    "clickToSelectPdf": "Haz clic para seleccionar un PDF",
+    "removeCarfaxReport": "Eliminar informe Carfax",
+    "alignmentReport": "Informe de alineación",
+    "removeAlignmentReport": "Eliminar informe de alineación",
+    "inspectionReport": "Informe de inspección",
+    "removeInspectionReport": "Eliminar informe de inspección",
+    "publishing": "Publicando...",
+    "publishListing": "Publicar",
+    "saveDraft": "Guardar borrador",
+    "savingDraft": "Guardando...",
+    "listedAt": "Publicado a ${price}",
+    "listingLiveDescription": "Tu anuncio ya está disponible. Puede tardar un momento en procesar las fotos.",
+    "listAnotherCar": "Publicar otro auto",
+    "errors": {
+      "vinFormat": "El VIN debe tener 17 caracteres (sin I, O ni Q).",
+      "yearInvalid": "Ingresa un año válido.",
+      "makeRequired": "Selecciona una marca.",
+      "modelRequired": "Selecciona un modelo.",
+      "priceRequired": "Ingresa un precio de venta.",
+      "photosRequired": "Agrega al menos una foto antes de publicar.",
+      "vinRequiredFirst": "Primero ingresa un VIN válido de 17 caracteres.",
+      "vinTaken": "Este VIN ya tiene un anuncio activo (disponible o pendiente)."
+    },
+    "toasts": {
+      "vinDecodeFailed": "No se pudo decodificar ese VIN.",
+      "makeNotSupported": "La marca decodificada \"{make}\" aún no es compatible -- selecciónala manualmente.",
+      "modelNotListed": "El modelo decodificado \"{model}\" no aparece para {make} -- selecciónalo manualmente.",
+      "vinDecoded": "VIN decodificado correctamente.",
+      "fixErrors": "Corrige los errores a continuación.",
+      "listingLive": "¡Tu anuncio ya está publicado!",
+      "vinTaken": "Este VIN ya tiene un anuncio activo (disponible o pendiente). <link>Ver el anuncio</link>.",
+      "uploadsInProgress": "Espera a que tus fotos terminen de subirse antes de publicar.",
+      "draftSaved": "Borrador guardado. Puedes terminarlo más tarde desde tu perfil.",
+      "draftSaveFailed": "No se pudo guardar el borrador. Inténtalo de nuevo."
+    }
+  },
+  "EditListingForm": {
+    "status": "Estado",
+    "statusAvailable": "Disponible",
+    "statusPending": "Pendiente",
+    "statusSold": "Vendido",
+    "published": "Publicado",
+    "publishedDescription": "Visible en búsqueda y navegación.",
+    "unpublishedNotice": "Los anuncios no publicados están ocultos para los compradores, pero siguen accesibles mediante su enlace directo.",
+    "draftNotice": "Este anuncio aún no se ha publicado. Termina de completarlo y pulsa Publicar cuando estés listo, o guarda tu progreso y vuelve más tarde.",
+    "photoRemoved": "Foto eliminada",
+    "photoRemoveFailed": "No se pudo eliminar la foto",
+    "fixErrorsAndRetry": "Corrige los errores a continuación e inténtalo de nuevo.",
+    "listingUpdated": "Anuncio actualizado",
+    "clickToAddMorePhotos": "Haz clic para añadir más fotos",
+    "dragToReorderNewPhotos": "Arrastra para reordenar las fotos nuevas (se añadirán después de las existentes).",
+    "viewCurrentReport": "Ver informe actual",
+    "replace": "Reemplazar",
+    "saving": "Guardando...",
+    "saveChanges": "Guardar cambios"
+  },
+  "Auth": {
+    "appTagline1": "Un lugar sencillo para comprar y vender autos. Rápido, confiable y transparente. OnlySalvage es un lugar donde puedes calificar a vendedores y compradores.",
+    "signUpTitle": "Registrarse"
+  },
+  "GoogleSignIn": {
+    "signInFailed": "No se pudo iniciar sesión con Google. Inténtalo de nuevo."
+  },
+  "CompleteProfile": {
+    "title": "Completa tu perfil",
+    "description": "Solo necesitamos tu ubicación para que los compradores cercanos puedan encontrar tus anuncios, y para que tú también puedas buscar por distancia.",
+    "city": "Ciudad",
+    "state": "Estado",
+    "zipCode": "Código postal",
+    "select": "Selecciona",
+    "submit": "Guardar y continuar",
+    "saving": "Guardando...",
+    "errors": {
+      "cityRequired": "La ciudad es obligatoria.",
+      "stateRequired": "Selecciona un estado.",
+      "zipInvalid": "Ingresa un código postal válido de 5 dígitos.",
+      "updateFailed": "Algo salió mal. Inténtalo de nuevo."
+    }
+  },
+  "LoginForm": {
+    "sellRedirectToast": "Necesitas una cuenta para vender autos -- inicia sesión o regístrate para continuar.",
+    "invalidCredentials": "Credenciales inválidas",
+    "logIn": "Iniciar sesión",
+    "username": "Usuario:",
+    "password": "Contraseña:",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "orDivider": "o",
+    "signUp": "Registrarse"
+  },
+  "SignUpForm": {
+    "createAccount": "Crea tu cuenta",
+    "orDivider": "o regístrate con tu correo",
+    "username": "Usuario",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "phoneNumber": "Número de teléfono",
+    "optional": "Opcional",
+    "city": "Ciudad",
+    "state": "Estado",
+    "select": "Selecciona",
+    "zipCode": "Código postal",
+    "dealerCheckbox": "Me registro como concesionario/empresa",
+    "businessName": "Nombre de la empresa",
+    "streetAddress": "Dirección",
+    "website": "Sitio web",
+    "creatingAccount": "Creando cuenta...",
+    "signUp": "Registrarse",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "logIn": "Iniciar sesión",
+    "errors": {
+      "usernameRequired": "El usuario es obligatorio.",
+      "emailInvalid": "Ingresa un correo electrónico válido.",
+      "passwordTooShort": "La contraseña debe tener al menos 8 caracteres.",
+      "passwordMismatch": "Las contraseñas no coinciden.",
+      "cityRequired": "La ciudad es obligatoria.",
+      "stateRequired": "Selecciona un estado.",
+      "zipInvalid": "Ingresa un código postal válido de 5 dígitos.",
+      "phoneInvalid": "Ingresa un número de teléfono completo de 10 dígitos.",
+      "businessNameRequired": "El nombre de la empresa es obligatorio para concesionarios.",
+      "streetAddressRequired": "La dirección es obligatoria para concesionarios.",
+      "phoneNotVerified": "Verifica primero tu número de teléfono."
+    },
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "ForgotPasswordForm": {
+    "checkYourEmail": "Revisa tu correo",
+    "checkYourEmailDescription": "Si una cuenta coincide con ese usuario o correo, te hemos enviado un enlace para restablecer la contraseña.",
+    "backToLogin": "Volver a iniciar sesión",
+    "title": "¿Olvidaste tu contraseña?",
+    "description": "Ingresa tu usuario o correo y te enviaremos un enlace para restablecer la contraseña.",
+    "usernameOrEmail": "Usuario o correo electrónico",
+    "sending": "Enviando...",
+    "sendResetLink": "Enviar enlace"
+  },
+  "ResetPasswordForm": {
+    "invalidLinkTitle": "Enlace de restablecimiento inválido",
+    "invalidLinkDescription": "Este enlace de restablecimiento de contraseña falta o está mal formado. Solicita uno nuevo abajo.",
+    "requestNewLink": "Solicitar un nuevo enlace",
+    "passwordUpdatedTitle": "Contraseña actualizada",
+    "passwordUpdatedDescription": "Ya puedes iniciar sesión con tu nueva contraseña.",
+    "goToLogin": "Ir a iniciar sesión",
+    "title": "Establece una nueva contraseña",
+    "newPassword": "Nueva contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "saving": "Guardando...",
+    "resetPassword": "Restablecer contraseña",
+    "errors": {
+      "passwordTooShort": "La contraseña debe tener al menos 8 caracteres.",
+      "passwordMismatch": "Las contraseñas no coinciden.",
+      "linkInvalidOrExpired": "Este enlace no es válido o ha expirado."
+    }
+  },
+  "RequestVerification": {
+    "requestVerification": "Solicitar verificación de cuenta",
+    "pending": "Verificación pendiente",
+    "previouslyDeclined": "Tu solicitud anterior fue rechazada.",
+    "submitting": "Enviando...",
+    "requestSucceeded": "Solicitud de verificación enviada",
+    "requestFailed": "Algo salió mal. Inténtalo de nuevo."
+  },
+  "ApiAccess": {
+    "title": "Acceso a la API",
+    "description": "Administra tus anuncios mediante programación con un token de API personal.",
+    "viewDocs": "Ver documentación de la API",
+    "noteLabel": "¿Para qué lo usarás? (opcional)",
+    "notePlaceholder": "p. ej. sincronizar el inventario desde nuestro sistema de gestión de concesionarios",
+    "verifiedHint": "Eres un vendedor verificado, así que obtendrás acceso de inmediato.",
+    "requestAccess": "Solicitar acceso a la API",
+    "submitting": "Enviando...",
+    "requestSucceeded": "Acceso a la API solicitado -- lo revisaremos pronto.",
+    "requestApprovedInstantly": "¡Estás aprobado! Genera tu token a continuación.",
+    "requestFailed": "Algo salió mal. Inténtalo de nuevo.",
+    "requestAgain": "Solicitar de nuevo",
+    "pendingReview": "Tu solicitud está pendiente de revisión.",
+    "denied": "Tu solicitud fue rechazada.",
+    "revoked": "Tu acceso a la API ha sido revocado.",
+    "approved": "Aprobado -- genera un token para empezar a usar la API.",
+    "generateToken": "Generar token",
+    "generateSucceeded": "Token generado",
+    "generateFailed": "No se pudo generar el token. Inténtalo de nuevo.",
+    "tokenShownOnce": "Copia este token ahora -- no podrás volver a verlo.",
+    "copy": "Copiar",
+    "tokenCopied": "Token copiado",
+    "tokenCopyFailed": "No se pudo copiar el token",
+    "regenerate": "Regenerar",
+    "revoke": "Revocar",
+    "revokeSucceeded": "Token de API revocado",
+    "revokeFailed": "No se pudo revocar tu token. Inténtalo de nuevo.",
+    "lastUsed": "Usado por última vez el {date}",
+    "cancel": "Cancelar",
+    "confirmRegenerateTitle": "¿Regenerar el token?",
+    "confirmRegenerateDescription": "Tu token actual dejará de funcionar de inmediato. Cualquier integración que lo use deberá actualizarse con el nuevo.",
+    "confirmRevokeTitle": "¿Revocar el acceso a la API?",
+    "confirmRevokeDescription": "Tu token dejará de funcionar de inmediato. Deberás solicitar acceso nuevamente para obtener uno nuevo."
+  },
+  "Profile": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbProfile": "Perfil",
+    "userNotFoundTitle": "Usuario no encontrado",
+    "userNotFoundDescription": "No pudimos encontrar un perfil para \"{username}\".",
+    "dealerBadge": "Concesionario",
+    "verifiedBadge": "Vendedor verificado",
+    "financingBadge": "Financiamiento del concesionario",
+    "memberSince": "Miembro desde {date}",
+    "carsSold": "{count, plural, one {# auto vendido} other {# autos vendidos}}",
+    "navProfile": "Perfil",
+    "navListings": "Anuncios",
+    "navWarranty": "Garantía",
+    "navDrafts": "Borradores",
+    "navWatchlist": "Favoritos",
+    "aboutTitle": "Acerca de",
+    "noDescriptionYet": "Aún no hay descripción.",
+    "contactInfoTitle": "Información de contacto",
+    "warrantyTitle": "Información de garantía",
+    "visibleToEveryone": "(visible para todos)",
+    "onlyVisibleToYou": "(solo visible para ti)",
+    "noContactInfo": "No se proporcionó información de contacto.",
+    "reviewsTitle": "Reseñas",
+    "noReviewsYet": "Aún no hay reseñas.",
+    "listingsTitle": "Anuncios",
+    "sellACar": "Vender un auto",
+    "bulkUpload": "Carga masiva",
+    "noListingsYet": "Aún no hay anuncios.",
+    "draftsTitle": "Borradores",
+    "draftsEmptyMessage": "No tienes borradores guardados.",
+    "draftStarted": "Iniciado el {date}",
+    "continueDraft": "Continuar",
+    "deleteDraft": "Eliminar borrador",
+    "watchlistTitle": "Favoritos",
+    "watchlistEmptyMessage": "Todavía no te ha gustado ningún anuncio. Explora el inventario y toca el corazón en un auto que te guste.",
+    "settings": "Configuración"
+  },
+  "Settings": {
+    "title": "Configuración",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbSettings": "Configuración",
+    "viewPublicProfile": "Ver perfil público",
+    "navProfile": "Perfil",
+    "navSubscriptions": "Suscripciones",
+    "navWarranty": "Garantía",
+    "navSecurity": "Seguridad",
+    "navApi": "Acceso a la API",
+    "subscriptionsTitle": "Suscripciones",
+    "subscriptionsDescription": "Las suscripciones aún no están disponibles -- aquí aparecerán las alertas de búsquedas guardadas y los planes de promoción para vendedores una vez que estén listos.",
+    "warrantyTitle": "Garantía",
+    "warrantyDescription": "Configura tu garantía de concesionario y elige cuáles de tus anuncios la incluyen.",
+    "warrantyListingsTitle": "Tus anuncios",
+    "warrantyNoListings": "Aún no tienes anuncios.",
+    "warrantyIncluded": "Garantía incluida",
+    "warrantyUpdateFailed": "No se pudo actualizar el estado de la garantía. Inténtalo de nuevo.",
+    "securityTitle": "Seguridad",
+    "usernameChangeQuestion": "¿Quieres cambiar tu nombre de usuario?",
+    "contactSupport": "Contacta a soporte",
+    "usernameChangeNotSupported": "-- aún no admitimos cambiarlo directamente.",
+    "dangerZone": "Zona de peligro"
+  },
+  "SubscriptionTiers": {
+    "mostPopular": "Más Popular",
+    "comingSoon": "Próximamente",
+    "free": {
+      "name": "Gratis",
+      "price": "$0",
+      "priceSuffix": "",
+      "tagline": "Para vendedores particulares ocasionales.",
+      "features": {
+        "0": "Publica hasta 3 vehículos activos",
+        "1": "Visibilidad estándar en búsquedas",
+        "2": "Mensajería y seguimiento de llamadas",
+        "3": "Perfil de vendedor básico"
+      }
+    },
+    "plus": {
+      "name": "Plus",
+      "price": "$19",
+      "priceSuffix": "/mes",
+      "tagline": "Para vendedores que quieren más visibilidad en sus anuncios.",
+      "features": {
+        "0": "Todo lo incluido en Gratis",
+        "1": "Posicionamiento destacado en resultados de búsqueda",
+        "2": "Rotación en la página de inicio",
+        "3": "Anuncios activos ilimitados",
+        "4": "Soporte prioritario"
+      }
+    },
+    "dealerPro": {
+      "name": "Dealer Pro",
+      "price": "$49",
+      "priceSuffix": "/mes",
+      "tagline": "Diseñado para concesionarios con alto volumen.",
+      "features": {
+        "0": "Todo lo incluido en Plus",
+        "1": "Revisión prioritaria para la insignia de Concesionario Verificado",
+        "2": "Análisis de rendimiento de anuncios",
+        "3": "Herramientas de carga masiva de fotos y VIN",
+        "4": "Gestor de cuenta dedicado",
+        "5": "Acceso anticipado a nuevas funciones"
+      }
+    }
+  },
+  "EditProfileModal": {
+    "editProfile": "Editar perfil",
+    "close": "Cerrar",
+    "changeProfilePicture": "Cambiar foto de perfil",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "you@example.com",
+    "emailRequired": "El correo electrónico es obligatorio.",
+    "emailInvalid": "Ingresa un correo electrónico válido.",
+    "businessName": "Nombre de la empresa",
+    "optional": "Opcional",
+    "businessNameLockedPlaceholder": "Marca \"Vendo como concesionario/empresa\" abajo para configurar esto",
+    "businessNameRequired": "El nombre de la empresa es obligatorio para concesionarios.",
+    "streetAddressRequired": "La dirección es obligatoria para concesionarios.",
+    "phoneNumber": "Número de teléfono",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "phoneInvalid": "Ingresa un número de teléfono completo de 10 dígitos.",
+    "website": "Sitio web",
+    "websitePlaceholder": "https://example.com",
+    "streetAddress": "Dirección",
+    "streetAddressPlaceholder": "Calle Principal 123",
+    "editField": "Editar",
+    "city": "Ciudad",
+    "state": "Estado",
+    "zipCode": "Código postal",
+    "description": "Descripción",
+    "descriptionPlaceholder": "Cuéntales a los compradores un poco sobre ti o tu negocio",
+    "dealerCheckbox": "Vendo como concesionario/empresa",
+    "financingCheckbox": "Ofrezco financiamiento propio (Buy Here Pay Here)",
+    "warrantyCheckbox": "Ofrezco garantía en mis vehículos",
+    "warrantyDuration": "Duración de la garantía",
+    "warrantyDurationPlaceholder": "ej. 12 meses / 12,000 millas",
+    "warrantyDurationRequired": "Ingresa la duración de la garantía.",
+    "warrantyDescription": "Detalles de la garantía",
+    "warrantyDescriptionPlaceholder": "Describe qué cubre la garantía",
+    "showEmailCheckbox": "Mostrar mi correo en mi perfil público",
+    "cancel": "Cancelar",
+    "saving": "Guardando...",
+    "saveChanges": "Guardar cambios",
+    "updateFailed": "No se pudo actualizar el perfil. Inténtalo de nuevo.",
+    "updateSucceeded": "Perfil actualizado",
+    "phoneNotVerified": "Verifica tu nuevo número de teléfono antes de guardar."
+  },
+  "DeleteAccountButton": {
+    "deleteAccount": "Eliminar cuenta",
+    "close": "Cerrar",
+    "confirmTitle": "¿Eliminar tu cuenta?",
+    "confirmDescription": "Esto desactiva tu cuenta y cierra tu sesión. Tus anuncios, favoritos y perfil ya no serán visibles para otros. Esto no se puede deshacer desde la configuración de tu cuenta -- contacta a soporte si cambias de opinión.",
+    "cancel": "Cancelar",
+    "deleting": "Eliminando...",
+    "deleteMyAccount": "Eliminar mi cuenta",
+    "deleteFailed": "No se pudo eliminar la cuenta. Inténtalo de nuevo.",
+    "deleteSucceeded": "Tu cuenta ha sido eliminada."
+  },
+  "LeaveReviewModal": {
+    "leaveReview": "Dejar una reseña",
+    "close": "Cerrar",
+    "ratingLabel": "Calificación",
+    "starAriaLabel": "{value, plural, one {# estrella} other {# estrellas}}",
+    "ratingRequired": "Selecciona una calificación en estrellas.",
+    "commentLabel": "Comentario (opcional)",
+    "commentPlaceholder": "Comparte detalles sobre tu experiencia con este vendedor",
+    "cancel": "Cancelar",
+    "submitting": "Enviando...",
+    "submitReview": "Enviar reseña",
+    "submitFailed": "No se pudo enviar la reseña. Inténtalo de nuevo.",
+    "submitSucceeded": "Reseña enviada"
+  },
+  "ReportReasons": {
+    "FAKE_VIN": "El VIN no coincide con el vehículo",
+    "DUP_VIN": "El VIN ya está publicado en otro anuncio",
+    "MISLEADING": "Los detalles del anuncio son engañosos o inexactos",
+    "SOLD": "El vehículo ya se vendió en otro lugar",
+    "SCAM": "Posible estafa o fraude",
+    "HARASSMENT": "Acoso o comportamiento abusivo",
+    "FAKE_PROFILE": "Perfil falso o suplantación de identidad",
+    "INAPPROPRIATE": "Contenido inapropiado",
+    "SPAM": "Spam",
+    "OTHER": "Otro"
+  },
+  "CompareButton": {
+    "addToCompare": "Añadir a Comparar",
+    "removeFromCompare": "Quitar de Comparar",
+    "added": "Añadido a la comparación",
+    "removed": "Eliminado de la comparación",
+    "viewCompare": "Ver Comparación"
+  },
+  "ComparePage": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbCompare": "Comparar",
+    "title": "Comparar Vehículos",
+    "subtitle": "Compara hasta 4 vehículos uno al lado del otro.",
+    "emptyTitle": "Nada que comparar todavía",
+    "emptyDescription": "Añade algunos vehículos para comparar desde el inventario o la página de un anuncio, y vuelve aquí.",
+    "browseInventory": "Explorar Inventario",
+    "comparingCount": "{count, plural, one {Comparando # vehículo} other {Comparando # vehículos}}",
+    "clearAll": "Borrar Todo",
+    "dragToReorder": "Arrastra un vehículo para reordenar la comparación.",
+    "remove": "Eliminar",
+    "specs": {
+      "year": "Año",
+      "mileage": "Kilometraje",
+      "transmission": "Transmisión",
+      "drive": "Tracción",
+      "fuelType": "Tipo de Combustible",
+      "engine": "Motor",
+      "cityMpg": "MPG Ciudad",
+      "hwyMpg": "MPG Carretera",
+      "exteriorColor": "Color Exterior",
+      "interiorColor": "Color Interior",
+      "titleStatus": "Estado del Título",
+      "owners": "Propietarios",
+      "warranty": "Garantía",
+      "vin": "VIN",
+      "seller": "Vendedor",
+      "features": "Características"
+    }
+  },
+  "ReportListingModal": {
+    "report": "Reportar",
+    "title": "Reportar este anuncio",
+    "close": "Cerrar",
+    "reasonLabel": "Motivo",
+    "reasonPlaceholder": "Selecciona un motivo",
+    "reasonRequired": "Selecciona un motivo.",
+    "detailsLabel": "Detalles adicionales (opcional)",
+    "detailsPlaceholder": "Cualquier otra información que nos ayude a revisar este anuncio",
+    "cancel": "Cancelar",
+    "submitting": "Enviando...",
+    "submitReport": "Enviar reporte",
+    "submitFailed": "No se pudo enviar el reporte. Inténtalo de nuevo.",
+    "submitSucceeded": "Gracias por avisarnos. Nuestro equipo revisará este anuncio.",
+    "done": "Listo"
+  },
+  "ReportSellerModal": {
+    "report": "Reportar",
+    "title": "Reportar a este vendedor",
+    "close": "Cerrar",
+    "reasonLabel": "Motivo",
+    "reasonPlaceholder": "Selecciona un motivo",
+    "reasonRequired": "Selecciona un motivo.",
+    "detailsLabel": "Detalles adicionales (opcional)",
+    "detailsPlaceholder": "Cualquier otra información que nos ayude a revisar esta cuenta",
+    "cancel": "Cancelar",
+    "submitting": "Enviando...",
+    "submitReport": "Enviar reporte",
+    "submitFailed": "No se pudo enviar el reporte. Inténtalo de nuevo.",
+    "submitSucceeded": "Gracias por avisarnos. Nuestro equipo revisará esta cuenta.",
+    "done": "Listo"
+  },
+  "ChangePasswordForm": {
+    "currentPassword": "Contraseña actual",
+    "newPassword": "Nueva contraseña",
+    "confirmNewPassword": "Confirmar nueva contraseña",
+    "updating": "Actualizando...",
+    "updatePassword": "Actualizar contraseña",
+    "updateSucceeded": "Contraseña actualizada",
+    "errors": {
+      "newPasswordTooShort": "La nueva contraseña debe tener al menos 8 caracteres.",
+      "passwordMismatch": "La nueva contraseña y la confirmación no coinciden.",
+      "updateFailed": "No se pudo actualizar la contraseña."
+    }
+  },
+  "Feedback": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbFeedback": "Comentarios",
+    "title": "Comentarios",
+    "subtitle": "¿Encontraste un error o tienes una idea para mejorar OnlySalvage? Cuéntanoslo a continuación.",
+    "categoryLabel": "Categoría",
+    "subjectLabel": "Asunto",
+    "subjectPlaceholder": "Un resumen breve",
+    "subjectRequired": "El asunto es obligatorio.",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Describe el error o tu sugerencia con el mayor detalle posible.",
+    "messageRequired": "El mensaje es obligatorio.",
+    "contextLabel": "¿Dónde ocurrió esto? (opcional)",
+    "contextPlaceholder": "p. ej. página de detalle del anuncio, formulario de venta, app móvil",
+    "emailLabel": "Tu correo electrónico (opcional)",
+    "emailPlaceholder": "Para que podamos contactarte si es necesario",
+    "submit": "Enviar comentarios",
+    "submitting": "Enviando...",
+    "submitFailed": "Algo salió mal. Inténtalo de nuevo.",
+    "submitSucceededTitle": "¡Gracias por tus comentarios!",
+    "submitSucceededDescription": "Hemos recibido tu mensaje y lo revisaremos. Si dejaste un correo electrónico, te contactaremos si necesitamos más detalles.",
+    "submitAnother": "Enviar otro"
+  },
+  "FeedbackCategories": {
+    "BUG": "Informe de error",
+    "SUG": "Sugerencia",
+    "OTH": "Otro"
+  },
+  "ContactForm": {
+    "nameLabel": "Nombre (opcional)",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo",
+    "emailPlaceholder": "Para poder responderte",
+    "emailRequired": "Proporciona un correo para poder contactarte.",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "¿Cómo podemos ayudarte?",
+    "messageRequired": "El mensaje es obligatorio.",
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando...",
+    "submitFailed": "Algo salió mal. Inténtalo de nuevo.",
+    "submitSucceeded": "Mensaje enviado -- te responderemos pronto.",
+    "submitAnother": "Enviar otro"
+  },
+  "Support": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbSupport": "Soporte",
+    "title": "Soporte",
+    "subtitle": "Estamos aquí para ayudar, 24/7. Revisa las preguntas frecuentes a continuación o contáctanos directamente.",
+    "browseGuide": "Ver la guía completa",
+    "browseGuideTitle": "¿Quieres aprender más?",
+    "browseGuideDescription": "Consulta la guía completa del sitio para ver instrucciones paso a paso sobre cómo comprar, vender y todo lo demás.",
+    "viewInGuide": "Ver en la guía",
+    "buyingTitle": "Comprar",
+    "sellingTitle": "Vender",
+    "accountTitle": "Cuenta",
+    "stillNeedHelpTitle": "¿Necesitas más ayuda?",
+    "stillNeedHelpDescription": "Envíanos un mensaje y te responderemos lo antes posible.",
+    "availability": "Disponibles 24/7 -- respondemos a la mayoría de los mensajes en un día.",
+    "feedbackTitle": "¿Tienes comentarios?",
+    "feedbackDescription": "¿Encontraste un error o tienes una idea para una función? Cuéntanos.",
+    "feedbackLink": "Sugerir una función o reportar un error",
+    "buyingFaqs": [
+      {
+        "question": "¿Cómo contacto a un vendedor?",
+        "answer": "Abre el anuncio y usa la tarjeta \"Contactar al vendedor\". Puedes revelar su número de teléfono con un clic, o ver su perfil para conocer sus otros anuncios y reseñas."
+      },
+      {
+        "question": "¿Cómo guardo un anuncio para verlo más tarde?",
+        "answer": "Toca el ícono de corazón en cualquier tarjeta de anuncio. Si has iniciado sesión, se guarda en los Favoritos de tu cuenta para que puedas encontrarlo desde cualquier dispositivo. Si no has iniciado sesión, se guarda en este navegador."
+      },
+      {
+        "question": "¿Qué significa la insignia \"Destacado\"?",
+        "answer": "Los anuncios destacados son autos que un administrador ha elegido resaltar en la página de inicio por tiempo limitado. No afecta el precio ni el estado del anuncio -- solo su visibilidad."
+      },
+      {
+        "question": "¿Puedo confiar en la calificación de un vendedor?",
+        "answer": "Las calificaciones de los vendedores las dejan compradores reales desde su cuenta, una reseña por comprador por vendedor, y los vendedores no pueden calificarse a sí mismos."
+      }
+    ],
+    "sellingFaqs": [
+      {
+        "question": "¿Cómo publico mi auto en venta?",
+        "answer": "Ve a Vender e ingresa tu VIN -- buscaremos automáticamente el año, la marca y el modelo de tu auto. Agrega fotos, fija un precio y publica."
+      },
+      {
+        "question": "¿Cómo edito un anuncio o lo marco como vendido?",
+        "answer": "Abre tu anuncio y haz clic en \"Editar anuncio\". Desde allí puedes actualizar los detalles, reordenar las fotos o cambiar su estado a Pendiente o Vendido."
+      },
+      {
+        "question": "¿Mi número de teléfono es visible para todos?",
+        "answer": "No. Solo se muestra tu código de área de forma predeterminada -- el número completo permanece oculto hasta que un comprador decida revelarlo."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre un vendedor particular y un concesionario?",
+        "answer": "Puedes marcar tu cuenta como concesionario/empresa desde tu perfil. Las cuentas de concesionario muestran una insignia de \"Concesionario\" en sus anuncios y perfil."
+      }
+    ],
+    "accountFaqs": [
+      {
+        "question": "Olvidé mi contraseña. ¿Qué hago?",
+        "answer": "Ve a la página de inicio de sesión y haz clic en \"¿Olvidaste tu contraseña?\" -- te enviaremos un enlace de restablecimiento por correo."
+      },
+      {
+        "question": "¿Puedo dejar una reseña de un vendedor?",
+        "answer": "Sí, desde su página de perfil. Debes haber iniciado sesión, y no puedes reseñar tu propio perfil."
+      },
+      {
+        "question": "¿Cómo actualizo mi perfil o información de contacto?",
+        "answer": "Visita la página de tu perfil y haz clic en \"Editar perfil\" para actualizar el nombre de tu empresa, teléfono, ubicación, descripción y foto."
+      }
+    ]
+  },
+  "Sellers": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbSellers": "Vendedores",
+    "title": "Vendedores",
+    "subtitle": "Explora a todos los que venden actualmente en OnlySalvage.",
+    "noSellersMatch": "Ningún vendedor coincide con \"{search}\".",
+    "noSellersYet": "Aún no hay vendedores."
+  },
+  "SellerCard": {
+    "verifiedBadge": "Verificado",
+    "dealerBadge": "Concesionario",
+    "financingBadge": "Financiamiento del concesionario",
+    "noReviewsYet": "Aún no hay reseñas",
+    "listingsCount": "{count, plural, one {# anuncio} other {# anuncios}}",
+    "openInNewTab": "Abrir en Nueva Pestaña",
+    "share": "Copiar enlace",
+    "linkCopied": "Enlace copiado al portapapeles",
+    "shareFailed": "No se pudo copiar el enlace. Inténtalo de nuevo.",
+    "editProfile": "Editar Perfil",
+    "leaveReview": "Dejar una Reseña",
+    "reportSeller": "Reportar Vendedor",
+    "callSeller": "Llamar al Vendedor",
+    "callFailed": "No se pudo obtener el número de teléfono del vendedor.",
+    "emailSeller": "Enviar Correo al Vendedor",
+    "copyAddress": "Copiar Dirección",
+    "addressCopied": "Dirección copiada al portapapeles",
+    "addressCopyFailed": "No se pudo copiar la dirección. Inténtalo de nuevo."
+  },
+  "SellerSearchBar": {
+    "searchPlaceholder": "Buscar vendedores por nombre...",
+    "search": "Buscar"
+  },
+  "Liked": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbWatchlist": "Favoritos",
+    "title": "Tus favoritos",
+    "emptyMessage": "Todavía no te ha gustado ningún anuncio. Explora el inventario y toca el corazón en un auto que te guste."
+  },
+  "LocalWatchlist": {
+    "emptyMessage": "Todavía no te ha gustado ningún anuncio. Explora el inventario y toca el corazón en un auto que te guste. Inicia sesión para conservar tus favoritos en todos los dispositivos."
+  },
+  "Sell": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbSell": "Vender",
+    "title": "Vende tu auto",
+    "subtitle": "Publica tu vehículo en venta en OnlySalvage gratis",
+    "bulkUploadLink": "Carga masiva (CSV)"
+  },
+  "SellBulk": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbSell": "Vender",
+    "breadcrumbBulk": "Carga masiva",
+    "title": "Carga masiva de anuncios",
+    "subtitle": "Agrega varios vehículos a la vez subiendo un archivo CSV. Cada fila se convierte en un borrador que puedes revisar y publicar individualmente.",
+    "uploadTitle": "Importar desde CSV",
+    "uploadDescription": "Descarga la plantilla, completa una fila por vehículo y luego súbela aquí.",
+    "downloadTemplate": "Descargar plantilla",
+    "templateDownloadFailed": "No se pudo descargar la plantilla. Inténtalo de nuevo.",
+    "importButton": "Importar anuncios",
+    "importing": "Importando...",
+    "importFailed": "No se pudo importar el archivo. Inténtalo de nuevo.",
+    "importSummary": "Se importaron {imported} de {total} anuncios.",
+    "importSummaryNone": "No se pudo importar ninguna de las {total} filas -- consulta los errores abajo.",
+    "colRow": "Fila",
+    "colVin": "VIN",
+    "colStatus": "Estado",
+    "colDetails": "Detalles",
+    "imported": "Importado",
+    "failed": "Fallido",
+    "reviewDraft": "Revisar borrador →",
+    "goToDrafts": "Ir a Borradores"
+  },
+  "EditListingPage": {
+    "listingNotFoundTitle": "Anuncio no encontrado",
+    "listingNotFoundDescription": "No pudimos encontrar un anuncio en \"{slug}\".",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbInventory": "Inventario",
+    "breadcrumbEdit": "Editar",
+    "title": "Editar anuncio"
+  },
+  "NearYouSection": {
+    "geolocationNotSupported": "Tu navegador no admite geolocalización.",
+    "geolocationFailed": "No se pudo obtener tu ubicación -- revisa el permiso de ubicación de tu navegador e inténtalo de nuevo.",
+    "title": "Cerca de ti",
+    "subtitle": "Anuncios más cercanos a tu ubicación",
+    "findCarsNearYou": "Encuentra autos cerca de ti",
+    "emptyNearby": "Aún no hay anuncios a menos de 50 millas -- vuelve pronto o explora todo el inventario.",
+    "promptText": "Mira primero los anuncios más cercanos a tu ubicación.",
+    "showNearbyListings": "Mostrar anuncios cercanos"
+  },
+  "ListingLikeButton": {
+    "likesCount": "{count, plural, one {# me gusta} other {# me gusta}}"
+  },
+  "PhotoGallery": {
+    "viewFullscreen": "Ver foto en pantalla completa",
+    "previousPhoto": "Foto anterior",
+    "nextPhoto": "Foto siguiente",
+    "closeFullscreen": "Cerrar pantalla completa",
+    "zoomOut": "Alejar",
+    "zoomIn": "Acercar",
+    "viewPhotoNumber": "Ver foto {index}"
+  },
+  "ImageCropModal": {
+    "title": "Recorta tu foto",
+    "close": "Cerrar",
+    "description": "Arrastra para reposicionar, desplázate o pellizca para hacer zoom. Tu foto de perfil se ve mejor en formato cuadrado.",
+    "zoom": "Zoom",
+    "cancel": "Cancelar",
+    "applying": "Aplicando...",
+    "usePhoto": "Usar foto"
+  },
+  "BackToTopButton": {
+    "backToTop": "Volver arriba"
+  },
+  "LikeButton": {
+    "like": "Me gusta"
+  },
+  "Price": {
+    "contactForPrice": "Precio a consultar"
+  },
+  "PrivacyPolicy": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbPrivacy": "Política de privacidad",
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización: julio de 2026",
+    "intro": "OnlySalvage (\"nosotros\", \"nos\" o \"nuestro\") opera el mercado OnlySalvage, donde vendedores particulares y concesionarios publican vehículos de salvamento y reconstruidos en venta. Esta Política de privacidad explica qué información recopilamos, cómo la usamos y las opciones que tienes.",
+    "sections": [
+      {
+        "heading": "Información que recopilamos",
+        "body": "Cuando creas una cuenta, recopilamos tu nombre de usuario, correo electrónico, número de teléfono (opcional) y ubicación (ciudad, estado, código postal) para que los compradores puedan encontrar anuncios cerca de ellos. Cuando publicas un vehículo, recopilamos los detalles del vehículo y cualquier foto o documento (como un informe Carfax, de alineación o de inspección) que decidas subir. También recopilamos automáticamente datos básicos de uso, como las páginas visitadas e información general del dispositivo, para ayudarnos a mantener y mejorar el sitio."
+      },
+      {
+        "heading": "Cómo usamos tu información",
+        "body": "Usamos tu información para operar el mercado: crear y mostrar tu perfil público de vendedor, conectar compradores y vendedores, procesar anuncios, calcular resultados de búsqueda por distancia y enviarte correos relacionados con tu cuenta, como restablecimientos de contraseña. No vendemos tu información personal a terceros."
+      },
+      {
+        "heading": "Qué pueden ver otros usuarios",
+        "body": "Tu nombre de usuario, ciudad y estado, foto de perfil, nombre de tu empresa (si eres concesionario), y cualquier anuncio o reseña que hayas publicado son visibles para otros usuarios. Tu número de teléfono solo se revela a un comprador si este decide revelarlo, y tu correo electrónico es privado de forma predeterminada -- puedes hacerlo visible en tu perfil público desde la configuración de tu cuenta."
+      },
+      {
+        "heading": "Cookies y almacenamiento local",
+        "body": "Usamos cookies para mantener tu sesión iniciada y recordar tu sesión. Si no has iniciado sesión, tu lista de favoritos (anuncios que te gustan) se guarda en el almacenamiento local de tu navegador en lugar de en nuestros servidores. No usamos cookies de publicidad o seguimiento de terceros."
+      },
+      {
+        "heading": "Seguridad de los datos",
+        "body": "Tomamos medidas razonables para proteger tu información, incluidas conexiones cifradas (HTTPS) y almacenamiento seguro de contraseñas. Sin embargo, ningún método de transmisión o almacenamiento es 100% seguro, y no podemos garantizar una seguridad absoluta."
+      },
+      {
+        "heading": "Tus opciones",
+        "body": "Puedes actualizar o corregir la información de tu perfil en cualquier momento desde la configuración de tu cuenta. Puedes desactivar tu cuenta desde tu página de perfil, o contactarnos para solicitar la eliminación de tus datos."
+      },
+      {
+        "heading": "Privacidad de los menores",
+        "body": "OnlySalvage no está dirigido a menores de 13 años, y no recopilamos conscientemente información personal de menores de 13 años."
+      },
+      {
+        "heading": "Cambios a esta Política",
+        "body": "Podemos actualizar esta Política de privacidad periódicamente. Si hacemos cambios importantes, actualizaremos la fecha en la parte superior de esta página."
+      },
+      {
+        "heading": "Contáctanos",
+        "body": "Si tienes preguntas sobre esta Política de privacidad o sobre cómo manejamos tu información, contáctanos en support@onlysalvage.com."
+      }
+    ]
+  },
+  "TermsOfService": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbTerms": "Términos de servicio",
+    "title": "Términos de servicio",
+    "lastUpdated": "Última actualización: julio de 2026",
+    "intro": "Estos Términos de servicio (\"Términos\") rigen tu uso de OnlySalvage. Al crear una cuenta o usar el sitio, aceptas estos Términos.",
+    "sections": [
+      {
+        "heading": "Elegibilidad",
+        "body": "Debes tener al menos 18 años para crear una cuenta o publicar un vehículo en OnlySalvage."
+      },
+      {
+        "heading": "Tu cuenta",
+        "body": "Eres responsable de mantener segura tu contraseña y de toda actividad realizada bajo tu cuenta. Avísanos de inmediato si crees que tu cuenta ha sido comprometida."
+      },
+      {
+        "heading": "Anuncios",
+        "body": "Al publicar un vehículo, aceptas que la información que proporcionas -- incluyendo el VIN, el estado del título (limpio, reconstruido o de salvamento), el kilometraje, la condición y las fotos -- es precisa según tu mejor conocimiento. Eres responsable del contenido de tus anuncios y debes tener el derecho legal de vender el vehículo."
+      },
+      {
+        "heading": "OnlySalvage es un mercado, no parte de la venta",
+        "body": "OnlySalvage conecta a compradores y vendedores -- no somos parte de ninguna transacción entre ellos, y no inspeccionamos, certificamos ni garantizamos ningún vehículo publicado en el sitio. Se recomienda encarecidamente a los compradores inspeccionar un vehículo en persona (o contratar una inspección profesional) y revisar su título e historial antes de completar una compra."
+      },
+      {
+        "heading": "Reseñas",
+        "body": "Las reseñas deben reflejar una transacción o interacción genuina. Las reseñas fraudulentas, abusivas o dejadas para manipular la calificación de un vendedor pueden ser eliminadas."
+      },
+      {
+        "heading": "Conducta prohibida",
+        "body": "Aceptas no: publicar un vehículo que no tienes derecho a vender, tergiversar la condición o el estado del título de un vehículo, acosar a otros usuarios, o usar el sitio con fines ilegales."
+      },
+      {
+        "heading": "Tarifas",
+        "body": "Publicar un vehículo en OnlySalvage es actualmente gratuito. Si en el futuro introducimos funciones de pago, te informaremos claramente sobre cualquier tarifa antes de cobrarte."
+      },
+      {
+        "heading": "Exenciones de responsabilidad y limitación de responsabilidad",
+        "body": "OnlySalvage se proporciona \"tal cual\" sin garantías de ningún tipo. En la máxima medida permitida por la ley, OnlySalvage no es responsable de ninguna disputa, pérdida o daño derivado de una transacción entre un comprador y un vendedor."
+      },
+      {
+        "heading": "Terminación",
+        "body": "Podemos suspender o cancelar cuentas que violen estos Términos o que consideremos que representan un riesgo para otros usuarios."
+      },
+      {
+        "heading": "Cambios a estos Términos",
+        "body": "Podemos actualizar estos Términos periódicamente. El uso continuado de OnlySalvage después de un cambio significa que aceptas los Términos actualizados."
+      },
+      {
+        "heading": "Contáctanos",
+        "body": "¿Tienes preguntas sobre estos Términos? Contáctanos en support@onlysalvage.com."
+      }
+    ]
+  },
+  "AboutUs": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbAbout": "Acerca de",
+    "title": "Acerca de OnlySalvage",
+    "subtitle": "La forma sencilla de comprar y vender autos de salvamento.",
+    "sections": [
+      {
+        "heading": "Nuestra misión",
+        "body": "Los vehículos de salvamento y reconstruidos son algunas de las mejores ofertas del mercado de autos usados, pero tradicionalmente encontrarlos significaba sitios de subastas dudosos, ninguna responsabilidad del vendedor y títulos que se pasan por alto hasta que es demasiado tarde. OnlySalvage se creó para solucionar eso -- un mercado donde cada anuncio está vinculado a una cuenta de vendedor real y calificada, y donde el estado del título (salvamento o reconstruido) se revela desde el principio, no en la letra pequeña."
+      },
+      {
+        "heading": "Qué hacemos",
+        "body": "Conectamos a vendedores particulares y concesionarios con compradores que buscan una buena oferta en un vehículo de salvamento o reconstruido. Los vendedores pueden publicar un auto en minutos -- solo ingresa el VIN y completaremos automáticamente el año, la marca y el modelo. Los compradores pueden buscar por ubicación, precio, kilometraje y estado del título, enviar mensajes directamente a los vendedores y revisar la calificación de un vendedor antes de comprar."
+      },
+      {
+        "heading": "Construido sobre la confianza",
+        "body": "Cada cuenta en OnlySalvage es real -- no hay anuncios anónimos. Compradores y vendedores se califican mutuamente después de una transacción, por lo que la reputación de un vendedor se gana, no se reclama. También ofrecemos soporte 24/7 si algo sale mal."
+      },
+      {
+        "heading": "Contáctanos",
+        "body": "¿Tienes una pregunta, comentario o idea de asociación? Nos encantaría saber de ti en support@onlysalvage.com."
+      }
+    ]
+  },
+  "Developers": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbDevelopers": "Desarrolladores",
+    "title": "Documentación de la API",
+    "subtitle": "Administra tu inventario mediante programación -- agrega anuncios, actualiza el estado y sube fotos sin abrir el sitio.",
+    "tableOfContents": "Contenido",
+    "searchEndpoints": "Buscar endpoints...",
+    "noEndpointsFound": "Ningún endpoint coincide con tu búsqueda.",
+    "gettingStartedTitle": "Primeros pasos",
+    "gettingStartedStep1": "Solicita acceso desde",
+    "gettingStartedStep1Link": "Configuración > Acceso a la API",
+    "gettingStartedStep2": "Un vendedor verificado es aprobado al instante; de lo contrario, revisaremos tu solicitud pronto.",
+    "gettingStartedStep3": "Una vez aprobado, genera tu token -- se muestra exactamente una vez, así que cópialo en un lugar seguro.",
+    "gettingStartedStep4": "Inclúyelo como token Bearer en cada solicitud a los endpoints que aparecen a continuación.",
+    "authTitle": "Autenticación",
+    "authDescription": "Cada solicitud (excepto los endpoints de referencia públicos) debe incluir tu token en el encabezado Authorization:",
+    "authNote": "Los tokens están vinculados a tu cuenta -- cada anuncio que crees, edites o consultes a través de la API se limita únicamente a tu propio inventario.",
+    "lifecycleTitle": "Ciclo de vida del anuncio",
+    "lifecycleDescription": "Un anuncio creado a través de la API siempre comienza como borrador, igual que si lo iniciaras manualmente en el sitio -- no puede publicarse sin al menos una foto, y esta llamada no puede incluir una.",
+    "lifecycleStep1": "Envía un POST para crear un anuncio nuevo -- se crea como borrador.",
+    "lifecycleStep2": "Sube una o más fotos a ese anuncio.",
+    "lifecycleStep3": "Envía un POST con un cambio de estado (p. ej. \"AV\") para publicarlo.",
+    "endpointsTitle": "Endpoints",
+    "endpointMeTitle": "Obtener tu cuenta",
+    "endpointMe": "La cuenta a la que pertenece tu token",
+    "endpointChoicesTitle": "Valores de los campos",
+    "endpointChoices": "Valores válidos para status, vehicle_type, fuel_type, etc.",
+    "endpointMakesTitle": "Listar marcas",
+    "endpointMakes": "Lista todas las marcas de vehículos (no requiere token)",
+    "endpointModelsTitle": "Listar modelos",
+    "endpointModels": "Lista los modelos de una marca específica (no requiere token)",
+    "endpointListTitle": "Listar tus anuncios",
+    "endpointList": "Lista tus propios anuncios -- se puede filtrar, ver más abajo",
+    "endpointCreateTitle": "Crear un anuncio",
+    "endpointCreate": "Crea un anuncio nuevo (siempre comienza como borrador)",
+    "endpointRetrieveTitle": "Obtener un anuncio",
+    "endpointRetrieve": "Obtiene uno de tus anuncios",
+    "endpointUpdateTitle": "Actualizar un anuncio",
+    "endpointUpdate": "Edita los campos de un anuncio (se admiten actualizaciones parciales)",
+    "endpointDeleteTitle": "Eliminar un anuncio",
+    "endpointDelete": "Elimina permanentemente un anuncio y sus fotos",
+    "endpointStatusTitle": "Cambiar el estado",
+    "endpointStatus": "Cambia solo el estado de un anuncio",
+    "endpointRenewTitle": "Renovar un anuncio",
+    "endpointRenew": "Vuelve a subir un anuncio elegible a la parte superior",
+    "endpointImagesListTitle": "Listar fotos",
+    "endpointImagesList": "Lista las fotos de un anuncio",
+    "endpointImagesUploadTitle": "Subir una foto",
+    "endpointImagesUpload": "Sube una foto, por archivo o image_url",
+    "endpointImageDeleteTitle": "Eliminar una foto",
+    "endpointImageDelete": "Elimina una sola foto",
+    "languageLabel": "Idioma",
+    "miscTitle": "Cosas que debes saber",
+    "miscRateLimit": "Las solicitudes están limitadas a 120 por minuto por cuenta.",
+    "miscOwnership": "Cada endpoint está limitado a tus propios anuncios -- no hay forma de leer ni modificar el inventario de otro vendedor a través de esta API.",
+    "miscErrors": "Los errores de validación se devuelven como un objeto JSON que asocia los nombres de los campos con los mensajes de error, igual que el resto de la API del sitio.",
+    "miscPagination": "Las respuestas de listado están paginadas (50 por página de forma predeterminada, hasta 200 con ?page_size=); usa los enlaces next/previous devueltos para recorrer el resto."
+  },
+  "Guide": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbGuide": "Guía",
+    "title": "Guía del sitio",
+    "subtitle": "Algunos consejos sobre funciones que no son obvias a primera vista.",
+    "searchPlaceholder": "Buscar en la guía...",
+    "noResults": "Ningún consejo coincide con tu búsqueda.",
+    "tableOfContents": "Contenido",
+    "goTo": "Ir a",
+    "walkthroughsTitle": "Guías paso a paso",
+    "categories": [
+      {
+        "title": "Explorar y comprar",
+        "tips": [
+          {
+            "heading": "Haz clic derecho en un anuncio para acciones rápidas",
+            "body": "Haz clic derecho en cualquier tarjeta de anuncio para abrirlo en una pestaña nueva, copiar su enlace, agregarlo a Comparar o a tus Favoritos, contactar al vendedor o reportarlo -- sin necesidad de abrir el anuncio primero."
+          },
+          {
+            "heading": "Compara vehículos uno al lado del otro",
+            "body": "Agrega algunos anuncios a Comparar (desde el menú de la tarjeta o desde la página de un anuncio) y visualízalos juntos para evaluar precio, kilometraje y especificaciones de un vistazo."
+          },
+          {
+            "heading": "Tus favoritos controlan la disponibilidad",
+            "body": "Toca el ícono de corazón en cualquier tarjeta de anuncio para guardarlo -- si has iniciado sesión, se guarda en los Favoritos de tu cuenta para que puedas encontrarlo desde cualquier dispositivo; si no has iniciado sesión, se guarda en este navegador. En cualquier caso, un auto se elimina automáticamente si se vende o se retira, y vuelve a aparecer por sí solo si vuelve a estar disponible."
+          },
+          {
+            "heading": "Ordenar por distancia",
+            "body": "Ingresa tu código postal (o permite el acceso a tu ubicación) en los filtros de inventario para ordenar los anuncios según qué tan lejos estén."
+          },
+          {
+            "heading": "Las recomendaciones mejoran mientras navegas",
+            "body": "La sección Recomendado en la página de inicio y en la de inventario aprende de lo que buscas y ves -- cuanto más la uses, mejor funciona."
+          },
+          {
+            "heading": "Qué significa \"Destacado\"",
+            "body": "Los anuncios destacados son autos que un administrador ha elegido resaltar en la página de inicio por tiempo limitado. No afecta el precio ni el estado del anuncio -- solo su visibilidad."
+          },
+          {
+            "heading": "Contacta a un vendedor directamente",
+            "body": "Abre el anuncio y usa la tarjeta \"Contactar al vendedor\" para revelar su número de teléfono con un clic, o visita su perfil para ver sus otros anuncios y reseñas."
+          },
+          {
+            "heading": "Cómo dejar una reseña",
+            "body": "Las calificaciones las dejan compradores reales desde su propia cuenta -- una reseña por comprador por vendedor, y los vendedores no pueden calificarse a sí mismos, así que lo que ves refleja experiencias reales.",
+            "steps": [
+              "Visita la página de perfil del vendedor.",
+              "Haz clic en \"Dejar una reseña\".",
+              "Elige una calificación en estrellas y escribe un comentario.",
+              "Envía tu reseña -- solo puedes calificar a un vendedor una vez."
+            ]
+          },
+          {
+            "heading": "Tus propios anuncios resaltan mientras navegas",
+            "body": "Dondequiera que veas uno de tus propios anuncios mezclado con los resultados de búsqueda -- inventario, tu perfil, donde sea -- aparece con un borde resaltado para que puedas identificarlo de un vistazo."
+          },
+          {
+            "heading": "Cómo comprar un auto",
+            "body": "Desde tu primera búsqueda hasta recoger las llaves -- este es el camino típico desde explorar hasta comprar en OnlySalvage.",
+            "steps": [
+              "Busca en el inventario usando filtros de marca, modelo, precio y ubicación.",
+              "Compara tu lista corta lado a lado para evaluar precio, kilometraje y estado.",
+              "Programa una prueba de manejo con el vendedor una vez que hayas reducido tus opciones.",
+              "Revisa la Lista de verificación del comprador antes de comprometerte, para que no se te pase nada."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Vender y administrar anuncios",
+        "tips": [
+          {
+            "heading": "Los borradores guardan tu progreso",
+            "body": "Comienza un anuncio y sal cuando quieras -- en cuanto lo guardes una vez, quedará en la pestaña Borradores de tu perfil para que puedas terminarlo más tarde."
+          },
+          {
+            "heading": "Editar o administrar un anuncio que ya publicaste",
+            "body": "Abre tu anuncio y haz clic en \"Editar anuncio\" para actualizar los detalles, reordenar las fotos o cambiar su estado -- o haz clic derecho en él desde cualquier tarjeta (tu perfil, inventario, donde sea) para acceder a los mismos accesos directos: marcarlo como Disponible, Pendiente o Vendido, publicarlo o anular su publicación, editarlo o eliminarlo, todo sin abrir la página de edición."
+          },
+          {
+            "heading": "Pausa en lugar de eliminar",
+            "body": "Desactiva \"Publicado\" en la página de edición para ocultar un anuncio en todas partes excepto en tu propio perfil (se muestra con la etiqueta Inactivo). Actívalo de nuevo cuando quieras -- no se pierde nada."
+          },
+          {
+            "heading": "Renueva para volver a subir tu anuncio",
+            "body": "Cuando un anuncio activo tenga al menos 7 días, renuévalo desde su sección de Acciones para volver a colocarlo en la parte superior de los resultados de búsqueda -- hasta 3 veces."
+          },
+          {
+            "heading": "Los concesionarios pueden hacer carga masiva por CSV",
+            "body": "Desde Vender > Carga masiva, los concesionarios pueden agregar muchos vehículos a la vez desde una hoja de cálculo. Cada fila se convierte en un borrador para revisar y publicar individualmente.",
+            "steps": [
+              "Ve a Vender > Carga masiva.",
+              "Descarga la plantilla CSV.",
+              "Completa una fila por vehículo y sube el archivo.",
+              "Revisa los borradores importados, agrega fotos y publica cada uno."
+            ]
+          },
+          {
+            "heading": "Autocompletado por VIN",
+            "body": "Ingresa un VIN al comenzar un anuncio y el año, la marca, el modelo y los detalles del motor se completan automáticamente."
+          },
+          {
+            "heading": "Vender como concesionario",
+            "body": "Marca tu cuenta como concesionario/empresa desde la configuración de tu perfil. Las cuentas de concesionario muestran una insignia de \"Concesionario\" en sus anuncios y perfil, y desbloquean la carga masiva por CSV."
+          },
+          {
+            "heading": "Tu número de teléfono se mantiene privado",
+            "body": "Solo se muestra tu código de área de forma predeterminada en un anuncio -- el número completo permanece oculto hasta que un comprador decida revelarlo."
+          },
+          {
+            "heading": "Cómo vender un auto, paso a paso",
+            "body": "El proceso completo desde el VIN hasta el anuncio publicado, de principio a fin.",
+            "steps": [
+              "Ve a Vender e ingresa tu VIN -- el año, la marca, el modelo y el motor se completan automáticamente.",
+              "Agrega fotos claras del auto (exterior, interior y cualquier daño).",
+              "Fija tu precio y agrega una descripción.",
+              "Publícalo -- o guárdalo como borrador para terminarlo más tarde.",
+              "Adminístralo cuando quieras: márcalo como Pendiente o Vendido, ponlo en pausa o renuévalo para mantenerlo en la parte superior de los resultados de búsqueda."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cuenta y herramientas para desarrolladores",
+        "tips": [
+          {
+            "heading": "Verifícate",
+            "body": "Solicita la verificación de vendedor desde Configuración para obtener una insignia de verificación que ayude a los compradores a confiar en tus anuncios."
+          },
+          {
+            "heading": "Administra tu inventario con la API",
+            "body": "Los vendedores verificados obtienen acceso instantáneo a la API desde Configuración > Acceso a la API -- genera un token y administra tus anuncios mediante programación. Consulta la documentación de la API para más detalles."
+          },
+          {
+            "heading": "Restablece tu contraseña",
+            "body": "Ve a la página de inicio de sesión y haz clic en \"¿Olvidaste tu contraseña?\" -- te enviaremos un enlace de restablecimiento por correo.",
+            "steps": [
+              "Ve a la página de inicio de sesión.",
+              "Haz clic en \"¿Olvidaste tu contraseña?\"",
+              "Revisa tu correo para encontrar el enlace de restablecimiento.",
+              "Establece una nueva contraseña e inicia sesión."
+            ]
+          },
+          {
+            "heading": "Actualiza tu perfil",
+            "body": "Visita la página de tu perfil y haz clic en \"Editar perfil\" para actualizar el nombre de tu empresa, teléfono, ubicación, descripción y foto."
+          }
+        ]
+      }
+    ]
+  },
+  "VehicleAttributes": {
+    "vehicleType": {
+      "SDN": "Sedán",
+      "TK": "Camioneta",
+      "SUV": "SUV",
+      "WGN": "Familiar",
+      "CPE": "Cupé",
+      "HBK": "Hatchback",
+      "VAN": "Furgoneta"
+    },
+    "transmission": {
+      "ATM": "Automática",
+      "MAN": "Manual",
+      "CVT": "CVT",
+      "DTC": "DCT",
+      "ECVT": "eCVT"
+    },
+    "drive": {
+      "FWD": "Tracción delantera",
+      "RWD": "Tracción trasera",
+      "AWD": "Tracción integral",
+      "4WD": "Tracción en las cuatro ruedas",
+      "EAWD": "Tracción integral eléctrica",
+      "OTH": "Otro"
+    },
+    "fuelType": {
+      "GAS": "Gasolina",
+      "DIS": "Diésel",
+      "HYB": "Híbrido",
+      "ELC": "Eléctrico"
+    },
+    "titleDocument": {
+      "RE": "Reconstruido",
+      "SA": "De salvamento",
+      "CT": "Limpio (Pérdida Total)"
+    },
+    "color": {
+      "BLK": "Negro",
+      "WHT": "Blanco",
+      "SIL": "Plateado",
+      "GRY": "Gris",
+      "RED": "Rojo",
+      "BLU": "Azul",
+      "BRW": "Marrón",
+      "TAN": "Beige",
+      "GRN": "Verde",
+      "ORG": "Naranja",
+      "YEL": "Amarillo",
+      "GLD": "Dorado",
+      "MAR": "Granate",
+      "PUR": "Morado"
+    },
+    "sellerType": {
+      "Private": "Vendedor particular",
+      "Dealer": "Concesionario",
+      "Financing": "Ofrece financiamiento",
+      "Verified": "Vendedor verificado"
+    },
+    "optionCategory": {
+      "CMF": "Confort e interior",
+      "TEC": "Tecnología e infoentretenimiento",
+      "SAF": "Seguridad y asistencia al conductor",
+      "EXT": "Exterior y comodidad",
+      "PRF": "Rendimiento y remolque"
+    }
+  },
+  "TranslatableText": {
+    "translate": "Traducir",
+    "viewOriginal": "Ver original",
+    "translationFailed": "Error al traducir. Inténtalo de nuevo."
+  },
+  "PhoneVerification": {
+    "verified": "Teléfono verificado",
+    "sending": "Enviando...",
+    "codeSent": "Código de verificación enviado.",
+    "sendFailed": "No se pudo enviar el código de verificación. Inténtalo de nuevo.",
+    "codeLabel": "Código de verificación",
+    "codePlaceholder": "Código de 6 dígitos",
+    "confirmCode": "Confirmar",
+    "verifying": "Verificando...",
+    "resendCode": "Reenviar código",
+    "invalidCode": "Código incorrecto o expirado.",
+    "verifySucceeded": "Número de teléfono verificado.",
+    "verify": "Verificar",
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "DeleteListingModal": {
+    "close": "Cerrar",
+    "confirmTitle": "¿Eliminar este anuncio?",
+    "confirmDescription": "Esto elimina permanentemente el anuncio junto con todas sus fotos y documentos. Esta acción no se puede deshacer.",
+    "cancel": "Cancelar",
+    "deleting": "Eliminando...",
+    "deleteListing": "Eliminar anuncio",
+    "deleteFailed": "No se pudo eliminar el anuncio.",
+    "deleteSucceeded": "Anuncio eliminado."
+  },
+  "Checklist": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbChecklist": "Lista de verificación del comprador",
+    "title": "Lista de verificación del comprador",
+    "subtitle": "Todo lo que debes revisar antes de comprar un vehículo de salvamento -- marca cada elemento a medida que avanzas.",
+    "progress": "{checked} de {total} marcados",
+    "reset": "Reiniciar",
+    "print": "Imprimir",
+    "aboutRebuilt": {
+      "title": "Entendiendo los títulos reconstruidos y de salvamento",
+      "paragraph1": "Un título reconstruido o de salvamento solo significa que un vehículo fue declarado pérdida total en algún momento -- no dice nada sobre la calidad de la reparación. Un taller que hace bien el trabajo puede devolver un auto siniestrado a una condición genuinamente segura y confiable, a veces mejor que la de muchos vehículos con título \"limpio\" en circulación.",
+      "paragraph2": "Un título limpio tampoco es garantía. Si un propietario paga las reparaciones de su bolsillo en lugar de presentar un reclamo al seguro, el accidente nunca se reporta, y el título permanece \"limpio\" sin importar qué tan grave haya sido el daño. El estado del título por sí solo no te dice cómo fue tratado realmente el auto.",
+      "paragraph3": "Por eso los pasos de esta lista de verificación -- un informe del historial del vehículo, una verificación del VIN y una inspección profesional -- importan más que el estado del título impreso en los documentos. Aplican tanto a un auto con título \"limpio\" como a uno reconstruido."
+    }
+  }
+}

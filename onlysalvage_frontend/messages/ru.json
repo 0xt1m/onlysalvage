@@ -1,0 +1,1595 @@
+{
+  "Common": {
+    "appName": "OnlySalvage",
+    "viewAll": "Смотреть все",
+    "showPassword": "Показать пароль",
+    "hidePassword": "Скрыть пароль"
+  },
+  "Nav": {
+    "logo": "Логотип",
+    "home": "Главная",
+    "inventory": "Каталог",
+    "support": "Поддержка 24/7",
+    "sell": "Продать",
+    "switchToLight": "Включить светлую тему",
+    "switchToDark": "Включить тёмную тему",
+    "switchLanguage": "Сменить язык",
+    "likedCars": "Избранные авто",
+    "compare": "Сравнение",
+    "myProfile": "Мой профиль",
+    "viewProfile": "Просмотреть профиль",
+    "logOut": "Выйти",
+    "logIn": "Войти",
+    "signUp": "Регистрация",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "settings": "Настройки"
+  },
+  "Footer": {
+    "tagline": "Ваша надёжная площадка для покупки и продажи автомобилей. Быстро, просто и надёжно.",
+    "company": "Компания",
+    "about": "О нас",
+    "shopByMake": "Обзор по маркам",
+    "shopByBodyStyle": "Обзор по типу кузова",
+    "sellers": "Продавцы",
+    "guide": "Гид по сайту",
+    "checklist": "Чек-лист покупателя",
+    "apiDocs": "Документация API",
+    "feedback": "Обратная связь",
+    "contact": "Контакты",
+    "careers": "Карьера",
+    "legal": "Правовая информация",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsOfService": "Условия использования",
+    "followUs": "Следите за нами",
+    "copyright": "© 2026 OnlySalvage. Все права защищены.",
+    "privacy": "Конфиденциальность",
+    "terms": "Условия"
+  },
+  "Home": {
+    "heroTitle": "Простой способ купить и продать аварийные авто",
+    "heroSubtitle": "Просматривайте проверенные объявления аварийных и восстановленных авто от частных продавцов и дилеров, или разместите своё авто за несколько минут.",
+    "trust": {
+      "verifiedTitle": "Проверенные объявления",
+      "verifiedDescription": "Каждый автомобиль привязан к реальному аккаунту продавца, со статусом документов (аварийный или восстановленный), указанным сразу.",
+      "ratedTitle": "Рейтинги продавцов и покупателей",
+      "ratedDescription": "Совершайте сделки уверенно благодаря нашей двусторонней системе отзывов.",
+      "supportTitle": "Поддержка 24/7",
+      "supportDescription": "Вопросы или проблемы? Наша команда доступна круглосуточно.",
+      "reachTitle": "Общенациональный охват",
+      "reachDescription": "Ищите аварийные и восстановленные объявления от частных продавцов и дилеров по всей стране."
+    },
+    "guideTip": {
+      "label": "А вы знали?",
+      "viewGuide": "Посмотреть гид"
+    },
+    "checklistTeaser": {
+      "label": "Перед покупкой",
+      "heading": "Чек-лист покупателя",
+      "description": "Всё, что нужно проверить перед покупкой аварийного авто, в одном чек-листе для печати.",
+      "viewChecklist": "Открыть чек-лист"
+    },
+    "howItWorks": {
+      "title": "Как это работает",
+      "subtitle": "Покупка или продажа аварийного авто на OnlySalvage состоит из трёх простых шагов",
+      "step1Title": "Найдите или разместите авто",
+      "step1Description": "Просмотрите аварийные и восстановленные объявления рядом с вами, или разместите своё авто за несколько минут -- просто введите VIN, и мы заполним детали.",
+      "step2Title": "Свяжитесь с продавцом",
+      "step2Description": "Откройте номер телефона продавца и свяжитесь напрямую, чтобы задать вопросы или договориться об осмотре.",
+      "step3Title": "Осмотрите и купите",
+      "step3Description": "Осмотрите авто лично (или организуйте профессиональный осмотр), а затем завершите сделку напрямую с продавцом."
+    },
+    "featuredTitle": "Рекомендуемые авто",
+    "featuredSubtitle": "Отобранные объявления, которые сейчас продвигают продавцы",
+    "newArrivalsTitle": "Новые поступления",
+    "newArrivalsSubtitle": "Последние автомобили, добавленные на площадку",
+    "noListingsYet": "Объявлений пока нет. Будьте первым, кто разместит авто!",
+    "recommendedTitle": "Рекомендовано для вас",
+    "recommendedSubtitle": "На основе того, что вы искали и просматривали",
+    "becauseYouViewedTitle": "Поскольку вы просматривали {title}",
+    "becauseYouViewedSubtitle": "Похожие объявления, которые могут вам понравиться",
+    "ctaTitle": "Готовы продать своё аварийное авто?",
+    "ctaDescription": "Разместите аварийное или восстановленное авто за несколько минут -- просто введите VIN, и мы заполним детали за вас.",
+    "sellYourCar": "Продать авто",
+    "mostLikedTitle": "Самые популярные",
+    "mostLikedSubtitle": "Доступные объявления, которые сейчас нравятся покупателям больше всего",
+    "topSellersTitle": "Лучшие продавцы",
+    "topSellersSubtitle": "Продавцы с самым высоким средним рейтингом от реальных покупателей",
+    "shopByMakeTitle": "Обзор по маркам",
+    "shopByMakeSubtitle": "Просматривайте объявления по производителю",
+    "shopByBodyStyleTitle": "Обзор по типу кузова",
+    "shopByBodyStyleSubtitle": "Просматривайте объявления по типу кузова",
+    "shopByCityTitle": "Обзор по городам",
+    "shopByCitySubtitle": "Просматривайте объявления в популярных городах",
+    "verifiedSellersTitle": "Проверенные продавцы",
+    "verifiedSellersSubtitle": "Продавцы, подтвердившие свою личность в процессе проверки",
+    "verifiedListingsTitle": "Объявления проверенных продавцов",
+    "verifiedListingsSubtitle": "Дополнительное спокойствие при покупке у проверенного аккаунта",
+    "mostViewedTitle": "Самые просматриваемые",
+    "mostViewedSubtitle": "Доступные объявления, привлекающие больше всего внимания сейчас"
+  },
+  "SearchBlock": {
+    "search": "Поиск",
+    "searchPlaceholder": "Поиск по марке, модели или ключевому слову",
+    "filters": {
+      "inventory": "Каталог",
+      "under5000": "До $5,000",
+      "under10000": "До $10,000",
+      "over10000": "Свыше $10,000",
+      "allWheelDrive": "Полный привод",
+      "rebuiltTitle": "Восстановленный",
+      "privateSellers": "Частные продавцы",
+      "nearby": "Рядом",
+      "recommended": "Рекомендуемые"
+    },
+    "surpriseMe": "Удиви меня"
+  },
+  "ListingCard": {
+    "mileage": "Пробег",
+    "transmission": "Коробка передач",
+    "fuelType": "Тип топлива",
+    "seller": "Продавец",
+    "location": "Местоположение",
+    "contactSeller": "Свяжитесь с продавцом",
+    "noPhotoYet": "Фото пока нет",
+    "callsReceived": "{count, plural, one {# звонок} few {# звонка} many {# звонков} other {# звонка}}",
+    "viewsCount": "{count, plural, one {# просмотр} few {# просмотра} many {# просмотров} other {# просмотра}}",
+    "statusAvailable": "ДОСТУПНО",
+    "statusPending": "ОЖИДАЕТ",
+    "statusSold": "ПРОДАНО",
+    "inactiveBadge": "Неактивно",
+    "lowMileage": "Малый пробег",
+    "verifiedSeller": "Проверенный продавец",
+    "warrantyBadge": "Гарантия",
+    "openInNewTab": "Открыть в новой вкладке",
+    "editListing": "Редактировать объявление",
+    "markAvailable": "Отметить как доступно",
+    "markSold": "Отметить как продано",
+    "markPending": "Отметить как ожидает",
+    "share": "Копировать ссылку",
+    "addToCompare": "Добавить к сравнению",
+    "removeFromCompare": "Убрать из сравнения",
+    "addedToCompare": "Добавлено к сравнению",
+    "removedFromCompare": "Удалено из сравнения",
+    "unpublish": "Снять с публикации",
+    "publish": "Опубликовать",
+    "callSeller": "Позвонить продавцу",
+    "callFailed": "Не удалось получить номер телефона продавца.",
+    "emailSeller": "Написать продавцу",
+    "report": "Пожаловаться",
+    "viewSellerProfile": "Профиль продавца",
+    "addToWatchlist": "Добавить в избранное",
+    "removeFromWatchlist": "Убрать из избранного",
+    "statusUpdateSucceeded": "Статус объявления обновлён",
+    "statusUpdateFailed": "Не удалось обновить статус объявления.",
+    "linkCopied": "Ссылка скопирована в буфер обмена",
+    "shareFailed": "Не удалось поделиться объявлением. Попробуйте снова.",
+    "unpublishSucceeded": "Публикация объявления отменена",
+    "unpublishFailed": "Не удалось снять объявление с публикации.",
+    "publishSucceeded": "Объявление опубликовано",
+    "publishFailed": "Не удалось опубликовать объявление.",
+    "deleteListing": "Удалить объявление"
+  },
+  "ListingResultsGrid": {
+    "noListingsFound": "Объявления не найдены."
+  },
+  "Filters": {
+    "search": "Поиск...",
+    "noResults": "Ничего не найдено",
+    "apply": "Применить",
+    "min": "От",
+    "max": "До",
+    "any": "Любая",
+    "deselectAll": "Снять всё",
+    "invalidNumber": "Введите корректное число"
+  },
+  "Inventory": {
+    "browseTitle": "Просмотрите наш каталог",
+    "filters": "Фильтры",
+    "closeFilters": "Закрыть фильтры",
+    "reset": "Сбросить",
+    "applyFilters": "Применить фильтры",
+    "distance": "Расстояние",
+    "zipCode": "Почтовый индекс",
+    "anyDistance": "Любое расстояние",
+    "locating": "Определение местоположения...",
+    "usingYourLocation": "Используется ваше местоположение",
+    "useMyLocation": "Использовать моё местоположение",
+    "apply": "Применить",
+    "year": "Год",
+    "make": "Марка",
+    "model": "Модель",
+    "selectMakeFirst": "Сначала выберите марку",
+    "price": "Цена",
+    "mileage": "Пробег",
+    "vehicleType": "Тип кузова",
+    "transmission": "Коробка передач",
+    "driveType": "Тип привода",
+    "fuelType": "Тип топлива",
+    "exteriorColor": "Цвет кузова",
+    "interiorColor": "Цвет салона",
+    "titleStatus": "Статус документов",
+    "seller": "Продавец",
+    "noGeolocationSupport": "Ваш браузер не поддерживает геолокацию.",
+    "geolocationFailed": "Не удалось определить ваше местоположение -- попробуйте ввести почтовый индекс.",
+    "within": "В пределах {miles} миль",
+    "searching": "Поиск...",
+    "listingsFound": "{count, plural, one {# объявление найдено} few {# объявления найдено} many {# объявлений найдено} other {# объявления найдено}}",
+    "largeCards": "Крупные карточки",
+    "compactCards": "Компактные карточки",
+    "listView": "Список",
+    "noListingsMatchFilters": "Ни одно объявление не соответствует вашим фильтрам.",
+    "loading": "Загрузка...",
+    "loadMore": "Загрузить ещё",
+    "sortOptions": {
+      "newest": "Сначала новые",
+      "priceAsc": "Цена: по возрастанию",
+      "priceDesc": "Цена: по убыванию",
+      "mileageAsc": "Пробег: по возрастанию",
+      "yearDesc": "Год: сначала новые",
+      "distance": "Ближайшие"
+    }
+  },
+  "MakesPage": {
+    "metaTitle": "Обзор по маркам",
+    "metaDescription": "Просматривайте аварийные и восстановленные автомобили по маркам на OnlySalvage.",
+    "breadcrumbHome": "Главная",
+    "breadcrumbMakes": "Марки",
+    "title": "Обзор по маркам",
+    "subtitle": "Просматривайте объявления по производителю",
+    "noMakesYet": "Пока нет доступных марок."
+  },
+  "MakePage": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbMakes": "Марки",
+    "title": "{make} на продажу",
+    "subtitle": "{count, plural, one {# объявление доступно} few {# объявления доступны} many {# объявлений доступно} other {# объявления доступно}}",
+    "noListingsYet": "Сейчас нет объявлений {make}.",
+    "viewAllInInventory": "{count, plural, one {Посмотреть это объявление в каталоге} few {Посмотреть все # объявления в каталоге} many {Посмотреть все # объявлений в каталоге} other {Посмотреть все # объявления в каталоге}}"
+  },
+  "MakeModelPage": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbMakes": "Марки",
+    "title": "{make} {model} на продажу",
+    "subtitle": "{count, plural, one {# объявление доступно} few {# объявления доступны} many {# объявлений доступно} other {# объявления доступно}}",
+    "noListingsYet": "Сейчас нет объявлений {make} {model}.",
+    "viewAllInInventory": "{count, plural, one {Посмотреть это объявление в каталоге} few {Посмотреть все # объявления в каталоге} many {Посмотреть все # объявлений в каталоге} other {Посмотреть все # объявления в каталоге}}"
+  },
+  "BodyStylesPage": {
+    "metaTitle": "Обзор по типу кузова",
+    "metaDescription": "Просматривайте аварийные и восстановленные автомобили по типу кузова на OnlySalvage.",
+    "breadcrumbHome": "Главная",
+    "breadcrumbBodyStyles": "Типы кузова",
+    "title": "Обзор по типу кузова",
+    "subtitle": "Просматривайте объявления по типу кузова"
+  },
+  "BodyStylePage": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbBodyStyles": "Типы кузова",
+    "title": "{type} на продажу",
+    "subtitle": "{count, plural, one {# объявление доступно} few {# объявления доступны} many {# объявлений доступно} other {# объявления доступно}}",
+    "noListingsYet": "Сейчас нет объявлений типа {type}.",
+    "viewAllInInventory": "{count, plural, one {Посмотреть это объявление в каталоге} few {Посмотреть все # объявления в каталоге} many {Посмотреть все # объявлений в каталоге} other {Посмотреть все # объявления в каталоге}}"
+  },
+  "CitiesPage": {
+    "metaTitle": "Обзор по городам",
+    "metaDescription": "Просматривайте автомобили после аварий и восстановленные автомобили на продажу по городам на OnlySalvage.",
+    "breadcrumbHome": "Главная",
+    "breadcrumbCities": "Города",
+    "title": "Обзор по городам",
+    "subtitle": "Просматривайте объявления в популярных городах",
+    "noCitiesYet": "Пока нет доступных страниц городов."
+  },
+  "CityPage": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbCities": "Города",
+    "title": "Восстановленные автомобили на продажу в {city}, {state}",
+    "subtitle": "{count, plural, one {# объявление доступно} few {# объявления доступны} many {# объявлений доступно} other {# объявления доступно}}",
+    "noListingsYet": "Сейчас нет объявлений в {city}.",
+    "viewAllInInventory": "{count, plural, one {Посмотреть это объявление в каталоге} few {Посмотреть все # объявления в каталоге} many {Посмотреть все # объявлений в каталоге} other {Посмотреть все # объявления в каталоге}}"
+  },
+  "ListingDetail": {
+    "statusAvailable": "Доступно",
+    "statusPending": "Ожидает",
+    "statusSold": "Продано",
+    "statusInactive": "Неактивно",
+    "actionsTitle": "Действия",
+    "verifiedSeller": "Проверенный продавец",
+    "listingNotFound": "Объявление не найдено",
+    "listingNotFoundDescription": "Мы не смогли найти объявление по адресу \"{slug}\".",
+    "breadcrumbHome": "Главная",
+    "breadcrumbInventory": "Каталог",
+    "printListing": "Печать",
+    "share": "Поделиться",
+    "linkCopied": "Ссылка скопирована",
+    "shareFailed": "Не удалось поделиться объявлением. Попробуйте ещё раз.",
+    "vehicleDetails": "Детали авто",
+    "year": "Год",
+    "make": "Марка",
+    "model": "Модель",
+    "trim": "Комплектация",
+    "type": "Тип",
+    "vin": "VIN",
+    "mileage": "Пробег",
+    "transmission": "Коробка передач",
+    "drivetrain": "Привод",
+    "fuelType": "Тип топлива",
+    "engine": "Двигатель",
+    "mpg": "Расход топлива",
+    "cityMpgLabel": "Расход в городе",
+    "hwyMpgLabel": "Расход на трассе",
+    "exterior": "Цвет кузова",
+    "interior": "Цвет салона",
+    "titleStatus": "Статус документов",
+    "owners": "Владельцы",
+    "posted": "Размещено",
+    "viewCarfaxReport": "Посмотреть отчёт Carfax",
+    "viewAlignmentReport": "Посмотреть отчёт о развал-схождении",
+    "viewInspectionReport": "Посмотреть отчёт осмотра",
+    "beforeRepairPhotos": "Фото до ремонта",
+    "beforeRepairPhotosDescription": "Как выглядело повреждение до устранения.",
+    "beforeRepairPhotoAlt": "Фото до ремонта",
+    "featuresAndOptions": "Комплектация и опции",
+    "description": "Описание",
+    "noDescriptionProvided": "Описание не предоставлено.",
+    "videoTitle": "Видео",
+    "watchVideo": "Смотреть видео",
+    "editListing": "Редактировать объявление",
+    "markPending": "Отметить как ожидает",
+    "markSold": "Отметить как продано",
+    "markAvailable": "Отметить как доступно",
+    "callsReceived": "{count, plural, one {# звонок} few {# звонка} many {# звонков} other {# звонка}}",
+    "viewsCount": "{count, plural, one {# просмотр} few {# просмотра} many {# просмотров} other {# просмотра}}",
+    "seller": "Продавец",
+    "moreFromThisSeller": "Больше от этого продавца",
+    "similarListings": "Похожие объявления",
+    "similarListingsSubtitle": "Другие объявления, которые могут вас заинтересовать",
+    "copyVin": "Копировать VIN",
+    "vinCopied": "VIN скопирован",
+    "vinCopyFailed": "Не удалось скопировать VIN",
+    "renewListing": "Обновить объявление",
+    "renewAvailableInDays": "{count, plural, one {Вы сможете обновить объявление через # день} few {Вы сможете обновить объявление через # дня} many {Вы сможете обновить объявление через # дней} other {Вы сможете обновить объявление через # дня}}",
+    "renewalsExhausted": "Это объявление уже использовало все обновления. Удалите его и опубликуйте заново, чтобы обновить дату размещения.",
+    "renewSucceeded": "Объявление обновлено",
+    "renewFailed": "Не удалось обновить объявление",
+    "previousListing": "Назад",
+    "nextListing": "Далее",
+    "listingPosition": "{current} из {total}"
+  },
+  "ContactSellerCard": {
+    "title": "Связаться с продавцом",
+    "loading": "Загрузка...",
+    "reveal": "Показать",
+    "maskedNumber": "+1 ({areaCode}) •••-••••",
+    "email": "Эл. почта",
+    "loadError": "Не удалось загрузить номер телефона продавца."
+  },
+  "ScheduleTestDrive": {
+    "scheduleTestDrive": "Тест драйв",
+    "close": "Закрыть",
+    "nameLabel": "Ваше имя",
+    "emailLabel": "Электронная почта",
+    "emailPlaceholder": "you@example.com",
+    "phoneLabel": "Номер телефона",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "preferredDateTimeLabel": "Желаемая дата и время",
+    "messageLabel": "Дополнительное сообщение",
+    "messagePlaceholder": "Что-нибудь ещё, что должен знать продавец?",
+    "cancel": "Отмена",
+    "submitting": "Отправка...",
+    "submit": "Отправить запрос",
+    "submitFailed": "Что-то пошло не так. Попробуйте ещё раз.",
+    "successTitle": "Запрос отправлен!",
+    "successDescription": "Продавец скоро свяжется с вами, чтобы подтвердить тест-драйв.",
+    "errors": {
+      "nameRequired": "Введите ваше имя.",
+      "contactRequired": "Введите электронную почту или номер телефона, чтобы продавец мог с вами связаться.",
+      "emailInvalid": "Введите корректный адрес электронной почты.",
+      "phoneInvalid": "Введите полный 10-значный номер телефона.",
+      "dateRequired": "Выберите желаемую дату и время.",
+      "dateInPast": "Выберите время в будущем."
+    }
+  },
+  "ListingStatusButton": {
+    "updateFailed": "Не удалось обновить статус объявления.",
+    "updateSucceeded": "Статус объявления обновлён",
+    "updating": "Обновление..."
+  },
+  "SellForm": {
+    "vehicleDetails": "Детали авто",
+    "vin": "VIN",
+    "vinPlaceholder": "17 символов",
+    "decodeVin": "Расшифровать VIN",
+    "decoding": "Расшифровка...",
+    "year": "Год",
+    "make": "Марка",
+    "selectMake": "Выберите марку",
+    "model": "Модель",
+    "selectMakeFirst": "Сначала выберите марку",
+    "loading": "Загрузка...",
+    "noModelsYet": "Для этой марки пока нет моделей",
+    "selectModel": "Выберите модель",
+    "trim": "Комплектация",
+    "trimPlaceholder": "Необязательно, напр. EX",
+    "vehicleType": "Тип кузова",
+    "specs": "Характеристики",
+    "mileage": "Пробег",
+    "optional": "Необязательно",
+    "engine": "Двигатель",
+    "enginePlaceholder": "Необязательно, напр. 2.0L I4",
+    "transmission": "Коробка передач",
+    "drivetrain": "Привод",
+    "fuelType": "Тип топлива",
+    "cityMpg": "Расход в городе (миль/гал)",
+    "highwayMpg": "Расход на трассе (миль/гал)",
+    "conditionAndPricing": "Состояние и цена",
+    "titleStatus": "Статус документов",
+    "owners": "Владельцы",
+    "exteriorColor": "Цвет кузова",
+    "interiorColor": "Цвет салона",
+    "askingPrice": "Цена продажи ($)",
+    "retailPrice": "Розничная цена ($)",
+    "includeWarranty": "На этот автомобиль распространяется моя гарантия дилера",
+    "description": "Описание",
+    "descriptionPlaceholder": "Опишите состояние, комплектацию и историю автомобиля. Укажите, где произошло повреждение и какой ремонт был выполнен, напр. \"Лобовое столкновение, заменены бампер, капот и фары.\"",
+    "video": "Видео",
+    "videoDescription": "Добавьте ссылку на видео обзора или тест-драйва, если оно у вас есть — ссылки с YouTube, Vimeo и Google Drive встраиваются автоматически.",
+    "videoUrl": "URL видео",
+    "videoUrlPlaceholder": "https://youtube.com/watch?v=...",
+    "featuresAndOptions": "Комплектация и опции",
+    "featuresAndOptionsDescription": "Выберите опции, которыми оснащён этот автомобиль.",
+    "photos": "Фотографии",
+    "uploadsLocked": "Укажите VIN выше, чтобы разблокировать загрузку фото и документов.",
+    "creatingDraft": "Настраиваем ваше объявление...",
+    "uploading": "Загрузка...",
+    "uploaded": "Загружено",
+    "uploadFailed": "Ошибка загрузки",
+    "clickToSelectPhotos": "Нажмите, чтобы выбрать фото",
+    "dragToReorder": "Перетаскивайте фото, чтобы изменить порядок. Первое фото используется как обложка.",
+    "cover": "Обложка",
+    "failed": "Ошибка",
+    "removePhoto": "Удалить фото",
+    "previewAlt": "Фото {index}",
+    "beforeRepairPhotos": "Фото до ремонта",
+    "beforeRepairPhotosDescription": "Необязательно. Покажите, как выглядело повреждение до устранения.",
+    "beforeRepairPreviewAlt": "Фото до ремонта {index}",
+    "documentsTitle": "Документы",
+    "carfaxReport": "Отчёт Carfax",
+    "reportDescription": "Необязательно. Покупатели смогут просмотреть этот PDF на странице объявления.",
+    "clickToSelectPdf": "Нажмите, чтобы выбрать PDF",
+    "removeCarfaxReport": "Удалить отчёт Carfax",
+    "alignmentReport": "Отчёт о развал-схождении",
+    "removeAlignmentReport": "Удалить отчёт о развал-схождении",
+    "inspectionReport": "Отчёт осмотра",
+    "removeInspectionReport": "Удалить отчёт осмотра",
+    "publishing": "Публикация...",
+    "publishListing": "Опубликовать",
+    "saveDraft": "Сохранить черновик",
+    "savingDraft": "Сохранение...",
+    "listedAt": "Размещено за ${price}",
+    "listingLiveDescription": "Ваше объявление уже доступно. Обработка фото может занять некоторое время.",
+    "listAnotherCar": "Разместить ещё один автомобиль",
+    "errors": {
+      "vinFormat": "VIN должен содержать 17 символов (без I, O или Q).",
+      "yearInvalid": "Введите корректный год.",
+      "makeRequired": "Выберите марку.",
+      "modelRequired": "Выберите модель.",
+      "priceRequired": "Введите цену продажи.",
+      "photosRequired": "Добавьте хотя бы одно фото перед публикацией.",
+      "vinRequiredFirst": "Сначала введите корректный 17-символьный VIN.",
+      "vinTaken": "Этот VIN уже указан в другом активном объявлении."
+    },
+    "toasts": {
+      "vinDecodeFailed": "Не удалось расшифровать этот VIN.",
+      "makeNotSupported": "Распознанная марка \"{make}\" пока не поддерживается -- выберите её вручную.",
+      "modelNotListed": "Распознанная модель \"{model}\" не указана для {make} -- выберите её вручную.",
+      "vinDecoded": "VIN успешно расшифрован.",
+      "fixErrors": "Пожалуйста, исправьте ошибки ниже.",
+      "listingLive": "Ваше объявление опубликовано!",
+      "vinTaken": "Этот VIN уже указан в другом активном объявлении. <link>Посмотреть объявление</link>.",
+      "uploadsInProgress": "Дождитесь завершения загрузки фото перед публикацией.",
+      "draftSaved": "Черновик сохранён. Вы можете завершить его позже в своём профиле.",
+      "draftSaveFailed": "Не удалось сохранить черновик. Попробуйте ещё раз."
+    }
+  },
+  "EditListingForm": {
+    "status": "Статус",
+    "statusAvailable": "Доступно",
+    "statusPending": "Ожидает",
+    "statusSold": "Продано",
+    "published": "Опубликовано",
+    "publishedDescription": "Видно в поиске и каталоге.",
+    "unpublishedNotice": "Неопубликованные объявления скрыты от покупателей, но доступны по прямой ссылке.",
+    "draftNotice": "Это объявление ещё не опубликовано. Заполните оставшиеся поля и нажмите «Опубликовать», когда будете готовы, или сохраните прогресс и вернитесь к этому позже.",
+    "photoRemoved": "Фото удалено",
+    "photoRemoveFailed": "Не удалось удалить фото",
+    "fixErrorsAndRetry": "Пожалуйста, исправьте ошибки ниже и попробуйте снова.",
+    "listingUpdated": "Объявление обновлено",
+    "clickToAddMorePhotos": "Нажмите, чтобы добавить больше фото",
+    "dragToReorderNewPhotos": "Перетаскивайте, чтобы изменить порядок новых фото (они будут добавлены после существующих).",
+    "viewCurrentReport": "Просмотреть текущий отчёт",
+    "replace": "Заменить",
+    "saving": "Сохранение...",
+    "saveChanges": "Сохранить изменения"
+  },
+  "Auth": {
+    "appTagline1": "Простая площадка для покупки и продажи авто. Быстро, надёжно и прозрачно. На OnlySalvage вы можете оценивать продавцов и покупателей.",
+    "signUpTitle": "Регистрация"
+  },
+  "GoogleSignIn": {
+    "signInFailed": "Не удалось войти через Google. Попробуйте ещё раз."
+  },
+  "CompleteProfile": {
+    "title": "Завершите настройку профиля",
+    "description": "Нам нужно лишь ваше местоположение, чтобы покупатели рядом могли находить ваши объявления, а вы могли искать по расстоянию.",
+    "city": "Город",
+    "state": "Штат",
+    "zipCode": "Почтовый индекс",
+    "select": "Выберите",
+    "submit": "Сохранить и продолжить",
+    "saving": "Сохранение...",
+    "errors": {
+      "cityRequired": "Город обязателен.",
+      "stateRequired": "Выберите штат.",
+      "zipInvalid": "Введите корректный 5-значный почтовый индекс.",
+      "updateFailed": "Что-то пошло не так. Попробуйте ещё раз."
+    }
+  },
+  "LoginForm": {
+    "sellRedirectToast": "Чтобы продавать авто, нужен аккаунт -- войдите или зарегистрируйтесь, чтобы продолжить.",
+    "invalidCredentials": "Неверные учётные данные",
+    "logIn": "Войти",
+    "username": "Имя пользователя:",
+    "password": "Пароль:",
+    "forgotPassword": "Забыли пароль?",
+    "orDivider": "или",
+    "signUp": "Регистрация"
+  },
+  "SignUpForm": {
+    "createAccount": "Создайте свой аккаунт",
+    "orDivider": "или зарегистрируйтесь по почте",
+    "username": "Имя пользователя",
+    "email": "Электронная почта",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "phoneNumber": "Номер телефона",
+    "optional": "Необязательно",
+    "city": "Город",
+    "state": "Штат",
+    "select": "Выберите",
+    "zipCode": "Почтовый индекс",
+    "dealerCheckbox": "Я регистрируюсь как дилер/компания",
+    "businessName": "Название компании",
+    "streetAddress": "Улица и дом",
+    "website": "Веб-сайт",
+    "creatingAccount": "Создание аккаунта...",
+    "signUp": "Зарегистрироваться",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "logIn": "Войти",
+    "errors": {
+      "usernameRequired": "Имя пользователя обязательно.",
+      "emailInvalid": "Введите корректный адрес электронной почты.",
+      "passwordTooShort": "Пароль должен содержать не менее 8 символов.",
+      "passwordMismatch": "Пароли не совпадают.",
+      "cityRequired": "Город обязателен.",
+      "stateRequired": "Выберите штат.",
+      "zipInvalid": "Введите корректный 5-значный почтовый индекс.",
+      "phoneInvalid": "Введите полный 10-значный номер телефона.",
+      "businessNameRequired": "Название компании обязательно для дилеров.",
+      "streetAddressRequired": "Адрес обязателен для дилеров.",
+      "phoneNotVerified": "Сначала подтвердите номер телефона."
+    },
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "ForgotPasswordForm": {
+    "checkYourEmail": "Проверьте вашу почту",
+    "checkYourEmailDescription": "Если аккаунт с таким именем пользователя или почтой существует, мы отправили ссылку для сброса пароля.",
+    "backToLogin": "Вернуться к входу",
+    "title": "Забыли пароль?",
+    "description": "Введите имя пользователя или почту, и мы отправим ссылку для сброса пароля.",
+    "usernameOrEmail": "Имя пользователя или почта",
+    "sending": "Отправка...",
+    "sendResetLink": "Отправить ссылку"
+  },
+  "ResetPasswordForm": {
+    "invalidLinkTitle": "Недействительная ссылка для сброса",
+    "invalidLinkDescription": "Эта ссылка для сброса пароля отсутствует или повреждена. Запросите новую ниже.",
+    "requestNewLink": "Запросить новую ссылку",
+    "passwordUpdatedTitle": "Пароль обновлён",
+    "passwordUpdatedDescription": "Теперь вы можете войти с новым паролем.",
+    "goToLogin": "Перейти к входу",
+    "title": "Установите новый пароль",
+    "newPassword": "Новый пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "saving": "Сохранение...",
+    "resetPassword": "Сбросить пароль",
+    "errors": {
+      "passwordTooShort": "Пароль должен содержать не менее 8 символов.",
+      "passwordMismatch": "Пароли не совпадают.",
+      "linkInvalidOrExpired": "Эта ссылка недействительна или срок её действия истёк."
+    }
+  },
+  "RequestVerification": {
+    "requestVerification": "Запросить верификацию аккаунта",
+    "pending": "Проверка на рассмотрении",
+    "previouslyDeclined": "Ваш предыдущий запрос был отклонён.",
+    "submitting": "Отправка...",
+    "requestSucceeded": "Запрос на проверку отправлен",
+    "requestFailed": "Что-то пошло не так. Попробуйте ещё раз."
+  },
+  "ApiAccess": {
+    "title": "Доступ к API",
+    "description": "Управляйте своими объявлениями программно с помощью персонального токена API.",
+    "viewDocs": "Открыть документацию API",
+    "noteLabel": "Для чего вы будете его использовать? (необязательно)",
+    "notePlaceholder": "например, синхронизация инвентаря с системой управления дилерским складом",
+    "verifiedHint": "Вы верифицированный продавец, поэтому получите доступ сразу же.",
+    "requestAccess": "Запросить доступ к API",
+    "submitting": "Отправка...",
+    "requestSucceeded": "Запрос на доступ к API отправлен -- мы скоро его рассмотрим.",
+    "requestApprovedInstantly": "Вы одобрены! Создайте токен ниже.",
+    "requestFailed": "Что-то пошло не так. Попробуйте ещё раз.",
+    "requestAgain": "Запросить снова",
+    "pendingReview": "Ваш запрос находится на рассмотрении.",
+    "denied": "Ваш запрос был отклонён.",
+    "revoked": "Ваш доступ к API был отозван.",
+    "approved": "Одобрено -- создайте токен, чтобы начать использовать API.",
+    "generateToken": "Создать токен",
+    "generateSucceeded": "Токен создан",
+    "generateFailed": "Не удалось создать токен. Попробуйте ещё раз.",
+    "tokenShownOnce": "Скопируйте этот токен сейчас -- вы не сможете увидеть его снова.",
+    "copy": "Копировать",
+    "tokenCopied": "Токен скопирован",
+    "tokenCopyFailed": "Не удалось скопировать токен",
+    "regenerate": "Пересоздать",
+    "revoke": "Отозвать",
+    "revokeSucceeded": "Токен API отозван",
+    "revokeFailed": "Не удалось отозвать токен. Попробуйте ещё раз.",
+    "lastUsed": "Последнее использование: {date}",
+    "cancel": "Отмена",
+    "confirmRegenerateTitle": "Пересоздать токен?",
+    "confirmRegenerateDescription": "Ваш текущий токен сразу же перестанет работать. Все интеграции, использующие его, нужно будет обновить новым токеном.",
+    "confirmRevokeTitle": "Отозвать доступ к API?",
+    "confirmRevokeDescription": "Ваш токен сразу же перестанет работать. Чтобы получить новый, вам нужно будет запросить доступ снова."
+  },
+  "Profile": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbProfile": "Профиль",
+    "userNotFoundTitle": "Пользователь не найден",
+    "userNotFoundDescription": "Мы не смогли найти профиль \"{username}\".",
+    "dealerBadge": "Дилер",
+    "verifiedBadge": "Проверенный продавец",
+    "financingBadge": "Финансирование от дилера",
+    "memberSince": "На сайте с {date}",
+    "carsSold": "{count, plural, one {# авто продано} few {# авто продано} many {# авто продано} other {# авто продано}}",
+    "navProfile": "Профиль",
+    "navListings": "Объявления",
+    "navWarranty": "Гарантия",
+    "navDrafts": "Черновики",
+    "navWatchlist": "Избранное",
+    "aboutTitle": "О себе",
+    "noDescriptionYet": "Описания пока нет.",
+    "contactInfoTitle": "Контактная информация",
+    "warrantyTitle": "Информация о гарантии",
+    "visibleToEveryone": "(видно всем)",
+    "onlyVisibleToYou": "(видно только вам)",
+    "noContactInfo": "Контактная информация не указана.",
+    "reviewsTitle": "Отзывы",
+    "noReviewsYet": "Отзывов пока нет.",
+    "listingsTitle": "Объявления",
+    "sellACar": "Продать авто",
+    "bulkUpload": "Массовая загрузка",
+    "noListingsYet": "Объявлений пока нет.",
+    "draftsTitle": "Черновики",
+    "draftsEmptyMessage": "У вас нет сохранённых черновиков.",
+    "draftStarted": "Начато {date}",
+    "continueDraft": "Продолжить",
+    "deleteDraft": "Удалить черновик",
+    "watchlistTitle": "Избранное",
+    "watchlistEmptyMessage": "Вы ещё не отметили ни одного объявления. Просмотрите каталог и нажмите на сердечко у понравившегося авто.",
+    "settings": "Настройки"
+  },
+  "Settings": {
+    "title": "Настройки",
+    "breadcrumbHome": "Главная",
+    "breadcrumbSettings": "Настройки",
+    "viewPublicProfile": "Открыть публичный профиль",
+    "navProfile": "Профиль",
+    "navSubscriptions": "Подписки",
+    "navWarranty": "Гарантия",
+    "navSecurity": "Безопасность",
+    "navApi": "Доступ к API",
+    "subscriptionsTitle": "Подписки",
+    "subscriptionsDescription": "Подписки пока недоступны -- здесь появятся уведомления о сохранённых поисках и планы продвижения для продавцов, когда они будут реализованы.",
+    "warrantyTitle": "Гарантия",
+    "warrantyDescription": "Настройте гарантию дилера и выберите, какие из ваших объявлений её включают.",
+    "warrantyListingsTitle": "Ваши объявления",
+    "warrantyNoListings": "У вас пока нет объявлений.",
+    "warrantyIncluded": "Гарантия включена",
+    "warrantyUpdateFailed": "Не удалось обновить статус гарантии. Попробуйте снова.",
+    "securityTitle": "Безопасность",
+    "usernameChangeQuestion": "Хотите изменить имя пользователя?",
+    "contactSupport": "Свяжитесь с поддержкой",
+    "usernameChangeNotSupported": "-- мы пока не поддерживаем прямое изменение имени пользователя.",
+    "dangerZone": "Опасная зона"
+  },
+  "SubscriptionTiers": {
+    "mostPopular": "Самый популярный",
+    "comingSoon": "Скоро",
+    "free": {
+      "name": "Бесплатно",
+      "price": "$0",
+      "priceSuffix": "",
+      "tagline": "Для частных продавцов, продающих время от времени.",
+      "features": {
+        "0": "До 3 активных объявлений",
+        "1": "Стандартная видимость в поиске",
+        "2": "Сообщения от покупателей и отслеживание звонков",
+        "3": "Базовый профиль продавца"
+      }
+    },
+    "plus": {
+      "name": "Plus",
+      "price": "$19",
+      "priceSuffix": "/мес",
+      "tagline": "Для продавцов, которым нужно больше внимания к объявлениям.",
+      "features": {
+        "0": "Всё из тарифа «Бесплатно»",
+        "1": "Приоритетное размещение в результатах поиска",
+        "2": "Ротация на главной странице",
+        "3": "Неограниченное количество активных объявлений",
+        "4": "Приоритетная поддержка"
+      }
+    },
+    "dealerPro": {
+      "name": "Dealer Pro",
+      "price": "$49",
+      "priceSuffix": "/мес",
+      "tagline": "Для дилеров с большим объёмом продаж.",
+      "features": {
+        "0": "Всё из тарифа Plus",
+        "1": "Приоритетное рассмотрение значка проверенного дилера",
+        "2": "Аналитика эффективности объявлений",
+        "3": "Массовая загрузка фото и VIN",
+        "4": "Персональный менеджер",
+        "5": "Ранний доступ к новым функциям"
+      }
+    }
+  },
+  "EditProfileModal": {
+    "editProfile": "Редактировать профиль",
+    "close": "Закрыть",
+    "changeProfilePicture": "Изменить фото профиля",
+    "email": "Электронная почта",
+    "emailPlaceholder": "you@example.com",
+    "emailRequired": "Электронная почта обязательна.",
+    "emailInvalid": "Введите корректный адрес электронной почты.",
+    "businessName": "Название компании",
+    "optional": "Необязательно",
+    "businessNameLockedPlaceholder": "Отметьте \"Продаю как дилер/компания\" ниже, чтобы задать это",
+    "businessNameRequired": "Название компании обязательно для дилеров.",
+    "streetAddressRequired": "Адрес обязателен для дилеров.",
+    "phoneNumber": "Номер телефона",
+    "phonePlaceholder": "+1 (555) 555-5555",
+    "phoneInvalid": "Введите полный 10-значный номер телефона.",
+    "website": "Веб-сайт",
+    "websitePlaceholder": "https://example.com",
+    "streetAddress": "Улица и дом",
+    "streetAddressPlaceholder": "ул. Главная, 123",
+    "editField": "Изменить",
+    "city": "Город",
+    "state": "Штат",
+    "zipCode": "Почтовый индекс",
+    "description": "Описание",
+    "descriptionPlaceholder": "Расскажите покупателям немного о себе или своём бизнесе",
+    "dealerCheckbox": "Я продаю как дилер/компания",
+    "financingCheckbox": "Я предлагаю финансирование от дилера",
+    "warrantyCheckbox": "Я предоставляю гарантию на автомобили",
+    "warrantyDuration": "Срок гарантии",
+    "warrantyDurationPlaceholder": "напр. 12 месяцев / 12 000 миль",
+    "warrantyDurationRequired": "Укажите срок гарантии.",
+    "warrantyDescription": "Условия гарантии",
+    "warrantyDescriptionPlaceholder": "Опишите, что покрывает гарантия",
+    "showEmailCheckbox": "Показывать мою почту в публичном профиле",
+    "cancel": "Отмена",
+    "saving": "Сохранение...",
+    "saveChanges": "Сохранить изменения",
+    "updateFailed": "Не удалось обновить профиль. Попробуйте ещё раз.",
+    "updateSucceeded": "Профиль обновлён",
+    "phoneNotVerified": "Пожалуйста, подтвердите новый номер телефона перед сохранением."
+  },
+  "DeleteAccountButton": {
+    "deleteAccount": "Удалить аккаунт",
+    "close": "Закрыть",
+    "confirmTitle": "Удалить ваш аккаунт?",
+    "confirmDescription": "Это деактивирует ваш аккаунт и выполнит выход. Ваши объявления, избранное и профиль больше не будут видны другим. Это нельзя отменить в настройках аккаунта -- свяжитесь с поддержкой, если передумаете.",
+    "cancel": "Отмена",
+    "deleting": "Удаление...",
+    "deleteMyAccount": "Удалить мой аккаунт",
+    "deleteFailed": "Не удалось удалить аккаунт. Попробуйте ещё раз.",
+    "deleteSucceeded": "Ваш аккаунт удалён."
+  },
+  "LeaveReviewModal": {
+    "leaveReview": "Оставить отзыв",
+    "close": "Закрыть",
+    "ratingLabel": "Оценка",
+    "starAriaLabel": "{value, plural, one {# звезда} few {# звезды} many {# звёзд} other {# звезды}}",
+    "ratingRequired": "Пожалуйста, выберите оценку в звёздах.",
+    "commentLabel": "Комментарий (необязательно)",
+    "commentPlaceholder": "Поделитесь деталями своего опыта с этим продавцом",
+    "cancel": "Отмена",
+    "submitting": "Отправка...",
+    "submitReview": "Отправить отзыв",
+    "submitFailed": "Не удалось отправить отзыв. Попробуйте ещё раз.",
+    "submitSucceeded": "Отзыв отправлен"
+  },
+  "ReportReasons": {
+    "FAKE_VIN": "VIN не соответствует автомобилю",
+    "DUP_VIN": "Этот VIN уже указан в другом объявлении",
+    "MISLEADING": "Информация в объявлении вводит в заблуждение или неверна",
+    "SOLD": "Автомобиль уже продан в другом месте",
+    "SCAM": "Подозрение на мошенничество",
+    "HARASSMENT": "Домогательства или оскорбительное поведение",
+    "FAKE_PROFILE": "Поддельный профиль или выдача себя за другого",
+    "INAPPROPRIATE": "Неприемлемый контент",
+    "SPAM": "Спам",
+    "OTHER": "Другое"
+  },
+  "CompareButton": {
+    "addToCompare": "Добавить к сравнению",
+    "removeFromCompare": "Убрать из сравнения",
+    "added": "Добавлено к сравнению",
+    "removed": "Удалено из сравнения",
+    "viewCompare": "Посмотреть сравнение"
+  },
+  "ComparePage": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbCompare": "Сравнение",
+    "title": "Сравнение автомобилей",
+    "subtitle": "Сравните до 4 автомобилей одновременно.",
+    "emptyTitle": "Пока нечего сравнивать",
+    "emptyDescription": "Добавьте несколько автомобилей для сравнения из каталога или со страницы объявления, а затем вернитесь сюда.",
+    "browseInventory": "Смотреть каталог",
+    "comparingCount": "{count, plural, one {Сравнивается # автомобиль} few {Сравнивается # автомобиля} many {Сравнивается # автомобилей} other {Сравнивается # автомобиля}}",
+    "clearAll": "Очистить всё",
+    "dragToReorder": "Перетащите автомобиль, чтобы изменить порядок сравнения.",
+    "remove": "Удалить",
+    "specs": {
+      "year": "Год",
+      "mileage": "Пробег",
+      "transmission": "Коробка передач",
+      "drive": "Привод",
+      "fuelType": "Тип топлива",
+      "engine": "Двигатель",
+      "cityMpg": "Расход в городе (миль/галлон)",
+      "hwyMpg": "Расход на трассе (миль/галлон)",
+      "exteriorColor": "Цвет кузова",
+      "interiorColor": "Цвет салона",
+      "titleStatus": "Статус документа",
+      "owners": "Владельцы",
+      "warranty": "Гарантия",
+      "vin": "VIN",
+      "seller": "Продавец",
+      "features": "Особенности"
+    }
+  },
+  "ReportListingModal": {
+    "report": "Пожаловаться",
+    "title": "Пожаловаться на объявление",
+    "close": "Закрыть",
+    "reasonLabel": "Причина",
+    "reasonPlaceholder": "Выберите причину",
+    "reasonRequired": "Пожалуйста, выберите причину.",
+    "detailsLabel": "Дополнительные детали (необязательно)",
+    "detailsPlaceholder": "Всё, что поможет нам проверить это объявление",
+    "cancel": "Отмена",
+    "submitting": "Отправка...",
+    "submitReport": "Отправить жалобу",
+    "submitFailed": "Не удалось отправить жалобу. Попробуйте ещё раз.",
+    "submitSucceeded": "Спасибо, что сообщили. Наша команда рассмотрит это объявление.",
+    "done": "Готово"
+  },
+  "ReportSellerModal": {
+    "report": "Пожаловаться",
+    "title": "Пожаловаться на продавца",
+    "close": "Закрыть",
+    "reasonLabel": "Причина",
+    "reasonPlaceholder": "Выберите причину",
+    "reasonRequired": "Пожалуйста, выберите причину.",
+    "detailsLabel": "Дополнительные детали (необязательно)",
+    "detailsPlaceholder": "Всё, что поможет нам проверить этот аккаунт",
+    "cancel": "Отмена",
+    "submitting": "Отправка...",
+    "submitReport": "Отправить жалобу",
+    "submitFailed": "Не удалось отправить жалобу. Попробуйте ещё раз.",
+    "submitSucceeded": "Спасибо, что сообщили. Наша команда рассмотрит этот аккаунт.",
+    "done": "Готово"
+  },
+  "ChangePasswordForm": {
+    "currentPassword": "Текущий пароль",
+    "newPassword": "Новый пароль",
+    "confirmNewPassword": "Подтвердите новый пароль",
+    "updating": "Обновление...",
+    "updatePassword": "Обновить пароль",
+    "updateSucceeded": "Пароль обновлён",
+    "errors": {
+      "newPasswordTooShort": "Новый пароль должен содержать не менее 8 символов.",
+      "passwordMismatch": "Новый пароль и подтверждение не совпадают.",
+      "updateFailed": "Не удалось обновить пароль."
+    }
+  },
+  "Feedback": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbFeedback": "Обратная связь",
+    "title": "Обратная связь",
+    "subtitle": "Нашли ошибку или у вас есть идея, как сделать OnlySalvage лучше? Расскажите нам об этом ниже.",
+    "categoryLabel": "Категория",
+    "subjectLabel": "Тема",
+    "subjectPlaceholder": "Краткое описание",
+    "subjectRequired": "Тема обязательна.",
+    "messageLabel": "Сообщение",
+    "messagePlaceholder": "Опишите ошибку или ваше предложение как можно подробнее.",
+    "messageRequired": "Сообщение обязательно.",
+    "contextLabel": "Где это произошло? (необязательно)",
+    "contextPlaceholder": "например, страница объявления, форма продажи, мобильное приложение",
+    "emailLabel": "Ваша электронная почта (необязательно)",
+    "emailPlaceholder": "Чтобы мы могли связаться с вами при необходимости",
+    "submit": "Отправить отзыв",
+    "submitting": "Отправка...",
+    "submitFailed": "Что-то пошло не так. Попробуйте ещё раз.",
+    "submitSucceededTitle": "Спасибо за отзыв!",
+    "submitSucceededDescription": "Мы получили ваше сообщение и обязательно его рассмотрим. Если вы оставили электронную почту, мы свяжемся с вами, если понадобятся уточнения.",
+    "submitAnother": "Отправить ещё один"
+  },
+  "FeedbackCategories": {
+    "BUG": "Сообщение об ошибке",
+    "SUG": "Предложение",
+    "OTH": "Другое"
+  },
+  "ContactForm": {
+    "nameLabel": "Имя (необязательно)",
+    "namePlaceholder": "Ваше имя",
+    "emailLabel": "Эл. почта",
+    "emailPlaceholder": "Чтобы мы могли ответить",
+    "emailRequired": "Укажите эл. почту, чтобы мы могли с вами связаться.",
+    "messageLabel": "Сообщение",
+    "messagePlaceholder": "Чем мы можем помочь?",
+    "messageRequired": "Сообщение обязательно.",
+    "submit": "Отправить сообщение",
+    "submitting": "Отправка...",
+    "submitFailed": "Что-то пошло не так. Попробуйте ещё раз.",
+    "submitSucceeded": "Сообщение отправлено -- мы скоро с вами свяжемся.",
+    "submitAnother": "Отправить ещё одно"
+  },
+  "Support": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbSupport": "Поддержка",
+    "title": "Поддержка",
+    "subtitle": "Мы здесь, чтобы помочь, 24/7. Просмотрите частые вопросы ниже или свяжитесь с нами напрямую.",
+    "browseGuide": "Просмотреть полный гид",
+    "browseGuideTitle": "Хотите узнать больше?",
+    "browseGuideDescription": "Ознакомьтесь с полным гидом по сайту с пошаговыми инструкциями по покупке, продаже и всему остальному.",
+    "viewInGuide": "Посмотреть в гиде",
+    "buyingTitle": "Покупка",
+    "sellingTitle": "Продажа",
+    "accountTitle": "Аккаунт",
+    "stillNeedHelpTitle": "Нужна ещё помощь?",
+    "stillNeedHelpDescription": "Отправьте нам сообщение, и мы ответим как можно скорее.",
+    "availability": "Доступны 24/7 -- отвечаем на большинство сообщений в течение дня.",
+    "feedbackTitle": "Есть отзыв?",
+    "feedbackDescription": "Нашли ошибку или у вас есть идея для новой функции? Дайте нам знать.",
+    "feedbackLink": "Предложить функцию или сообщить об ошибке",
+    "buyingFaqs": [
+      {
+        "question": "Как связаться с продавцом?",
+        "answer": "Откройте объявление и используйте карточку \"Связаться с продавцом\". Вы можете открыть номер телефона одним кликом или посмотреть профиль, чтобы увидеть другие объявления и отзывы."
+      },
+      {
+        "question": "Как сохранить объявление, чтобы посмотреть позже?",
+        "answer": "Нажмите на значок сердечка на любой карточке объявления. Если вы вошли в аккаунт, оно сохранится в Избранном вашего аккаунта, чтобы вы могли найти его с любого устройства. Если вы не вошли, оно сохранится в этом браузере."
+      },
+      {
+        "question": "Что означает значок \"Рекомендуемое\"?",
+        "answer": "Рекомендуемые объявления -- это авто, которые администратор решил выделить на главной странице на ограниченное время. Это не влияет на цену или состояние объявления -- только на его видимость."
+      },
+      {
+        "question": "Можно ли доверять рейтингу продавца?",
+        "answer": "Рейтинги продавцов оставляют реальные покупатели со своего аккаунта, по одному отзыву на покупателя на продавца, и продавцы не могут оценивать сами себя."
+      }
+    ],
+    "sellingFaqs": [
+      {
+        "question": "Как разместить своё авто на продажу?",
+        "answer": "Перейдите в раздел \"Продать\" и введите свой VIN -- мы автоматически определим год, марку и модель вашего авто. Добавьте фото, установите цену и опубликуйте."
+      },
+      {
+        "question": "Как редактировать объявление или отметить его проданным?",
+        "answer": "Откройте своё объявление и нажмите \"Редактировать объявление\". Там вы сможете обновить детали, изменить порядок фото или изменить статус на Ожидает или Продано."
+      },
+      {
+        "question": "Виден ли мой номер телефона всем?",
+        "answer": "Нет. По умолчанию показывается только код города -- полный номер остаётся скрытым, пока покупатель не решит его открыть."
+      },
+      {
+        "question": "В чём разница между частным продавцом и дилером?",
+        "answer": "Вы можете отметить свой аккаунт как дилерский/бизнес-аккаунт в своём профиле. Дилерские аккаунты показывают значок \"Дилер\" на своих объявлениях и в профиле."
+      }
+    ],
+    "accountFaqs": [
+      {
+        "question": "Я забыл пароль. Что делать?",
+        "answer": "Перейдите на страницу входа и нажмите \"Забыли пароль?\" -- мы отправим вам ссылку для сброса на почту."
+      },
+      {
+        "question": "Могу ли я оставить отзыв о продавце?",
+        "answer": "Да, с его страницы профиля. Вам нужно войти в аккаунт, и вы не можете оценить свой собственный профиль."
+      },
+      {
+        "question": "Как обновить свой профиль или контактную информацию?",
+        "answer": "Перейдите на страницу своего профиля и нажмите \"Редактировать профиль\", чтобы обновить название компании, телефон, местоположение, описание и фото."
+      }
+    ]
+  },
+  "Sellers": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbSellers": "Продавцы",
+    "title": "Продавцы",
+    "subtitle": "Просмотрите всех, кто сейчас продаёт на OnlySalvage.",
+    "noSellersMatch": "Не найдено продавцов по запросу \"{search}\".",
+    "noSellersYet": "Продавцов пока нет."
+  },
+  "SellerCard": {
+    "verifiedBadge": "Проверено",
+    "dealerBadge": "Дилер",
+    "financingBadge": "Финансирование от дилера",
+    "noReviewsYet": "Отзывов пока нет",
+    "listingsCount": "{count, plural, one {# объявление} few {# объявления} many {# объявлений} other {# объявления}}",
+    "openInNewTab": "Открыть в новой вкладке",
+    "share": "Копировать ссылку",
+    "linkCopied": "Ссылка скопирована в буфер обмена",
+    "shareFailed": "Не удалось скопировать ссылку. Попробуйте снова.",
+    "editProfile": "Редактировать профиль",
+    "leaveReview": "Оставить отзыв",
+    "reportSeller": "Пожаловаться на продавца",
+    "callSeller": "Позвонить продавцу",
+    "callFailed": "Не удалось получить номер телефона продавца.",
+    "emailSeller": "Написать продавцу",
+    "copyAddress": "Копировать адрес",
+    "addressCopied": "Адрес скопирован в буфер обмена",
+    "addressCopyFailed": "Не удалось скопировать адрес. Попробуйте снова."
+  },
+  "SellerSearchBar": {
+    "searchPlaceholder": "Поиск продавцов по имени...",
+    "search": "Поиск"
+  },
+  "Liked": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbWatchlist": "Избранное",
+    "title": "Ваше избранное",
+    "emptyMessage": "Вы ещё не отметили ни одного объявления. Просмотрите каталог и нажмите на сердечко у понравившегося авто."
+  },
+  "LocalWatchlist": {
+    "emptyMessage": "Вы ещё не отметили ни одного объявления. Просмотрите каталог и нажмите на сердечко у понравившегося авто. Войдите в аккаунт, чтобы сохранять избранное на всех устройствах."
+  },
+  "Sell": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbSell": "Продать",
+    "title": "Продайте своё авто",
+    "subtitle": "Разместите своё авто на продажу на OnlySalvage бесплатно",
+    "bulkUploadLink": "Массовая загрузка (CSV)"
+  },
+  "SellBulk": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbSell": "Продать",
+    "breadcrumbBulk": "Массовая загрузка",
+    "title": "Массовая загрузка объявлений",
+    "subtitle": "Добавьте сразу несколько автомобилей, загрузив CSV-файл. Каждая строка становится черновиком, который можно просмотреть и опубликовать отдельно.",
+    "uploadTitle": "Импорт из CSV",
+    "uploadDescription": "Скачайте шаблон, заполните по одной строке на каждый автомобиль, затем загрузите его здесь.",
+    "downloadTemplate": "Скачать шаблон",
+    "templateDownloadFailed": "Не удалось скачать шаблон. Попробуйте ещё раз.",
+    "importButton": "Импортировать объявления",
+    "importing": "Импортируем...",
+    "importFailed": "Не удалось импортировать файл. Попробуйте ещё раз.",
+    "importSummary": "Импортировано {imported} из {total} объявлений.",
+    "importSummaryNone": "Ни одну из {total} строк не удалось импортировать -- см. ошибки ниже.",
+    "colRow": "Строка",
+    "colVin": "VIN",
+    "colStatus": "Статус",
+    "colDetails": "Детали",
+    "imported": "Импортировано",
+    "failed": "Ошибка",
+    "reviewDraft": "Просмотреть черновик →",
+    "goToDrafts": "Перейти к черновикам"
+  },
+  "EditListingPage": {
+    "listingNotFoundTitle": "Объявление не найдено",
+    "listingNotFoundDescription": "Мы не смогли найти объявление по адресу \"{slug}\".",
+    "breadcrumbHome": "Главная",
+    "breadcrumbInventory": "Каталог",
+    "breadcrumbEdit": "Редактировать",
+    "title": "Редактировать объявление"
+  },
+  "NearYouSection": {
+    "geolocationNotSupported": "Ваш браузер не поддерживает геолокацию.",
+    "geolocationFailed": "Не удалось определить ваше местоположение -- проверьте разрешение на геолокацию в браузере и попробуйте снова.",
+    "title": "Рядом с вами",
+    "subtitle": "Объявления ближе всего к вашему местоположению",
+    "findCarsNearYou": "Найдите авто рядом с вами",
+    "emptyNearby": "Объявлений в радиусе 50 миль пока нет -- загляните позже или просмотрите весь каталог.",
+    "promptText": "Сначала просмотрите объявления ближе всего к вашему местоположению.",
+    "showNearbyListings": "Показать объявления рядом"
+  },
+  "ListingLikeButton": {
+    "likesCount": "{count, plural, one {# лайк} few {# лайка} many {# лайков} other {# лайка}}"
+  },
+  "PhotoGallery": {
+    "viewFullscreen": "Просмотреть фото на весь экран",
+    "previousPhoto": "Предыдущее фото",
+    "nextPhoto": "Следующее фото",
+    "closeFullscreen": "Закрыть полноэкранный режим",
+    "zoomOut": "Уменьшить",
+    "zoomIn": "Увеличить",
+    "viewPhotoNumber": "Просмотреть фото {index}"
+  },
+  "ImageCropModal": {
+    "title": "Обрежьте своё фото",
+    "close": "Закрыть",
+    "description": "Перетащите, чтобы переместить, прокрутите или сведите пальцы, чтобы масштабировать. Фото профиля лучше всего смотрится квадратным.",
+    "zoom": "Масштаб",
+    "cancel": "Отмена",
+    "applying": "Применение...",
+    "usePhoto": "Использовать фото"
+  },
+  "BackToTopButton": {
+    "backToTop": "Наверх"
+  },
+  "LikeButton": {
+    "like": "Нравится"
+  },
+  "Price": {
+    "contactForPrice": "Цена по запросу"
+  },
+  "PrivacyPolicy": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbPrivacy": "Политика конфиденциальности",
+    "title": "Политика конфиденциальности",
+    "lastUpdated": "Последнее обновление: июль 2026",
+    "intro": "OnlySalvage (\"мы\", \"нас\" или \"наш\") управляет площадкой OnlySalvage, где частные продавцы и дилеры размещают аварийные и восстановленные автомобили на продажу. Эта Политика конфиденциальности объясняет, какую информацию мы собираем, как мы её используем и какой выбор у вас есть.",
+    "sections": [
+      {
+        "heading": "Информация, которую мы собираем",
+        "body": "Когда вы создаёте аккаунт, мы собираем ваше имя пользователя, электронную почту, номер телефона (необязательно) и местоположение (город, штат, почтовый индекс), чтобы покупатели могли находить объявления рядом. Когда вы размещаете авто, мы собираем данные об авто и любые фото или документы (например, отчёт Carfax, отчёт о развал-схождении или осмотре), которые вы загружаете. Мы также автоматически собираем базовые данные об использовании, такие как посещённые страницы и общую информацию об устройстве, чтобы поддерживать и улучшать сайт."
+      },
+      {
+        "heading": "Как мы используем вашу информацию",
+        "body": "Мы используем вашу информацию для работы площадки: создания и отображения вашего публичного профиля продавца, соединения покупателей и продавцов, обработки объявлений, вычисления результатов поиска по расстоянию и отправки вам писем, связанных с аккаунтом, таких как сброс пароля. Мы не продаём вашу личную информацию третьим лицам."
+      },
+      {
+        "heading": "Что видят другие пользователи",
+        "body": "Ваше имя пользователя, город и штат, фото профиля, название компании (если вы дилер), а также любые объявления или отзывы, которые вы оставили, видны другим пользователям. Ваш номер телефона раскрывается покупателю только если он решит его раскрыть, а электронная почта скрыта по умолчанию -- вы можете сделать её видимой в своём публичном профиле в настройках аккаунта."
+      },
+      {
+        "heading": "Файлы cookie и локальное хранилище",
+        "body": "Мы используем файлы cookie, чтобы сохранять вашу сессию и держать вас в системе. Если вы не вошли в аккаунт, ваше избранное (понравившиеся объявления) хранится в локальном хранилище вашего браузера, а не на наших серверах. Мы не используем сторонние рекламные или трекинговые файлы cookie."
+      },
+      {
+        "heading": "Безопасность данных",
+        "body": "Мы принимаем разумные меры для защиты вашей информации, включая зашифрованные соединения (HTTPS) и безопасное хранение паролей. Однако ни один способ передачи или хранения данных не является стопроцентно безопасным, и мы не можем гарантировать абсолютную безопасность."
+      },
+      {
+        "heading": "Ваш выбор",
+        "body": "Вы можете обновить или исправить информацию своего профиля в любое время в настройках аккаунта. Вы можете деактивировать свой аккаунт со страницы профиля или обратиться к нам с запросом на удаление ваших данных."
+      },
+      {
+        "heading": "Конфиденциальность детей",
+        "body": "OnlySalvage не предназначен для детей младше 13 лет, и мы сознательно не собираем личную информацию детей младше 13 лет."
+      },
+      {
+        "heading": "Изменения в этой Политике",
+        "body": "Мы можем время от времени обновлять эту Политику конфиденциальности. Если мы внесём существенные изменения, мы обновим дату вверху этой страницы."
+      },
+      {
+        "heading": "Свяжитесь с нами",
+        "body": "Если у вас есть вопросы об этой Политике конфиденциальности или о том, как мы обрабатываем вашу информацию, свяжитесь с нами по адресу support@onlysalvage.com."
+      }
+    ]
+  },
+  "TermsOfService": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbTerms": "Условия использования",
+    "title": "Условия использования",
+    "lastUpdated": "Последнее обновление: июль 2026",
+    "intro": "Эти Условия использования (\"Условия\") регулируют ваше использование OnlySalvage. Создавая аккаунт или используя сайт, вы соглашаетесь с этими Условиями.",
+    "sections": [
+      {
+        "heading": "Право на использование",
+        "body": "Вам должно быть не менее 18 лет, чтобы создать аккаунт или разместить авто на OnlySalvage."
+      },
+      {
+        "heading": "Ваш аккаунт",
+        "body": "Вы несёте ответственность за сохранение безопасности вашего пароля и за всю активность в вашем аккаунте. Сообщите нам немедленно, если считаете, что ваш аккаунт скомпрометирован."
+      },
+      {
+        "heading": "Объявления",
+        "body": "Размещая авто, вы соглашаетесь, что предоставленная вами информация -- включая VIN, статус документов (чистый, восстановленный или аварийный), пробег, состояние и фото -- точна насколько вам известно. Вы несёте ответственность за содержание своих объявлений и должны иметь законное право продавать авто."
+      },
+      {
+        "heading": "OnlySalvage -- это площадка, а не сторона сделки",
+        "body": "OnlySalvage соединяет покупателей и продавцов -- мы не являемся стороной какой-либо сделки между ними и не проверяем, не сертифицируем и не гарантируем ни одно авто, размещённое на сайте. Покупателям настоятельно рекомендуется осмотреть авто лично (или организовать профессиональный осмотр) и проверить его документы и историю перед покупкой."
+      },
+      {
+        "heading": "Отзывы",
+        "body": "Отзывы должны отражать реальную сделку или взаимодействие. Отзывы, которые являются мошенническими, оскорбительными или оставлены для манипуляции рейтингом продавца, могут быть удалены."
+      },
+      {
+        "heading": "Запрещённое поведение",
+        "body": "Вы соглашаетесь не: размещать авто, которое вы не имеете права продавать, искажать состояние авто или статус документов, преследовать других пользователей или использовать сайт в любых незаконных целях."
+      },
+      {
+        "heading": "Платежи",
+        "body": "Размещение авто на OnlySalvage в настоящее время бесплатно. Если в будущем мы введём платные функции, мы чётко сообщим о любых платежах до их взимания."
+      },
+      {
+        "heading": "Отказ от ответственности",
+        "body": "OnlySalvage предоставляется \"как есть\" без каких-либо гарантий. В максимальной степени, разрешённой законом, OnlySalvage не несёт ответственности за любой спор, убыток или ущерб, возникающий из сделки между покупателем и продавцом."
+      },
+      {
+        "heading": "Прекращение действия",
+        "body": "Мы можем приостановить или прекратить действие аккаунтов, которые нарушают эти Условия или которые, по нашему мнению, представляют риск для других пользователей."
+      },
+      {
+        "heading": "Изменения в этих Условиях",
+        "body": "Мы можем время от времени обновлять эти Условия. Продолжение использования OnlySalvage после изменения означает, что вы принимаете обновлённые Условия."
+      },
+      {
+        "heading": "Свяжитесь с нами",
+        "body": "Есть вопросы об этих Условиях? Свяжитесь с нами по адресу support@onlysalvage.com."
+      }
+    ]
+  },
+  "AboutUs": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbAbout": "О нас",
+    "title": "О OnlySalvage",
+    "subtitle": "Простой способ купить и продать аварийные авто.",
+    "sections": [
+      {
+        "heading": "Наша миссия",
+        "body": "Аварийные и восстановленные авто -- одни из лучших предложений на рынке подержанных авто, но традиционно найти их означало сомнительные аукционные сайты, отсутствие ответственности продавца и документы, которые скрывают до последнего. OnlySalvage создан, чтобы это исправить -- площадка, где каждое объявление привязано к реальному, оценённому аккаунту продавца, а статус документов (аварийный или восстановленный) раскрывается сразу, а не мелким шрифтом."
+      },
+      {
+        "heading": "Что мы делаем",
+        "body": "Мы соединяем частных продавцов и дилеров с покупателями, которые ищут выгодное предложение на аварийное или восстановленное авто. Продавцы могут разместить авто за несколько минут -- просто введите VIN, и мы автоматически определим год, марку и модель. Покупатели могут искать по местоположению, цене, пробегу и статусу документов, писать продавцам напрямую и проверять рейтинг продавца перед покупкой."
+      },
+      {
+        "heading": "Построено на доверии",
+        "body": "Каждый аккаунт на OnlySalvage реален -- никаких анонимных объявлений. Покупатели и продавцы оценивают друг друга после сделки, поэтому репутация продавца заслужена, а не заявлена. Мы также предоставляем поддержку 24/7, если что-то пойдёт не так."
+      },
+      {
+        "heading": "Свяжитесь с нами",
+        "body": "Есть вопрос, отзыв или идея партнёрства? Мы будем рады услышать вас по адресу support@onlysalvage.com."
+      }
+    ]
+  },
+  "Developers": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbDevelopers": "Разработчикам",
+    "title": "Документация API",
+    "subtitle": "Управляйте своим инвентарём программно -- добавляйте объявления, обновляйте статус и загружайте фото, не открывая сайт.",
+    "tableOfContents": "Содержание",
+    "searchEndpoints": "Поиск эндпоинтов...",
+    "noEndpointsFound": "Ни один эндпоинт не соответствует вашему запросу.",
+    "gettingStartedTitle": "Начало работы",
+    "gettingStartedStep1": "Запросите доступ в разделе",
+    "gettingStartedStep1Link": "Настройки > Доступ к API",
+    "gettingStartedStep2": "Верифицированные продавцы одобряются мгновенно; в остальных случаях мы рассмотрим ваш запрос в ближайшее время.",
+    "gettingStartedStep3": "После одобрения создайте токен -- он показывается только один раз, поэтому сохраните его в надёжном месте.",
+    "gettingStartedStep4": "Указывайте его как Bearer-токен в каждом запросе к эндпоинтам ниже.",
+    "authTitle": "Аутентификация",
+    "authDescription": "Каждый запрос (кроме публичных справочных эндпоинтов) должен содержать ваш токен в заголовке Authorization:",
+    "authNote": "Токены привязаны к вашему аккаунту -- любое объявление, которое вы создаёте, редактируете или читаете через API, относится только к вашему собственному инвентарю.",
+    "lifecycleTitle": "Жизненный цикл объявления",
+    "lifecycleDescription": "Объявление, созданное через API, всегда начинается как черновик -- так же, как если бы вы создавали его вручную на сайте: без хотя бы одного фото его нельзя опубликовать, а этот запрос не может содержать фото.",
+    "lifecycleStep1": "Отправьте POST-запрос для нового объявления -- оно будет создано как черновик.",
+    "lifecycleStep2": "Загрузите к нему одно или несколько фото.",
+    "lifecycleStep3": "Отправьте POST-запрос на смену статуса (например, \"AV\"), чтобы опубликовать его.",
+    "endpointsTitle": "Эндпоинты",
+    "endpointMeTitle": "Получить аккаунт",
+    "endpointMe": "Аккаунт, которому принадлежит ваш токен",
+    "endpointChoicesTitle": "Список значений полей",
+    "endpointChoices": "Допустимые значения для status, vehicle_type, fuel_type и т.д.",
+    "endpointMakesTitle": "Список марок",
+    "endpointMakes": "Список всех марок автомобилей (токен не требуется)",
+    "endpointModelsTitle": "Список моделей",
+    "endpointModels": "Список моделей для указанной марки (токен не требуется)",
+    "endpointListTitle": "Список ваших объявлений",
+    "endpointList": "Список ваших объявлений -- с фильтрами, см. ниже",
+    "endpointCreateTitle": "Создать объявление",
+    "endpointCreate": "Создать новое объявление (всегда начинается как черновик)",
+    "endpointRetrieveTitle": "Получить объявление",
+    "endpointRetrieve": "Получить одно из ваших объявлений",
+    "endpointUpdateTitle": "Обновить объявление",
+    "endpointUpdate": "Редактировать поля объявления (поддерживаются частичные обновления)",
+    "endpointDeleteTitle": "Удалить объявление",
+    "endpointDelete": "Безвозвратно удалить объявление и его фото",
+    "endpointStatusTitle": "Изменить статус объявления",
+    "endpointStatus": "Изменить только статус объявления",
+    "endpointRenewTitle": "Поднять объявление",
+    "endpointRenew": "Поднять подходящее объявление обратно наверх",
+    "endpointImagesListTitle": "Список фото",
+    "endpointImagesList": "Список фото объявления",
+    "endpointImagesUploadTitle": "Загрузить фото",
+    "endpointImagesUpload": "Загрузить фото -- файлом или через image_url",
+    "endpointImageDeleteTitle": "Удалить фото",
+    "endpointImageDelete": "Удалить одно фото",
+    "languageLabel": "Язык",
+    "miscTitle": "Полезно знать",
+    "miscRateLimit": "Запросы ограничены до 120 в минуту на аккаунт.",
+    "miscOwnership": "Каждый эндпоинт ограничен вашими собственными объявлениями -- через этот API нельзя прочитать или изменить инвентарь другого продавца.",
+    "miscErrors": "Ошибки валидации возвращаются в виде JSON-объекта, сопоставляющего имена полей с сообщениями об ошибках -- так же, как и в остальном API сайта.",
+    "miscPagination": "Ответы со списками постранично разбиты (по умолчанию 50 на страницу, до 200 с ?page_size=); используйте возвращаемые ссылки next/previous для перехода по страницам."
+  },
+  "Guide": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbGuide": "Гид",
+    "title": "Гид по сайту",
+    "subtitle": "Несколько советов о функциях, которые не сразу бросаются в глаза.",
+    "searchPlaceholder": "Поиск по гиду...",
+    "noResults": "По вашему запросу советов не найдено.",
+    "tableOfContents": "Содержание",
+    "goTo": "Перейти",
+    "walkthroughsTitle": "Пошаговые инструкции",
+    "categories": [
+      {
+        "title": "Просмотр и покупка",
+        "tips": [
+          {
+            "heading": "Кликните правой кнопкой по объявлению для быстрых действий",
+            "body": "Кликните правой кнопкой по карточке любого объявления, чтобы открыть его в новой вкладке, скопировать ссылку, добавить в Сравнение или в Избранное, связаться с продавцом или пожаловаться на него -- не открывая само объявление."
+          },
+          {
+            "heading": "Сравнивайте автомобили бок о бок",
+            "body": "Добавьте несколько объявлений в Сравнение (из меню карточки или со страницы объявления) и просматривайте их вместе, чтобы сразу оценить цену, пробег и характеристики."
+          },
+          {
+            "heading": "Ваше избранное следит за доступностью",
+            "body": "Нажмите на значок сердечка на любой карточке объявления, чтобы сохранить его -- если вы вошли в аккаунт, оно остаётся в Избранном вашего аккаунта, и вы сможете найти его с любого устройства; если вы не вошли, оно сохраняется в этом браузере. В любом случае автомобиль автоматически удаляется из списка, если он продан или снят с публикации, и появляется снова, если снова становится доступен."
+          },
+          {
+            "heading": "Сортировка по расстоянию",
+            "body": "Введите почтовый индекс (или разрешите доступ к геолокации) в фильтрах каталога, чтобы сортировать объявления по расстоянию до вас."
+          },
+          {
+            "heading": "Рекомендации улучшаются по мере использования",
+            "body": "Раздел «Рекомендовано для вас» на главной странице и странице каталога учитывает то, что вы ищете и просматриваете -- чем чаще вы им пользуетесь, тем точнее он становится."
+          },
+          {
+            "heading": "Что означает пометка «Рекомендуемое»",
+            "body": "Рекомендуемые объявления -- это авто, которые администратор решил выделить на главной странице на ограниченное время. Это не влияет на цену или состояние объявления -- только на его видимость."
+          },
+          {
+            "heading": "Свяжитесь с продавцом напрямую",
+            "body": "Откройте объявление и используйте карточку «Связаться с продавцом», чтобы открыть номер телефона одним кликом, или посмотрите профиль продавца, чтобы увидеть его другие объявления и отзывы."
+          },
+          {
+            "heading": "Как оставить отзыв",
+            "body": "Рейтинги оставляют реальные покупатели со своего аккаунта -- один отзыв от покупателя на продавца, и продавцы не могут оценивать сами себя, поэтому то, что вы видите, отражает реальный опыт.",
+            "steps": [
+              "Перейдите на страницу профиля продавца.",
+              "Нажмите «Оставить отзыв».",
+              "Выберите оценку в звёздах и напишите комментарий.",
+              "Отправьте -- вы можете оставить отзыв о продавце только один раз."
+            ]
+          },
+          {
+            "heading": "Ваши собственные объявления выделяются при просмотре",
+            "body": "Где бы ни встретилось одно из ваших объявлений среди результатов поиска -- в каталоге, в профиле, где угодно -- оно будет выделено рамкой, чтобы вы могли сразу его заметить."
+          },
+          {
+            "heading": "Как купить автомобиль",
+            "body": "От первого поиска до получения ключей -- вот типичный путь от просмотра до покупки на OnlySalvage.",
+            "steps": [
+              "Ищите автомобили в каталоге, используя фильтры по марке, модели, цене и местоположению.",
+              "Сравните избранные варианты бок о бок, чтобы оценить цену, пробег и состояние.",
+              "Запишитесь на тест-драйв с продавцом, когда сузите выбор.",
+              "Пройдите по чек-листу покупателя перед тем, как принять решение, чтобы ничего не упустить."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Продажа и управление объявлениями",
+        "tips": [
+          {
+            "heading": "Черновики сохраняют прогресс",
+            "body": "Начните создавать объявление и уходите в любой момент -- как только вы сохраните его хотя бы раз, оно останется во вкладке «Черновики» вашего профиля, и вы сможете закончить его позже."
+          },
+          {
+            "heading": "Редактирование или управление уже опубликованным объявлением",
+            "body": "Откройте своё объявление и нажмите «Редактировать объявление», чтобы изменить данные, поменять порядок фото или статус -- либо кликните правой кнопкой по нему на любой карточке (в профиле, инвентаре, где угодно), чтобы выполнить те же действия быстрее: отметить его как «Доступно», «Ожидает» или «Продано», опубликовать или снять с публикации, отредактировать либо удалить -- всё это без открытия страницы редактирования."
+          },
+          {
+            "heading": "Приостановите вместо удаления",
+            "body": "Отключите «Опубликовано» на странице редактирования, чтобы скрыть объявление везде, кроме вашего профиля (оно будет отмечено меткой «Неактивно»). Включите обратно в любой момент -- ничего не потеряется."
+          },
+          {
+            "heading": "Обновляйте объявление, чтобы поднять его наверх",
+            "body": "Как только активному объявлению исполнится не менее 7 дней, обновите его в разделе «Действия», чтобы вернуть на верх результатов поиска -- до 3 раз."
+          },
+          {
+            "heading": "Дилеры могут загружать объявления через CSV",
+            "body": "В разделе «Продать > Массовая загрузка» дилеры могут добавить сразу много автомобилей из таблицы. Каждая строка становится черновиком, который можно просмотреть и опубликовать отдельно.",
+            "steps": [
+              "Перейдите в раздел «Продать > Массовая загрузка».",
+              "Скачайте шаблон CSV.",
+              "Заполните по одной строке на каждый автомобиль и загрузите файл.",
+              "Проверьте импортированные черновики, добавьте фото и опубликуйте каждый из них."
+            ]
+          },
+          {
+            "heading": "Автозаполнение по VIN",
+            "body": "Введите VIN при создании объявления -- и год, марка, модель и данные двигателя заполнятся автоматически."
+          },
+          {
+            "heading": "Продажа в качестве дилера",
+            "body": "Отметьте свой аккаунт как дилерский/бизнес-аккаунт в настройках профиля. Дилерские аккаунты получают значок «Дилер» на своих объявлениях и в профиле, а также доступ к массовой загрузке через CSV."
+          },
+          {
+            "heading": "Ваш номер телефона остаётся конфиденциальным",
+            "body": "По умолчанию в объявлении отображается только код города -- полный номер остаётся скрытым, пока покупатель не решит его открыть."
+          },
+          {
+            "heading": "Как продать автомобиль: пошаговая инструкция",
+            "body": "Полный путь от VIN до опубликованного объявления, от начала до конца.",
+            "steps": [
+              "Перейдите в раздел «Продать» и введите VIN -- год, марка, модель и двигатель заполнятся автоматически.",
+              "Добавьте чёткие фото автомобиля (снаружи, внутри и все повреждения).",
+              "Укажите цену и добавьте описание.",
+              "Опубликуйте объявление -- или сохраните как черновик, чтобы закончить позже.",
+              "Управляйте им в любой момент: отметьте как «Ожидает» или «Продано», приостановите его или обновите, чтобы оставаться на верху результатов поиска."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Аккаунт и инструменты для разработчиков",
+        "tips": [
+          {
+            "heading": "Пройдите верификацию",
+            "body": "Запросите верификацию продавца в Настройках, чтобы получить значок «Проверенный продавец», который поможет покупателям доверять вашим объявлениям."
+          },
+          {
+            "heading": "Управляйте инвентарём через API",
+            "body": "Верифицированные продавцы получают мгновенный доступ к API в разделе «Настройки > Доступ к API» -- создайте токен и управляйте своими объявлениями программно. Подробности см. в документации API."
+          },
+          {
+            "heading": "Сбросьте пароль",
+            "body": "Перейдите на страницу входа и нажмите «Забыли пароль?» -- мы отправим вам ссылку для сброса на почту.",
+            "steps": [
+              "Перейдите на страницу входа.",
+              "Нажмите «Забыли пароль?»",
+              "Проверьте почту -- там будет ссылка для сброса.",
+              "Задайте новый пароль и войдите в аккаунт."
+            ]
+          },
+          {
+            "heading": "Обновите свой профиль",
+            "body": "Перейдите на страницу своего профиля и нажмите «Редактировать профиль», чтобы обновить название компании, телефон, местоположение, описание и фото."
+          }
+        ]
+      }
+    ]
+  },
+  "VehicleAttributes": {
+    "vehicleType": {
+      "SDN": "Седан",
+      "TK": "Пикап",
+      "SUV": "Внедорожник",
+      "WGN": "Универсал",
+      "CPE": "Купе",
+      "HBK": "Хэтчбек",
+      "VAN": "Фургон"
+    },
+    "transmission": {
+      "ATM": "Автоматическая",
+      "MAN": "Механическая",
+      "CVT": "CVT (вариатор)",
+      "DTC": "DCT (робот)",
+      "ECVT": "eCVT"
+    },
+    "drive": {
+      "FWD": "Передний привод",
+      "RWD": "Задний привод",
+      "AWD": "Полный привод",
+      "4WD": "Полный привод (4x4)",
+      "EAWD": "Электрический полный привод",
+      "OTH": "Другое"
+    },
+    "fuelType": {
+      "GAS": "Бензин",
+      "DIS": "Дизель",
+      "HYB": "Гибрид",
+      "ELC": "Электро"
+    },
+    "titleDocument": {
+      "RE": "Восстановленный",
+      "SA": "Аварийный",
+      "CT": "Чистый (Полная гибель)"
+    },
+    "color": {
+      "BLK": "Чёрный",
+      "WHT": "Белый",
+      "SIL": "Серебристый",
+      "GRY": "Серый",
+      "RED": "Красный",
+      "BLU": "Синий",
+      "BRW": "Коричневый",
+      "TAN": "Бежевый",
+      "GRN": "Зелёный",
+      "ORG": "Оранжевый",
+      "YEL": "Жёлтый",
+      "GLD": "Золотистый",
+      "MAR": "Бордовый",
+      "PUR": "Фиолетовый"
+    },
+    "sellerType": {
+      "Private": "Частный продавец",
+      "Dealer": "Дилер",
+      "Financing": "Предлагает финансирование",
+      "Verified": "Проверенный продавец"
+    },
+    "optionCategory": {
+      "CMF": "Комфорт и салон",
+      "TEC": "Технологии и мультимедиа",
+      "SAF": "Безопасность и помощь водителю",
+      "EXT": "Экстерьер и удобства",
+      "PRF": "Производительность и буксировка"
+    }
+  },
+  "TranslatableText": {
+    "translate": "Перевести",
+    "viewOriginal": "Показать оригинал",
+    "translationFailed": "Не удалось перевести. Попробуйте снова."
+  },
+  "PhoneVerification": {
+    "verified": "Телефон подтверждён",
+    "sending": "Отправка...",
+    "codeSent": "Код подтверждения отправлен.",
+    "sendFailed": "Не удалось отправить код подтверждения. Попробуйте снова.",
+    "codeLabel": "Код подтверждения",
+    "codePlaceholder": "6-значный код",
+    "confirmCode": "Подтвердить",
+    "verifying": "Проверка...",
+    "resendCode": "Отправить код повторно",
+    "invalidCode": "Неверный или истёкший код.",
+    "verifySucceeded": "Номер телефона подтверждён.",
+    "verify": "Подтвердить",
+    "phonePlaceholder": "+1 (555) 555-5555"
+  },
+  "DeleteListingModal": {
+    "close": "Закрыть",
+    "confirmTitle": "Удалить это объявление?",
+    "confirmDescription": "Это навсегда удалит объявление вместе со всеми фото и документами. Отменить это действие нельзя.",
+    "cancel": "Отмена",
+    "deleting": "Удаление...",
+    "deleteListing": "Удалить объявление",
+    "deleteFailed": "Не удалось удалить объявление.",
+    "deleteSucceeded": "Объявление удалено."
+  },
+  "Checklist": {
+    "breadcrumbHome": "Главная",
+    "breadcrumbChecklist": "Чек-лист покупателя",
+    "title": "Чек-лист покупателя",
+    "subtitle": "Всё, что нужно проверить перед покупкой аварийного авто -- отмечайте каждый пункт по мере выполнения.",
+    "progress": "{checked} из {total} отмечено",
+    "reset": "Сбросить",
+    "print": "Печать",
+    "aboutRebuilt": {
+      "title": "Что на самом деле означают статусы «Восстановленный» и «Аварийный»",
+      "paragraph1": "Статус «Восстановленный» или «Аварийный» означает лишь то, что автомобиль когда-то был признан полной гибелью -- это ничего не говорит о качестве ремонта. Мастерская, которая сделала работу правильно, может вернуть разбитый автомобиль в по-настоящему безопасное и надёжное состояние, иногда даже лучшее, чем у многих авто со статусом «Чистый».",
+      "paragraph2": "Статус «Чистый» тоже не гарантия. Если владелец оплачивает ремонт из своего кармана вместо подачи страхового иска, авария нигде не фиксируется, и статус документов остаётся «Чистый», каким бы серьёзным ни было повреждение. Сам по себе статус документов не скажет вам, как на самом деле обращались с машиной.",
+      "paragraph3": "Именно поэтому шаги этого чек-листа -- отчёт об истории автомобиля, сверка VIN и профессиональный осмотр -- важнее статуса, указанного в документах. Они актуальны как для авто со статусом «Чистый», так и для восстановленного."
+    }
+  }
+}

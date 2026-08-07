@@ -1,0 +1,4118 @@
+[
+{
+  "model": "inventory.make",
+  "pk": 1,
+  "fields": {
+    "name": "BMW"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 2,
+  "fields": {
+    "name": "Audi"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 3,
+  "fields": {
+    "name": "Volkswagen"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 4,
+  "fields": {
+    "name": "Subaru"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 5,
+  "fields": {
+    "name": "Honda"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 6,
+  "fields": {
+    "name": "Mazda"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 7,
+  "fields": {
+    "name": "Ford"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 8,
+  "fields": {
+    "name": "Toyota"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 9,
+  "fields": {
+    "name": "Chevrolet"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 10,
+  "fields": {
+    "name": "Nissan"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 11,
+  "fields": {
+    "name": "Geo"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 12,
+  "fields": {
+    "name": "Hyundai"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 13,
+  "fields": {
+    "name": "Kia"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 14,
+  "fields": {
+    "name": "Jeep"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 15,
+  "fields": {
+    "name": "GMC"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 16,
+  "fields": {
+    "name": "Ram"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 17,
+  "fields": {
+    "name": "Tesla"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 18,
+  "fields": {
+    "name": "Lexus"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 19,
+  "fields": {
+    "name": "Dodge"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 20,
+  "fields": {
+    "name": "Mercedes-Benz"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 21,
+  "fields": {
+    "name": "Acura"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 22,
+  "fields": {
+    "name": "Infiniti"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 23,
+  "fields": {
+    "name": "Cadillac"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 24,
+  "fields": {
+    "name": "Buick"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 25,
+  "fields": {
+    "name": "Chrysler"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 26,
+  "fields": {
+    "name": "Mitsubishi"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 27,
+  "fields": {
+    "name": "Mini"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 28,
+  "fields": {
+    "name": "Volvo"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 29,
+  "fields": {
+    "name": "Land Rover"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 30,
+  "fields": {
+    "name": "Porsche"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 31,
+  "fields": {
+    "name": "Genesis"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 32,
+  "fields": {
+    "name": "Lincoln"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 33,
+  "fields": {
+    "name": "Jaguar"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 34,
+  "fields": {
+    "name": "Alfa Romeo"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 35,
+  "fields": {
+    "name": "Fiat"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 36,
+  "fields": {
+    "name": "Suzuki"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 37,
+  "fields": {
+    "name": "Isuzu"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 38,
+  "fields": {
+    "name": "Saturn"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 39,
+  "fields": {
+    "name": "Pontiac"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 40,
+  "fields": {
+    "name": "Saab"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 41,
+  "fields": {
+    "name": "Mercury"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 42,
+  "fields": {
+    "name": "Scion"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 43,
+  "fields": {
+    "name": "Smart"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 44,
+  "fields": {
+    "name": "Rivian"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 45,
+  "fields": {
+    "name": "Lucid"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 46,
+  "fields": {
+    "name": "Polestar"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 47,
+  "fields": {
+    "name": "Maserati"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 48,
+  "fields": {
+    "name": "Bentley"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 49,
+  "fields": {
+    "name": "Rolls-Royce"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 50,
+  "fields": {
+    "name": "Ferrari"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 51,
+  "fields": {
+    "name": "Lamborghini"
+  }
+},
+{
+  "model": "inventory.make",
+  "pk": 52,
+  "fields": {
+    "name": "Aston Martin"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 1,
+  "fields": {
+    "make": 8,
+    "name": "Camry"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 2,
+  "fields": {
+    "make": 5,
+    "name": "Civic"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 3,
+  "fields": {
+    "make": 7,
+    "name": "F-150"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 4,
+  "fields": {
+    "make": 1,
+    "name": "3 Series"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 5,
+  "fields": {
+    "make": 4,
+    "name": "Forester"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 6,
+  "fields": {
+    "make": 4,
+    "name": "Ascent"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 7,
+  "fields": {
+    "make": 4,
+    "name": "Crosstrek"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 8,
+  "fields": {
+    "make": 11,
+    "name": "Tracker"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 9,
+  "fields": {
+    "make": 8,
+    "name": "Corolla"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 10,
+  "fields": {
+    "make": 8,
+    "name": "RAV4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 11,
+  "fields": {
+    "make": 8,
+    "name": "Highlander"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 12,
+  "fields": {
+    "make": 8,
+    "name": "Tacoma"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 13,
+  "fields": {
+    "make": 8,
+    "name": "Tundra"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 14,
+  "fields": {
+    "make": 8,
+    "name": "4Runner"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 15,
+  "fields": {
+    "make": 8,
+    "name": "Prius"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 16,
+  "fields": {
+    "make": 8,
+    "name": "Sienna"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 17,
+  "fields": {
+    "make": 5,
+    "name": "Accord"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 18,
+  "fields": {
+    "make": 5,
+    "name": "CR-V"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 19,
+  "fields": {
+    "make": 5,
+    "name": "Pilot"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 20,
+  "fields": {
+    "make": 5,
+    "name": "Odyssey"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 21,
+  "fields": {
+    "make": 5,
+    "name": "HR-V"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 22,
+  "fields": {
+    "make": 5,
+    "name": "Ridgeline"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 23,
+  "fields": {
+    "make": 7,
+    "name": "Escape"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 24,
+  "fields": {
+    "make": 7,
+    "name": "Explorer"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 25,
+  "fields": {
+    "make": 7,
+    "name": "Mustang"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 26,
+  "fields": {
+    "make": 7,
+    "name": "Edge"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 27,
+  "fields": {
+    "make": 7,
+    "name": "Bronco"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 28,
+  "fields": {
+    "make": 7,
+    "name": "Ranger"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 29,
+  "fields": {
+    "make": 9,
+    "name": "Silverado 1500"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 30,
+  "fields": {
+    "make": 9,
+    "name": "Equinox"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 31,
+  "fields": {
+    "make": 9,
+    "name": "Traverse"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 32,
+  "fields": {
+    "make": 9,
+    "name": "Malibu"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 33,
+  "fields": {
+    "make": 9,
+    "name": "Tahoe"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 34,
+  "fields": {
+    "make": 9,
+    "name": "Camaro"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 35,
+  "fields": {
+    "make": 9,
+    "name": "Suburban"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 36,
+  "fields": {
+    "make": 10,
+    "name": "Altima"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 37,
+  "fields": {
+    "make": 10,
+    "name": "Rogue"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 38,
+  "fields": {
+    "make": 10,
+    "name": "Sentra"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 39,
+  "fields": {
+    "make": 10,
+    "name": "Pathfinder"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 40,
+  "fields": {
+    "make": 10,
+    "name": "Frontier"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 41,
+  "fields": {
+    "make": 10,
+    "name": "Murano"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 42,
+  "fields": {
+    "make": 10,
+    "name": "Maxima"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 43,
+  "fields": {
+    "make": 1,
+    "name": "5 Series"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 44,
+  "fields": {
+    "make": 1,
+    "name": "X3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 45,
+  "fields": {
+    "make": 1,
+    "name": "X5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 46,
+  "fields": {
+    "make": 1,
+    "name": "7 Series"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 47,
+  "fields": {
+    "make": 1,
+    "name": "X1"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 48,
+  "fields": {
+    "make": 2,
+    "name": "A4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 49,
+  "fields": {
+    "make": 2,
+    "name": "A6"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 50,
+  "fields": {
+    "make": 2,
+    "name": "Q5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 51,
+  "fields": {
+    "make": 2,
+    "name": "Q7"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 52,
+  "fields": {
+    "make": 2,
+    "name": "A3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 53,
+  "fields": {
+    "make": 3,
+    "name": "Golf GTI"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 54,
+  "fields": {
+    "make": 3,
+    "name": "Jetta"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 55,
+  "fields": {
+    "make": 3,
+    "name": "Tiguan"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 56,
+  "fields": {
+    "make": 3,
+    "name": "Atlas"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 57,
+  "fields": {
+    "make": 3,
+    "name": "Passat"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 58,
+  "fields": {
+    "make": 6,
+    "name": "CX-5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 59,
+  "fields": {
+    "make": 6,
+    "name": "CX-9"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 60,
+  "fields": {
+    "make": 6,
+    "name": "Mazda3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 61,
+  "fields": {
+    "make": 6,
+    "name": "Mazda6"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 62,
+  "fields": {
+    "make": 6,
+    "name": "CX-30"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 63,
+  "fields": {
+    "make": 4,
+    "name": "Outback"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 64,
+  "fields": {
+    "make": 4,
+    "name": "Impreza"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 65,
+  "fields": {
+    "make": 4,
+    "name": "WRX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 66,
+  "fields": {
+    "make": 12,
+    "name": "Elantra"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 67,
+  "fields": {
+    "make": 12,
+    "name": "Sonata"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 68,
+  "fields": {
+    "make": 12,
+    "name": "Tucson"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 69,
+  "fields": {
+    "make": 12,
+    "name": "Santa Fe"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 70,
+  "fields": {
+    "make": 12,
+    "name": "Palisade"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 71,
+  "fields": {
+    "make": 13,
+    "name": "Forte"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 72,
+  "fields": {
+    "make": 13,
+    "name": "K5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 73,
+  "fields": {
+    "make": 13,
+    "name": "Sportage"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 74,
+  "fields": {
+    "make": 13,
+    "name": "Sorento"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 75,
+  "fields": {
+    "make": 13,
+    "name": "Telluride"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 76,
+  "fields": {
+    "make": 14,
+    "name": "Wrangler"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 77,
+  "fields": {
+    "make": 14,
+    "name": "Grand Cherokee"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 78,
+  "fields": {
+    "make": 14,
+    "name": "Cherokee"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 79,
+  "fields": {
+    "make": 14,
+    "name": "Compass"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 80,
+  "fields": {
+    "make": 14,
+    "name": "Gladiator"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 81,
+  "fields": {
+    "make": 15,
+    "name": "Sierra 1500"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 82,
+  "fields": {
+    "make": 15,
+    "name": "Terrain"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 83,
+  "fields": {
+    "make": 15,
+    "name": "Acadia"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 84,
+  "fields": {
+    "make": 15,
+    "name": "Yukon"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 85,
+  "fields": {
+    "make": 16,
+    "name": "1500"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 86,
+  "fields": {
+    "make": 16,
+    "name": "2500"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 87,
+  "fields": {
+    "make": 16,
+    "name": "3500"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 88,
+  "fields": {
+    "make": 17,
+    "name": "Model 3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 89,
+  "fields": {
+    "make": 17,
+    "name": "Model Y"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 90,
+  "fields": {
+    "make": 17,
+    "name": "Model S"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 91,
+  "fields": {
+    "make": 17,
+    "name": "Model X"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 92,
+  "fields": {
+    "make": 18,
+    "name": "RX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 93,
+  "fields": {
+    "make": 18,
+    "name": "ES"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 94,
+  "fields": {
+    "make": 18,
+    "name": "NX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 95,
+  "fields": {
+    "make": 18,
+    "name": "GX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 96,
+  "fields": {
+    "make": 19,
+    "name": "Charger"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 97,
+  "fields": {
+    "make": 19,
+    "name": "Challenger"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 98,
+  "fields": {
+    "make": 19,
+    "name": "Durango"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 99,
+  "fields": {
+    "make": 4,
+    "name": "BRZ"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 100,
+  "fields": {
+    "make": 6,
+    "name": "MX-5 Miata"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 101,
+  "fields": {
+    "make": 8,
+    "name": "Avalon"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 102,
+  "fields": {
+    "make": 8,
+    "name": "Venza"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 103,
+  "fields": {
+    "make": 8,
+    "name": "Sequoia"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 104,
+  "fields": {
+    "make": 8,
+    "name": "Corolla Cross"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 105,
+  "fields": {
+    "make": 8,
+    "name": "GR86"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 106,
+  "fields": {
+    "make": 8,
+    "name": "Supra"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 107,
+  "fields": {
+    "make": 5,
+    "name": "Passport"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 108,
+  "fields": {
+    "make": 5,
+    "name": "Insight"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 109,
+  "fields": {
+    "make": 5,
+    "name": "Fit"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 110,
+  "fields": {
+    "make": 7,
+    "name": "Expedition"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 111,
+  "fields": {
+    "make": 7,
+    "name": "F-250"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 112,
+  "fields": {
+    "make": 7,
+    "name": "Focus"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 113,
+  "fields": {
+    "make": 7,
+    "name": "Fusion"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 114,
+  "fields": {
+    "make": 7,
+    "name": "Bronco Sport"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 115,
+  "fields": {
+    "make": 7,
+    "name": "Maverick"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 116,
+  "fields": {
+    "make": 7,
+    "name": "EcoSport"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 117,
+  "fields": {
+    "make": 9,
+    "name": "Colorado"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 118,
+  "fields": {
+    "make": 9,
+    "name": "Blazer"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 119,
+  "fields": {
+    "make": 9,
+    "name": "Trax"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 120,
+  "fields": {
+    "make": 9,
+    "name": "Trailblazer"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 121,
+  "fields": {
+    "make": 9,
+    "name": "Corvette"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 122,
+  "fields": {
+    "make": 9,
+    "name": "Impala"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 123,
+  "fields": {
+    "make": 9,
+    "name": "Spark"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 124,
+  "fields": {
+    "make": 10,
+    "name": "Kicks"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 125,
+  "fields": {
+    "make": 10,
+    "name": "Armada"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 126,
+  "fields": {
+    "make": 10,
+    "name": "Versa"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 127,
+  "fields": {
+    "make": 10,
+    "name": "Titan"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 128,
+  "fields": {
+    "make": 10,
+    "name": "370Z"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 129,
+  "fields": {
+    "make": 1,
+    "name": "X7"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 130,
+  "fields": {
+    "make": 1,
+    "name": "4 Series"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 131,
+  "fields": {
+    "make": 1,
+    "name": "2 Series"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 132,
+  "fields": {
+    "make": 1,
+    "name": "M3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 133,
+  "fields": {
+    "make": 1,
+    "name": "Z4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 134,
+  "fields": {
+    "make": 2,
+    "name": "Q3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 135,
+  "fields": {
+    "make": 2,
+    "name": "Q8"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 136,
+  "fields": {
+    "make": 2,
+    "name": "A5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 137,
+  "fields": {
+    "make": 2,
+    "name": "A8"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 138,
+  "fields": {
+    "make": 2,
+    "name": "e-tron"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 139,
+  "fields": {
+    "make": 2,
+    "name": "TT"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 140,
+  "fields": {
+    "make": 3,
+    "name": "Taos"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 141,
+  "fields": {
+    "make": 3,
+    "name": "ID.4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 142,
+  "fields": {
+    "make": 3,
+    "name": "Golf"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 143,
+  "fields": {
+    "make": 3,
+    "name": "Arteon"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 144,
+  "fields": {
+    "make": 6,
+    "name": "CX-50"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 145,
+  "fields": {
+    "make": 6,
+    "name": "CX-90"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 146,
+  "fields": {
+    "make": 4,
+    "name": "Legacy"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 147,
+  "fields": {
+    "make": 4,
+    "name": "Solterra"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 148,
+  "fields": {
+    "make": 12,
+    "name": "Kona"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 149,
+  "fields": {
+    "make": 12,
+    "name": "Venue"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 150,
+  "fields": {
+    "make": 12,
+    "name": "Ioniq 5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 151,
+  "fields": {
+    "make": 12,
+    "name": "Accent"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 152,
+  "fields": {
+    "make": 13,
+    "name": "Soul"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 153,
+  "fields": {
+    "make": 13,
+    "name": "Seltos"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 154,
+  "fields": {
+    "make": 13,
+    "name": "Rio"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 155,
+  "fields": {
+    "make": 13,
+    "name": "Niro"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 156,
+  "fields": {
+    "make": 13,
+    "name": "EV6"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 157,
+  "fields": {
+    "make": 14,
+    "name": "Renegade"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 158,
+  "fields": {
+    "make": 14,
+    "name": "Grand Wagoneer"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 159,
+  "fields": {
+    "make": 15,
+    "name": "Canyon"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 160,
+  "fields": {
+    "make": 15,
+    "name": "Yukon XL"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 161,
+  "fields": {
+    "make": 15,
+    "name": "Sierra 2500HD"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 162,
+  "fields": {
+    "make": 16,
+    "name": "ProMaster"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 163,
+  "fields": {
+    "make": 17,
+    "name": "Cybertruck"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 164,
+  "fields": {
+    "make": 18,
+    "name": "IS"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 165,
+  "fields": {
+    "make": 18,
+    "name": "GS"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 166,
+  "fields": {
+    "make": 18,
+    "name": "LX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 167,
+  "fields": {
+    "make": 18,
+    "name": "UX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 168,
+  "fields": {
+    "make": 18,
+    "name": "LS"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 169,
+  "fields": {
+    "make": 19,
+    "name": "Journey"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 170,
+  "fields": {
+    "make": 19,
+    "name": "Grand Caravan"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 171,
+  "fields": {
+    "make": 19,
+    "name": "Hornet"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 172,
+  "fields": {
+    "make": 20,
+    "name": "C-Class"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 173,
+  "fields": {
+    "make": 20,
+    "name": "E-Class"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 174,
+  "fields": {
+    "make": 20,
+    "name": "GLC"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 175,
+  "fields": {
+    "make": 20,
+    "name": "GLE"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 176,
+  "fields": {
+    "make": 20,
+    "name": "S-Class"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 177,
+  "fields": {
+    "make": 20,
+    "name": "GLA"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 178,
+  "fields": {
+    "make": 20,
+    "name": "GLB"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 179,
+  "fields": {
+    "make": 20,
+    "name": "A-Class"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 180,
+  "fields": {
+    "make": 20,
+    "name": "CLA"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 181,
+  "fields": {
+    "make": 20,
+    "name": "G-Class"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 182,
+  "fields": {
+    "make": 21,
+    "name": "MDX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 183,
+  "fields": {
+    "make": 21,
+    "name": "RDX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 184,
+  "fields": {
+    "make": 21,
+    "name": "TLX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 185,
+  "fields": {
+    "make": 21,
+    "name": "Integra"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 186,
+  "fields": {
+    "make": 21,
+    "name": "ILX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 187,
+  "fields": {
+    "make": 22,
+    "name": "Q50"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 188,
+  "fields": {
+    "make": 22,
+    "name": "QX60"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 189,
+  "fields": {
+    "make": 22,
+    "name": "QX80"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 190,
+  "fields": {
+    "make": 22,
+    "name": "QX50"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 191,
+  "fields": {
+    "make": 22,
+    "name": "Q60"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 192,
+  "fields": {
+    "make": 23,
+    "name": "Escalade"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 193,
+  "fields": {
+    "make": 23,
+    "name": "XT5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 194,
+  "fields": {
+    "make": 23,
+    "name": "CT5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 195,
+  "fields": {
+    "make": 23,
+    "name": "XT4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 196,
+  "fields": {
+    "make": 23,
+    "name": "XT6"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 197,
+  "fields": {
+    "make": 23,
+    "name": "CT4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 198,
+  "fields": {
+    "make": 24,
+    "name": "Enclave"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 199,
+  "fields": {
+    "make": 24,
+    "name": "Encore"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 200,
+  "fields": {
+    "make": 24,
+    "name": "Encore GX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 201,
+  "fields": {
+    "make": 24,
+    "name": "Envision"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 202,
+  "fields": {
+    "make": 25,
+    "name": "Pacifica"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 203,
+  "fields": {
+    "make": 25,
+    "name": "300"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 204,
+  "fields": {
+    "make": 25,
+    "name": "Voyager"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 205,
+  "fields": {
+    "make": 26,
+    "name": "Outlander"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 206,
+  "fields": {
+    "make": 26,
+    "name": "Eclipse Cross"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 207,
+  "fields": {
+    "make": 26,
+    "name": "Outlander Sport"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 208,
+  "fields": {
+    "make": 26,
+    "name": "Mirage"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 209,
+  "fields": {
+    "make": 27,
+    "name": "Cooper"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 210,
+  "fields": {
+    "make": 27,
+    "name": "Countryman"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 211,
+  "fields": {
+    "make": 27,
+    "name": "Clubman"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 212,
+  "fields": {
+    "make": 28,
+    "name": "XC90"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 213,
+  "fields": {
+    "make": 28,
+    "name": "XC60"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 214,
+  "fields": {
+    "make": 28,
+    "name": "XC40"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 215,
+  "fields": {
+    "make": 28,
+    "name": "S60"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 216,
+  "fields": {
+    "make": 28,
+    "name": "S90"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 217,
+  "fields": {
+    "make": 29,
+    "name": "Range Rover"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 218,
+  "fields": {
+    "make": 29,
+    "name": "Range Rover Sport"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 219,
+  "fields": {
+    "make": 29,
+    "name": "Discovery"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 220,
+  "fields": {
+    "make": 29,
+    "name": "Defender"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 221,
+  "fields": {
+    "make": 29,
+    "name": "Range Rover Evoque"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 222,
+  "fields": {
+    "make": 30,
+    "name": "911"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 223,
+  "fields": {
+    "make": 30,
+    "name": "Cayenne"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 224,
+  "fields": {
+    "make": 30,
+    "name": "Macan"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 225,
+  "fields": {
+    "make": 30,
+    "name": "Panamera"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 226,
+  "fields": {
+    "make": 30,
+    "name": "Taycan"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 227,
+  "fields": {
+    "make": 31,
+    "name": "G70"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 228,
+  "fields": {
+    "make": 31,
+    "name": "G80"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 229,
+  "fields": {
+    "make": 31,
+    "name": "G90"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 230,
+  "fields": {
+    "make": 31,
+    "name": "GV70"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 231,
+  "fields": {
+    "make": 31,
+    "name": "GV80"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 232,
+  "fields": {
+    "make": 32,
+    "name": "Navigator"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 233,
+  "fields": {
+    "make": 32,
+    "name": "Aviator"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 234,
+  "fields": {
+    "make": 32,
+    "name": "Corsair"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 235,
+  "fields": {
+    "make": 32,
+    "name": "Nautilus"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 236,
+  "fields": {
+    "make": 33,
+    "name": "F-Pace"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 237,
+  "fields": {
+    "make": 33,
+    "name": "XF"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 238,
+  "fields": {
+    "make": 33,
+    "name": "XE"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 239,
+  "fields": {
+    "make": 33,
+    "name": "E-Pace"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 240,
+  "fields": {
+    "make": 33,
+    "name": "F-Type"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 241,
+  "fields": {
+    "make": 34,
+    "name": "Giulia"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 242,
+  "fields": {
+    "make": 34,
+    "name": "Stelvio"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 243,
+  "fields": {
+    "make": 34,
+    "name": "Tonale"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 244,
+  "fields": {
+    "make": 35,
+    "name": "500"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 245,
+  "fields": {
+    "make": 35,
+    "name": "500X"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 246,
+  "fields": {
+    "make": 36,
+    "name": "Grand Vitara"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 247,
+  "fields": {
+    "make": 36,
+    "name": "SX4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 248,
+  "fields": {
+    "make": 36,
+    "name": "Kizashi"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 249,
+  "fields": {
+    "make": 37,
+    "name": "Rodeo"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 250,
+  "fields": {
+    "make": 37,
+    "name": "Trooper"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 251,
+  "fields": {
+    "make": 37,
+    "name": "Ascender"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 252,
+  "fields": {
+    "make": 38,
+    "name": "Vue"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 253,
+  "fields": {
+    "make": 38,
+    "name": "Ion"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 254,
+  "fields": {
+    "make": 38,
+    "name": "Aura"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 255,
+  "fields": {
+    "make": 38,
+    "name": "Outlook"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 256,
+  "fields": {
+    "make": 39,
+    "name": "Grand Prix"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 257,
+  "fields": {
+    "make": 39,
+    "name": "G6"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 258,
+  "fields": {
+    "make": 39,
+    "name": "Vibe"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 259,
+  "fields": {
+    "make": 39,
+    "name": "Torrent"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 260,
+  "fields": {
+    "make": 40,
+    "name": "9-3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 261,
+  "fields": {
+    "make": 40,
+    "name": "9-5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 262,
+  "fields": {
+    "make": 41,
+    "name": "Milan"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 263,
+  "fields": {
+    "make": 41,
+    "name": "Mariner"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 264,
+  "fields": {
+    "make": 41,
+    "name": "Grand Marquis"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 265,
+  "fields": {
+    "make": 42,
+    "name": "tC"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 266,
+  "fields": {
+    "make": 42,
+    "name": "xB"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 267,
+  "fields": {
+    "make": 42,
+    "name": "FR-S"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 268,
+  "fields": {
+    "make": 43,
+    "name": "Fortwo"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 269,
+  "fields": {
+    "make": 44,
+    "name": "R1T"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 270,
+  "fields": {
+    "make": 44,
+    "name": "R1S"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 271,
+  "fields": {
+    "make": 45,
+    "name": "Air"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 272,
+  "fields": {
+    "make": 45,
+    "name": "Gravity"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 273,
+  "fields": {
+    "make": 46,
+    "name": "Polestar 2"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 274,
+  "fields": {
+    "make": 46,
+    "name": "Polestar 3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 275,
+  "fields": {
+    "make": 47,
+    "name": "Ghibli"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 276,
+  "fields": {
+    "make": 47,
+    "name": "Levante"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 277,
+  "fields": {
+    "make": 47,
+    "name": "Quattroporte"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 278,
+  "fields": {
+    "make": 48,
+    "name": "Continental GT"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 279,
+  "fields": {
+    "make": 48,
+    "name": "Bentayga"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 280,
+  "fields": {
+    "make": 48,
+    "name": "Flying Spur"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 281,
+  "fields": {
+    "make": 49,
+    "name": "Ghost"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 282,
+  "fields": {
+    "make": 49,
+    "name": "Wraith"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 283,
+  "fields": {
+    "make": 49,
+    "name": "Cullinan"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 284,
+  "fields": {
+    "make": 50,
+    "name": "488"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 285,
+  "fields": {
+    "make": 50,
+    "name": "Roma"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 286,
+  "fields": {
+    "make": 50,
+    "name": "Portofino"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 287,
+  "fields": {
+    "make": 51,
+    "name": "Huracan"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 288,
+  "fields": {
+    "make": 51,
+    "name": "Urus"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 289,
+  "fields": {
+    "make": 51,
+    "name": "Aventador"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 290,
+  "fields": {
+    "make": 52,
+    "name": "Vantage"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 291,
+  "fields": {
+    "make": 52,
+    "name": "DB11"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 292,
+  "fields": {
+    "make": 52,
+    "name": "DBX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 293,
+  "fields": {
+    "make": 1,
+    "name": "6 Series"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 294,
+  "fields": {
+    "make": 1,
+    "name": "8 Series"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 295,
+  "fields": {
+    "make": 1,
+    "name": "X2"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 296,
+  "fields": {
+    "make": 1,
+    "name": "X4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 297,
+  "fields": {
+    "make": 1,
+    "name": "X6"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 298,
+  "fields": {
+    "make": 1,
+    "name": "M2"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 299,
+  "fields": {
+    "make": 1,
+    "name": "M4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 300,
+  "fields": {
+    "make": 1,
+    "name": "M5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 301,
+  "fields": {
+    "make": 1,
+    "name": "i4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 302,
+  "fields": {
+    "make": 1,
+    "name": "i7"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 303,
+  "fields": {
+    "make": 1,
+    "name": "iX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 304,
+  "fields": {
+    "make": 8,
+    "name": "Land Cruiser"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 305,
+  "fields": {
+    "make": 8,
+    "name": "Yaris"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 306,
+  "fields": {
+    "make": 8,
+    "name": "Matrix"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 307,
+  "fields": {
+    "make": 8,
+    "name": "C-HR"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 308,
+  "fields": {
+    "make": 8,
+    "name": "Prius Prime"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 309,
+  "fields": {
+    "make": 8,
+    "name": "Camry Hybrid"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 310,
+  "fields": {
+    "make": 8,
+    "name": "Crown"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 311,
+  "fields": {
+    "make": 5,
+    "name": "Element"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 312,
+  "fields": {
+    "make": 5,
+    "name": "S2000"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 313,
+  "fields": {
+    "make": 5,
+    "name": "Civic Type R"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 314,
+  "fields": {
+    "make": 5,
+    "name": "CR-Z"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 315,
+  "fields": {
+    "make": 5,
+    "name": "Prelude"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 316,
+  "fields": {
+    "make": 7,
+    "name": "F-350"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 317,
+  "fields": {
+    "make": 7,
+    "name": "Taurus"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 318,
+  "fields": {
+    "make": 7,
+    "name": "Flex"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 319,
+  "fields": {
+    "make": 7,
+    "name": "Transit"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 320,
+  "fields": {
+    "make": 7,
+    "name": "Transit Connect"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 321,
+  "fields": {
+    "make": 7,
+    "name": "Mustang Mach-E"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 322,
+  "fields": {
+    "make": 7,
+    "name": "GT"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 323,
+  "fields": {
+    "make": 9,
+    "name": "Silverado 2500HD"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 324,
+  "fields": {
+    "make": 9,
+    "name": "Cruze"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 325,
+  "fields": {
+    "make": 9,
+    "name": "Sonic"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 326,
+  "fields": {
+    "make": 9,
+    "name": "Bolt EV"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 327,
+  "fields": {
+    "make": 9,
+    "name": "Bolt EUV"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 328,
+  "fields": {
+    "make": 9,
+    "name": "Express"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 329,
+  "fields": {
+    "make": 10,
+    "name": "GT-R"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 330,
+  "fields": {
+    "make": 10,
+    "name": "Z"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 331,
+  "fields": {
+    "make": 10,
+    "name": "Ariya"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 332,
+  "fields": {
+    "make": 10,
+    "name": "Juke"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 333,
+  "fields": {
+    "make": 10,
+    "name": "Xterra"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 334,
+  "fields": {
+    "make": 10,
+    "name": "Cube"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 335,
+  "fields": {
+    "make": 2,
+    "name": "S4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 336,
+  "fields": {
+    "make": 2,
+    "name": "S5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 337,
+  "fields": {
+    "make": 2,
+    "name": "RS5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 338,
+  "fields": {
+    "make": 2,
+    "name": "Q4 e-tron"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 339,
+  "fields": {
+    "make": 2,
+    "name": "A7"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 340,
+  "fields": {
+    "make": 2,
+    "name": "SQ5"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 341,
+  "fields": {
+    "make": 2,
+    "name": "Allroad"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 342,
+  "fields": {
+    "make": 3,
+    "name": "Beetle"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 343,
+  "fields": {
+    "make": 3,
+    "name": "CC"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 344,
+  "fields": {
+    "make": 3,
+    "name": "Atlas Cross Sport"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 345,
+  "fields": {
+    "make": 3,
+    "name": "GTI"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 346,
+  "fields": {
+    "make": 3,
+    "name": "Golf R"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 347,
+  "fields": {
+    "make": 6,
+    "name": "CX-3"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 348,
+  "fields": {
+    "make": 6,
+    "name": "RX-8"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 349,
+  "fields": {
+    "make": 6,
+    "name": "Mazda2"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 350,
+  "fields": {
+    "make": 6,
+    "name": "Tribute"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 351,
+  "fields": {
+    "make": 4,
+    "name": "STI"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 352,
+  "fields": {
+    "make": 4,
+    "name": "Baja"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 353,
+  "fields": {
+    "make": 4,
+    "name": "Tribeca"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 354,
+  "fields": {
+    "make": 12,
+    "name": "Santa Cruz"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 355,
+  "fields": {
+    "make": 12,
+    "name": "Veloster"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 356,
+  "fields": {
+    "make": 12,
+    "name": "Ioniq 6"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 357,
+  "fields": {
+    "make": 12,
+    "name": "Genesis Coupe"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 358,
+  "fields": {
+    "make": 12,
+    "name": "Azera"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 359,
+  "fields": {
+    "make": 13,
+    "name": "Stinger"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 360,
+  "fields": {
+    "make": 13,
+    "name": "Carnival"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 361,
+  "fields": {
+    "make": 13,
+    "name": "Optima"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 362,
+  "fields": {
+    "make": 13,
+    "name": "Sedona"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 363,
+  "fields": {
+    "make": 14,
+    "name": "Wagoneer"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 364,
+  "fields": {
+    "make": 14,
+    "name": "Patriot"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 365,
+  "fields": {
+    "make": 14,
+    "name": "Liberty"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 366,
+  "fields": {
+    "make": 14,
+    "name": "Wrangler Unlimited"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 367,
+  "fields": {
+    "make": 15,
+    "name": "Savana"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 368,
+  "fields": {
+    "make": 15,
+    "name": "Envoy"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 369,
+  "fields": {
+    "make": 15,
+    "name": "Sierra 3500HD"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 370,
+  "fields": {
+    "make": 16,
+    "name": "ProMaster City"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 371,
+  "fields": {
+    "make": 16,
+    "name": "1500 Classic"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 372,
+  "fields": {
+    "make": 16,
+    "name": "Dakota"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 373,
+  "fields": {
+    "make": 18,
+    "name": "RC"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 374,
+  "fields": {
+    "make": 18,
+    "name": "LC"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 375,
+  "fields": {
+    "make": 18,
+    "name": "IS 350"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 376,
+  "fields": {
+    "make": 18,
+    "name": "RX Hybrid"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 377,
+  "fields": {
+    "make": 19,
+    "name": "Dart"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 378,
+  "fields": {
+    "make": 19,
+    "name": "Avenger"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 379,
+  "fields": {
+    "make": 19,
+    "name": "Viper"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 380,
+  "fields": {
+    "make": 19,
+    "name": "Magnum"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 381,
+  "fields": {
+    "make": 19,
+    "name": "Nitro"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 382,
+  "fields": {
+    "make": 20,
+    "name": "GLS"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 383,
+  "fields": {
+    "make": 20,
+    "name": "GLK"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 384,
+  "fields": {
+    "make": 20,
+    "name": "ML-Class"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 385,
+  "fields": {
+    "make": 20,
+    "name": "Sprinter"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 386,
+  "fields": {
+    "make": 20,
+    "name": "CLS"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 387,
+  "fields": {
+    "make": 20,
+    "name": "SL"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 388,
+  "fields": {
+    "make": 20,
+    "name": "AMG GT"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 389,
+  "fields": {
+    "make": 21,
+    "name": "TSX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 390,
+  "fields": {
+    "make": 21,
+    "name": "TL"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 391,
+  "fields": {
+    "make": 21,
+    "name": "RSX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 392,
+  "fields": {
+    "make": 21,
+    "name": "RLX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 393,
+  "fields": {
+    "make": 21,
+    "name": "NSX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 394,
+  "fields": {
+    "make": 21,
+    "name": "ZDX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 395,
+  "fields": {
+    "make": 22,
+    "name": "QX55"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 396,
+  "fields": {
+    "make": 22,
+    "name": "G37"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 397,
+  "fields": {
+    "make": 22,
+    "name": "FX35"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 398,
+  "fields": {
+    "make": 22,
+    "name": "QX30"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 399,
+  "fields": {
+    "make": 22,
+    "name": "M37"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 400,
+  "fields": {
+    "make": 23,
+    "name": "CTS"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 401,
+  "fields": {
+    "make": 23,
+    "name": "ATS"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 402,
+  "fields": {
+    "make": 23,
+    "name": "SRX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 403,
+  "fields": {
+    "make": 23,
+    "name": "XTS"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 404,
+  "fields": {
+    "make": 23,
+    "name": "Escalade ESV"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 405,
+  "fields": {
+    "make": 24,
+    "name": "LaCrosse"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 406,
+  "fields": {
+    "make": 24,
+    "name": "Regal"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 407,
+  "fields": {
+    "make": 24,
+    "name": "Verano"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 408,
+  "fields": {
+    "make": 24,
+    "name": "Lucerne"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 409,
+  "fields": {
+    "make": 25,
+    "name": "200"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 410,
+  "fields": {
+    "make": 25,
+    "name": "Town & Country"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 411,
+  "fields": {
+    "make": 25,
+    "name": "Sebring"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 412,
+  "fields": {
+    "make": 25,
+    "name": "PT Cruiser"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 413,
+  "fields": {
+    "make": 26,
+    "name": "Lancer"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 414,
+  "fields": {
+    "make": 26,
+    "name": "Galant"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 415,
+  "fields": {
+    "make": 26,
+    "name": "Endeavor"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 416,
+  "fields": {
+    "make": 26,
+    "name": "Outlander PHEV"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 417,
+  "fields": {
+    "make": 27,
+    "name": "Hardtop"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 418,
+  "fields": {
+    "make": 27,
+    "name": "Convertible"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 419,
+  "fields": {
+    "make": 27,
+    "name": "Paceman"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 420,
+  "fields": {
+    "make": 28,
+    "name": "V60"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 421,
+  "fields": {
+    "make": 28,
+    "name": "V90"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 422,
+  "fields": {
+    "make": 28,
+    "name": "XC70"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 423,
+  "fields": {
+    "make": 28,
+    "name": "S80"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 424,
+  "fields": {
+    "make": 28,
+    "name": "C40 Recharge"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 425,
+  "fields": {
+    "make": 29,
+    "name": "Discovery Sport"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 426,
+  "fields": {
+    "make": 29,
+    "name": "Range Rover Velar"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 427,
+  "fields": {
+    "make": 30,
+    "name": "718 Boxster"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 428,
+  "fields": {
+    "make": 30,
+    "name": "718 Cayman"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 429,
+  "fields": {
+    "make": 30,
+    "name": "Cayman"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 430,
+  "fields": {
+    "make": 31,
+    "name": "GV60"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 431,
+  "fields": {
+    "make": 32,
+    "name": "MKZ"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 432,
+  "fields": {
+    "make": 32,
+    "name": "MKC"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 433,
+  "fields": {
+    "make": 32,
+    "name": "MKX"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 434,
+  "fields": {
+    "make": 32,
+    "name": "Continental"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 435,
+  "fields": {
+    "make": 32,
+    "name": "Town Car"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 436,
+  "fields": {
+    "make": 33,
+    "name": "XJ"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 437,
+  "fields": {
+    "make": 33,
+    "name": "I-Pace"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 438,
+  "fields": {
+    "make": 33,
+    "name": "S-Type"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 439,
+  "fields": {
+    "make": 34,
+    "name": "4C"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 440,
+  "fields": {
+    "make": 35,
+    "name": "500L"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 441,
+  "fields": {
+    "make": 35,
+    "name": "500e"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 442,
+  "fields": {
+    "make": 36,
+    "name": "XL7"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 443,
+  "fields": {
+    "make": 36,
+    "name": "Aerio"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 444,
+  "fields": {
+    "make": 36,
+    "name": "Forenza"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 445,
+  "fields": {
+    "make": 37,
+    "name": "Axiom"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 446,
+  "fields": {
+    "make": 38,
+    "name": "Sky"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 447,
+  "fields": {
+    "make": 38,
+    "name": "L-Series"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 448,
+  "fields": {
+    "make": 39,
+    "name": "Firebird"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 449,
+  "fields": {
+    "make": 39,
+    "name": "GTO"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 450,
+  "fields": {
+    "make": 39,
+    "name": "Solstice"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 451,
+  "fields": {
+    "make": 39,
+    "name": "Sunfire"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 452,
+  "fields": {
+    "make": 40,
+    "name": "9-2X"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 453,
+  "fields": {
+    "make": 40,
+    "name": "9-4X"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 454,
+  "fields": {
+    "make": 41,
+    "name": "Sable"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 455,
+  "fields": {
+    "make": 41,
+    "name": "Mountaineer"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 456,
+  "fields": {
+    "make": 41,
+    "name": "Cougar"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 457,
+  "fields": {
+    "make": 42,
+    "name": "xD"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 458,
+  "fields": {
+    "make": 42,
+    "name": "iQ"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 459,
+  "fields": {
+    "make": 43,
+    "name": "Forfour"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 460,
+  "fields": {
+    "make": 46,
+    "name": "Polestar 4"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 461,
+  "fields": {
+    "make": 47,
+    "name": "GranTurismo"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 462,
+  "fields": {
+    "make": 48,
+    "name": "Mulsanne"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 463,
+  "fields": {
+    "make": 49,
+    "name": "Phantom"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 464,
+  "fields": {
+    "make": 49,
+    "name": "Dawn"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 465,
+  "fields": {
+    "make": 50,
+    "name": "F8 Tributo"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 466,
+  "fields": {
+    "make": 50,
+    "name": "812 Superfast"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 467,
+  "fields": {
+    "make": 50,
+    "name": "296 GTB"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 468,
+  "fields": {
+    "make": 51,
+    "name": "Revuelto"
+  }
+},
+{
+  "model": "inventory.vehiclemodel",
+  "pk": 469,
+  "fields": {
+    "make": 52,
+    "name": "DBS"
+  }
+}
+]

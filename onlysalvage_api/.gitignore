@@ -1,0 +1,16 @@
+venv
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.pyc
+db.sqlite3
+staticfiles/
+
+# Local dev artifacts -- real uploaded files, shouldn't ever be committed.
+carfax_pdfs/
+profiles/
+
+.idea/
+.vscode/

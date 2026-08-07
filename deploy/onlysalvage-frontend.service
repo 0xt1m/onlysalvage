@@ -1,0 +1,20 @@
+[Unit]
+Description=OnlySalvage Next.js frontend
+After=network.target onlysalvage-api.service
+
+[Service]
+Type=simple
+User=onlysalvage
+Group=onlysalvage
+WorkingDirectory=/opt/onlysalvage/onlysalvage_frontend
+EnvironmentFile=/opt/onlysalvage/onlysalvage_frontend/.env.production.local
+Environment=PORT=3000
+ExecStart=/usr/bin/npm start
+Restart=on-failure
+RestartSec=5
+
+# `npm run build` must be run (once, and again on every deploy) before this
+# starts -- see deploy/DEPLOY.md. journalctl -u onlysalvage-frontend -f
+
+[Install]
+WantedBy=multi-user.target
