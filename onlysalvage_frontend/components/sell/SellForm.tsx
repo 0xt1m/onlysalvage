@@ -852,7 +852,10 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
           <>
             <p className="text-xs text-muted -mt-1">{t('dragToReorder')}</p>
             <p className="text-xs text-muted -mt-1">{t('dragDescriptorHint')}</p>
-            <PhotoDescriptorPalette className="-mt-1" />
+            <PhotoDescriptorPalette
+              className="-mt-1"
+              usedKeys={photos.map((p) => p.descriptor).filter((d): d is string => !!d)}
+            />
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
               {photos.map((p, i) => {
                 const reorder = submitting ? null : dragHandlers(i)

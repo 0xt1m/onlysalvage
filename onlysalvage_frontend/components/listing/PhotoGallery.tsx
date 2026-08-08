@@ -54,9 +54,15 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
   // every photo to jump straight to one, since fullscreen (unlike the
   // regular preview) has no thumbnail strip of its own to pick from.
   const [showGrid, setShowGrid] = useState(false)
+  // Same idea for the regular (non-fullscreen) preview's own counter, but as
+  // a small dropdown anchored above it rather than a full-screen overlay --
+  // the preview already has a thumbnail strip below it, so this is just a
+  // faster way to jump without scrolling that strip into view.
+  const [showPreviewGrid, setShowPreviewGrid] = useState(false)
   const dragStart = useRef({ x: 0, y: 0 })
   const containerRef = useRef<HTMLDivElement>(null)
   const previewRef = useRef<HTMLDivElement>(null)
+  const previewGridRef = useRef<HTMLDivElement>(null)
   const maxPan = useRef({ x: 0, y: 0 })
 
   // Multi-touch bookkeeping for the fullscreen viewer: `pointers` tracks every
@@ -223,6 +229,17 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
   }, [fullscreen, index, images.length, showGrid])
 
   useEffect(() => {
+    if (!showPreviewGrid) return
+    const onClickOutside = (e: MouseEvent) => {
+      if (previewGridRef.current && !previewGridRef.current.contains(e.target as Node)) {
+        setShowPreviewGrid(false)
+      }
+    }
+    document.addEventListener('mousedown', onClickOutside)
+    return () => document.removeEventListener('mousedown', onClickOutside)
+  }, [showPreviewGrid])
+
+  useEffect(() => {
     // Attached as a native (non-passive) listener rather than React's onWheel
     // -- React registers wheel handlers as passive by default, which would
     // silently ignore preventDefault() and let the page scroll behind the
@@ -248,6 +265,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
     swipeStart.current = null
     setFullscreenLoaded(false)
     setShowGrid(false)
+    setShowPreviewGrid(false)
     // Closing fullscreen (double-click/Escape/X) drops DOM focus back to
     // <body> instead of returning it here, which silently broke the arrow
     // keys until the preview was clicked again -- its ArrowLeft/ArrowRight
@@ -270,6 +288,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
         ref={previewRef}
         className="relative aspect-video print:aspect-[16/10] bg-surface-raised group touch-pan-y select-none overflow-hidden"
         onKeyDown={(e) => {
+          if (e.key === 'Escape' && showPreviewGrid) { setShowPreviewGrid(false); return }
           if (e.key === 'ArrowLeft') goTo(index - 1)
           if (e.key === 'ArrowRight') goTo(index + 1)
         }}
@@ -370,8 +389,36 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                 {t('nextPhoto')}
               </span>
             </button>
-            <div className="absolute right-3 bottom-3 bg-black/60 text-white text-xs px-2 py-1 rounded-full print:hidden">
-              {index + 1} / {images.length}
+            <div ref={previewGridRef} className="absolute right-3 bottom-3 print:hidden">
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); setShowPreviewGrid((v) => !v) }}
+                onDoubleClick={(e) => e.stopPropagation()}
+                aria-label={t('viewAllPhotos')}
+                aria-expanded={showPreviewGrid}
+                className="bg-black/60 hover:bg-black/80 text-white text-xs px-2 py-1 rounded-full cursor-pointer transition-colors"
+              >
+                {index + 1} / {images.length}
+              </button>
+
+              {showPreviewGrid && (
+                <div className="absolute right-0 bottom-full mb-2 z-20 w-56 sm:w-64 max-h-64 overflow-y-auto rounded-lg border border-border bg-surface shadow-lg p-2 grid grid-cols-4 gap-1.5">
+                  {images.map((img, i) => (
+                    <button
+                      type="button"
+                      key={img.id}
+                      onClick={(e) => { e.stopPropagation(); setIndex(i); setShowPreviewGrid(false) }}
+                      aria-label={t('viewPhotoNumber', { index: i + 1 })}
+                      className={cn(
+                        'relative aspect-square rounded overflow-hidden border-2 cursor-pointer transition-colors',
+                        i === index ? 'border-primary' : 'border-transparent hover:border-muted'
+                      )}
+                    >
+                      <Image src={safeImageUrl(img.thumb_url, img.image_url)} alt={`${title} thumbnail ${i + 1}`} fill sizes="64px" className="object-cover" />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </>
         )}

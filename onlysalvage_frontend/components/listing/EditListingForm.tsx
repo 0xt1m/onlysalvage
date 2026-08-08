@@ -713,7 +713,13 @@ export function EditListingForm({ listing }: { listing: Listing }) {
           <>
             <p className="text-xs text-muted -mt-1">{t('SellForm.dragToReorder')}</p>
             <p className="text-xs text-muted -mt-1">{t('SellForm.dragDescriptorHint')}</p>
-            <PhotoDescriptorPalette className="-mt-1" />
+            <PhotoDescriptorPalette
+              className="-mt-1"
+              usedKeys={[
+                ...existingImages.map((img) => img.descriptor).filter((d): d is string => !!d),
+                ...newPhotos.map((p) => p.descriptor).filter((d): d is string => !!d),
+              ]}
+            />
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
               {existingImages.map((img, i) => {
                 const reorder = existingDragHandlers(i)
