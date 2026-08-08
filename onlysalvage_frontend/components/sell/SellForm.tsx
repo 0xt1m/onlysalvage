@@ -16,6 +16,7 @@ import { Dropzone } from '@/components/ui/Dropzone'
 import { DocUploadSlot } from '@/components/listing/DocUploadSlot'
 import { VehicleOptionsPicker } from '@/components/sell/VehicleOptionsPicker'
 import { RequestMakeModelModal } from '@/components/sell/RequestMakeModelModal'
+import { PhotoDescriptorPalette, PHOTO_DESCRIPTOR_DRAG_TYPE } from '@/components/sell/PhotoDescriptorPalette'
 import { Link, useRouter } from '@/i18n/navigation'
 import { cn, translateOptions, normalizeUrl } from '@/lib/utils'
 import { useDragReorder } from '@/lib/useDragReorder'
@@ -33,6 +34,7 @@ import {
   registerListingImage,
   deleteListingImage,
   deleteListingBeacon,
+  updateListingImageDescriptor,
   uploadCarfaxReport,
   uploadAlignmentReport,
   uploadInspectionReport,
@@ -58,6 +60,9 @@ interface Photo {
   // photo that's already saved server-side (needs a DELETE call) apart
   // from one that's merely staged locally (just drop it from state).
   imageId?: number
+  // Only assignable once imageId exists (see setImageDescriptor) -- a photo
+  // that's still mid-upload has nothing on the server yet to PATCH.
+  descriptor?: string
 }
 
 type DocKind = 'carfax' | 'alignment' | 'inspection'
@@ -152,6 +157,7 @@ interface SellFormProps {
 export function SellForm({ offersWarranty = false }: SellFormProps) {
   const t = useTranslations('SellForm')
   const tAttr = useTranslations('VehicleAttributes')
+  const tPhotoDescriptors = useTranslations('PhotoDescriptors')
   const router = useRouter()
   const { user } = useAuth()
   const [form, setForm] = useState(initialForm)
@@ -358,6 +364,15 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
     // failed before ever registering) -- needs an actual delete, not just
     // dropping it from local state.
     if (photo.imageId && draftListing) await deleteListingImage(draftListing.id, photo.imageId)
+  }
+
+  // "" clears an assignment (dragging isn't the only way to remove one --
+  // see each thumbnail's clear button).
+  const setImageDescriptor = async (imageId: number, descriptor: string) => {
+    setPhotos(prev => prev.map(p => (p.imageId === imageId ? { ...p, descriptor } : p)))
+    if (!draftListing) return
+    const ok = await updateListingImageDescriptor(draftListing.id, imageId, descriptor)
+    if (!ok) toast.error(t('descriptorUpdateFailed'))
   }
 
   const { dragIndex, dragHandlers } = useDragReorder(photos, setPhotos)
@@ -811,7 +826,14 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
       <Card>
         <h2 className="text-lg font-semibold">{t('featuresAndOptions')}</h2>
         <p className="text-sm text-muted -mt-1">{t('featuresAndOptionsDescription')}</p>
-        <VehicleOptionsPicker options={vehicleOptions} selected={selectedOptions} onToggle={toggleOption} tAttr={tAttr} />
+        <VehicleOptionsPicker
+          options={vehicleOptions}
+          selected={selectedOptions}
+          onToggle={toggleOption}
+          tAttr={tAttr}
+          searchPlaceholder={t('searchOptions')}
+          noResultsMessage={t('noOptionsFound')}
+        />
       </Card>
 
       <Card>
@@ -829,11 +851,25 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
         {photos.length > 0 && (
           <>
             <p className="text-xs text-muted -mt-1">{t('dragToReorder')}</p>
+            <p className="text-xs text-muted -mt-1">{t('dragDescriptorHint')}</p>
+            <PhotoDescriptorPalette className="-mt-1" />
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
-              {photos.map((p, i) => (
+              {photos.map((p, i) => {
+                const reorder = submitting ? null : dragHandlers(i)
+                return (
                 <div
                   key={p.id}
-                  {...(submitting ? {} : dragHandlers(i))}
+                  {...(reorder ?? {})}
+                  onDragOver={(e) => { if (p.imageId) e.preventDefault() }}
+                  onDrop={(e) => {
+                    if (p.imageId && e.dataTransfer.types.includes(PHOTO_DESCRIPTOR_DRAG_TYPE)) {
+                      e.preventDefault()
+                      const key = e.dataTransfer.getData(PHOTO_DESCRIPTOR_DRAG_TYPE)
+                      if (key) setImageDescriptor(p.imageId, key)
+                      return
+                    }
+                    reorder?.onDrop(e)
+                  }}
                   className={cn(
                     'relative aspect-square rounded-lg overflow-hidden border border-border transition-opacity',
                     !submitting && 'cursor-grab active:cursor-grabbing',
@@ -851,6 +887,16 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
                       {p.status === 'error' && t('failed')}
                     </div>
                   )}
+                  {p.descriptor && (
+                    <button
+                      type="button"
+                      onClick={() => p.imageId && setImageDescriptor(p.imageId, '')}
+                      title={t('clearDescriptor')}
+                      className="absolute right-1 bottom-1 max-w-[calc(100%-0.5rem)] bg-black/70 hover:bg-black/85 text-white text-[10px] leading-tight px-1.5 py-0.5 rounded-full truncate cursor-pointer"
+                    >
+                      {tPhotoDescriptors(p.descriptor)}
+                    </button>
+                  )}
                   {p.status === 'pending' && !submitting && (
                     <button
                       type="button"
@@ -863,7 +909,7 @@ export function SellForm({ offersWarranty = false }: SellFormProps) {
                     </button>
                   )}
                 </div>
-              ))}
+              )})}
             </div>
           </>
         )}

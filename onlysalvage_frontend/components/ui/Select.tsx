@@ -156,8 +156,13 @@ export function Select({ label, value, onChange, options, placeholder, error, di
           <ChevronDown className={cn('w-4 h-4 text-muted shrink-0 transition-transform', open && 'rotate-180')} />
         </button>
 
+        {/* z-30, not z-20 -- ListingCard's own like-button/badge overlay
+            (top-left of the thumbnail) is also z-20, and with equal
+            z-index DOM order decides the winner, which let card overlays
+            show through an open dropdown sitting right above a listings
+            grid (see ProfileListingsSection's sort dropdown). */}
         {open && (
-          <div className="absolute z-20 mt-1 w-full rounded-md border border-border bg-surface shadow-lg overflow-hidden">
+          <div className="absolute z-30 mt-1 w-full rounded-md border border-border bg-surface shadow-lg overflow-hidden">
             <ul
               ref={listRef}
               role="listbox"

@@ -227,7 +227,40 @@ export interface ListingImage {
   order: number | null;
   photo_type: PhotoType;
   status: "pending" | "ready" | "failed";
+  // A stable key into PHOTO_DESCRIPTOR_KEYS/the PhotoDescriptors translation
+  // namespace (e.g. "frontDriverSide") -- never the display text itself, so
+  // the same assignment renders as proper alt text in whichever locale a
+  // visitor is browsing in (see PhotoGallery). "" means no label assigned.
+  descriptor: string;
 }
+
+// A curated palette of common photo-angle/feature labels a seller can drag
+// onto a specific gallery photo (see PhotoDescriptorPalette). Each key maps
+// to a translated label in the PhotoDescriptors namespace of every
+// messages/*.json -- not an enum the backend enforces (ListingImage.descriptor
+// is a plain CharField), so this list can grow without a migration.
+export const PHOTO_DESCRIPTOR_KEYS = [
+  "front",
+  "frontDriverSide",
+  "frontPassengerSide",
+  "rear",
+  "rearDriverSide",
+  "rearPassengerSide",
+  "driverSide",
+  "passengerSide",
+  "interiorDashboard",
+  "interiorFrontSeats",
+  "interiorRearSeats",
+  "steeringWheel",
+  "entertainmentSystem",
+  "engineBay",
+  "trunkCargoSpace",
+  "wheelsTires",
+  "undercarriage",
+  "odometer",
+  "vinPlate",
+  "damageCloseup",
+];
 
 export interface ListingReview {
   id: number;

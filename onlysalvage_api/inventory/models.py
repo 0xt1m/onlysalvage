@@ -516,6 +516,14 @@ class ListingImage(models.Model):
 
 	order = models.PositiveIntegerField(null=True, blank=True)
 
+	# Free text, not a choices field -- the frontend offers a curated palette
+	# of common photo-angle labels (see PHOTO_DESCRIPTORS in lib/types.ts)
+	# to drag onto a photo, but nothing here enforces the value actually came
+	# from that list, so the palette can grow without a migration. Blank
+	# means "no label assigned" -- see PhotoGallery's alt text, which falls
+	# back to a generic "{title} — photo {n}" whenever this is empty.
+	descriptor = models.CharField(max_length=100, blank=True)
+
 	@property
 	def image_url(self):
 		return f"{settings.MEDIA_BASE_URL.rstrip('/')}/{self.original_s3_key}"

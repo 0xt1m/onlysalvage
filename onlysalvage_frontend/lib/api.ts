@@ -531,6 +531,16 @@ export const uploadInspectionReport = async (slug: string, file: File) => {
   return res.json() as Promise<import("./types").Listing>;
 };
 
+// Powers the Sell/Edit forms' drag-and-drop photo descriptor palette --
+// "" clears whatever label was assigned.
+export const updateListingImageDescriptor = async (listingId: number, imageId: number, descriptor: string) => {
+  const res = await fetchWithAuth(
+    `${getApiUrl()}/inventory/listings/${listingId}/images/${imageId}/`,
+    { method: "PATCH", body: JSON.stringify({ descriptor }) }
+  );
+  return !!res?.ok;
+};
+
 export const deleteListingImage = async (listingId: number, imageId: number) => {
   const res = await fetchWithAuth(
     `${getApiUrl()}/inventory/listings/${listingId}/images/${imageId}/`,

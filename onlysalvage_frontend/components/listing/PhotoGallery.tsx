@@ -29,6 +29,12 @@ function pointerDistance(a: { x: number; y: number }, b: { x: number; y: number 
 
 export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) {
   const t = useTranslations('PhotoGallery')
+  const tPhotoDescriptors = useTranslations('PhotoDescriptors')
+  // Real SEO/accessibility value once a seller's tagged a photo (see
+  // PhotoDescriptorPalette in the Sell/Edit forms) -- falls back to the
+  // generic "{title} — photo {n}" for anything left untagged.
+  const altFor = (img: ListingImage, i: number) =>
+    img.descriptor ? `${title} — ${tPhotoDescriptors(img.descriptor)}` : `${title} — photo ${i + 1}`
   const [index, setIndex] = useState(0)
   const [fullscreen, setFullscreen] = useState(false)
   // Live horizontal offset (px) while dragging the preview strip, so the
@@ -295,7 +301,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                   // where it's actually needed and only one photo loads at
                   // a time.
                   src={safeImageUrl(img.large_url, img.image_url)}
-                  alt={`${title} — photo ${i + 1}`}
+                  alt={altFor(img, i)}
                   fill
                   // large_url is already a properly-sized (2400px cap),
                   // already-compressed WebP generated once at upload time --
@@ -440,7 +446,7 @@ export function PhotoGallery({ images, title, statusBadge }: PhotoGalleryProps) 
                 // every time, not just after the first viewer eats the
                 // cold-cache cost.
                 src={safeImageUrl(images[index].large_url, images[index].image_url)}
-                alt={`${title} — photo ${index + 1}`}
+                alt={altFor(images[index], index)}
                 fill
                 unoptimized
                 className={cn('object-contain pointer-events-none transition-opacity', fullscreenLoaded ? 'opacity-100' : 'opacity-0')}

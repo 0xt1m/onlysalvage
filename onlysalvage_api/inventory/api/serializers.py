@@ -45,7 +45,7 @@ class MakeModelRequestSerializer(serializers.ModelSerializer):
 class ListingImageSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = ListingImage
-		fields = ("id", "image_url", "large_url", "medium_url", "thumb_url", "order", "photo_type", "status",)
+		fields = ("id", "image_url", "large_url", "medium_url", "thumb_url", "order", "photo_type", "status", "descriptor",)
 
 class ListingThumbnailSerializer(serializers.ModelSerializer):
 	class Meta:
